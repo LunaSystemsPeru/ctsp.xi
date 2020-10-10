@@ -10,7 +10,7 @@
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
 	<meta name="description" content="" />
-	<meta property="og:title" content="MediCo. - Doctor HTML Template" />
+	<meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">

@@ -3,7 +3,7 @@
         <div class="container header-contant-block ">
             <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-lg-3">
-                    <div class="logo-header "><a href="index.html"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
+                    <div class="logo-header "><a href="index.php"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
                 </div>
                 <div class="col-lg-9">
                     <ul class="contact-info style-1 clearfix text-primary">
@@ -35,7 +35,7 @@
                 <div class="container clearfix">
                     <!-- website logo -->
                     <div class="logo-header mostion">
-                        <a href="index.html"><img src="images/logo-white1.png" width="193" height="89" alt=""></a>
+                        <a href="index.php"><img src="images/logo-white1.png" width="193" height="89" alt=""></a>
                     </div>
                     <!-- nav toggle button -->
                     <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +60,7 @@
                     <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
                             <li class="active">
-                                <a href="index.html">Inicio<i class="fa fa-chevron-down"></i></a>
+                                <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>
 
                             </li>
                             <li> <a href="javascript:;">Institucional<i class="fa fa-chevron-down"></i></a>
