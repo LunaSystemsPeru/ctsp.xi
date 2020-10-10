@@ -20,7 +20,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title>MediCo. - Doctor HTML Template</title>
+	<title>Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -899,7 +899,7 @@
                 <div class="section-content">
                     <div class="row d-flex">
                         <div class="col-lg-6 col-md-6 align-self-center m-b30">
-                            <h2 class="m-b15">Health Care with <br/><span class="text-primary">Carezone Hospital Center</span></h3>
+                            <h2 class="m-b15">Health Care with <br/><span class="text-primary">Carezone Hospital Center</span></h2>
                             <p class="m-b15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has.</p>
                             <p class="m-b30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
 							<img src="images/sign.png" width="200" alt="">
