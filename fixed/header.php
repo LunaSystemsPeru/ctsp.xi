@@ -116,7 +116,7 @@
                                     <li><a href="contact.html">Día de la Madre</a></li>
                                     <li><a href="contact-2.html">Semana Cívica</a></li>
                                     <li><a href="contact-3.html">Dia del Trabajador Social</a></li>
-                                    <li><a href="contact-4.html">Navidad y Año Nuevo</a></li>
+                                    <li><a href="fiestas_navidenas.php">Navidad y Año Nuevo</a></li>
                                 </ul>
                             </li>
                         </ul>
