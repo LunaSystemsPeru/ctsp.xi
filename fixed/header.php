@@ -46,7 +46,7 @@
                     <!-- extra nav -->
                     <div class="extra-nav">
                         <div class="extra-cell">
-                            <button id="quik-search-btn" type="button" class="site-button white"><i class="fa fa-search"></i></button>
+                            <a href="ingresar_usuario.php" type="button" class="site-button white"><i class="fa fa-user"></i> Intranet</a>
                         </div>
                     </div>
                     <!-- Quik search -->
@@ -77,7 +77,7 @@
                             </li>
                             <li> <a href="javascript:;">Marco Legal<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li> <a href="javascript:;">Ley de Creacion</a>
+                                    <li> <a href="ley_creacion.php">Ley de Creacion</a>
 
                                     </li>
                                     <li> <a href="javascript:;">Ley 30112</a>
