@@ -11,7 +11,7 @@
     <meta name="robots" content="" />
     <meta name="description" content="" />
     <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
-    <meta property="og:description" content=" Ley de Creacion del Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
+    <meta property="og:description" content=" Ley 30112 del Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
     <meta property="og:image" content="" />
     <meta name="format-detection" content="telephone=no">
 
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
     <!-- PAGE TITLE HERE -->
-    <title>Consejo Directivo | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>Ley 30112 | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,7 +77,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Ley de Creacion - 27918</h3>
+                        <h3 class="h3"> Ley 30112</h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
@@ -86,7 +86,7 @@
                 <div class="section-content ">
                     <div class="row">
                         <div class="col-lg-12">
-                            <embed src="https://leyes.congreso.gob.pe/Documentos/Leyes/27918.pdf" width="100%" height="1000px">
+                            <embed src="http://www2.congreso.gob.pe/sicr/cendocbib/con4_uibd.nsf/443E013CC0F6112305257EF400039A87/$FILE/30112.pdf" width="100%" height="1000px">
                         </div>
                     </div>
                 </div>

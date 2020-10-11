@@ -6,21 +6,21 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="" />
-    <meta name="description" content="" />
-    <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
-    <meta property="og:description" content=" Ley de Creacion del Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
-    <meta property="og:image" content="" />
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+    <meta name="description" content=""/>
+    <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
+    <meta property="og:description" content="Ficha de Inscripcion PDF para Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
+    <meta property="og:image" content=""/>
     <meta name="format-detection" content="telephone=no">
 
     <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
 
     <!-- PAGE TITLE HERE -->
-    <title>Consejo Directivo | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>Ficha de Inscripcion PDF | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,11 +39,6 @@
     <link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
     <link rel="stylesheet" type="text/css" href="css/templete.min.css">
 
-    <!-- Revolution Slider Css -->
-    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
-
     <script
             src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -53,12 +48,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|PT+Serif:400,400i,700,700i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Slab:100,300,400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
     </style>
-    <script type="text/javascript" src="plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 
 </head>
 <body id="bg">
@@ -77,41 +66,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Ley de Creacion - 27918</h3>
+                        <h3 class="h3"> Ficha de Inscripcion Imprimible PDF</h3>
                         <div class="dez-separator bg-primary"></div>
-
+                        <p>Puede presentar su expediente segun los requisitos mencionados en <a class="text-success" href="colegiacion.php"> requisitos para colegiatura</a> o puede armar su expediente virtual <a class="text-info" href="solicitud_virtual.php">aqui</a></p>
                     </div>
                 </div>
 
                 <div class="section-content ">
                     <div class="row">
                         <div class="col-lg-12">
-                            <embed src="https://leyes.congreso.gob.pe/Documentos/Leyes/27918.pdf" width="100%" height="1000px">
+                            <embed src="archivos/Formato%20Ficha%20Afiliac.%20CTSP.pdf" width="100%" height="1200px">
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <!-- Footer -->
-    <?php include 'fixed/footer.php'?>
+    <?php include 'fixed/footer.php' ?>
     <!-- Footer END-->
     <!-- scroll top button -->
-    <button class="scroltop fa fa-chevron-up" ></button>
+    <button class="scroltop fa fa-chevron-up"></button>
 </div>
 <!-- JavaScript  files ========================================= -->
 <script src="js/combining.js"></script><!-- COMBINING JS  -->
 <!-- revolution JS FILES -->
-<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script  src="js/rev.slider.js"></script>
-<script>
-    jQuery(document).ready(function() {
-        'use strict';
-        dz_rev_slider_5();
-    });	/*ready*/
-</script>
 </body>
 
 <!-- Mirrored from medico.dexignzone.com/xhtml/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Sep 2020 21:19:49 GMT -->
