@@ -57,27 +57,24 @@
                                 <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>
 
                             </li>
-                            <li> <a href="javascript:;">Institucional<i class="fa fa-chevron-down"></i></a>
+                            <li><a href="javascript:;">Institucional<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li> <a href="consejo_directivo.php">Consejo Directivo</a>
+                                    <li><a href="consejo_directivo.php">Consejo Directivo</a></li>
+                                    <li><a href="resena_historica.php">Reseña Historica</a>
                                     </li>
-                                    <li> <a href="mision_vision.php">Mision y Vision</a>
-                                    </li>
-                                    <li> <a href="resena_historica.php">Reseña Historica</a>
-                                    </li>
-                                    <li> <a href="javascript:;">Plan de Trabajo</a>
+                                    <li><a href="plan_trabajo.php">Plan de Trabajo</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li> <a href="javascript:;">Marco Legal<i class="fa fa-chevron-down"></i></a>
+                            <li><a href="javascript:;">Marco Legal<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li> <a href="ley_creacion.php">Ley de Creacion</a>
+                                    <li><a href="ley_creacion.php">Ley de Creacion</a>
 
                                     </li>
-                                    <li> <a href="ley_30112.php">Ley 30112</a>
+                                    <li><a href="ley_30112.php">Ley 30112</a>
 
                                     </li>
-                                    <li> <a href="partida_registral.php">Partida Registral</a>
+                                    <li><a href="partida_registral.php">Partida Registral</a>
 
                                     </li>
                                     <li><a href="escritura_publica.php">Escritura Publica</a></li>
@@ -86,7 +83,7 @@
 
                                 </ul>
                             </li>
-                            <li> <a href="javascript:;">Tramites<i class="fa fa-chevron-down"></i></a>
+                            <li><a href="javascript:;">Tramites<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
                                     <li><a href="colegiacion.php">Colegiación</a></li>
                                     <li><a href="ficha_inscripcion.php">Ficha Inscripción</a></li>
@@ -95,26 +92,26 @@
 
                                 </ul>
                             </li>
-                            <li> <a href="javascript:;">Servicios<i class="fa fa-chevron-down"></i></a>
+                            <li><a href="javascript:;">Servicios<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li> <a href="javascript:;">Bienestar Social</a></li>
-                                    <li> <a href="javascript:;">Fondo de Apoyo</a></li>
-                                    <li> <a href="javascript:;">Capacitaciones</a></li>
-                                    <li> <a href="javascript:;">Convenios</a></li>
-                                    <li> <a href="javascript:;">Oportunidad Laboral</a></li>
+                                    <li><a href="javascript:;">Bienestar Social</a></li>
+                                    <li><a href="javascript:;">Fondo de Apoyo</a></li>
+                                    <li><a href="javascript:;">Capacitaciones</a></li>
+                                    <li><a href="javascript:;">Convenios</a></li>
+                                    <li><a href="javascript:;">Oportunidad Laboral</a></li>
                                 </ul>
                             </li>
-                            <li> <a href="javascript:;">Prensa<i class="fa fa-chevron-down"></i></a>
+                            <li><a href="javascript:;">Prensa<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li> <a href="javascript:;">Noticias</a></li>
-                                    <li> <a href="javascript:;">Comunicados</a></li>
-                                    <li> <a href="javascript:;">Eventos</a></li>
-                                    <li> <a href="javascript:;">Revistas</a></li>
-                                    <li> <a href="javascript:;">Cursos</a></li>
+                                    <li><a href="javascript:;">Noticias</a></li>
+                                    <li><a href="javascript:;">Comunicados</a></li>
+                                    <li><a href="javascript:;">Eventos</a></li>
+                                    <li><a href="javascript:;">Revistas</a></li>
+                                    <li><a href="javascript:;">Cursos</a></li>
                                 </ul>
                             </li>
 
-                            <li> <a href="javascript:;">Actividades Conmemorativas<i class="fa fa-chevron-down"></i></a>
+                            <li><a href="javascript:;">Actividades Conmemorativas<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu right">
                                     <li><a href="contact.html">Día de la Madre</a></li>
                                     <li><a href="contact-2.html">Semana Cívica</a></li>

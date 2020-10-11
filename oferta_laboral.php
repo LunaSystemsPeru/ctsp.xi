@@ -6,21 +6,21 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content=""/>
-    <meta name="author" content=""/>
-    <meta name="robots" content=""/>
-    <meta name="description" content=""/>
-    <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
-    <meta property="og:description" content="Como solicito mi constancia de habilidad para Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
-    <meta property="og:image" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
+    <meta property="og:description" content="Oferta Laborar para colegiados del Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
+    <meta property="og:image" content="" />
     <meta name="format-detection" content="telephone=no">
 
     <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
     <!-- PAGE TITLE HERE -->
-    <title>Solicitar Constancia de Habilidad | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>Oferta Laboral | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,43 +66,42 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Cuales son los Requisitos para solicitar la Constancia de Habilidad?</h3>
+                        <h3 class="h3"> Oferta Laboral</h3>
                         <div class="dez-separator bg-primary"></div>
-                        <p></p>
+
                     </div>
                 </div>
 
                 <div class="section-content ">
                     <div class="row">
-                        <div class="col-lg-9">
-                            <ul class="list-check-circle primary">
-                                <li>Pago de Derecho por S/ xx.00  REVISAR ITEMS MODIFICAR</li>
-                                <li>Copia autenticada del DNI.</li>
-                                <li>Estar al dia con sus cuotas mensuales</li>
-                                <li>Certificado valido por 06 meses</li>
-                                <li>Enviar un correo con su voucher y datos completos (dni, nro colegiatura)</li>
-                            </ul>
+                        <div class="col-lg-12">
+<!--                            Falta codigo de etica-->
+                            <embed src="" width="100%" height="1000px">
                         </div>
-
-                        <div class="col-lg-3">
-                            <h4>Nro de Cuentas</h4>
-                            <p>BCP SOLES: 310-12345678-0-001</p>
-                        </div>
-
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
     <!-- Footer -->
-    <?php include 'fixed/footer.php' ?>
+    <?php include 'fixed/footer.php'?>
     <!-- Footer END-->
     <!-- scroll top button -->
-    <button class="scroltop fa fa-chevron-up"></button>
+    <button class="scroltop fa fa-chevron-up" ></button>
 </div>
 <!-- JavaScript  files ========================================= -->
 <script src="js/combining.js"></script><!-- COMBINING JS  -->
 <!-- revolution JS FILES -->
+<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script  src="js/rev.slider.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        'use strict';
+        dz_rev_slider_5();
+    });	/*ready*/
+</script>
 </body>
 
 <!-- Mirrored from medico.dexignzone.com/xhtml/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Sep 2020 21:19:49 GMT -->
