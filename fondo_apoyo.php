@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
 
     <!-- PAGE TITLE HERE -->
-    <title>Plan de Trabajo | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>Fondo de Apoyo Social | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> PLAN DE TRABAJO </h3>
+                        <h3 class="h3"> FONDO DE APOYO SOCIAL</h3>
                         <h3 class="h3"> 2019 - 2021 </h3>
                         <div class="dez-separator bg-primary"></div>
 
@@ -75,53 +75,9 @@
 
                 <div class="section-content ">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <p>El Colegio de Trabajadores Sociales del Perú es una institución gremial autónoma de derecho público interno, sin fines de lucro tiene personería jurídica y es el órgano representativo de los profesionales Trabajadores Sociales y Asistentes Sociales del Perú.</p>
-                            <p>Teniendo como marco legal los Estatutos, el Reglamento de Elecciones, Ley de creación de los Trabajadores Sociales del Perú  Nº27918  del 11 Enero  2003, en el  D.S. Nº 012-2018-JUS de 28.12.2018 de los Lineamientos para inscripción de los Colegios Profesionales de las Juntas de Decanos de los colegios Profesionales</p>
-                            <p>En este marco jurídico este consejo directivo CDR XI – Ancash, presenta a todos los agremiados el Plan de Trabajo, para el periodo 2019 -2021.</p>
-
-                            <h4 class="h4"> PROPUESTAS</h4>
-                            <div class="dez-separator bg-primary"></div>
-                            <h5 class="h5" > Área de Capacitación:  Actualización de temas</h5>
-
-                            <ul class="list-check-circle primary">
-                                <li>Peritaje social</li>
-                                <li>Violencia Familiar</li>
-                                <li>Sistema de Pensiones, Jubilación y Seguridad social</li>
-                                <li>Familia  y Cuidado de Adulto Mayor</li>
-                                <li>Trabajo social en Educación</li>
-                                <li>Seguridad  y Salud en el Trabajo</li>
-                                <li>Trabajo Social en Pandemias</li>
-
-                            </ul>
-                            <h5 class="h5" > Área de Gestión</h5>
-                            <ul class="list-check-circle primary">
-                                <li>Conformación de comisión Revisora de cuentas</li>
-                                <li>Fortalecimiento del Fondo de Apoyo Social r</li>
-                                <li>Difusión bolsa de Trabajo</li>
-                                <li>Acciones  que contribuyan a la Renovación de directiva  y fortalecimiento
-                                    del Consejo Directivo Nacional</li>
-                                <li>Inscripción del Colegio a la Sunarp</li>
-                                <li>Inscripción  del Colegio a la Sunat</li>
-                                <li>Creación de cuenta Bancaria a nombre CDR XI-Ancash-CTSP </li>
-
-                            </ul>
-                            <h5 class="h5" > Área de Responsabilidad Social</h5>
-                            <ul class="list-check-circle primary">
-                                <li>Proyección y desarrollo social  en poblaciones vulnerables : Campañas</li>
-
-                            </ul>
-                            <h5 class="h5" > Área bienestar social</h5>
-                            <ul class="list-check-circle primary">
-                                <li>Programa Turístico Nacional, e internacional</li>
-                                <li>Programas de Integración institucional en fechas conmemorativas de
-                                    acuerdo al calendario cívico</li>
-
-                            </ul>
-
-                        </div>
-                        <div class="col-lg-12">
-                            <a href="archivos/Plan%20%20de%20Trabajo%20Bienal%20CDR%20XI%20Ancash%20CTSP.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Descargue el plan completo aqui</a>
+                        <div class="col-lg-12 text-center">
+                            <p>El Fondo de Apoyo Social es una herramienta estatutaria y se implementa con el 20% del pago mensual que aporta cada asociada, este fondo es intangible y se constituye al interior del Colegio de Trabajadores Sociales Región XI-Ancash, para brindar asistencia solidaria a las agremiadas en casos de fallecimiento del titular.</p>
+                            <embed src="Archivos/ReglamentoFAS.pdf" width="75%" height="1000px">
                         </div>
                     </div>
                 </div>

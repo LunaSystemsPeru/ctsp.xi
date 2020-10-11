@@ -95,7 +95,7 @@
                             <li><a href="javascript:;">Servicios<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
                                     <li><a href="javascript:;">Bienestar Social</a></li>
-                                    <li><a href="javascript:;">Fondo de Apoyo</a></li>
+                                    <li><a href="fondo_apoyo.php">Fondo de Apoyo</a></li>
                                     <li><a href="javascript:;">Capacitaciones</a></li>
                                     <li><a href="javascript:;">Convenios</a></li>
                                     <li><a href="javascript:;">Oportunidad Laboral</a></li>
