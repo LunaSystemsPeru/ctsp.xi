@@ -157,189 +157,9 @@
                                              data-paddingleft="[0,0,0,0]"
                                              style="z-index: 6; width: 100%;background-color:rgb(255,255,255);">
 
-                                            <!-- LAYER NR. 3 -->
-                                            <div class="tp-caption tp-resizeme"
-                                                 id="slide-100-layer-3"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['0','0','0','0']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['0','0','0','0']"
-                                                 data-width="none"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                                 data-margintop="[30,30,30,30]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[40,20,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,20,20]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 9; white-space: normal; font-size: 25px; line-height: 25px; font-weight: 500; color: #000000; letter-spacing: 0px; display: block; font-family:Roboto;"> Dental Root Canals
-                                            </div>
-                                            <!-- LAYER NR. 4 -->
-                                            <div class="tp-caption tp-resizeme text-primary"
-                                                 id="slide-100-layer-4"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['5','5','5','5']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['5','5','5','5']"
-                                                 data-width="none"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                                 data-margintop="[10,10,10,10]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[40,20,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 10; white-space: normal; font-size: 20px; line-height: 20px; font-weight: 500; letter-spacing: 0px; display: block;font-family:Roboto;"> $1500 /Fees
-                                            </div>
-                                            <!-- LAYER NR. 5 -->
-                                            <div class="tp-caption tp-resizeme"
-                                                 id="slide-100-layer-5"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['10','10','10','10']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['10','10','10','10']"
-                                                 data-width="none"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                                 data-margintop="[30,30,30,30]"
-                                                 data-marginright="[40,40,40,40]"
-                                                 data-marginbottom="[20,20,20,20]"
-                                                 data-marginleft="[40,20,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 11; white-space: normal; font-size: 15px; line-height: 25px; font-weight: 400; color: #555555; letter-spacing: 0px; display: block;font-family:Roboto; text-align:justify;">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text make a type.
-                                            </div>
-                                            <!-- LAYER NR. 6 -->
-                                            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                                                 id="slide-100-layer-6"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['0','0','0','0']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['0','0','0','0']"
-                                                 data-width="60"
-                                                 data-height="60"
-                                                 data-whitespace="normal"
-                                                 data-visibility="['on','on','off','off']"
-                                                 data-type="shape"
-                                                 data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-100-layer-11","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-100-layer-11","delay":""},{"event":"mouseenter","action":"pauseslider","delay":""},{"event":"mouseleave","action":"playslider","delay":""}]'
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bc:var(--bg-color);"}]'
-                                                 data-margintop="[0,0,0,0]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[40,20,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 23; display: inline-block;background-color:rgba(0,0,0,0.5);border-color:rgb(0,0,0);border-style:solid;border-width:3px 3px 3px 3px;cursor:pointer;">
-                                                <div class="tp-element-background" style=" background: url('images/main-slider/pic1.jpg') no-repeat center center; background-size: cover; opacity: 1;">
-                                                </div>
-                                            </div>
-                                            <!-- LAYER NR. 7 -->
-                                            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                                                 id="slide-100-layer-7"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['5','0','0','0']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['5','0','0','0']"
-                                                 data-width="60"
-                                                 data-height="60"
-                                                 data-whitespace="normal"
-                                                 data-visibility="['on','on','off','off']"
-                                                 data-type="shape"
-                                                 data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-100-layer-12","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-100-layer-12","delay":""},{"event":"mouseenter","action":"pauseslider","delay":""},{"event":"mouseleave","action":"playslider","delay":""}]'
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bc:var(--bg-color);"}]'
-                                                 data-margintop="[0,0,0,0]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[10,10,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 24; display: inline-block;background-color:rgba(0,0,0,0.5);border-color:rgb(0,0,0);border-style:solid;border-width:3px 3px 3px 3px;cursor:pointer;">
-                                                <div class="tp-element-background" style=" background: url('images/main-slider/pic2.jpg') no-repeat center center; background-size: cover; opacity: 1;">
-                                                </div>
-                                            </div>
-                                            <!-- LAYER NR. 8 -->
-                                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
-                                                 id="slide-100-layer-8"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['10','0','0','0']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['10','0','0','0']"
-                                                 data-width="60"
-                                                 data-height="60"
-                                                 data-whitespace="normal"
-                                                 data-visibility="['on','on','off','off']"
-                                                 data-type="shape"
-                                                 data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-100-layer-13","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-100-layer-13","delay":""},{"event":"mouseenter","action":"pauseslider","delay":""},{"event":"mouseleave","action":"playslider","delay":""}]'
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bc:var(--bg-color);"}]'
-                                                 data-margintop="[0,0,0,0]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[10,10,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 25; display: inline-block;background-color:rgba(0,0,0,0.5);border-color:rgb(0,0,0);border-style:solid;border-width:3px 3px 3px 3px;cursor:pointer;">
-                                                <div class="tp-element-background" style=" background: url('images/main-slider/pic3.jpg') no-repeat center center; background-size: cover; opacity: 1;"></div>
-                                            </div>
 
-                                            <!-- LAYER NR. 9 -->
-                                            <a class="tp-caption rev-btn tp-resizeme scroll bg-primary"
-                                               id="slide-100-layer-9"
-                                               href="#services"
-                                               data-x="['left','left','left','left']"
-                                               data-hoffset="['0','0','0','0']"
-                                               data-y="['top','top','top','top']"
-                                               data-voffset="['0','0','0','0']"
-                                               data-width="100%"
-                                               data-height="none"
-                                               data-whitespace="normal"
-                                               data-type="button"
-                                               data-responsive_offset="on"
-                                               data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;fbr:100;","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:110%;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
-                                               data-margintop="[30,30,30,30]"
-                                               data-marginright="[0,0,0,0]"
-                                               data-marginbottom="[0,0,0,0]"
-                                               data-marginleft="[0,0,0,0]"
-                                               data-textAlign="['center','center','center','center']"
-                                               data-paddingtop="[0,0,0,0]"
-                                               data-paddingright="[0,0,0,0]"
-                                               data-paddingbottom="[0,0,0,0]"
-                                               data-paddingleft="[0,0,0,0]"
-                                               style="z-index: 22; min-width: 100%; max-width: 100%; white-space: normal; font-size: 20px; line-height: 60px;  font-weight: 700; color: rgba(255,255,255,1); display: block; font-family:Roboto; border-color:rgba(0,0,0,1); outline:none; box-shadow:none; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; cursor:pointer;">
-                                                <i class="fa-icon-home" style="margin-right:10px;"></i>View All Services
-                                            </a>
+                                            <!-- LAYER NR. 4 -->
+
                                         </div>
                                         <!-- LAYER NR. 10 -->
                                         <div class="tp-caption  "
@@ -524,191 +344,10 @@
                                              style="z-index: 6; width: 100%;background-color:rgb(255,255,255);">
 
                                             <!-- LAYER NR. 3 -->
-                                            <div class="tp-caption tp-resizeme"
-                                                 id="slide-200-layer-3"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['0','0','0','0']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['0','0','0','0']"
-                                                 data-width="none"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                                 data-margintop="[30,30,30,30]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[40,20,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,20,20]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 9; white-space: normal; font-size: 25px; line-height: 25px; font-weight: 500; color: #000000; letter-spacing: 0px; display: block;font-family:Roboto;">
-                                                Care Your Heart
-                                            </div>
-                                            <!-- LAYER NR. 4 -->
-                                            <div class="tp-caption tp-resizeme text-primary"
-                                                 id="slide-200-layer-4"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['5','5','5','5']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['5','5','5','5']"
-                                                 data-width="none"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                                 data-margintop="[10,10,10,10]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[40,20,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 10; white-space: normal; font-size: 20px; line-height: 20px; font-weight: 500; letter-spacing: 0px; display: block;font-family:Roboto;">
-                                                $1800 /Fees
-                                            </div>
-                                            <!-- LAYER NR. 5 -->
-                                            <div class="tp-caption   tp-resizeme"
-                                                 id="slide-200-layer-5"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['10','10','10','10']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['10','10','10','10']"
-                                                 data-width="none"
-                                                 data-height="none"
-                                                 data-whitespace="normal"
-                                                 data-type="text"
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                                 data-margintop="[30,30,30,30]"
-                                                 data-marginright="[40,40,40,40]"
-                                                 data-marginbottom="[20,20,20,20]"
-                                                 data-marginleft="[40,20,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 11; white-space: normal; font-size: 15px; line-height: 25px; font-weight: 400; color: #555555; letter-spacing: 0px; display: block;font-family:Roboto; text-align:justify;">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text make a type.
-                                            </div>
-                                            <!-- LAYER NR. 6 -->
-                                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
-                                                 id="slide-200-layer-6"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['0','0','0','0']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['0','0','0','0']"
-                                                 data-width="60"
-                                                 data-height="60"
-                                                 data-whitespace="normal"
-                                                 data-visibility="['on','on','off','off']"
-                                                 data-type="shape"
-                                                 data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-200-layer-11","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-200-layer-11","delay":""},{"event":"mouseenter","action":"pauseslider","delay":""},{"event":"mouseleave","action":"playslider","delay":""}]'
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bc:var(--bg-color);"}]'
-                                                 data-margintop="[0,0,0,0]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[40,20,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 23; display: inline-block;background-color:rgba(0,0,0,0.5);border-color:rgb(0,0,0);border-style:solid;border-width:3px 3px 3px 3px;cursor:pointer;">
-                                                <div class="tp-element-background" style=" background: url('images/main-slider/pic4.jpg') no-repeat center center; background-size: cover; opacity: 1;">
-                                                </div>
-                                            </div>
-                                            <!-- LAYER NR. 7 -->
-                                            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                                                 id="slide-200-layer-7"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['5','0','0','0']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['5','0','0','0']"
-                                                 data-width="60"
-                                                 data-height="60"
-                                                 data-whitespace="normal"
-                                                 data-visibility="['on','on','off','off']"
-                                                 data-type="shape"
-                                                 data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-200-layer-12","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-200-layer-12","delay":""},{"event":"mouseenter","action":"pauseslider","delay":""},{"event":"mouseleave","action":"playslider","delay":""}]'
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bc:var(--bg-color);"}]'
-                                                 data-margintop="[0,0,0,0]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[10,10,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 24; display: inline-block;background-color:rgba(0,0,0,0.5);border-color:rgb(0,0,0);border-style:solid;border-width:3px 3px 3px 3px;cursor:pointer;">
-                                                <div class="tp-element-background" style=" background: url('images/main-slider/pic5.jpg') no-repeat center center; background-size: cover; opacity: 1;">
-                                                </div>
-                                            </div>
-                                            <!-- LAYER NR. 8 -->
-                                            <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
-                                                 id="slide-200-layer-8"
-                                                 data-x="['left','left','left','left']"
-                                                 data-hoffset="['10','0','0','0']"
-                                                 data-y="['top','top','top','top']"
-                                                 data-voffset="['10','0','0','0']"
-                                                 data-width="60"
-                                                 data-height="60"
-                                                 data-whitespace="normal"
-                                                 data-visibility="['on','on','off','off']"
-                                                 data-type="shape"
-                                                 data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-200-layer-13","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-200-layer-13","delay":""},{"event":"mouseenter","action":"pauseslider","delay":""},{"event":"mouseleave","action":"playslider","delay":""}]'
-                                                 data-responsive_offset="on"
-                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(0,0,0);bc:var(--bg-color);"}]'
-                                                 data-margintop="[0,0,0,0]"
-                                                 data-marginright="[0,0,0,0]"
-                                                 data-marginbottom="[0,0,0,0]"
-                                                 data-marginleft="[10,10,20,20]"
-                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                                 data-paddingtop="[0,0,0,0]"
-                                                 data-paddingright="[0,0,0,0]"
-                                                 data-paddingbottom="[0,0,0,0]"
-                                                 data-paddingleft="[0,0,0,0]"
-                                                 style="z-index: 25; display: inline-block;background-color:rgba(0,0,0,0.5);border-color:rgb(0,0,0);border-style:solid;border-width:3px 3px 3px 3px;cursor:pointer;">
-                                                <div class="tp-element-background" style=" background: url('images/main-slider/pic6.jpg') no-repeat center center; background-size: cover; opacity: 1;"></div>
-                                            </div>
 
-                                            <!-- LAYER NR. 9 -->
-                                            <a class="tp-caption rev-btn scroll tp-resizeme bg-primary"
-                                               href="#services"
-                                               id="slide-200-layer-9"
-                                               data-x="['left','left','left','left']"
-                                               data-hoffset="['0','0','0','0']"
-                                               data-y="['top','top','top','top']"
-                                               data-voffset="['0','0','0','0']"
-                                               data-width="100%"
-                                               data-height="none"
-                                               data-whitespace="normal"
-                                               data-type="button"
-                                               data-responsive_offset="on"
-                                               data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;fbr:100;","to":"o:1;fbr:100;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fbr:100;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fbr:110%;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
-                                               data-margintop="[30,30,30,30]"
-                                               data-marginright="[0,0,0,0]"
-                                               data-marginbottom="[0,0,0,0]"
-                                               data-marginleft="[0,0,0,0]"
-                                               data-textAlign="['center','center','center','center']"
-                                               data-paddingtop="[0,0,0,0]"
-                                               data-paddingright="[0,0,0,0]"
-                                               data-paddingbottom="[0,0,0,0]"
-                                               data-paddingleft="[0,0,0,0]"
-                                               style="z-index: 22; min-width: 100%px; max-width: 100%px; white-space: normal; font-size: 20px; line-height: 60px; font-weight: 700; color: rgba(255,255,255,1); letter-spacing: px; display: block;font-family:Roboto;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-                                                <i class="fa-icon-home" style="margin-right:10px;"></i>View Full Info
-                                            </a>
-                                        </div>
+                                            <!-- LAYER NR. 4 -->
+
+
                                         <!-- LAYER NR. 10 -->
                                         <div class="tp-caption  "
                                              id="slide-200-layer-10"
@@ -739,29 +378,6 @@
                                     </div>
                                 </div>
 
-                                <!-- LAYER NR. 11 -->
-                                <div class="tp-caption tp-resizeme re-shadow"
-                                     id="slide-200-layer-11"
-                                     data-x="['left','left','left','left']"
-                                     data-hoffset="['400','330','50','50']"
-                                     data-y="['bottom','bottom','bottom','bottom']"
-                                     data-voffset="['140','160','350','350']"
-                                     data-width="none"
-                                     data-height="none"
-                                     data-whitespace="normal"
-                                     data-visibility="['on','off','off','off']"
-                                     data-type="image"
-                                     data-responsive_offset="on"
-                                     data-frames='[{"delay":"bytrigger","speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,0,0,0]"
-                                     data-lasttriggerstate="reset"
-                                     style="z-index: 27;">
-                                    <img src="images/main-slider/pic4.jpg" alt="" data-ww="['640px','640px','360px','360px']" data-hh="['360px','360px','249px','249']" width="640" height="360" data-no-retina>
-                                </div>
                                 <!-- LAYER NR. 12 -->
                                 <div class="tp-caption   tp-resizeme  re-shadow"
                                      id="slide-200-layer-12"
@@ -810,90 +426,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <div style="" class="tp-static-layers">
-                            <!-- LAYER NR. 78 -->
-                            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme re-shadow2 re-overflow tp-static-layer"
-                                 id="slider-328-layer-31"
-                                 data-x="['right','right','right','right']"
-                                 data-hoffset="['55','55','55','55']"
-                                 data-y="['bottom','bottom','bottom','bottom']"
-                                 data-voffset="['40','40','40','40']"
-                                 data-width="130"
-                                 data-height="130"
-                                 data-whitespace="nowrap"
-                                 data-visibility="['on','off','off','off']"
-                                 data-type="shape"
-                                 data-basealign="slide"
-                                 data-responsive_offset="on"
-                                 data-startslide="0"
-                                 data-endslide="2"
-                                 data-frames='[{"delay":2100,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[0,0,0,0]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[0,0,0,0]"
 
-                                 style="z-index: 14;background-color:rgb(255,255,255);border-color:rgb(255,255,255);border-style:solid;border-width:5px 5px 5px 5px;border-radius:100px;">
-                                <div class="tp-element-background" style=" background: url('images/testimonials/pic4.jpg') no-repeat center center; background-size: cover; opacity: 1; border-radius:100px;">
-                                </div>
-                            </div>
-
-                            <!-- LAYER NR. 79 -->
-                            <div class="tp-caption tp-resizeme tp-static-layer bg-primary"
-                                 id="slider-328-layer-32"
-                                 data-x="['right','right','right','right']"
-                                 data-hoffset="['70','70','70','70']"
-                                 data-y="['bottom','bottom','bottom','bottom']"
-                                 data-voffset="['30','30','30','30']"
-                                 data-width="100"
-                                 data-height="none"
-                                 data-whitespace="nowrap"
-                                 data-visibility="['on','off','off','off']"
-                                 data-type="text"
-                                 data-basealign="slide"
-                                 data-responsive_offset="on"
-                                 data-startslide="0"
-                                 data-endslide="2"
-                                 data-frames='[{"delay":2200,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                 data-textAlign="['center','center','center','center']"
-                                 data-paddingtop="[0,0,0,0]"
-                                 data-paddingright="[10,10,10,10]"
-                                 data-paddingbottom="[0,0,0,0]"
-                                 data-paddingleft="[10,10,10,10]"
-                                 style="z-index: 15; min-width: 100px; max-width: 100px; white-space: nowrap; font-size: 15px; line-height: 25px; font-weight: 500; color: #ffffff; letter-spacing: 0px;font-family:Roboto;border-radius:5px 5px 5px 5px;">
-                                John Cane
-                            </div>
-                            <!-- LAYER NR. 80 -->
-                            <div class="tp-caption   tp-resizeme re-shadow2 tp-static-layer"
-                                 id="slider-328-layer-33"
-                                 data-x="['right','right','right','right']"
-                                 data-hoffset="['30','30','30','30']"
-                                 data-y="['bottom','bottom','bottom','bottom']"
-                                 data-voffset="['160','160','160','160']"
-                                 data-width="180"
-                                 data-height="none"
-                                 data-whitespace="nowrap"
-                                 data-visibility="['on','off','off','off']"
-                                 data-type="text"
-                                 data-basealign="slide"
-                                 data-responsive_offset="on"
-                                 data-startslide="0"
-                                 data-endslide="2"
-                                 data-frames='[{"delay":2000,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                 data-textAlign="['center','center','center','center']"
-                                 data-paddingtop="[10,10,10,10]"
-                                 data-paddingright="[20,20,20,20]"
-                                 data-paddingbottom="[10,10,10,10]"
-                                 data-paddingleft="[20,20,20,20]"
-                                 style="z-index: 16; min-width: 180px; max-width: 180px; white-space: nowrap; font-size: 15px; line-height: 22px; font-weight: 400; color: #000000; letter-spacing: 0px;font-family:Roboto;background-color:rgb(255,255,255);border-radius:5px 5px 5px 5px;">
-                                <div class="rs-looped rs-slideloop" data-easing="Expo.easeInOut" data-speed="1" data-xs="0" data-xe="0" data-ys="-5" data-ye="5">
-                                    Have a Question?<br/>
-                                    <i class="fa-icon-phone" style="margin-right:7px"></i>
-                                    <a class="tp-phonenum">0800 98765432</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -933,30 +466,75 @@
                     <p>Ingrese los datos para hacer la busqueda de un colegiado</p>
                 </div>
                 <div class="row">
-                        <form class="col-lg-12" method="post" action="#">
-                            <div class="form-row">
-                                <div class="form-group col-md-2">
-                                    <label>Nro Colegiatura</label>
-                                    <input type="text" class="form-control" placeholder="999999">
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <label>Ape. Paterno</label>
-                                    <input type="email" class="form-control" placeholder="Paterno">
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <label>Ape. Materno</label>
-                                    <input type="email" class="form-control" placeholder="Materno">
-                                </div>
-                                <div class="form-group col-md-3">
-                                    <label>Nombre</label>
-                                    <input type="email" class="form-control" placeholder="Nombres">
-                                </div>
-                                <div class="form-group col-md-1">
-                                    <button type="submit" class="btn btn-primary">Buscar</button>
-                                </div>
-
+                    <form class="col-lg-12" method="post" action="#">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label>Nro Colegiatura</label>
+                                <input type="text" class="form-control" placeholder="999999">
                             </div>
-                        </form>
+                            <div class="form-group col-md-3">
+                                <label>Ape. Paterno</label>
+                                <input type="email" class="form-control" placeholder="Paterno">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Ape. Materno</label>
+                                <input type="email" class="form-control" placeholder="Materno">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Nombre</label>
+                                <input type="email" class="form-control" placeholder="Nombres">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <button type="submit" class="btn btn-primary">Buscar</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-full bg-white content-inner" id="services">
+            <div class="container">
+                <div class="section-head text-center ">
+                    <h3 class="h3 text-uppercase">Cursos</h3>
+                </div>
+                <div class="section-content ">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+                            <div class="dez-box">
+                                <div class="dez-media"><a href="#"><img src="images/our-services/service/pic1.jpg" alt=""></a></div>
+                                <div class="dez-info p-a30 border-1">
+                                    <h4 class="dez-title m-t0"><a href="#">Seguridad Y Salud Ocupacional en tiempos de COVID-19</a></h4>
+                                    <div class="dez-separator bg-primary"></div>
+                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius. </p>
+                                    <a href="#" class="site-button-link black">Estoy Interesado <i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+                            <div class="dez-box">
+                                <div class="dez-media"><a href="#"><img src="images/our-services/service/pic1.jpg" alt=""></a></div>
+                                <div class="dez-info p-a30 border-1">
+                                    <h4 class="dez-title m-t0"><a href="#">Auditoria SUNAFIL</a></h4>
+                                    <div class="dez-separator bg-primary"></div>
+                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius. </p>
+                                    <a href="#" class="site-button-link black">Estoy Interesado <i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+                            <div class="dez-box">
+                                <div class="dez-media"><a href="#"><img src="images/our-services/service/pic1.jpg" alt=""></a></div>
+                                <div class="dez-info p-a30 border-1">
+                                    <h4 class="dez-title m-t0"><a href="#">Dental Fillings</a></h4>
+                                    <div class="dez-separator bg-primary"></div>
+                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius. </p>
+                                    <a href="#" class="site-button-link black">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -969,65 +547,65 @@
                 </div>
                 <div class="section-content ">
                     <div class="blog-carousel owl-carousel owl-theme owl-btn-1 primary owl-btn-center-lr owl-dots-black-full">
-                       <div class="item">
-                           <div class="dez-box">
-                               <div class="dez-media">
-                                   <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
-                               </div>
-                               <div class="dez-info p-a20 border-1">
-                                   <div class="dez-post-meta ">
-                                       <ul>
-                                           <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                           <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
-                                           <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
-                                       </ul>
-                                   </div>
-                                   <h4 class="dez-title m-t5 m-b10"><a href="#">Provide qualtiy productivity..</a></h4>
-                                   <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
-                                   <a href="#" class="site-button">Read More</a>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="item">
-                           <div class="dez-box">
-                               <div class="dez-media">
-                                   <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
-                               </div>
-                               <div class="dez-info p-a20 border-1">
-                                   <div class="dez-post-meta ">
-                                       <ul>
-                                           <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                           <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
-                                           <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
-                                       </ul>
-                                   </div>
-                                   <h4 class="dez-title m-t5 m-b10"><a href="#">Provide qualtiy productivity..</a></h4>
-                                   <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
-                                   <a href="#" class="site-button">Read More</a>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="item">
-                           <div class="dez-box">
-                               <div class="dez-media">
-                                   <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
-                               </div>
-                               <div class="dez-info p-a20 border-1">
-                                   <div class="dez-post-meta ">
-                                       <ul>
-                                           <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                           <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
-                                           <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
-                                       </ul>
-                                   </div>
-                                   <h4 class="dez-title m-t5 m-b10"><a href="#">Provide qualtiy productivity..</a></h4>
-                                   <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
-                                   <a href="#" class="site-button">Read More</a>
-                               </div>
-                           </div>
-                       </div>
+                        <div class="item">
+                            <div class="dez-box">
+                                <div class="dez-media">
+                                    <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
+                                </div>
+                                <div class="dez-info p-a20 border-1">
+                                    <div class="dez-post-meta ">
+                                        <ul>
+                                            <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
+                                            <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
+                                            <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="dez-title m-t5 m-b10"><a href="#">Provide qualtiy productivity..</a></h4>
+                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
+                                    <a href="#" class="site-button">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dez-box">
+                                <div class="dez-media">
+                                    <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
+                                </div>
+                                <div class="dez-info p-a20 border-1">
+                                    <div class="dez-post-meta ">
+                                        <ul>
+                                            <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
+                                            <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
+                                            <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="dez-title m-t5 m-b10"><a href="#">Provide qualtiy productivity..</a></h4>
+                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
+                                    <a href="#" class="site-button">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dez-box">
+                                <div class="dez-media">
+                                    <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
+                                </div>
+                                <div class="dez-info p-a20 border-1">
+                                    <div class="dez-post-meta ">
+                                        <ul>
+                                            <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
+                                            <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
+                                            <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
+                                        </ul>
+                                    </div>
+                                    <h4 class="dez-title m-t5 m-b10"><a href="#">Provide qualtiy productivity..</a></h4>
+                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
+                                    <a href="#" class="site-button">Read More</a>
+                                </div>
+                            </div>
+                        </div>
 
-                   </div>
+                    </div>
 
                 </div>
             </div>
@@ -1038,9 +616,82 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white ">
-                        <h2 class="m-b15 m-t0">Podemos Ayudarte</h2>
-                        <h3 class="m-t0 m-b20">Contactate con nosotros al Whatsapp haciendo clic en el boton o llamanos al xxxxxx</h3>
-                        <a href="#" class="site-button white radius-sm">Escribenos</a>
+                        <h2 class="m-b15 m-t0">Comunicados</h2>
+                    </div>
+                </div>
+
+                <div class="section-content ">
+                    <div class="row">
+                        <div class="col-lg-12 p-lr0">
+                            <!-- blog grid -->
+                            <div id="masonry" class="dez-blog-grid-4">
+                                <div>
+                                    <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
+                                                    <div class="overlay-bx">
+                                                        <div class="overlay-icon">
+                                                            <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here">
+                                                                <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-title ">
+                                                    <h3 class="post-title text-white ">Apoyo a Afectados por Covid</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
+                                                    <div class="overlay-bx">
+                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-title ">
+                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
+                                                    <div class="overlay-bx">
+                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-title ">
+                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
+                                                    <div class="overlay-bx">
+                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-title ">
+                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1057,37 +708,33 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-cogs"></i></a> </div>
+                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-cogs"></i></a></div>
                                 <div class="icon-content">
                                     <h5 class="dez-tilte text-uppercase">Bienestar Social</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-recycle"></i></a> </div>
+                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-recycle"></i></a></div>
                                 <div class="icon-content">
                                     <h5 class="dez-tilte text-uppercase">Fondo de Apoyo</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-graduation-cap"></i></a> </div>
+                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-graduation-cap"></i></a></div>
                                 <div class="icon-content">
                                     <h5 class="dez-tilte text-uppercase">Capacitaciones</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"> <a href="#" class="icon-cell"><i class="fa fa-trophy"></i></a> </div>
+                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-trophy"></i></a></div>
                                 <div class="icon-content">
                                     <h5 class="dez-tilte text-uppercase">Convenios</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
                                 </div>
                             </div>
                         </div>
@@ -1096,46 +743,17 @@
             </div>
         </div>
         <!-- Team member END -->
-        <!-- Testimoniay -->
-        <div class="section-full owl-dots-style md-testimonial" style="background-image:url(images/background/bg3.jpg); background-size:cover;">
-            <div class="container-fluid p-a0">
-                <div class="section-content col-md-6 overlay-primary-dark content-inner-1" style="background-image:url(images/background/bg3.jpg);">
-                    <div class="testimonial-six relative z-index2 owl-theme owl-loaded owl-carousel owl-none owl-dots-white-full max-w700 m-auto">
-                        <div class="item">
-                            <div class="testimonial-1 testimonial-bg">
-                                <div class="testimonial-pic quote-left radius shadow"><img src="images/testimonials/pic1.jpg" width="100" height="100" alt=""></div>
-                                <div class="testimonial-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                                        popularised in the 1960s with the release of Letraset sheets conta</p>
-                                </div>
-                                <div class="testimonial-detail"><strong class="testimonial-name">David Matin</strong> <span class="testimonial-position">Student</span></div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-1 testimonial-bg">
-                                <div class="testimonial-pic quote-left radius shadow"><img src="images/testimonials/pic2.jpg" width="100" height="100" alt=""></div>
-                                <div class="testimonial-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                                        popularised in the 1960s with the release of Letraset sheets conta</p>
-                                </div>
-                                <div class="testimonial-detail"><strong class="testimonial-name">David Matin</strong> <span class="testimonial-position">Student</span></div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-1 testimonial-bg">
-                                <div class="testimonial-pic quote-left radius shadow"><img src="images/testimonials/pic3.jpg" width="100" height="100" alt=""></div>
-                                <div class="testimonial-text">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                                        popularised in the 1960s with the release of Letraset sheets conta</p>
-                                </div>
-                                <div class="testimonial-detail"><strong class="testimonial-name">David Matin</strong> <span class="testimonial-position">Student</span></div>
-                            </div>
-                        </div>
+        <div class="section-full bg-img-fix overlay-primary-dark content-inner-1 dez-support" style="background-image:url(images/background/bg5.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center text-white ">
+                        <h2 class="m-b15 m-t0">Podemos Ayudarte</h2>
+                        <h3 class="m-t0 m-b20">Contactate con nosotros al Whatsapp haciendo clic en el boton o llamanos al xxxxxx</h3>
+                        <a href="#" class="site-button white radius-sm">Escribenos</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Testimoniay END -->
         <!-- Latest Blog -->
         <div class="section-full bg-white content-inner-1">
             <div class="container">
@@ -1238,50 +856,6 @@
                 </div>
             </div>
         </div>
-        <!-- Latest Blog END -->
-        <div class="section-full bg-primary overlay-primary-dark bg-img-fix" style="background-image:url(images/background/bg9.jpg);">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6 ov-white1 style1 text-white">
-                        <div class="icon-bx-wraper p-a40 center">
-                            <div class="icon-md m-b20"><span class="icon-cell"><i class="fa fa-clock-o"></i></span></div>
-                            <div class="icon-content">
-                                <h5 class="dez-tilte text-uppercase">CALL CENTER 24/7</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 ov-white2 style1 text-white">
-                        <div class="icon-bx-wraper p-a40 center">
-                            <div class="icon-md m-b20"><span class="icon-cell"><i class="fa fa-user"></i></span></div>
-                            <div class="icon-content">
-                                <h5 class="dez-tilte text-uppercase">Professional staff</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 ov-white3 style1 text-white">
-                        <div class="icon-bx-wraper p-a40 center">
-                            <div class="icon-md m-b20"><span class="icon-cell"><i class="fa fa-pencil"></i></span></div>
-                            <div class="icon-content">
-                                <h5 class="dez-tilte text-uppercase">Modern Equipment</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 ov-white4 style1 text-white">
-                        <div class="icon-bx-wraper p-a40 center">
-                            <div class="icon-md m-b20"><span class="icon-cell"><i class="fa fa-file-text"></i></span></div>
-                            <div class="icon-content">
-                                <h5 class="dez-tilte text-uppercase">ONLINE APPOINTMENT</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Content END-->
     </div>
     <!-- Footer -->
     <footer class="site-footer map-footer">

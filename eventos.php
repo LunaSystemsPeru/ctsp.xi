@@ -6,21 +6,21 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="" />
-    <meta name="description" content="" />
-    <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
-    <meta property="og:description" content="Oferta Laborar para colegiados del Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
-    <meta property="og:image" content="" />
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta name="robots" content=""/>
+    <meta name="description" content=""/>
+    <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
+    <meta property="og:description" content="Eventos del Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
+    <meta property="og:image" content=""/>
     <meta name="format-detection" content="telephone=no">
 
     <!-- FAVICONS ICON -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
 
     <!-- PAGE TITLE HERE -->
-    <title>Oferta Laboral | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>Eventos | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Oferta Laboral</h3>
+                        <h3 class="h3"> Eventos</h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
@@ -74,9 +74,7 @@
 
                 <div class="section-content ">
                     <div class="row">
-                        <div class="col-lg-12">
-<!--
-                        </div>
+<p>que se va aponer un calendario para saber que pasara o una galeria para ver que paso</p>
                     </div>
                 </div>
 
@@ -84,19 +82,19 @@
         </div>
     </div>
     <!-- Footer -->
-    <?php include 'fixed/footer.php'?>
+    <?php include 'fixed/footer.php' ?>
     <!-- Footer END-->
     <!-- scroll top button -->
-    <button class="scroltop fa fa-chevron-up" ></button>
+    <button class="scroltop fa fa-chevron-up"></button>
 </div>
 <!-- JavaScript  files ========================================= -->
 <script src="js/combining.js"></script><!-- COMBINING JS  -->
 <!-- revolution JS FILES -->
 <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script  src="js/rev.slider.js"></script>
+<script src="js/rev.slider.js"></script>
 <script>
-    jQuery(document).ready(function() {
+    jQuery(document).ready(function () {
         'use strict';
         dz_rev_slider_5();
     });	/*ready*/
