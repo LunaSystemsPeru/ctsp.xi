@@ -74,7 +74,112 @@
 
                 <div class="section-content ">
                     <div class="row">
-                        <div class="col-lg-12 p-lr0">
+                        <div class="col-lg-3">
+                            <aside  class="side-bar">
+                                <div class="widget">
+                                    <h4 class="widget-title">Search</h4>
+                                    <div class="search-bx">
+                                        <form role="search" method="post">
+                                            <div class="input-group">
+                                                <input name="text" type="text" class="form-control" placeholder="Write your text">
+                                                <span class="input-group-btn">
+                                            <button type="submit" class="site-button"><i class="fa fa-search"></i></button>
+                                            </span> </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="widget recent-posts-entry">
+                                    <h4 class="widget-title">Recent Posts</h4>
+                                    <div class="widget-post-bx">
+                                        <div class="widget-post clearfix">
+                                            <div class="dez-post-media"> <img src="images/blog/recent-blog/pic1.jpg" width="200" height="143" alt=""> </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-header">
+                                                    <h6 class="post-title"><a href="#">Title of first blog post entry</a></h6>
+                                                </div>
+                                                <div class="dez-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">By <a href="#">Admin</a></li>
+                                                        <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-post clearfix">
+                                            <div class="dez-post-media"> <img src="images/blog/recent-blog/pic2.jpg" width="200" height="160" alt=""> </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-header">
+                                                    <h6 class="post-title"><a href="#">Title of first blog post entry</a></h6>
+                                                </div>
+                                                <div class="dez-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">By <a href="#">Admin</a></li>
+                                                        <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="widget-post clearfix">
+                                            <div class="dez-post-media"> <img src="images/blog/recent-blog/pic3.jpg" width="200" height="160" alt=""> </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-header">
+                                                    <h6 class="post-title"><a href="#">Title of first blog post entry</a></h6>
+                                                </div>
+                                                <div class="dez-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">By <a href="#">Admin</a></li>
+                                                        <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget widget_categories">
+                                    <h4 class="widget-title">Categories List</h4>
+                                    <ul>
+                                        <li><a href="#">aciform</a> (1)</li>
+                                        <li><a href="#">championship</a> (1) </li>
+                                        <li><a href="#">chastening</a> (1) </li>
+                                        <li><a href="#">clerkship</a> (1) </li>
+                                        <li><a href="#">disinclination</a> (1) </li>
+                                        <li><a href="#">disinfection</a> (1) </li>
+                                        <li><a href="#">dispatch</a> (1) </li>
+                                        <li><a href="#">echappee</a> (1) </li>
+                                        <li><a href="#">Edge Case</a> (6) </li>
+                                        <li><a href="#">enphagy</a> (1) </li>
+                                    </ul>
+                                </div>
+                                <div class="widget widget_gallery">
+                                    <h5 class="widget-title">Our services</h5>
+                                    <ul>
+                                        <li><a href="#"><div class="dez-post-thum dez-img-overlay1 dez-img-effect zoom-slow">
+                                                    <img src="images/gallery/small/pic2.jpg" alt=""></div></a>
+                                        </li>
+                                        <li><a href="#"><div class="dez-post-thum dez-img-overlay1 dez-img-effect zoom-slow">
+                                                    <img src="images/gallery/small/pic1.jpg" alt=""></div></a>
+                                        </li>
+                                        <li><a href="#"><div class="dez-post-thum dez-img-overlay1 dez-img-effect zoom-slow">
+                                                    <img src="images/gallery/small/pic5.jpg" alt=""></div></a>
+                                        </li>
+                                        <li><a href="#"><div class="dez-post-thum dez-img-overlay1 dez-img-effect zoom-slow">
+                                                    <img src="images/gallery/small/pic7.jpg" alt=""></div></a>
+                                        </li>
+                                        <li><a href="#"><div class="dez-post-thum dez-img-overlay1 dez-img-effect zoom-slow">
+                                                    <img src="images/gallery/small/pic8.jpg" alt=""></div></a>
+                                        </li>
+                                        <li><a href="#"><div class="dez-post-thum dez-img-overlay1 dez-img-effect zoom-slow">
+                                                    <img src="images/gallery/small/pic9.jpg" alt=""></div></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget widget_tag_cloud">
+                                    <h4 class="tagcloud">Tags</h4>
+                                    <div class="tagcloud"> <a href="#">Design</a> <a href="#">User interface</a> <a href="#">SEO</a> <a href="#">WordPress</a> <a href="#">Development</a> <a href="#">Joomla</a> <a href="#">Design</a> <a href="#">User interface</a> <a href="#">SEO</a> <a href="#">WordPress</a> <a href="#">Development</a> <a href="#">Joomla</a> <a href="#">Design</a> <a href="#">User interface</a> <a href="#">SEO</a> <a href="#">WordPress</a> <a href="#">Development</a> <a href="#">Joomla</a> </div>
+                                </div>
+                            </aside>
+                        </div>
+                        <div class="col-lg-9 p-lr0">
                             <!-- blog grid -->
                             <div id="masonry" class="dez-blog-grid-3">
                                 <div class="post card-container col-lg-4 col-md-6 col-12">
