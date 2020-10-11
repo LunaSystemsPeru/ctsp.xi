@@ -67,7 +67,7 @@
     <div class="page-content">
         <div class="page-content bg-white">
             <!-- inner page banner -->
-            <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/bnr1.jpg);">
+            <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/reseña1.jpeg);">
                 <div class="container">
                     <div class="dez-bnr-inr-entry">
                         <h1 class="text-white">Reseña Historica</h1>
@@ -121,71 +121,135 @@
                                     Campos Paucar. Luego asume como Decana de 1994 -1995, que luego se integran al Colegio
                                     de Trabajadores Sociales del Perú Región II Trujillo</p>
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-4 m-b30">
+                                    <div class="col-lg-6 col-md-4 m-b30">
                                         <div class="dez-box">
                                             <div class="dez-media"> <a href="#"><img src="images/our-work/dec_celiaCampos.jpg" alt=""></a> </div>
                                             <div class="dez-info p-a30 bg-gray">
-                                                <h4 class="dez-title m-t0 text-center">PAS DECANA. LIC. T.S. LILIAN CLEMENTINA GARCIA AGUILAR</h4>
+                                                <h4 class="dez-title m-t0 text-center">PAST DECANA. LIC. T.S. LILIAN CLEMENTINA GARCIA AGUILAR</h4>
+                                                <p class="text-center"><b>CTSP S/N</b></p>
+                                                <p class="text-center"><b>PERIODO   1994 – 1995</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-4 m-b30">
+                                        <div class="dez-box">
+                                            <div class="dez-media"> <a href="#"><img src="images/our-work/mercedes.jpg" alt=""></a> </div>
+                                            <div class="dez-info p-a30 bg-gray">
+                                                <h4 class="dez-title m-t0 text-center">PAST DECANA. LIC. T.S.  LILIAN CLEMENTINA. GARCIA AGUILAR</h4>
                                                 <p class="text-center"><b>CTSP 2680</b></p>
                                                 <p class="text-center"><b>PERIODO   1995 – 1998</b></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 m-b30">
+                                </div>
+                                    <p class="text-justify">En Setiembre 1992,  Asistentes Sociales/ Trabajadores Sociales de Chimbote se organizan y se forma  el CTSP Sub Región Pacifico Región Chavín, logrando que el 24 de agosto en 1994  se oficializa la Creación del CTSP Región XI Chimbote, reconocida con Resolución  N°065-94 CDN-CASP, pero al mes fue desconocida por el mismo Decano Nacional, quien emitió la resolución de Creación, porque en ese entonces  el Consejo Nacional de CTSP, se encontraba pasando situaciones de confrontación y supuestos cuestionamientos al Sr. Decano Nacional, en esta coyuntura  se logra en Chimbote el posicionamiento  del Colegio en instituciones públicas, contando con un local institucional alquilado.</p>
+                                    <p class="text-justify">Con Resolución N° 0014-96, de13 abril 1996, la Lic. Mercedes Samanez Rivero, Decana
+                                        Nacional del Colegio de Trabajadores Sociales del Perú, ratifica la Creación del Colegio Asistentes Sociales Región XI, Chimbote, incluyendo Casma y Huarmey. Resolución que fue entregada a la Decana en ejercicio Lic. T.S.   Lilian Clementina García Aguilar- CTSP N°2680, quien asumió como Decana en Julio 1995   hasta 1998, en esta gestión se continúa desarrollando actividades de posicionamiento del Colegio Región XI Chimbote en Instituciones Públicas locales y nacionales, se colegia a Trabajadores Sociales en coordinación con Consejo Directivo Nacional (CDN) del CTSP, contando con local institucional alquilado.
+                                    </p>
+                                <div class="row">
+                                        <div class="col-lg-6 col-md-4 m-b30">
+                                            <div class="dez-box">
+                                                <div class="dez-media"> <a href="#"><img src="images/our-work/olga.jpg" alt=""></a> </div>
+                                                <div class="dez-info p-a30 bg-gray">
+                                                    <h4 class="dez-title m-t0 text-center">PAST DECANA: LIC. T. S. OLGA CONSUELO FLORES HERNANDEZ</h4>
+                                                    <p class="text-center"><b>CTSP 2737</b></p>
+                                                    <p class="text-center"><b>PERIODO   1999 -  2001</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-4 m-b30">
+                                            <div class="dez-box">
+                                                <div class="dez-media"> <a href="#"><img src="images/our-work/zoila.jpg" alt=""></a> </div>
+                                                <div class="dez-info p-a30 bg-gray">
+                                                    <h4 class="dez-title m-t0 text-center">PAST DECANA. LIC. T.S. ZOILA ANGÉLICA ZEVALLOS ECHEVERIA</h4>
+                                                    <p class="text-center"><b>CTSP 2217</b></p>
+                                                    <p class="text-center"><b>PERIODO 2003 - JUNIO 2017</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                        <p class="text-justify">A partir de febrero 1999, asume el cargo de Decana del CDR XI – Ancash del CTSP la Lic. T.S. Olga  Consuelo  Flores  Hernández  -  CTSP  N°2737,  para  el periodo 1999  -  2001,  pero permanece en el cargo como Decana hasta setiembre 2003, continuando con actividades propias del Colegio. Además, como Decana en ejercicio, fue elegida como Decana - Presidenta de Consejo Regional de Decanos (CONREDE) Chimbote del 2001 al 2002.
+                                            En el año 2003 se convoca a elecciones para renovar el CDR</p>
+                                        <p class="text-justify">En octubre 2003 asume el cargo de  Decana del CDR XI – Ancash CTSP,  la Lic. T.S. Zoila Angélica Zevallos Echeverría -  CTSP N° 2217, para el   periodo  de Octubre 2003  hasta Mayo 2017, en esta gestión se generó la Escritura Pública de Constitución de Asociación Civil denominada :Colegio de Trabajadores Sociales del Perú   Región XI   Ancash, también   se gestiona e inscribe al Colegio a la SUNARP, con la misma razón social; También como Decana asumió el cargo de Secretaria del Consejo Regional de Decanos (CONREDE) Chimbote periodo 2003 – 2004.</p>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-4 m-b30">
                                         <div class="dez-box">
-                                            <div class="dez-media"> <a href="#"><img src="images/our-work/pic2.jpg" alt=""></a> </div>
+                                            <div class="dez-media"> <a href="#"><img src="images/our-work/liczarela.jpg" alt=""></a> </div>
                                             <div class="dez-info p-a30 bg-gray">
-                                                <h4 class="dez-title m-t0"><a href="#">first heading</a></h4>
-                                                <p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius. </p>
-                                                <a href="#" class="site-button  ">More</a> </div>
+                                                <h4 class="dez-title m-t0 text-center">PAST DECANA: Mag. MARIA ZARELA VENTURA LOPEZ</h4>
+                                                <p class="text-center"><b>CTSP 4783 </b></p>
+                                                <p class="text-center"><b>PERIODO JULIO  2017 - SETIEMBRE 2019</b></p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 m-b30">
+
+                                    <div class="col-lg-6 col-md-4 m-b30">
                                         <div class="dez-box">
-                                            <div class="dez-media"> <a href="#"><img src="images/our-work/pic3.jpg" alt=""></a> </div>
+                                            <div class="dez-media"> <a href="#"><img src="images/our-work/licsilvia2.jpg" alt=""></a> </div>
                                             <div class="dez-info p-a30 bg-gray">
-                                                <h4 class="dez-title m-t0"><a href="#">first heading</a></h4>
-                                                <p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius. </p>
-                                                <a href="#" class="site-button  ">More</a> </div>
+                                                <h4 class="dez-title m-t0 text-center">DECANA ACTUAL: LIC. T.S. SILVIA NORIEGA ROLDAN</h4>
+                                                <p class="text-center"><b>CTSP 2280</b></p>
+                                                <p class="text-center"><b>PERIODO   2019 – 2021</b></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <h3 class="m-tb10">Our Offerings</h3>
+                                <p class="text-justify">Antes de finalizar el año 2017, convoca a elecciones para la renovación del Consejo Directivo
+                                    Regional XI Ancash del colegio de Trabajadores Sociales del Perú.</p>
+                                <p class="text-justify">En junio del 2017, asume como Decana la Lic. T.S. María Zarela Ventura López CTSP  4783 para el periodo junio 2017 a junio 2019. En esta gestión se crea el Fondo de Apoyo Social (FAS), como Decana integro la Junta Directiva de CONREDES en el cargo de Tesorera.
+                                    Esta gestión ha mantenido los fines esenciales del Colegio : como la ordenación del ejercicio de la profesión, su representación exclusiva en la Región Ancash, así como la defensa y promoción de los intereses profesionales de las personas colegiadas y la observancia de los principios jurídicos, éticos y deontológicos en la actuación profesional</p>
+                                <p class="text-justify">En Octubre 2019, asume como Decana la Mg. Silvia Aurora Noriega Roldan - CTSP2280, para el periodo octubre 2019 a octubre 2021.</p>
+
+                            </div>
+
+
+                                <h3 class="m-tb10">Logros de la Gestión</h3>
                                 <ul class="list-check-circle primary">
-                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
-                                    <li>Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</li>
-                                    <li>Printer took a galley of type and scrambled it to make a type specimen book. </li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</li>
-                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
-                                    <li>Eorem ipsum dolor sit amet</li>
+                                    <li>Modificar los Estatutos, nombrar las Comisiones de trabajo, en Asamblea General.</li>
+                                    <li>Se elaboró el Manuel de organizaciones y funciones (MOF) de las Comisiones de Trabajo</li>
+                                    <li>Celebración de la Navidad 2019</li>
+                                    <li>Inscribir al CDR XI Ancash del CTSP la SUNARP como Persona Jurídica</li>
+                                    <li>Está en proceso la inscripción a la SUNAT</li>
+                                    <li>Capacitaciones en el marco de la celebración de Aniversario Institucional</li>
                                 </ul>
                             </div>
-                        </div>
+
                         <!-- Side Bar END -->
                         <!-- Right Bar -->
                         <div class="col-lg-3">
                             <div class="row">
                                 <div class="col-lg-12 col-md-6 col-sm-6 m-b30">
                                     <div class="icon-bx-wraper bx-style-1 p-a30 center">
-                                        <div class="icon-bx-sm text-primary bg-white radius border-2 m-b20"> <a href="#" class="icon-cell"><i class="fa fa-user"></i></a> </div>
+                                        <div>
+                                            <h3 class="dez-tilte text-uppercase">Decana Actual</h3>
+                                            <div class="dez-separator bg-primary"></div>
+                                            <img src="images/our-work/Licsilvia1.jpg">
+                                        </div>
+                                        <br>
                                         <div class="icon-content">
-                                            <h5 class="dez-tilte text-uppercase">Recent Highlights</h5>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
+                                            <h5 class="dez-tilte text-uppercase">Lic. T.S. Silvia Noriega Roldan</h5>
+                                            <p>2019 – 2021</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-6 col-sm-6 m-b30">
                                     <div class="icon-bx-wraper bx-style-1 p-a30 center">
-                                        <div class="icon-bx-sm text-primary bg-white radius border-2 m-b20"> <a href="#" class="icon-cell"><i class="fa fa-building-o"></i></a> </div>
+                                        <div>
+                                            <h3 class="dez-tilte text-uppercase">Hoja de Vida</h3>
+                                            <div class="dez-separator bg-primary"></div>
+                                        </div>
+                                        <br>
                                         <div class="icon-content">
-                                            <h5 class="dez-tilte text-uppercase">Recent Highlights</h5>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. </p>
+                                            <h5 class="dez-tilte text-uppercase">Lic. T.S. Silvia Noriega Roldan</h5>
+                                            <p>2019 – 2021</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 m-b30">
                                     <div class="icon-bx-wraper bx-style-1 p-a20 left">
-                                        <div class="icon-bx-xs text-primary bg-white radius border-2 "> <a href="#" class="icon-cell "><i class="fa fa-code"></i></a> </div>
+
                                         <div class="icon-content">
                                             <h5 class="dez-tilte text-uppercase">Content title</h5>
                                             <p>Lorem ipsum dolor sit elit nonummy dolor is euismod end </p>
