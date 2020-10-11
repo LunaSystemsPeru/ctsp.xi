@@ -67,7 +67,7 @@
     <div class="page-content">
         <div class="page-content bg-white">
             <!-- inner page banner -->
-            <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/reseña1.jpeg);">
+            <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/resena1.jpeg);">
                 <div class="container">
                     <div class="dez-bnr-inr-entry">
                         <h1 class="text-white">Reseña Historica</h1>
