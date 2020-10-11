@@ -67,9 +67,9 @@
                                 <ul class="sub-menu">
                                     <li> <a href="consejo_directivo.php">Consejo Directivo</a>
                                     </li>
-                                    <li> <a href="javascript:;">Mision y Vision</a>
+                                    <li> <a href="mision_vision.php">Mision y Vision</a>
                                     </li>
-                                    <li> <a href="javascript:;">Reseña Historica</a>
+                                    <li> <a href="resena_historica.php">Reseña Historica</a>
                                     </li>
                                     <li> <a href="javascript:;">Plan de Trabajo</a>
                                     </li>
