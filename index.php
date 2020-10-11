@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <!-- Mirrored from medico.dexignzone.com/xhtml/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Sep 2020 21:18:50 GMT -->
 <head>
@@ -10,7 +10,7 @@
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
 	<meta name="description" content="" />
-	<meta property="og:title" content="MediCo. - Doctor HTML Template" />
+	<meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
@@ -20,7 +20,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title>MediCo. - Doctor HTML Template</title>
+	<title>Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +43,11 @@
 	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/layers.css">
 	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
 	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
-	
+
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
 	<style>
 	@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|PT+Serif:400,400i,700,700i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Slab:100,300,400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
 	</style>
@@ -899,7 +903,7 @@
                 <div class="section-content">
                     <div class="row d-flex">
                         <div class="col-lg-6 col-md-6 align-self-center m-b30">
-                            <h2 class="m-b15">Health Care with <br/><span class="text-primary">Carezone Hospital Center</span></h3>
+                            <h2 class="m-b15">Health Care with <br/><span class="text-primary">Carezone Hospital Center</span></h2>
                             <p class="m-b15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has.</p>
                             <p class="m-b30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
 							<img src="images/sign.png" width="200" alt="">
