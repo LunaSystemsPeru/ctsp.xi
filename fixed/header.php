@@ -103,10 +103,10 @@
                             </li>
                             <li><a href="javascript:;">Prensa<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a href="javascript:;">Noticias</a></li>
-                                    <li><a href="javascript:;">Comunicados</a></li>
-                                    <li><a href="javascript:;">Eventos</a></li>
-                                    <li><a href="javascript:;">Revistas</a></li>
+                                    <li><a href="noticias.php">Noticias</a></li>
+                                    <li><a href="comunicados.php">Comunicados</a></li>
+                                    <li><a href="eventos.php">Eventos</a></li>
+                                    <li><a href="revistas.php">Revistas</a></li>
                                     <li><a href="javascript:;">Cursos</a></li>
                                 </ul>
                             </li>
