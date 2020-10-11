@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <!-- Mirrored from medico.dexignzone.com/xhtml/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Sep 2020 21:18:50 GMT -->
 <head>
@@ -10,8 +10,8 @@
 	<meta name="author" content="" />
 	<meta name="robots" content="" />
 	<meta name="description" content="" />
-	<meta property="og:title" content="MediCo. - Doctor HTML Template" />
-	<meta property="og:description" content="" />
+	<meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
+	<meta property="og:description" content=" Consejo Directivo del Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
 	
@@ -38,6 +38,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="css/skin/skin-1.css">
 	<link rel="stylesheet" type="text/css" href="css/templete.min.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+
 	
 	<!-- Revolution Slider Css -->
 	<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/layers.css">
@@ -239,7 +245,6 @@
 </div>
 <!-- JavaScript  files ========================================= -->
 <script src="js/combining.js"></script><!-- COMBINING JS  -->
-<script src='../../www.google.com/recaptcha/api.js'></script> <!-- Google API For Recaptcha  -->
 <!-- revolution JS FILES -->
 <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>

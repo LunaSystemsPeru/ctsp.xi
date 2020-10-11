@@ -46,20 +46,14 @@
                     <!-- extra nav -->
                     <div class="extra-nav">
                         <div class="extra-cell">
-                            <button id="quik-search-btn" type="button" class="site-button white"><i class="fa fa-search"></i></button>
+                            <a href="ingresar_usuario.php" type="button" class="site-button white"><i class="fa fa-user"></i> Intranet</a>
                         </div>
                     </div>
-                    <!-- Quik search -->
-                    <div class="dez-quik-search bg-primary">
-                        <form action="#">
-                            <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
-                            <span  id="quik-search-remove"><i class="fa fa-remove"></i></span>
-                        </form>
-                    </div>
+
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class="active">
+                            <li class="">
                                 <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>
 
                             </li>
@@ -77,27 +71,27 @@
                             </li>
                             <li> <a href="javascript:;">Marco Legal<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li> <a href="javascript:;">Ley de Creacion</a>
+                                    <li> <a href="ley_creacion.php">Ley de Creacion</a>
 
                                     </li>
-                                    <li> <a href="javascript:;">Ley 30112</a>
+                                    <li> <a href="ley_30112.php">Ley 30112</a>
 
                                     </li>
-                                    <li> <a href="javascript:;">Partida Registral</a>
+                                    <li> <a href="partida_registral.php">Partida Registral</a>
 
                                     </li>
-                                    <li><a href="career.html">Escritura Publica</a></li>
-                                    <li><a href="who-we-are.html">Estatutos CDR</a></li>
-                                    <li><a href="help.html">CODIGO DE ETICA</a></li>
+                                    <li><a href="escritura_publica.php">Escritura Publica</a></li>
+                                    <li><a href="estatutos_cdr.php">Estatutos CDR</a></li>
+                                    <li><a href="codigo_etica.php">CODIGO DE ETICA</a></li>
 
                                 </ul>
                             </li>
                             <li> <a href="javascript:;">Tramites<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
-                                    <li><a href="product.html">Colegiación</a></li>
-                                    <li><a href="product-details.html">Inscripción</a></li>
-                                    <li><a href="product.html">Modelo de Solicitud</a></li>
-                                    <li><a href="product-details.html">Constancia de Habilidad</a></li>
+                                    <li><a href="colegiacion.php">Colegiación</a></li>
+                                    <li><a href="ficha_inscripcion.php">Ficha Inscripción</a></li>
+                                    <li><a href="solicitud_virtual.php">Solicitud Virtual</a></li>
+                                    <li><a href="info_constancia_habilidad.php">Constancia de Habilidad</a></li>
 
                                 </ul>
                             </li>

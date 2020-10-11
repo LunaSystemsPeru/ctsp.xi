@@ -1420,7 +1420,6 @@
 </div>
 <!-- JavaScript  files ========================================= -->
 <script src="js/combining.js"></script><!-- COMBINING JS  -->
-<script src='../../www.google.com/recaptcha/api.js'></script> <!-- Google API For Recaptcha  -->
 <!-- revolution JS FILES -->
 <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
