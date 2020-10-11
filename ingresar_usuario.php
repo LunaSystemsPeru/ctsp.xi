@@ -134,7 +134,7 @@
                                             <li><i class="fa fa-check"></i> Ver Bolsa Laboral</li>
                                             <li><i class="fa fa-check"></i> Reporte de Deudas</li>
                                         </ul>
-                                        <div class="pricingtable-footer"><a href="#" class="site-button radius-no">Ingresar</a></div>
+                                        <div class="pricingtable-footer"><a href="intranet/colegiado/contents/login.html" class="site-button radius-no">Ingresar</a></div>
                                     </div>
                                 </div>
                             </div>
