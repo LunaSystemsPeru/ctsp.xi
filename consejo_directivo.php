@@ -131,7 +131,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
 							<div class="dez-box team-bx1">
-								<div class="dez-media"> <a href="#"><img src="images/our-team/small/pic1.jpg" alt=""></a> </div>
+								<div class="dez-media"> <a href="#"><img src="images/our-team/small/decana.JPG" alt=""></a> </div>
 								<div class="dez-info p-t20">
 									<h4 class="dez-title m-b10"><a href="#">Mg. T.S. Silvia Aurora Noriega Roldán</a></h4>
 									<h6 class="dez-title">Decana</h6>

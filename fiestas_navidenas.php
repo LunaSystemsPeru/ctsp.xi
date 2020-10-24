@@ -98,7 +98,7 @@
                                             <div class="dez-box  dez-gallery-bx">
                                                 <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/cel3.jpeg" alt=""> </a>
                                                     <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel3.jpeg"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel3.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -108,7 +108,7 @@
                                             <div class="dez-box  dez-gallery-bx">
                                                 <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/cel4.jpeg" alt=""> </a>
                                                     <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel4.jpeg"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel4.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -118,7 +118,7 @@
                                             <div class="dez-box  dez-gallery-bx">
                                                 <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/cel5.jpeg" alt=""> </a>
                                                     <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel5.jpeg"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel5.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -128,7 +128,7 @@
                                             <div class="dez-box  dez-gallery-bx">
                                                 <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/cel12.jpeg" alt=""> </a>
                                                     <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel12.jpeg"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel12.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -138,7 +138,7 @@
                                             <div class="dez-box  dez-gallery-bx">
                                                 <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/cel14.jpeg" alt=""> </a>
                                                     <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel14.jpeg"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/cel14.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                                     </div>
                                                 </div>
                                             </div>

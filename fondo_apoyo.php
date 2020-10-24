@@ -76,7 +76,16 @@
                 <div class="section-content ">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <p>El Fondo de Apoyo Social es una herramienta estatutaria y se implementa con el 20% del pago mensual que aporta cada asociada, este fondo es intangible y se constituye al interior del Colegio de Trabajadores Sociales Región XI-Ancash, para brindar asistencia solidaria a las agremiadas en casos de fallecimiento del titular.</p>
+                            <h4 class="h4 text-left">DEFINICIÓN</h4>
+                            <p class="text-justify">El Fondo de Apoyo Social es una herramienta estatutaria y se implementa con el 20% del pago mensual que aporta cada asociada, este fondo es intangible y se constituye al interior del Colegio de Trabajadores Sociales Región XI-Ancash, para brindar asistencia solidaria a las agremiadas en casos de fallecimiento del titular.</p>
+
+                            <h4 class="h4 text-left">BENEFICIARIOS</h4>
+                            <p class="text-justify">El Fondo de Apoyo Social esta dirigido a todas las aportantes al Colegio de Trabajadoras Sociales - Región XI-Ancash, y que se encuentren habilitadas antes de la contingencia.</p>
+                            <p class="text-justify">Registrar o Actualizar su ficha de apoyo social --> <a href="archivos/Ficha_fondo_Apoyo_Social(FAS).pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Descargar la ficha del fondo de apoyo social </a> </p>
+
+                            <h4 class="h4 text-left">REGLAMENTO</h4>
+                            <p class="text-justify">Para mayor detalle revisar el reglamento del fondo de apoyo social </p>
+
                             <embed src="Archivos/ReglamentoFAS.pdf" width="75%" height="1000px">
                         </div>
                     </div>

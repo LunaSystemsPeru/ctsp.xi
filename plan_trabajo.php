@@ -122,6 +122,7 @@
                         </div>
                         <div class="col-lg-12">
                             <a href="archivos/Plan%20%20de%20Trabajo%20Bienal%20CDR%20XI%20Ancash%20CTSP.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Descargue el plan completo aqui</a>
+                            
                         </div>
                     </div>
                 </div>

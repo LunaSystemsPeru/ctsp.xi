@@ -225,7 +225,7 @@
                                         <div>
                                             <h3 class="dez-tilte text-uppercase">Decana Actual</h3>
                                             <div class="dez-separator bg-primary"></div>
-                                            <img src="images/our-work/Licsilvia1.jpg">
+                                            <img src="images/our-work/decana.JPG">
                                         </div>
                                         <br>
                                         <div class="icon-content">

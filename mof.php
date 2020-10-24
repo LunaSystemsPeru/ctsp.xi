@@ -11,7 +11,7 @@
     <meta name="robots" content="" />
     <meta name="description" content="" />
     <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
-    <meta property="og:description" content="Escritura Publica del Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
+    <meta property="og:description" content="Estatutos CDR del Colegio de Trabajadores Sociales del Peru - Region XI Ancash" />
     <meta property="og:image" content="" />
     <meta name="format-detection" content="telephone=no">
 
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
     <!-- PAGE TITLE HERE -->
-    <title>Escritura Publica | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>MOF | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,16 +66,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Escritura Publica</h3>
+                        <h3 class="h3"> Manual de Organización y Funciones - COMISIONES</h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
                 </div>
+                <P> El presente Manual de Organización y Funciones (MOF) tiene como finalidad de constituirse
+                    en un Instrumento de gestión que permita regular las funciones y atribuciones de cada comisión
+                    del CDR XI Ancash - CTSP.  </P>
 
                 <div class="section-content ">
                     <div class="row">
                         <div class="col-lg-12">
-                            <embed src="archivos/EscrituraPublica2.pdf" width="100%" height="1000px">
+                            <embed src="archivos/MOFComisiones.pdf" width="100%" height="1000px">
                         </div>
                     </div>
                 </div>

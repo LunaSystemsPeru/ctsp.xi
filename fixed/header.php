@@ -3,7 +3,8 @@
         <div class="container header-contant-block ">
             <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-lg-3">
-                    <div class="logo-header "><a href="index.php"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
+                    <div class="logo-header "><a href="index.php"><img src="images/logo.png" width="193" height="89"
+                                                                       alt=""></a></div>
                 </div>
                 <div class="col-lg-9">
                     <ul class="contact-info style-1 clearfix text-primary">
@@ -38,7 +39,9 @@
                         <a href="index.php"><img src="images/logo-white1.png" width="193" height="89" alt=""></a>
                     </div>
                     <!-- nav toggle button -->
-                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
+                            data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -46,7 +49,8 @@
                     <!-- extra nav -->
                     <div class="extra-nav">
                         <div class="extra-cell">
-                            <a href="ingresar_usuario.php" type="button" class="site-button white"><i class="fa fa-user"></i> Intranet</a>
+                            <a href="ingresar_usuario.php" type="button" class="site-button white"><i
+                                        class="fa fa-user"></i> Intranet</a>
                         </div>
                     </div>
 
@@ -60,10 +64,9 @@
                             <li><a href="javascript:;">Institucional<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
                                     <li><a href="consejo_directivo.php">Consejo Directivo</a></li>
-                                    <li><a href="resena_historica.php">Reseña Historica</a>
-                                    </li>
-                                    <li><a href="plan_trabajo.php">Plan de Trabajo</a>
-                                    </li>
+                                    <li><a href="resena_historica.php">Reseña Historica</a></li>
+                                    <li><a href="plan_trabajo.php">Plan de Trabajo</a></li>
+                                    <li><a href="mof.php">M.O.F.</a></li>
                                 </ul>
                             </li>
                             <li><a href="javascript:;">Marco Legal<i class="fa fa-chevron-down"></i></a>
