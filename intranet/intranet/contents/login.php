@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Soy Colegiado - Acceso a mi Perfil del CTSP Region XI Ancash</title>
+    <title>Acceso a la intranet del CTSP Region XI Ancash</title>
     <!-- Favicon icon -->
     <link rel="icon" type="../../public/image/png" sizes="16x16" href="../../public/images/favicon.png">
     <link href="../../public/css/style.css" rel="stylesheet">
@@ -27,19 +27,19 @@
                                     <img src="../../../images/logo.png" height="80px">
                                 </div>
                                 <hr class="">
-                                <h3 class="text-center mb-4 text-uppercase bg-blue-dark text-white">Soy Colegiado</h3>
+                                <h4 class="text-center mb-4 text-uppercase">Acesso Intranet</h4>
                                 <form action="#">
                                     <div class="form-group">
-                                        <label><strong>Email</strong></label>
-                                        <input type="email" class="form-control" value="colegiado@correo.com">
+                                        <label><strong>Usuario</strong></label>
+                                        <input type="email" class="form-control" placeholder="Admin">
                                     </div>
                                     <div class="form-group">
                                         <label><strong>Contraseña</strong></label>
-                                        <input type="password" class="form-control" value="Contraseña">
+                                        <input type="password" class="form-control" placeholder="pass">
                                     </div>
                                     <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                         <div class="form-group">
-                                            <a href="http://medico.dexignzone.com/xhtml/error-404.html">Olvidaste tu Contraseña?</a>
+                                            <a href="controller/recuperar_contrasena.php">Olvidaste tu Contraseña?</a>
                                         </div>
                                     </div>
                                     <div class="text-center">
