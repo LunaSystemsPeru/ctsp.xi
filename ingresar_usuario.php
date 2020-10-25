@@ -117,7 +117,7 @@
                                             <li><i class="fa fa-check"></i> Control de Cuotas</li>
                                             <li><i class="fa fa-check"></i> Caja Chica - Ingresos y Egresos</li>
                                         </ul>
-                                        <div class="pricingtable-footer"><a href="#" class="site-button radius-no">Acceder</a></div>
+                                        <div class="pricingtable-footer"><a href="intranet/intranet/index.php" class="site-button radius-no">Acceder</a></div>
                                     </div>
                                 </div>
                             </div>

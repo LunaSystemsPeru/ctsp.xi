@@ -8807,8 +8807,9 @@ a {
         padding-right: 0;
         justify-content: center; } }
   .nav-header .brand-title {
-    margin-left: 15px;
-    max-width: 130px; }
+    /*  margin-left: 15px;
+    max-width: 130px; */
+  }
     [data-theme-version="dark"] .nav-header .brand-title {
       background-position: 0 120%; }
 
