@@ -74,22 +74,9 @@
 
                 <div class="section-content ">
                     <div class="row">
-                        <div class="col-lg-9">
-                            <ul class="list-check-circle primary">
-                                <li>Pago de Derecho por S/ xx.00  REVISAR ITEMS MODIFICAR</li>
-                                <li>Copia autenticada del DNI.</li>
-                                <li>Estar al dia con sus cuotas mensuales</li>
-                                <li>Certificado valido por 06 meses</li>
-                                <li>Enviar un correo con su voucher y datos completos (dni, nro colegiatura)</li>
-                            </ul>
-                        </div>
-
-                        <div class="col-lg-3">
-                            <h4>Nro de Cuentas</h4>
-                            <p>BCP SOLES: 310-12345678-0-001</p>
-                        </div>
-
+                        <div class="col-lg-12 text-center"><img src="archivos/ReqHabilitacion.png" width="100%"></div>
                     </div>
+
                 </div>
             </div>
         </div>

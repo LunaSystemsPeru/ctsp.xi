@@ -65,7 +65,7 @@
         <div class="section-full bg-white content-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center section-head">
+                    <div class="col-lg-12 text-justify section-head">
                         <h3 class="h3"> Cuales son los Requisitos para Colegiarse?</h3>
                         <div class="dez-separator bg-primary"></div>
                         <p>La presentación del expediente de colegiación, se realiza en el CDR XI – Ancash
@@ -90,8 +90,7 @@
                                 <li>Original de los certificados de estudios de pre-grado presenciales y copia legalizada.</li>
                                 <li>Cuatro fotos tamaño pasaporte de frente a colores en fondo blanco</li>
                                 <li>Recibo de tesorería por el pago de la cuota de ingreso y otros derechos al consejo directivo
-                                    del colegio de trabajadores sociales del Perú y la región xi Áncash.
-                                </li>
+                                    del colegio de trabajadores sociales del Perú y la región xi Áncash. <strong class="font-18">CUENTA BCP :310-98986958-0-16</strong></li>
                                 <li>Constancia de <strong>"participación del taller de ética"</strong> organizado por el consejo regional
                                     respectivo o su equivalente y el compromiso escrito con la orden profesional
                                 </li>

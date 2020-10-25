@@ -437,13 +437,16 @@
             <div class="container">
                 <div class="section-content">
                     <div class="row d-flex">
-                        <div class="col-lg-6 col-md-6 align-self-center m-b30">
-                            <h2 class="m-b15">Aqui van las palabras de la decana</h2>
-                            <p class="m-b15">bla bla bla con una mano en e corazon apoyamos a nuestros compañeros, blablalbla, al mas necesitado</p>
-                            <p class="m-b30">blablabla respaldamos nuestro deber como apoyo a la comunidad blablablabla</p>
-                            <img src="images/firmaDec2.png" width="200" alt="">
-                            <h4 class="m-b0">Nombre de la Decana</h4>
-                            <span class="font-14">Decana 2019 - Actual</span>
+                        <div class="col-lg-6 col-md-6 text-justify m-b30">
+                            <div class="text-center"><h2 class="m-b15">BIENVENIDA</h2></div>
+                            <p class="m-b15">Estimadas colegas, a nombre del Consejo Directivo Regional XI – Ancash del Colegio de Trabajadores sociales del Peru,   me dirijo a Ustedes para expresarle una cordial BIENVENIDA a nuestra pagina Web, que tiene como objetivo principal la comumicacion sobre las actividades institucionales que permita el fortalecimiento de nuestro Colegio.</p>
+                            <p class="m-b30">Asi tambien, información sobre las normas legales, instrumentos normativos, el sistema de registro  de los miembros de la orden, que les permitira visualizar su condicion de habil para el ejercicio profesional. Asi como la difusion de experiencias exitosas de Trabajo Social que realicen en las instituciones donde ejercen como Trabajadores Sociales o informacion relevante que consideren en beneficio de nuestra Institucion.</p>
+                            <div class="text-center">
+                                <img src="images/firmaDec2.png" width="200" alt="">
+                                <h4 class="m-b0">Mg. Silvia Aurora Noriega Roldan</h4>
+                                <h4 class="m-b0">Decana</h4>
+                            </div>
+
                         </div>
                         <div class="col-lg-6 col-md-6 m-b30">
                             <div class="video-bx">

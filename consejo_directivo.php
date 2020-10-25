@@ -80,8 +80,19 @@
                         <h3 class="h3"> Sobre Nosotros</h3>
                         <div class="dez-separator bg-primary"></div>
                         <div class="clear"></div>
-                        <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                        <p class="m-b0">El Colegio de Trabajadores Sociales del Perú, es una Institución Gremial Autónoma de Derecho Público Interno, sin fines de lucro, con personería Jurídica y representa a los Profesionales Asistentes Sociales y Trabajadores Sociales del Perú.  El CTSP fue creado por Ley N° 27918 el 11 enero 2003. Contamos con la Ley del Ejercicio Profesional del Trabajador Social Ley N°30112 del 07 noviembre 2013.</p>
+                        <p class="m-b0">En la Region Ancash estamos registradas en la SUNARP con inscripción de Personas Jurídicas creadas por Ley Colegio de Trabajadores Sociales del Perú Region XI - Ancash.   Partida Registral N° 11085805 Zona Registral N° VII - Sede Huaraz. Oficina Registral Chimbote - SUNARP </p>
+
                     </div>
+                    <div class="col-lg-12 text-center">
+                        <img src="images/main-slider/baner22.jpg" width="75%">
+
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <br>
+                        <div class="dez-separator bg-primary"></div>
+                   </div>
+
                 </div>
                 <div class="row clearfix">
                     <div class="col-lg-6 col-md-6 col-sm-6">
@@ -228,13 +239,49 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Team member END -->
-        <!-- Testimoniay -->
 
-		<!-- Testimoniay END -->
-        <!-- Latest Blog -->
-		<!-- Latest Blog END -->
+        </div>
+        <div class="section-full content-inner bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="h3"> Consejos Directivos Regionales</h3>
+                        <div class="dez-separator bg-primary"></div>
+                        <div class="clear"></div>
+                        <ol class="primary">
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XI ANCASH </li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION IV AREQUIPA</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION II SEDE TRUJILLO LA LIBERTAD</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION I PIURA-TUMBES</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION V CUSCO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES  DEL PERU REGION VIII AYACUCHO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES  DEL PERU REGION X LORETO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES  DEL PERU REGION XI LAMBAYEQUE–AMAZONAS-SAN MARTIN</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XIII ICA </li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XIV HUACHO </li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XV CALLAO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XVI UCAYALI</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION VII PUNO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION III LIMA</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION VI JUNIN </li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION HUANCAYO</li>
+                        </ol>
+
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="images/mapasdelperu.gif" width="80%">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- Team member END -->
+
 		<!-- Content END-->
 	</div>
     <!-- Footer -->

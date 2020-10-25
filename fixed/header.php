@@ -89,8 +89,8 @@
                             <li><a href="javascript:;">Tramites<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu">
                                     <li><a href="colegiacion.php">Colegiación</a></li>
-                                    <li><a href="ficha_inscripcion.php">Ficha Inscripción</a></li>
-                                    <li><a href="solicitud_virtual.php">Solicitud Virtual</a></li>
+                                    <li><a href="inscripcion.php">Inscripción</a></li>
+                                    <li><a href="ficha_inscripcion.php">Modelo Solicitud</a></li>
                                     <li><a href="info_constancia_habilidad.php">Constancia de Habilidad</a></li>
 
                                 </ul>
@@ -116,7 +116,7 @@
 
                             <li><a href="javascript:;">Actividades Conmemorativas<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu right">
-                                    <li><a href="contact.html">Día de la Madre</a></li>
+                                    <li><a href="diadelamadre.php">Día de la Madre</a></li>
                                     <li><a href="contact-2.html">Semana Cívica</a></li>
                                     <li><a href="contact-3.html">Dia del Trabajador Social</a></li>
                                     <li><a href="fiestas_navidenas.php">Navidad y Año Nuevo</a></li>
