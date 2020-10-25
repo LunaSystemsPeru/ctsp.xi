@@ -441,7 +441,7 @@
                             <h2 class="m-b15">Aqui van las palabras de la decana</h2>
                             <p class="m-b15">bla bla bla con una mano en e corazon apoyamos a nuestros compañeros, blablalbla, al mas necesitado</p>
                             <p class="m-b30">blablabla respaldamos nuestro deber como apoyo a la comunidad blablablabla</p>
-                            <img src="images/firmaDec2.png" width="200" alt="">
+                            <img src="images/firma_liliana.png" width="200" alt="">
                             <h4 class="m-b0">Nombre de la Decana</h4>
                             <span class="font-14">Decana 2019 - Actual</span>
                         </div>
