@@ -20,7 +20,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Consejo Directivo | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+	<title>Reseña Historica | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -185,15 +185,8 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6 col-md-4 m-b30">
-                                        <div class="dez-box">
-                                            <div class="dez-media"> <a href="#"><img src="images/our-work/licsilvia2.jpg" alt=""></a> </div>
-                                            <div class="dez-info p-a30 bg-gray">
-                                                <h4 class="dez-title m-t0 text-center">DECANA ACTUAL: LIC. T.S. SILVIA NORIEGA ROLDAN</h4>
-                                                <p class="text-center"><b>CTSP 2280</b></p>
-                                                <p class="text-center"><b>PERIODO   2019 – 2021</b></p>
-                                            </div>
-                                        </div>
+                                    <div class="col-lg-3 col-md-4 m-b30">
+
                                     </div>
                                 </div>
                                 <p class="text-justify">Antes de finalizar el año 2017, convoca a elecciones para la renovación del Consejo Directivo
@@ -241,21 +234,27 @@
                                             <div class="dez-separator bg-primary"></div>
                                         </div>
                                         <br>
-                                        <div class="icon-content">
-                                            <h5 class="dez-tilte text-uppercase">Lic. T.S. Silvia Noriega Roldan</h5>
-                                            <p>2019 – 2021</p>
+                                        <div class="icon-content" >
+                                            <ul class="list-check-circle primary text-justify">
+                                                <P class="text-black ">FORMACION :</P>
+                                                <li>Maestria en Investigación y Docencia</li>
+                                                <li>Lic. en Trabajo Social</li>
+                                                <hr>
+                                                <P class="text-black ">ESTUDIOS :</P>
+                                                <li>Diplomados en Violencia Familiar y Genero</li>
+                                                <li>Diplomado en Investigacion cientifica </li>
+                                                <hr>
+                                                <P class="text-black ">EXPERIENCIA :</P>
+                                                <li>Grupo sindicato Pesquero S.A.</li>
+                                                <li>Ministerio de Guerra</li>
+                                                <li>Inversiones Industriales Carolina</li>
+                                                <li>Caja de Beneficios y Seguridad Social del Pescador</li>
+                                                <li>Hospital La Caleta</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 m-b30">
-                                    <div class="icon-bx-wraper bx-style-1 p-a20 left">
 
-                                        <div class="icon-content">
-                                            <h5 class="dez-tilte text-uppercase">Content title</h5>
-                                            <p>Lorem ipsum dolor sit elit nonummy dolor is euismod end </p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <!-- Right Bar END -->

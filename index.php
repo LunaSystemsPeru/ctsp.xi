@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- Mirrored from medico.dexignzone.com/xhtml/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Sep 2020 21:18:50 GMT -->
+
 <head>
 
     <meta charset="utf-8">
@@ -450,9 +450,9 @@
                         </div>
                         <div class="col-lg-6 col-md-6 m-b30">
                             <div class="video-bx">
-                                <img src="images/pic1.jpg" alt="">
+                                <img src="images/queests.jpg" alt="">
                                 <div class="video-play-icon">
-                                    <a href="https://www.youtube.com/watch?v=f4Bts39jimI" class="popup-youtube video bg-primary"><i class="fa fa-play"></i></a>
+                                    <a href="archivos/videoTsprincipal.mp4" class="popup-youtube video bg-primary"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
                         </div>

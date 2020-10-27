@@ -117,8 +117,8 @@
                             <li><a href="javascript:;">Actividades Conmemorativas<i class="fa fa-chevron-down"></i></a>
                                 <ul class="sub-menu right">
                                     <li><a href="diadelamadre.php">Día de la Madre</a></li>
-                                    <li><a href="contact-2.html">Semana Cívica</a></li>
-                                    <li><a href="contact-3.html">Dia del Trabajador Social</a></li>
+                                    <li><a href="semanacivica.php">Semana Cívica</a></li>
+                                    <li><a href="diatrabajadorsocial.php">Dia del Trabajador Social</a></li>
                                     <li><a href="fiestas_navidenas.php">Navidad y Año Nuevo</a></li>
                                 </ul>
                             </li>
