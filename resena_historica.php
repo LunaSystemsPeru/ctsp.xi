@@ -125,7 +125,7 @@
                                         <div class="dez-box">
                                             <div class="dez-media"> <a href="#"><img src="images/our-work/dec_celiaCampos.jpg" alt=""></a> </div>
                                             <div class="dez-info p-a30 bg-gray">
-                                                <h4 class="dez-title m-t0 text-center">PAST DECANA. LIC. T.S. LILIAN CLEMENTINA GARCIA AGUILAR</h4>
+                                                <h4 class="dez-title m-t0 text-center">PAST DECANA. LIC. T.S. CELIA CAMPOS PAUCAR</h4>
                                                 <p class="text-center"><b>CTSP S/N</b></p>
                                                 <p class="text-center"><b>PERIODO   1994 – 1995</b></p>
                                             </div>
