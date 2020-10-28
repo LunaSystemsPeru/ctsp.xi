@@ -45,8 +45,8 @@
         ***********************************-->
         <div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <img class="logo-compact" src="../public/images/logo-text-white.png" alt="">
-                <img class="brand-title" src="../public/images/logo-text-white.png" alt="">
+                <img class="logo-compact" src="../public/images/logo-text-white.png" alt="" height="50px">
+                <img class="brand-title" src="../public/images/logo-text-white.png" alt="" height="50px">
             </a>
 
             <div class="nav-control">
