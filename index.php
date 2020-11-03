@@ -750,9 +750,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white ">
-                        <h2 class="m-b15 m-t0">Podemos Ayudarte</h2>
-                        <h3 class="m-t0 m-b20">Contactate con nosotros al Whatsapp haciendo clic en el boton o llamanos al xxxxxx</h3>
-                        <a href="#" class="site-button white radius-sm">Escribenos</a>
+                        <h2 class="m-b15 m-t0">Enlaces de Interes</h2>
+                        <h3 class="m-t0 m-b20">mostrar paginas de entidades asociadas: demuna, policia , municipalidad</h3>
                     </div>
                 </div>
             </div>
