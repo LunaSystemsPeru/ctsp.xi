@@ -108,11 +108,10 @@
                                         <thead>
                                             <tr>
                                                 <th>Apellidos y Nombres</th>
-                                                <th>Edad</th>
-                                                <th>Cumpleaños</th>
                                                 <th>Fecha Afiliacion</th>
                                                 <th>Ultimo Pago</th>
-                                                <th>Condicion</th>
+                                                <th>Fecha Solicitud</th>
+                                                <th>Monto Pagado</th>
                                                 <th>Estado</th>
                                                 <th>Acciones</th>
                                             </tr>
@@ -120,12 +119,11 @@
                                         <tbody>
                                             <tr>
                                                 <td>OYANGUREN GIRON LUIS ENRIQUE</td>
-                                                <td>28</td>
-                                                <td>05-10</td>
-                                                <td>2020-10-04</td>
-                                                <td>2020-10-10</td>
-                                                <td><label class="label label-success">Nuevo</label></td>
-                                                <td><label class="label label-success">Activo</label></td>
+                                                <td class="text-center">2020-10-04</td>
+                                                <td class="text-center">2020-10-10</td>
+                                                <td class="text-center">2020-11-12</td>
+                                                <td class="text-right">S/ 30.00</td>
+                                                <td><label class="label label-success">Pendiente</label></td>
                                                 <td>
                                                     <button type="button" class="btn btn-success btn-xs" title="Permisos"><i class="fa fa-user"></i></button>
                                                     <button type="button" class="btn btn-warning btn-xs" title="Eliminar"><i class="fa fa-trash"></i></button>
@@ -133,12 +131,11 @@
                                             </tr>
                                             <tr>
                                                 <td>DE LA CRUZ ESPINOZA ANDREA TATIANA</td>
-                                                <td>27</td>
-                                                <td>04-29</td>
-                                                <td>2020-09-04</td>
-                                                <td>2020-10-10</td>
-                                                <td><label class="label label-default">Traslado</label></td>
-                                                <td><label class="label label-success">Activo</label></td>
+                                                <td class="text-center">2020-10-04</td>
+                                                <td class="text-center">2020-10-10</td>
+                                                <td class="text-center">2020-11-12</td>
+                                                <td class="text-right">S/ 30.00</td>
+                                                <td><label class="label label-success">Pendiente</label></td>
                                                 <td>
                                                     <button type="button" class="btn btn-success btn-xs" title="Permisos"><i class="fa fa-user"></i></button>
                                                     <button type="button" class="btn btn-warning btn-xs" title="Eliminar"><i class="fa fa-trash"></i></button>
@@ -148,11 +145,10 @@
                                         <tfoot>
                                             <tr>
                                                 <th>Apellidos y Nombres</th>
-                                                <th>Edad</th>
-                                                <th>Cumpleaños</th>
                                                 <th>Fecha Afiliacion</th>
                                                 <th>Ultimo Pago</th>
-                                                <th>Condicion</th>
+                                                <th>Fecha Solicitud</th>
+                                                <th>Monto Pagado</th>
                                                 <th>Estado</th>
                                                 <th>Acciones</th>
                                             </tr>
