@@ -98,11 +98,10 @@
 
 
             <div class="row">
-                <div class="col-12">
+                <div class="col-8">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Cursos</h4>
-                            <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar</a>
+                            <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar Participante</a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -111,9 +110,8 @@
                                     <tr>
                                         <th>Item</th>
                                         <th>Nombre</th>
-                                        <th>Costo</th>
-                                        <th>Fec. Inicio</th>
-                                        <th>Matriculados</th>
+                                        <th>Email</th>
+                                        <th>Celular</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
@@ -121,14 +119,12 @@
                                     <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Seguridad y Salud en El Trabajo | Prof-. xxx aaa luis</td>
-                                        <td>30.00</td>
-                                        <td>2020-11-20</td>
-                                        <td>21</td>
-                                        <td><label class="label label-success">Activo</label></td>
+                                        <td>OYANGUREN GIRON LUIS ENRIQUE</td>
+                                        <td>leog.1992@gmail.com</td>
+                                        <td>936507153</td>
+                                        <td><label class="label label-warning">Por Cobrar</label></td>
                                         <td>
-                                            <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
-                                            <a href="ver_cursos_detalle.php" class="btn btn-info" title="Ver Participantes"><i class="fa fa-user"></i></a>
+                                            <a href="#" class="btn btn-facebook" title="Cobrar"><i class="fa fa-dollar"></i></a>
                                             <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>
@@ -138,15 +134,30 @@
                                     <tr>
                                         <th>Item</th>
                                         <th>Nombre</th>
-                                        <th>Costo</th>
-                                        <th>Fec. Inicio</th>
-                                        <th>Matriculados</th>
+                                        <th>Email</th>
+                                        <th>Celular</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
                                     </tfoot>
                                 </table>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Detalle del Curso</h4>
+                        </div>
+                        <div class="card-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label>Nombre Curso</label>
+                                    <input class="form-control" type="text" value="curso 1">
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -95,9 +95,8 @@
 										</svg>
 									</span>
                                 <div class="media-body">
-                                    <p class="mb-1">Patient</p>
-                                    <h4 class="mb-0">3280</h4>
-                                    <span class="badge badge-primary">+3.5%</span>
+                                    <p class="mb-1">Colegiados</p>
+                                    <h4 class="mb-0">50</h4>
                                 </div>
                             </div>
                         </div>
@@ -117,9 +116,8 @@
 										</svg>
 									</span>
                                 <div class="media-body">
-                                    <p class="mb-1">Bills</p>
-                                    <h4 class="mb-0">2570</h4>
-                                    <span class="badge badge-warning">+3.5%</span>
+                                    <p class="mb-1">Cursos este mes</p>
+                                    <h4 class="mb-0">4</h4>
                                 </div>
                             </div>
                         </div>
@@ -136,9 +134,8 @@
 										</svg>
 									</span>
                                 <div class="media-body">
-                                    <p class="mb-1">Revenue</p>
-                                    <h4 class="mb-0">364.50K</h4>
-                                    <span class="badge badge-danger">-3.5%</span>
+                                    <p class="mb-1">Solic. Constancia Hab.</p>
+                                    <h4 class="mb-0">5</h4>
                                 </div>
                             </div>
                         </div>
@@ -156,9 +153,8 @@
 										</svg>
 									</span>
                                 <div class="media-body">
-                                    <p class="mb-1">Patient</p>
-                                    <h4 class="mb-0">364.50K</h4>
-                                    <span class="badge badge-success">-3.5%</span>
+                                    <p class="mb-1">Recaudado Cuotas</p>
+                                    <h4 class="mb-0">S/ 850.00</h4>
                                 </div>
                             </div>
                         </div>

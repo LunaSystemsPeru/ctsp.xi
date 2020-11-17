@@ -205,7 +205,46 @@
                         </div>
                     </div>
                 </div>
-         
+
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="basic-form">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-2">
+                                            <label>Cuotas Pendientes</label>
+                                            <input type="text" class="form-control" placeholder="" disabled>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label>Fecha Pago</label>
+                                            <input type="date" class="form-control" placeholder="" disabled>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label>Nro Cuotas a Pagar</label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label>Monto Total</label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label>Destino</label>
+                                            <select class="form-control">
+                                                <option>Banco</option>
+                                                <option>Caja Efectivo</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label>Nro Operacion</label>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
