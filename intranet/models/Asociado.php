@@ -22,7 +22,9 @@ class Asociado
     private $fichaInscripcion;
     private $foto;
     private $titulo;
-    private $registroSunedo;
+    private $registroSunedu;
+    private $tipo_documento;
+    private $tipo_registro;
 
     private $c_conectar;
 
@@ -212,16 +214,47 @@ class Asociado
         $this->titulo = $titulo;
     }
 
-    public function getRegistroSunedo()
+    public function getRegistroSunedu()
     {
-        return $this->registroSunedo;
+        return $this->registroSunedu;
     }
 
-    public function setRegistroSunedo($registroSunedo)
+    public function setRegistroSunedu($registroSunedu)
     {
-        $this->registroSunedo = $registroSunedo;
+        $this->registroSunedu = $registroSunedu;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getTipoDocumento()
+    {
+        return $this->tipo_documento;
+    }
+
+    /**
+     * @param mixed $tipo_documento
+     */
+    public function setTipoDocumento($tipo_documento)
+    {
+        $this->tipo_documento = $tipo_documento;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTipoRegistro()
+    {
+        return $this->tipo_registro;
+    }
+
+    /**
+     * @param mixed $tipo_registro
+     */
+    public function setTipoRegistro($tipo_registro)
+    {
+        $this->tipo_registro = $tipo_registro;
+    }
 
     public function generarCodigo()
     {
@@ -231,7 +264,30 @@ class Asociado
 
     public function insertar()
     {
-        $sql = "insert into asociados values ('$this->idAsociado', '$this->dni', '$this->apellido', '$this->nombre', '$this->ctsp', '$this->centroTrabajo', '$this->fechaNac', '$this->email', '$this->celular', '$this->estado', '$this->password', '$this->ultimoPago', '$this->domicilio', '$this->fechaInscripcion', '$this->fechaCertificado', '$this->fichaInscripcion', '$this->foto', '$this->titulo', '$this->registroSunedo')";
+        $sql = "insert into asociados 
+                values (
+                        '$this->idAsociado', 
+                        '$this->dni', 
+                        '$this->apellido', 
+                        '$this->nombre', 
+                        '$this->ctsp', 
+                        '$this->centroTrabajo', 
+                        '$this->fechaNac', 
+                        '$this->email', 
+                        '$this->celular', 
+                        '$this->estado', 
+                        '$this->password', 
+                        '$this->ultimoPago', 
+                        '$this->domicilio', 
+                        '$this->fechaInscripcion', 
+                        '$this->fechaCertificado', 
+                        '$this->fichaInscripcion', 
+                        '$this->foto', 
+                        '$this->titulo', 
+                        '$this->registroSunedu',
+                        '$this->tipo_documento',
+                        '$this->tipo_registro'
+                )";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
@@ -257,13 +313,15 @@ class Asociado
         $this->fichaInscripcion = $resultado['ficha_inscripcion'];
         $this->foto = $resultado['foto'];
         $this->titulo = $resultado['titulo'];
-        $this->registroSunedo = $resultado['registro_sunedo'];
+        $this->registroSunedu = $resultado['registro_sunedu'];
+        $this->tipo_documento = $resultado['id_tipo_documento'];
+        $this->tipo_registro = $resultado['id_tipo_registro'];
     }
 
     public function actualizar()
     {
         $sql = "UPDATE asociados
-                SET  registro_sunedo = '$this->registroSunedo' WHERE  id_asociado = '$this->idAsociado' ";
+                SET  registro_sunedu = '$this->registroSunedu' WHERE  id_asociado = '$this->idAsociado' ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
@@ -272,6 +330,15 @@ class Asociado
         $sql = "DELETE FROM asociados
                 WHERE  id_asociado = '$this->idAsociado'  ";
         return $this->c_conectar->ejecutar_idu($sql);
+    }
+
+    public function verAsociados () {
+        $sql = "select a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion
+                from asociados as a 
+                inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
+                inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
+                where a.estado = '$this->estado'";
+        return $this->c_conectar->get_Cursor($sql);
     }
 
 }
