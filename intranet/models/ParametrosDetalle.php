@@ -1,8 +1,5 @@
 <?php
-
-
 require_once 'Conectar.php';
-
 
 class ParametrosDetalle
 {
@@ -76,9 +73,9 @@ class ParametrosDetalle
     public function obtenerDatos()
     {
         $sql = "select * from parametros_detalles 
-        where id_detalle = '$this->idDetalle'" ;
+        where id_detalle = '$this->idDetalle'";
         $resultado = $this->c_conectar->get_Row($sql);
-         $this->nombre = $resultado['nombre'];
+        $this->nombre = $resultado['nombre'];
         $this->valor = $resultado['valor'];
         $this->idParametro = $resultado['id_parametro'];
     }
@@ -86,15 +83,22 @@ class ParametrosDetalle
     public function actualizar()
     {
         $sql = "UPDATE parametros_detalles
-                SET  id_parametro = '$this->idParametro' WHERE  id_detalle = '$this->idDetalle' " ;
-         return $this->c_conectar->ejecutar_idu($sql);
+                SET  id_parametro = '$this->idParametro' WHERE  id_detalle = '$this->idDetalle' ";
+        return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function eliminar()
     {
         $sql = "DELETE FROM parametros_detalles
-                WHERE  id_detalle = '$this->idDetalle'  " ; 
+                WHERE  id_detalle = '$this->idDetalle'  ";
         return $this->c_conectar->ejecutar_idu($sql);
+    }
+
+    public function verFilas()
+    {
+        $sql = "select * from parametros_detalles
+                where id_parametro = '$this->idParametro'";
+        return $this->c_conectar->get_Cursor($sql);
     }
 
 }

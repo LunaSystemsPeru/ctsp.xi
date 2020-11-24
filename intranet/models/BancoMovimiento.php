@@ -1,8 +1,5 @@
 <?php
-
-
 require_once 'Conectar.php';
-
 
 class BancoMovimiento
 {
@@ -98,9 +95,9 @@ class BancoMovimiento
     public function obtenerDatos()
     {
         $sql = "select * from banco_movimientos 
-        where id_movimiento = '$this->idMovimiento'" ;
+        where id_movimiento = '$this->idMovimiento'";
         $resultado = $this->c_conectar->get_Row($sql);
-         $this->fecha = $resultado['fecha'];
+        $this->fecha = $resultado['fecha'];
         $this->ingresa = $resultado['ingresa'];
         $this->sale = $resultado['sale'];
         $this->concepto = $resultado['concepto'];
@@ -110,15 +107,43 @@ class BancoMovimiento
     public function actualizar()
     {
         $sql = "UPDATE banco_movimientos
-                SET  id_banco = '$this->idBanco' WHERE  id_movimiento = '$this->idMovimiento' " ;
-         return $this->c_conectar->ejecutar_idu($sql);
+                SET  id_banco = '$this->idBanco' WHERE  id_movimiento = '$this->idMovimiento' ";
+        return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function eliminar()
     {
         $sql = "DELETE FROM banco_movimientos
-                WHERE  id_movimiento = '$this->idMovimiento'  " ; 
+                WHERE  id_movimiento = '$this->idMovimiento'  ";
         return $this->c_conectar->ejecutar_idu($sql);
+    }
+
+    public function verPeriodos($year)
+    {
+        $sql = "select concat(year(fecha), '-', month(fecha)) as periodo 
+                from banco_movimientos
+                where year(fecha) = '$year'
+                group by month(fecha)";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
+    public function obtenerSaldo($year, $month)
+    {
+        $saldo = 0;
+        $sql = "select ifnull(sum(ingresa - sale), 0) as saldo 
+                from banco_movimientos
+                where year(fecha) = '$year' and month(fecha) < '$month' and id_banco = '$this->idBanco'";
+        $saldo = $this->c_conectar->get_valor_query($sql, "saldo");
+        return $saldo;
+    }
+
+    public function verFilas($periodo)
+    {
+        $sql = "select bm.fecha, bm.concepto, bm.id_movimiento, bm.ingresa, bm.sale 
+                from banco_movimientos as bm 
+                where bm.id_banco = '$this->idBanco' and concat(year(bm.fecha),'-',LPAD(month(bm.fecha), 2, '0'))  = '$periodo'
+                order by bm.fecha asc";
+        return $this->c_conectar->get_Cursor($sql);
     }
 
 }

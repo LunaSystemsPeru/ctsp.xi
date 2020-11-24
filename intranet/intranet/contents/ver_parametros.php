@@ -1,6 +1,15 @@
 <?php
-require '../../models/Banco.php';
-$banco = new Banco();
+require '../../models/ParametrosGenerale.php';
+require '../../models/ParametrosDetalle.php';
+$parametro = new ParametrosGenerale();
+$detalle = new ParametrosDetalle();
+
+if (filter_input(INPUT_GET, 'idparametro')) {
+    $parametro->setIdParametro(filter_input(INPUT_GET, 'idparametro'));
+    $parametro->obtenerDatos();
+
+    $detalle->setIdParametro($parametro->getIdParametro());
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -11,7 +20,7 @@ $banco = new Banco();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Cajas - Bancos | Sistema de Gestion - CTSP Region XI Ancash </title>
+    <title>Parametros Generales | Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <!-- Datatable -->
@@ -87,14 +96,14 @@ $banco = new Banco();
             <div class="row page-titles mx-0">
                 <div class="col-sm-6 p-md-0">
                     <div class="welcome-text">
-                        <h4>Hi, welcome back!</h4>
-                        <span class="ml-1">Datatable</span>
+                        <h4>Parametros Generales</h4>
+                        <span class="ml-1">Configuracion </span>
                     </div>
                 </div>
                 <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">CTSP XI</a></li>
-                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Caja</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Parametros Generales</a></li>
                     </ol>
                 </div>
             </div>
@@ -102,18 +111,18 @@ $banco = new Banco();
 
 
             <div class="row">
-                <div class="col-12">
+                <div class="col-5">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Ver Cajas - Bancos</h4>
+                            <h4 class="card-title">Ver Parametros Generales</h4>
                             <button type="button" data-toggle="modal" data-target="#basicModal" class="btn btn-facebook"><i class="fa fa-plus"></i> Agregar</button>
                         </div>
                         <div class="modal fade" id="basicModal">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
-                                    <form action="../controller/banco.php" method="post">
+                                    <form action="../controller/parametros_generales.php" method="post">
                                         <div class="modal-header">
-                                            <h5 class="modal-title">Agregar Caja - Banco</h5>
+                                            <h5 class="modal-title">Agregar Parametro - Configuracion</h5>
                                             <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
                                             </button>
                                         </div>
@@ -122,10 +131,6 @@ $banco = new Banco();
                                                 <div class="form-group col-md-12">
                                                     <label>Nombre</label>
                                                     <input type="text" class="form-control" name="input_nombre" required>
-                                                </div>
-                                                <div class="form-group col-md-3">
-                                                    <label>Monto Inicial</label>
-                                                    <input type="text" class="form-control" placeholder="0.00" name="input_monto" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,28 +144,24 @@ $banco = new Banco();
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="example" class="display" style="min-width: 845px">
+                                <table id="example1" class="table " >
                                     <thead>
                                     <tr>
                                         <th>Item</th>
                                         <th>Nombre</th>
-                                        <th>Nro Cuenta</th>
-                                        <th>Saldo</th>
                                         <th>Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <?php
-                                    $abancos = $banco->verFilas();
-                                    foreach ($abancos as $fila) {
+                                    $aparametros = $parametro->verFilas();
+                                    foreach ($aparametros as $fila) {
                                         ?>
                                         <tr>
-                                            <td><?php echo $fila['id_banco'] ?></td>
+                                            <td><?php echo $fila['id_parametro'] ?></td>
                                             <td><?php echo $fila['nombre'] ?></td>
-                                            <td>-</td>
-                                            <td class="text-right"><?php echo $fila['monto'] ?></td>
                                             <td class="text-center">
-                                                <a href="ver_banco_movimiento.php?idbanco=<?php echo $fila['id_banco'] ?>" class="btn btn-success text-white">
+                                                <a href="ver_parametros.php?idparametro=<?php echo $fila['id_parametro'] ?>" class="btn btn-success text-white">
                                                     <i class="fa fa-bar-chart"></i> Ver Detalle
                                                 </a>
                                             </td>
@@ -169,14 +170,75 @@ $banco = new Banco();
                                     }
                                     ?>
                                     </tbody>
-                                    <tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Ver detalle de Parametros | <?php echo $parametro->getNombre()?></h4>
+                            <button type="button" data-toggle="modal" data-target="#modalDetalle" class="btn btn-facebook"><i class="fa fa-plus"></i> Agregar</button>
+                        </div>
+                        <div class="modal fade" id="modalDetalle">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <form action="../controller/parametros_detalle.php" method="post">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Agregar Detalle del Parametro</h5>
+                                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label>Nombre</label>
+                                                    <input type="text" class="form-control" name="input_nombre" required>
+                                                </div>
+                                                <div class="form-group col-md-12">
+                                                    <label>Valor</label>
+                                                    <input type="text" class="form-control" name="input_valor" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <input type="hidden" name="hidden_idparametro" value="<?php echo $detalle->getIdParametro() ?>">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            <button type="submit" class="btn btn-primary">Guardar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="aaa" class="table " >
+                                    <thead>
                                     <tr>
                                         <th>Item</th>
                                         <th>Nombre</th>
-                                        <th>Nro Cuenta</th>
-                                        <th>Saldo</th>
+                                        <th>Valor</th>
                                         <th>Acciones</th>
                                     </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php
+                                    $adetalle = $detalle->verFilas();
+                                    foreach ($adetalle as $fila) {
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $fila['id_detalle'] ?></td>
+                                            <td><?php echo $fila['nombre'] ?></td>
+                                            <td class="text-center"><?php echo $fila['valor'] ?></td>
+                                            <td class="text-center">
+                                                <button class="btn btn-info"><i class="fa fa-edit"></i> Editar</button>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                    }
+                                    ?>
+                                    </tbody>
                                     </tfoot>
                                 </table>
                             </div>

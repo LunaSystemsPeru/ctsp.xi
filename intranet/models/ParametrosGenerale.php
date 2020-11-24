@@ -1,12 +1,8 @@
 <?php
-
-
 require_once 'Conectar.php';
-
 
 class ParametrosGenerale
 {
-
     private $idParametro;
     private $nombre;
 
@@ -71,6 +67,11 @@ class ParametrosGenerale
         $sql = "DELETE FROM parametros_generales
                 WHERE  id_parametro = '$this->idParametro'  " ; 
         return $this->c_conectar->ejecutar_idu($sql);
+    }
+
+    public function verFilas () {
+        $sql ="select * from parametros_generales ORDER BY nombre asc";
+        return $this->c_conectar->get_Cursor($sql);
     }
 
 }

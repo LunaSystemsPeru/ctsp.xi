@@ -1,3 +1,11 @@
+<?php
+require '../../models/Asociado.php';
+require '../../models/ParametrosDetalle.php';
+
+$asociado = new Asociado();
+$detalle = new ParametrosDetalle();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -104,47 +112,63 @@
                         </div>
                         <div class="card-body">
                             <div class="basic-form">
-                                <form>
+                                <form METHOD="post" action="../controller/asociado.php" enctype="multipart/form-data">
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label>Tipo Documento</label>
-                                            <select class="form-control">
-                                                <option>DNI</option>
-                                                <option>Carnet Extranjeria</option>
-                                                <option>Cedula Identidad</option>
+                                            <select class="form-control" name="select_tipo_documento">
+                                                <?php
+                                                $detalle->setIdParametro(3);
+                                                $adocumentos = $detalle->verFilas();
+                                                foreach ($adocumentos as $fila) {
+                                                    echo "<option value='".$fila['id_detalle']."'>".$fila['nombre']."</option>";
+                                                }
+                                                ?>
                                             </select>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Nro Doc</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <input type="text" class="form-control" name="input_dni" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label>Apellidos</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <input type="text" class="form-control" name="input_apellidos" required>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label>Nombres</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <input type="text" class="form-control" name="input_nombres" required>
                                         </div>
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-md-3">
+                                            <label>Tipo Inscripcion</label>
+                                            <select class="form-control" name="select_tipo_inscripcion">
+                                                <?php
+                                                $detalle->setIdParametro(4);
+                                                $ainscripcion = $detalle->verFilas();
+                                                foreach ($ainscripcion as $fila) {
+                                                    echo "<option value='".$fila['id_detalle']."'>".$fila['nombre']."</option>";
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-5">
                                             <label>Email</label>
-                                            <input type="email" class="form-control" placeholder="Email">
+                                            <input type="email" class="form-control" placeholder="correo@correo.com" name="input_email" required>
                                         </div>
-                                        <div class="form-group col-md-6">
+                                        <div class="form-group col-md-3">
                                             <label>Nro Celular</label>
-                                            <input type="password" class="form-control" placeholder="Password">
+                                            <input type="text" class="form-control" name="input_celular" maxlength="9" required>
                                         </div>
                                         <div class="form-group col-md-12">
                                             <label>Domicilio Actual</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="input_domicilio" required>
                                         </div>
-                                        <div class="form-group col-md-12">
+                                        <div class="form-group col-md-3">
                                             <label>Fecha Nacimiento</label>
-                                            <input type="date" class="form-control">
+                                            <input type="date" class="form-control" name="input_fec_nac" required>
                                         </div>
-                                        <div class="form-group col-md-12">
+                                        <div class="form-group col-md-9">
                                             <label>Centro Trabajo Actual</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="input_trabajo">
                                         </div>
                                     </div>
                                     <div class="form-row">
@@ -154,15 +178,15 @@
                                         <div class="col-lg-8">
                                             <div class="form-group col-md-12">
                                                 <label>Ficha Inscripcion</label>
-                                                <input type="file" class="form-control">
+                                                <input type="file" class="form-control" name="file_ficha_inscripcion" required accept="application/pdf">
                                             </div>
                                             <div class="form-group col-md-12">
                                                 <label>Titulo scan</label>
-                                                <input type="file" class="form-control">
+                                                <input type="file" class="form-control" name="file_titulo" required accept="application/pdf">
                                             </div>
                                             <div class="form-group col-md-12">
                                                 <label>Certificado SUNEDU</label>
-                                                <input type="file" class="form-control">
+                                                <input type="file" class="form-control" name="file_sunedu" required accept="application/pdf">
                                             </div>
                                         </div>
                                     </div>
