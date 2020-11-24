@@ -11,7 +11,7 @@
     <meta name="robots" content=""/>
     <meta name="description" content=""/>
     <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
-    <meta property="og:description" content="Eventos del Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
+    <meta property="og:description" content="Requisitos de Colegiacion para Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
     <meta property="og:image" content=""/>
     <meta name="format-detection" content="telephone=no">
 
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
 
     <!-- PAGE TITLE HERE -->
-    <title>Eventos | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>Requisitos para Habilidad | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,19 +65,38 @@
         <div class="section-full bg-white content-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Eventos</h3>
+                    <div class="col-lg-12 text-justify section-head">
+                        <h3 class="h3"> Cuales son los Requisitos para la Habilitación Profesional?</h3>
                         <div class="dez-separator bg-primary"></div>
-
+                        <p>Para solicitar una constancia de habilidad profesional, el colegiado deberá estar al día en sus aportes mensuales y debe realizar el tramite en el CDR XI – Ancash
+                            CTSP, segun la secuencia descrita aqui:</p>
                     </div>
                 </div>
 
                 <div class="section-content ">
                     <div class="row">
-<p>que se va aponer un calendario para saber que pasara o una galeria para ver que paso</p>
+                        <div class="col-lg-12">
+                            <ul class="list-check-circle primary">
+                                <li>Enviar al correo institucional: tramites@ctsprxi.org.pe, sus datos personales como:Nombres y apellidos,DNI,Nro de Colegiatura
+                                 y sus datos institucionales como: Universidad de Estudio y Centro de Trabajo</li>
+                                <li>Duración de la Habilitación: se otorga hasta seis meses</li>
+                                <li>Realizar el pago de S/.20.00 por derecho de habilitacion a la <strong class="font-18">CUENTA BCP :310-98986958-0-16</strong></li>
+                                <li>Enviar al correo institucional el voucher escaneado(foto)</li>
+                                <li>Secuencia Interna del Proceso:</li>
+                                <li>Tesorera verifica información y comunica a secretaría</li>
+                                <li>Secretaría prepara habilitación para firma</li>
+                                <li>Decana firma habilitación</li>
+                                <li>Secretaría entrega habilitación a colegiado contra entrega de voucher de pago</li>
+                                <li>Duración del tramite: 2 días</li>
+                            </ul>
+                            <p><strong class="font-14">BASE LEGAL: Ordenanza Regional Nº 012-2016-GRA/CR . Obligatorio la Colegiación y Habilitación  de los
+                                Profesionales para el ejercicio legal en la Región. 14. Noviembre 2017 </strong></p>
+                        </div>
+                        <div class="col-lg-12">
+                            <a href="archivos/ReqHabilitacion.png" target="_blank"> <i class="fa fa-file-pdf-o"></i> Ver Archivo</a>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -90,15 +109,6 @@
 <!-- JavaScript  files ========================================= -->
 <script src="js/combining.js"></script><!-- COMBINING JS  -->
 <!-- revolution JS FILES -->
-<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="js/rev.slider.js"></script>
-<script>
-    jQuery(document).ready(function () {
-        'use strict';
-        dz_rev_slider_5();
-    });	/*ready*/
-</script>
 </body>
 
 <!-- Mirrored from medico.dexignzone.com/xhtml/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Sep 2020 21:19:49 GMT -->
