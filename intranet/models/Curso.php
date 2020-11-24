@@ -1,12 +1,8 @@
 <?php
-
-
 require_once 'Conectar.php';
-
 
 class Curso
 {
-
     private $idCurso;
     private $nombre;
     private $profesor;
@@ -16,6 +12,7 @@ class Curso
     private $idModalidad;
     private $lugar;
     private $idUsuario;
+    private $imagen;
 
     private $c_conectar;
 
@@ -115,6 +112,21 @@ class Curso
         $this->idUsuario = $idUsuario;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
+    /**
+     * @param mixed $imagen
+     */
+    public function setImagen($imagen)
+    {
+        $this->imagen = $imagen;
+    }
 
     public function generarCodigo()
     {
@@ -124,16 +136,27 @@ class Curso
 
     public function insertar()
     {
-        $sql = "insert into cursos values ('$this->idCurso', '$this->nombre', '$this->profesor', '$this->monto', '$this->fecha', '$this->estado', '$this->idModalidad', '$this->lugar', '$this->idUsuario')";
+        $sql = "insert into cursos values (
+                           '$this->idCurso', 
+                           '$this->nombre', 
+                           '$this->profesor', 
+                           '$this->monto', 
+                           '$this->fecha', 
+                           '$this->estado', 
+                           '$this->idModalidad', 
+                           '$this->lugar', 
+                           '$this->idUsuario', 
+                           '$this->imagen'
+                           )";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function obtenerDatos()
     {
         $sql = "select * from cursos 
-        where id_curso = '$this->idCurso'" ;
+        where id_curso = '$this->idCurso'";
         $resultado = $this->c_conectar->get_Row($sql);
-         $this->nombre = $resultado['nombre'];
+        $this->nombre = $resultado['nombre'];
         $this->profesor = $resultado['profesor'];
         $this->monto = $resultado['monto'];
         $this->fecha = $resultado['fecha'];
@@ -141,20 +164,27 @@ class Curso
         $this->idModalidad = $resultado['id_modalidad'];
         $this->lugar = $resultado['lugar'];
         $this->idUsuario = $resultado['id_usuario'];
+        $this->imagen = $resultado['imagen'];
     }
 
     public function actualizar()
     {
         $sql = "UPDATE cursos
-                SET  id_usuario = '$this->idUsuario' WHERE  id_curso = '$this->idCurso' " ;
-         return $this->c_conectar->ejecutar_idu($sql);
+                SET  id_usuario = '$this->idUsuario' WHERE  id_curso = '$this->idCurso' ";
+        return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function eliminar()
     {
         $sql = "DELETE FROM cursos
-                WHERE  id_curso = '$this->idCurso'  " ; 
+                WHERE  id_curso = '$this->idCurso'  ";
         return $this->c_conectar->ejecutar_idu($sql);
+    }
+
+    public function verFilas () {
+        $sql = "select id_curso, nombre, profesor, monto, fecha, estado 
+                from cursos ";
+        return $this->c_conectar->get_Cursor($sql);
     }
 
 }
