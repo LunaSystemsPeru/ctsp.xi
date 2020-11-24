@@ -1,3 +1,7 @@
+<?php
+require '../../models/Curso.php';
+$curso = new Curso();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -119,32 +123,27 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Seguridad y Salud en El Trabajo | Prof-. xxx aaa luis</td>
-                                        <td>30.00</td>
-                                        <td>2020-11-20</td>
-                                        <td>21</td>
-                                        <td><label class="label label-success">Activo</label></td>
-                                        <td>
-                                            <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
-                                            <a href="ver_cursos_detalle.php" class="btn btn-info" title="Ver Participantes"><i class="fa fa-user"></i></a>
-                                            <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-
+                                    <?php
+                                    $acurso = $curso->verFilas();
+                                    foreach ($acurso as $fila) {
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $fila['id_curso'] ?></td>
+                                            <td><?php echo $fila['nombre'] . " | Ponente: " . $fila['profesor'] ?></td>
+                                            <td><?php echo number_format($fila['monto'],2) ?></td>
+                                            <td><?php echo $fila['fecha'] ?></td>
+                                            <td>21</td>
+                                            <td><label class="label label-success">Activo</label></td>
+                                            <td>
+                                                <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
+                                                <a href="ver_cursos_detalle.php" class="btn btn-info" title="Ver Participantes"><i class="fa fa-user"></i></a>
+                                                <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                    }
+                                    ?>
                                     </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Item</th>
-                                        <th>Nombre</th>
-                                        <th>Costo</th>
-                                        <th>Fec. Inicio</th>
-                                        <th>Matriculados</th>
-                                        <th>Estado</th>
-                                        <th>Acciones</th>
-                                    </tr>
-                                    </tfoot>
                                 </table>
                             </div>
                         </div>
