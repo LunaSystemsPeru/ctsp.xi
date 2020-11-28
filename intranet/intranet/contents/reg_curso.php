@@ -104,7 +104,7 @@ $detalle = new ParametrosDetalle();
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <form>
+                        <form method="post" action="../controller/curso.php">
                             <div class="card-header">
 
                             </div>
