@@ -91,7 +91,7 @@
                                     <li><a href="colegiacion.php">Colegiación</a></li>
                                     <li><a href="inscripcion.php">Inscripción</a></li>
                                     <li><a href="ficha_inscripcion.php">Modelo Solicitud</a></li>
-                                    <li><a href="info_constancia_habilidad.php">Constancia de Habilidad</a></li>
+                                    <li><a href="habilidad.php">Constancia de Habilidad</a></li>
 
                                 </ul>
                             </li>
@@ -99,7 +99,6 @@
                                 <ul class="sub-menu">
                                     <li><a href="javascript:;">Bienestar Social</a></li>
                                     <li><a href="fondo_apoyo.php">Fondo de Apoyo</a></li>
-                                    <li><a href="javascript:;">Capacitaciones</a></li>
                                     <li><a href="javascript:;">Convenios</a></li>
                                     <li><a href="javascript:;">Oportunidad Laboral</a></li>
                                 </ul>
@@ -108,7 +107,6 @@
                                 <ul class="sub-menu">
                                     <li><a href="noticias.php">Noticias</a></li>
                                     <li><a href="comunicados.php">Comunicados</a></li>
-                                    <li><a href="eventos.php">Eventos</a></li>
                                     <li><a href="revistas.php">Revistas</a></li>
                                     <li><a href="cursos.php">Cursos</a></li>
                                 </ul>
