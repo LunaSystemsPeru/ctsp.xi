@@ -101,7 +101,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Asociados</h4>
-                                <a href="reg_asociado.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar</a>
+                                <!--<a href="reg_asociado.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar</a>-->
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">

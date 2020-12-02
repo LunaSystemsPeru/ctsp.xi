@@ -172,8 +172,14 @@ $detalle = new ParametrosDetalle();
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="col-lg-4">
-                                            <img src="../public/images/profile/pic1.jpg" width="100%">
+                                        <div class="col-lg-4" >
+                                            <div id="preview">
+                                                <img src="../public/images/profile/pic1.jpg" class="col-lg-12" id="img_perfil">
+                                            </div>
+
+                                            <div>
+                                                <input type="file" name="input_file_perfil" id="input_file_perfil" required accept="image/jpeg" >
+                                            </div>
                                         </div>
                                         <div class="col-lg-8">
                                             <div class="form-group col-md-12">
@@ -244,6 +250,31 @@ $detalle = new ParametrosDetalle();
 <!-- Svganimation scripts -->
 <script src="../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../public/vendor/svganimation/svg.animation.js"></script>
+
+<script>
+    document.getElementById("input_file_perfil").onchange = function(e) {
+        var file = this.files[0];
+        var imagefile = file.type;
+        var match = ["image/jpeg", "image/png", "image/jpg"];
+        if (!((imagefile == match[0]) || (imagefile == match[1]) || (imagefile == match[2]))) {
+            $('#img_perfil').attr('src', 'noimage.png');
+            return false;
+        } else {
+            var reader = new FileReader();
+            reader.onload = imageIsLoaded_lado1;
+            reader.readAsDataURL(this.files[0]);
+        }
+
+    }
+
+    function imageIsLoaded_lado1(e) {
+        //$("#file_lado1").css("color", "green");
+        //$('#image_preview_lado1').css("display", "block");
+        $('#img_perfil').attr('src', e.target.result);
+        $('#img_perfil').attr('width', '100%');
+        //$('#previewing').attr('height', '300px');
+    }
+</script>
 </body>
 
 
