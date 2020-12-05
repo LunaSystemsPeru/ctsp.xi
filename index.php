@@ -47,7 +47,9 @@
     <script
             src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|PT+Serif:400,400i,700,700i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Slab:100,300,400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
     </style>
@@ -100,7 +102,8 @@
                                 data-param10="{&quot;revslider-weather-addon&quot; : { &quot;type&quot; : &quot;&quot; ,&quot;name&quot; : &quot;&quot; ,&quot;woeid&quot; : &quot;&quot; ,&quot;unit&quot; : &quot;&quot; }}"
                                 data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="images/main-slider/baner22.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" 2 data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="100 0" data-bgparallax="8" class="rev-slidebg"
+                                <img src="images/main-slider/baner22.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" 2 data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                     data-blurend="0" data-offsetstart="0 0" data-offsetend="100 0" data-bgparallax="8" class="rev-slidebg"
                                      data-no-retina>
 
                                 <!-- LAYERS -->
@@ -286,7 +289,8 @@
                                 data-param10="{&quot;revslider-weather-addon&quot; : { &quot;type&quot; : &quot;&quot; ,&quot;name&quot; : &quot;&quot; ,&quot;woeid&quot; : &quot;&quot; ,&quot;unit&quot; : &quot;&quot; }}"
                                 data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="images/main-slider/BANER31.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="100 0" data-bgparallax="8" class="rev-slidebg"
+                                <img src="images/main-slider/BANER31.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                     data-blurend="0" data-offsetstart="0 0" data-offsetend="100 0" data-bgparallax="8" class="rev-slidebg"
                                      data-no-retina>
 
                                 <!-- LAYERS -->
@@ -348,82 +352,82 @@
                                             <!-- LAYER NR. 4 -->
 
 
-                                        <!-- LAYER NR. 10 -->
-                                        <div class="tp-caption  "
-                                             id="slide-200-layer-10"
-                                             data-x="['left','left','left','left']"
-                                             data-hoffset="['100','100','100','100']"
-                                             data-y="['top','top','top','top']"
-                                             data-voffset="['100','100','100','100']"
-                                             data-width="none"
-                                             data-height="none"
-                                             data-whitespace="nowrap"
-                                             data-type="column"
-                                             data-responsive_offset="on"
-                                             data-responsive="off"
-                                             data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                             data-columnwidth="66.67%"
-                                             data-verticalalign="top"
-                                             data-margintop="[0,0,0,0]"
-                                             data-marginright="[0,0,0,0]"
-                                             data-marginbottom="[0,0,0,0]"
-                                             data-marginleft="[0,0,0,0]"
-                                             data-textAlign="['inherit','inherit','inherit','inherit']"
-                                             data-paddingtop="[0,0,0,0]"
-                                             data-paddingright="[0,0,0,0]"
-                                             data-paddingbottom="[0,0,0,0]"
-                                             data-paddingleft="[0,0,0,0]"
-                                             style="z-index: 26; width: 100%;">
+                                            <!-- LAYER NR. 10 -->
+                                            <div class="tp-caption  "
+                                                 id="slide-200-layer-10"
+                                                 data-x="['left','left','left','left']"
+                                                 data-hoffset="['100','100','100','100']"
+                                                 data-y="['top','top','top','top']"
+                                                 data-voffset="['100','100','100','100']"
+                                                 data-width="none"
+                                                 data-height="none"
+                                                 data-whitespace="nowrap"
+                                                 data-type="column"
+                                                 data-responsive_offset="on"
+                                                 data-responsive="off"
+                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                 data-columnwidth="66.67%"
+                                                 data-verticalalign="top"
+                                                 data-margintop="[0,0,0,0]"
+                                                 data-marginright="[0,0,0,0]"
+                                                 data-marginbottom="[0,0,0,0]"
+                                                 data-marginleft="[0,0,0,0]"
+                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                 data-paddingtop="[0,0,0,0]"
+                                                 data-paddingright="[0,0,0,0]"
+                                                 data-paddingbottom="[0,0,0,0]"
+                                                 data-paddingleft="[0,0,0,0]"
+                                                 style="z-index: 26; width: 100%;">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- LAYER NR. 12 -->
-                                <div class="tp-caption   tp-resizeme  re-shadow"
-                                     id="slide-200-layer-12"
-                                     data-x="['left','left','left','left']"
-                                     data-hoffset="['400','330','50','50']"
-                                     data-y="['bottom','bottom','bottom','bottom']"
-                                     data-voffset="['140','160','350','350']"
-                                     data-width="none"
-                                     data-height="none"
-                                     data-whitespace="normal"
-                                     data-visibility="['on','off','off','off']"
-                                     data-type="image"
-                                     data-responsive_offset="on"
-                                     data-frames='[{"delay":"bytrigger","speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,0,0,0]"
-                                     data-lasttriggerstate="reset"
-                                     style="z-index: 28;">
-                                    <img src="images/main-slider/pic5.jpg" alt="" data-ww="['640px','640px','360px','360px']" data-hh="['360px','360px','249px','249']" width="640" height="360" data-no-retina>
-                                </div>
-                                <!-- LAYER NR. 13 -->
-                                <div class="tp-caption   tp-resizeme  re-shadow"
-                                     id="slide-200-layer-13"
-                                     data-x="['left','left','left','left']"
-                                     data-hoffset="['400','330','50','50']"
-                                     data-y="['bottom','bottom','bottom','bottom']"
-                                     data-voffset="['140','160','350','350']"
-                                     data-width="none"
-                                     data-height="none"
-                                     data-whitespace="normal"
-                                     data-visibility="['on','off','off','off']"
-                                     data-type="image"
-                                     data-responsive_offset="on"
-                                     data-frames='[{"delay":"bytrigger","speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']"
-                                     data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]"
-                                     data-paddingbottom="[0,0,0,0]"
-                                     data-paddingleft="[0,0,0,0]"
-                                     data-lasttriggerstate="reset"
-                                     style="z-index: 29;">
-                                    <img src="images/main-slider/pic6.jpg" alt="" data-ww="['640px','640px','360px','360px']" data-hh="['360px','360px','249px','249']" width="640" height="360" data-no-retina>
-                                </div>
+                                    <!-- LAYER NR. 12 -->
+                                    <div class="tp-caption   tp-resizeme  re-shadow"
+                                         id="slide-200-layer-12"
+                                         data-x="['left','left','left','left']"
+                                         data-hoffset="['400','330','50','50']"
+                                         data-y="['bottom','bottom','bottom','bottom']"
+                                         data-voffset="['140','160','350','350']"
+                                         data-width="none"
+                                         data-height="none"
+                                         data-whitespace="normal"
+                                         data-visibility="['on','off','off','off']"
+                                         data-type="image"
+                                         data-responsive_offset="on"
+                                         data-frames='[{"delay":"bytrigger","speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                                         data-paddingtop="[0,0,0,0]"
+                                         data-paddingright="[0,0,0,0]"
+                                         data-paddingbottom="[0,0,0,0]"
+                                         data-paddingleft="[0,0,0,0]"
+                                         data-lasttriggerstate="reset"
+                                         style="z-index: 28;">
+                                        <img src="images/main-slider/pic5.jpg" alt="" data-ww="['640px','640px','360px','360px']" data-hh="['360px','360px','249px','249']" width="640" height="360" data-no-retina>
+                                    </div>
+                                    <!-- LAYER NR. 13 -->
+                                    <div class="tp-caption   tp-resizeme  re-shadow"
+                                         id="slide-200-layer-13"
+                                         data-x="['left','left','left','left']"
+                                         data-hoffset="['400','330','50','50']"
+                                         data-y="['bottom','bottom','bottom','bottom']"
+                                         data-voffset="['140','160','350','350']"
+                                         data-width="none"
+                                         data-height="none"
+                                         data-whitespace="normal"
+                                         data-visibility="['on','off','off','off']"
+                                         data-type="image"
+                                         data-responsive_offset="on"
+                                         data-frames='[{"delay":"bytrigger","speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                                         data-paddingtop="[0,0,0,0]"
+                                         data-paddingright="[0,0,0,0]"
+                                         data-paddingbottom="[0,0,0,0]"
+                                         data-paddingleft="[0,0,0,0]"
+                                         data-lasttriggerstate="reset"
+                                         style="z-index: 29;">
+                                        <img src="images/main-slider/pic6.jpg" alt="" data-ww="['640px','640px','360px','360px']" data-hh="['360px','360px','249px','249']" width="640" height="360" data-no-retina>
+                                    </div>
                             </li>
                         </ul>
 
@@ -439,8 +443,10 @@
                     <div class="row d-flex">
                         <div class="col-lg-6 col-md-6 text-justify m-b30">
                             <div class="text-center"><h2 class="m-b15">BIENVENIDA</h2></div>
-                            <p class="m-b15">Estimadas colegas, a nombre del Consejo Directivo Regional XI – Ancash del Colegio de Trabajadores sociales del Peru,   me dirijo a Ustedes para expresarle una cordial BIENVENIDA a nuestra pagina Web, que tiene como objetivo principal la comumicacion sobre las actividades institucionales que permita el fortalecimiento de nuestro Colegio.</p>
-                            <p class="m-b30">Asi tambien, información sobre las normas legales, instrumentos normativos, el sistema de registro  de los miembros de la orden, que les permitira visualizar su condicion de habil para el ejercicio profesional. Asi como la difusion de experiencias exitosas de Trabajo Social que realicen en las instituciones donde ejercen como Trabajadores Sociales o informacion relevante que consideren en beneficio de nuestra Institucion.</p>
+                            <p class="m-b15">Estimadas colegas, a nombre del Consejo Directivo Regional XI – Ancash del Colegio de Trabajadores sociales del Peru, me dirijo a Ustedes para expresarle una cordial BIENVENIDA a nuestra pagina Web, que tiene como objetivo principal la comumicacion sobre
+                                las actividades institucionales que permita el fortalecimiento de nuestro Colegio.</p>
+                            <p class="m-b30">Asi tambien, información sobre las normas legales, instrumentos normativos, el sistema de registro de los miembros de la orden, que les permitira visualizar su condicion de habil para el ejercicio profesional. Asi como la difusion de experiencias exitosas
+                                de Trabajo Social que realicen en las instituciones donde ejercen como Trabajadores Sociales o informacion relevante que consideren en beneficio de nuestra Institucion.</p>
                             <div class="text-center">
                                 <img src="images/firmaDec2.png" width="200" alt="">
                                 <h4 class="m-b0">Mg. Silvia Aurora Noriega Roldan</h4>
@@ -652,7 +658,8 @@
                                             <div class="dez-box  dez-gallery-bx">
                                                 <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
                                                     <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                            </a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -666,7 +673,8 @@
                                             <div class="dez-box  dez-gallery-bx">
                                                 <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
                                                     <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                            </a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -680,7 +688,8 @@
                                             <div class="dez-box  dez-gallery-bx">
                                                 <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
                                                     <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                            </a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -727,17 +736,17 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-graduation-cap"></i></a></div>
+                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-trophy"></i></a></div>
                                 <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Capacitaciones</h5>
+                                    <h5 class="dez-tilte text-uppercase">Convenios</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-trophy"></i></a></div>
+                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-openid"></i></a></div>
                                 <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Convenios</h5>
+                                    <h5 class="dez-tilte text-uppercase">Oportunidad Laboral</h5>
                                 </div>
                             </div>
                         </div>
@@ -750,8 +759,73 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white ">
-                        <h2 class="m-b15 m-t0">Enlaces de Interes</h2>
-                        <h3 class="m-t0 m-b20">mostrar paginas de entidades asociadas: demuna, policia , municipalidad</h3>
+                        <h2 class="m-b15 m-t0">ENLACES DE INTERES</h2>
+                    </div>
+                </div>
+
+                <div class="section-content ">
+                    <div class="row">
+                        <div class="col-lg-12 p-lr0">
+                            <!-- blog grid -->
+                            <div id="masonry" class="dez-blog-grid-4">
+                                <div>
+                                    <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+
+                                                <a href="http://app.sis.gob.pe/SisConsultaEnLinea/Consulta/frmConsultaEnLinea.aspx" target="_blank">
+                                                    <img src="images/sisconsulta.jpg" alt=""></a>
+
+                                            </div>
+
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <a href="http://ww4.essalud.gob.pe:7777/acredita/?_ga=2.177261029.1563388887.1606966413-2008961574.1603862109" target="_blank">
+                                                    <img src="images/essalud.jpg" alt=""></a>
+                                            </div>
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <a href="https://app1.susalud.gob.pe/registro/" target="_blank">
+                                                    <img src="images/logosusalud.png" alt=""></a>
+                                            </div>
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <a href="https://operaciones.sisfoh.gob.pe/cse/" target="_blank">
+                                                    <img src="images/sisfoh.jpg" alt=""></a>
+                                            </div>
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <a href="https://www.defensoria.gob.pe/" target="_blank">
+                                                    <img src="images/defensoria.jpg" alt=""></a>
+                                            </div>
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <a href="https://www.gob.pe/mimp" target="_blank">
+                                                    <img src="images/mimp.jpg" alt=""></a>
+                                            </div>
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <a href="https://www.gob.pe/midis" target="_blank">
+                                                    <img src="images/Midis2.png" alt=""></a>
+                                            </div>
+                                        </li>
+                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                            <div class="dez-box  dez-gallery-bx">
+                                                <a href="https://www.gob.pe/inabif" target="_blank">
+                                                    <img src="images/inabif.png" alt=""></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -760,7 +834,7 @@
         <div class="section-full bg-white content-inner-1">
             <div class="container">
                 <div class="section-head text-center ">
-                    <h3 class="h3 text-uppercase">Oferta Laboral</h3>
+                    <h3 class="h3 text-uppercase">Revistas</h3>
                 </div>
                 <div class="section-content">
                     <div class="blog-carousel owl-carousel owl-theme owl-btn-1 primary owl-btn-center-lr owl-dots-black-full">
@@ -868,7 +942,8 @@
                         <div class="widget widget_about">
                             <h4 class="m-b15 text-uppercase">Nosotros</h4>
                             <div class="dez-separator bg-primary"></div>
-                            <p><strong>Trabajadoras Sociales.</strong> Un trabajador social se define como aquel o aquella profesional dedicada a promover activamente el cambio y desarrollo social de las personas. Es decir, se encarga de la ardua tarea de promover el bienestar de los individuos, atendiendo en todo momento sus carencias sociales, ya sean en el entorno familiar, grupal, comunitario
+                            <p><strong>Trabajadoras Sociales.</strong> Un trabajador social se define como aquel o aquella profesional dedicada a promover activamente el cambio y desarrollo social de las personas. Es decir, se encarga de la ardua tarea de promover el bienestar de los individuos,
+                                atendiendo en todo momento sus carencias sociales, ya sean en el entorno familiar, grupal, comunitario
                                 o el medio social en el que viven.</p>
                             <ul class="dez-social-icon border">
                                 <li><a class="text-primary fa fa-facebook" href="javascript:void(0);"></a></li>
@@ -883,7 +958,8 @@
                             <h4 class="m-b15 text-uppercase">Mapa de Ubicación</h4>
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.7089936730395!2d-78.57244020389116!3d-9.090252360991814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab815056117107%3A0xd16a685ae617821e!2sAv.%20Enrique%20Meiggs%2C%20Chimbote!5e0!3m2!1ses!2spe!4v1601526962286!5m2!1ses!2spe" width="500" height="300" frameborder="0" style="border:0;"
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.7089936730395!2d-78.57244020389116!3d-9.090252360991814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab815056117107%3A0xd16a685ae617821e!2sAv.%20Enrique%20Meiggs%2C%20Chimbote!5e0!3m2!1ses!2spe!4v1601526962286!5m2!1ses!2spe"
+                                        width="500" height="300" frameborder="0" style="border:0;"
                                         allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
                             </div>
@@ -939,6 +1015,7 @@
         dz_rev_slider_5();
     });	/*ready*/
 </script>
+
 </body>
 
 <!-- Mirrored from medico.dexignzone.com/xhtml/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Sep 2020 21:19:49 GMT -->

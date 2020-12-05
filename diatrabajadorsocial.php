@@ -74,515 +74,578 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <a href="archivos/programaAniversario.pdf" target="_blank" class="site-button">Descargar Programa Aqui</a> </div>
+                        <a href="archivos/programaAniversario.pdf" target="_blank" class="site-button">Descargar Programa Aqui</a></div>
 
                 </div>
+                <div class="section-content ">
+                    <div class="row">
+                        <div class="col-lg-12 p-lr0 text-center">
+                            <video src="archivos/videoDiadelTS.mp4" controls></video>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="blog-page-content full-blog-dark style-2 style-3" >
+            <div class="blog-page-content full-blog-dark style-2 style-3">
                 <div class="row m-lr0">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-tb20">
                         <div id="masonry" class="row m-lr0 dez-blog-grid-3 dez-gallery-listing gallery-grid-4 gallery mfp-gallery">
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/diats/saludo.JPG" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/diats/saludo.JPG" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="images/gallery/diats/saludo.JPG" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="images/gallery/diats/saludo.JPG" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img1.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img1.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img1.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="images/gallery/img1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img5.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img5.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img5.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="images/gallery/img5.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img4.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img4.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img4.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="images/gallery/img4.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic2.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic2.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic4.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic4.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic9.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic9.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic5.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic5.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic6.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic6.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic7.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic7.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic7.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic7.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic8.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic8.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic8.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic8.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img2.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img2.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img2.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img2.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img3.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img3.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img3.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img3.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img1.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img1.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img1.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img5.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img5.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img5.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img5.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img4.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img4.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img4.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img4.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic2.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic2.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic4.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic4.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic9.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic9.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic5.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic5.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic6.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic6.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic7.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic7.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic7.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic7.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic8.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic8.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic8.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic8.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img2.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img2.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img2.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img2.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img3.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img3.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img3.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img3.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img1.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img1.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img1.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img5.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img5.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img5.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img5.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img4.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img4.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img4.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img4.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic2.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic2.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic4.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic4.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic9.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic9.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic5.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic5.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic6.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic6.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic7.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic7.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic7.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic7.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic8.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic8.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic8.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic8.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img2.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img2.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img2.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img2.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img3.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img3.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img3.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img3.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img1.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img1.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img1.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img5.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img5.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img5.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img5.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img4.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img4.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img4.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img4.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic2.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic2.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic4.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic4.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic9.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic9.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic5.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic5.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic6.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic6.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic7.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic7.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic7.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic7.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic8.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic8.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic8.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic8.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/img2.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img2.jpg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img2.jpg" class="mfp-link"  title="DexignZone"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                            <div class="overlay-icon z-index2"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/img2.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                </a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -595,11 +658,11 @@
         </div>
     </div>
 </div>
-    <!-- Footer -->
-    <?php include 'fixed/footer.php' ?>
-    <!-- Footer END-->
-    <!-- scroll top button -->
-    <button class="scroltop fa fa-chevron-up"></button>
+<!-- Footer -->
+<?php include 'fixed/footer.php' ?>
+<!-- Footer END-->
+<!-- scroll top button -->
+<button class="scroltop fa fa-chevron-up"></button>
 </div>
 <!-- JavaScript  files ========================================= -->
 <script src="js/combining.js"></script><!-- COMBINING JS  -->

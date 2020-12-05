@@ -80,7 +80,7 @@
                         <h3 class="h3"> Seleccionar Usuario</h3>
                         <div class="dez-separator bg-primary"></div>
                         <div class="clear"></div>
-                        <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                        <p class="m-b0">Lorem Ipsum the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
                     </div>
                 </div>
 
