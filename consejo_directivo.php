@@ -190,7 +190,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
 							<div class="dez-box team-bx1">
-								<div class="dez-media"> <a href="#"><img src="images/our-team/small/pic4.jpg" alt=""></a> </div>
+								<div class="dez-media"> <a href="#"><img src="images/our-team/small/tesorera2.jpg" alt=""></a> </div>
 								<div class="dez-info p-t20">
 									<h4 class="dez-title m-b10"><a href="#">Lic. T. S. Olinda María Ganoza Alvitres </a></h4>
 									<h6 class="dez-title">Tesorera</h6>
@@ -206,10 +206,10 @@
 						</div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="dez-box team-bx1">
-                                <div class="dez-media"> <a href="#"><img src="images/our-team/small/pic4.jpg" alt=""></a> </div>
+                                <div class="dez-media"> <a href="#"><img src="images/our-team/small/vocal1_3.jpg" alt=""></a> </div>
                                 <div class="dez-info p-t20">
                                     <h4 class="dez-title m-b10"><a href="#">Lic. T. S. Nancy Esperanza Sánchez Azañedo </a></h4>
-                                    <h6 class="dez-title">Vocal 1</h6>
+                                    <h6 class="dez-title">Vocal I</h6>
                                     <p class="m-b10">CTSP:6090 - DNI:32875221 </p>
                                     <ul class="dez-social-icon border dez-social-icon-lg">
                                         <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
@@ -222,10 +222,10 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="dez-box team-bx1">
-                                <div class="dez-media"> <a href="#"><img src="images/our-team/small/pic4.jpg" alt=""></a> </div>
+                                <div class="dez-media"> <a href="#"><img src="images/our-team/small/vocal2_3.jpg" alt=""></a> </div>
                                 <div class="dez-info p-t20">
                                     <h4 class="dez-title m-b10"><a href="#">Lic. T. S. Frecia  Carmela Castillo  Milla </a></h4>
-                                    <h6 class="dez-title">Vocal 2</h6>
+                                    <h6 class="dez-title">Vocal II</h6>
                                     <p class="m-b10">CTSP:2492 - DNI:32860182  </p>
                                     <ul class="dez-social-icon border dez-social-icon-lg">
                                         <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
