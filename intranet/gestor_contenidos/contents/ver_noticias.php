@@ -1,3 +1,7 @@
+<?php
+require '../../models/Noticias.php';
+$noticia =new Noticias();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -105,7 +109,7 @@
                                 <label>Buscar Mes</label>
                                 <select>
                                     <option>2020-11</option>
-                                    <option>2020-11</option>
+                                    <option>2020-12</option>
                                     <option>2020-11</option>
                                     <option>2020-11</option>
                                 </select>
@@ -116,43 +120,32 @@
                 </div>
             </div>
 
+
             <div class="row">
+                <?php
+                $anoticia=$noticia->verNoticias(12,2020);
+                foreach ($anoticia as $fila) {
+                ?>
                 <div class="col-xl-4 col-xxl-6 col-lg-6 col-sm-6">
+
                     <div class="card mb-3">
-                        <div class="card-header">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text and below as
-                                a natural lead-in to the additional content. This content is a
-                                little</p>
-                        </div>
-                        <img class="card-img-bottom img-fluid" src="../../public/images/profile/3.jpg"
+
+                        <img class="card-img-bottom img-fluid" src="../../../images/noticias/<?php echo $fila['imagen']?>"
                              alt="Card image cap">
+                        <div class="card-header">
+                            <h5 class="card-title"><?php echo $fila['titulo']?></h5>
+                        </div>
+
                         <div class="card-footer">
                             <p class="card-text d-inline">Card footer</p>
                             <a href="mod_noticia.php?id=1" class="card-link float-right btn btn-success">Editar</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-xxl-6 col-lg-6 col-sm-6">
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            <h5 class="card-title">Card title</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text and below as
-                                a natural lead-in to the additional content. This content is a
-                                little</p>
-                        </div>
-                        <img class="card-img-bottom img-fluid" src="../../public/images/profile/3.jpg"
-                             alt="Card image cap">
-                        <div class="card-footer">
-                            <p class="card-text d-inline">Card footer</p>
-                            <a href="mod_noticia.php?id=1" class="card-link float-right btn btn-success">Editar</a>
-                        </div>
-                    </div>
-                </div>
+
+                    <?php
+                }
+                ?>
             </div>
         </div>
     </div>

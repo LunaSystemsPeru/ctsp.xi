@@ -1,6 +1,6 @@
 <?php
 
-
+require_once 'Conectar.php';
 class noticias
 {
     private $idnoticias;
@@ -142,7 +142,9 @@ class noticias
     }
     public function verNoticias ($mes,$anio) {
         $sql = "select idnoticias, fecha,titulo, contenido, imagen from noticias where year(fecha)=$anio and month(fecha)=$mes ";
+        //echo $sql;
         return $this->c_conectar->get_Cursor($sql);
+
     }
 
 

@@ -5,7 +5,7 @@ $noticia = new Noticias();
 
 $noticia->generarCodigo();
 $noticia->setFecha(filter_input(INPUT_POST, 'input_fecha'));
-$noticia->setTitulo();Nombre(filter_input(INPUT_POST, 'input_titulo'));
+$noticia->setTitulo(filter_input(INPUT_POST, 'input_titulo'));
 $noticia->setContenido(filter_input(INPUT_POST, 'input_contenido'));
 $afile = $_FILES["input_imagen"];
 
