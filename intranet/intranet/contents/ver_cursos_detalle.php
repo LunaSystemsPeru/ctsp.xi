@@ -45,8 +45,8 @@
     ***********************************-->
     <div class="nav-header">
         <a href="index.html" class="brand-logo">
-            <img class="logo-compact" src="../public/images/logo-text-white.png" alt="" height="50px">
-            <img class="brand-title" src="../public/images/logo-text-white.png" alt="" height="50px">
+            <img class="logo-compact" src="../../public/images/logo-text-white.png" alt="" height="50px">
+            <img class="brand-title" src="../../public/images/logo-text-white.png" alt="" height="50px">
         </a>
 
         <div class="nav-control">
@@ -195,19 +195,19 @@
     Scripts
 ***********************************-->
 <!-- Required vendors -->
-<script src="../public/vendor/global/global.min.js"></script>
-<script src="../public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-<script src="../public/js/deznav-init.js"></script>
-<script src="../public/js/custom.min.js"></script>
+<script src="../../public/vendor/global/global.min.js"></script>
+<script src="../../public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="../../public/js/deznav-init.js"></script>
+<script src="../../public/js/custom.min.js"></script>
 
 
 <!-- Datatable -->
-<script src="../public/vendor/datatables/js/jquery.dataTables.min.js"></script>
-<script src="../public/js/plugins-init/datatables.init.js"></script>
+<script src="../../public/vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script src="../../public/js/plugins-init/datatables.init.js"></script>
 
 <!-- Svganimation scripts -->
-<script src="../public/vendor/svganimation/vivus.min.js"></script>
-<script src="../public/vendor/svganimation/svg.animation.js"></script>
+<script src="../../public/vendor/svganimation/vivus.min.js"></script>
+<script src="../../public/vendor/svganimation/svg.animation.js"></script>
 </body>
 
 
