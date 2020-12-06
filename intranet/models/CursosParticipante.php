@@ -11,6 +11,7 @@ class CursosParticipante
     private $celular;
     private $idCurso;
     private $idMovimiento;
+    private $centroTrabajo;
     private $voucher;
 
     private $c_conectar;
@@ -119,7 +120,8 @@ class CursosParticipante
                         '$this->email', 
                         '$this->celular', 
                         '$this->idCurso', 
-                        '$this->idMovimiento', 
+                        '$this->idMovimiento',
+                        '$this->centroTrabajo',  
                         '$this->voucher'
                         )";
         return $this->c_conectar->ejecutar_idu($sql);
@@ -137,6 +139,7 @@ class CursosParticipante
         $this->celular = $resultado['celular'];
         $this->idCurso = $resultado['id_curso'];
         $this->idMovimiento = $resultado['id_movimiento'];
+        $this->centroTrabajo = $resultado['centro_trabajo'];
         $this->voucher = $resultado['voucher'];
     }
 

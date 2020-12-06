@@ -152,8 +152,9 @@ if (!$curso->getIdCurso()) {
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
+                                                    <label class="col-form-label">Cargar Voucher</label>
                                                     <div class="input-group">
-                                                        <input type="file" accept="image/jpeg, image/png" name="input_voucher" class="form-control">
+                                                        <input type="file" accept="image/jpeg, image/png" name="input_voucher" class="form-control" placeholder="Cargar Voucher">
                                                     </div>
                                                 </div>
                                             </div>
