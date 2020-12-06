@@ -123,6 +123,8 @@
                                         <label>Imagen</label>
                                         <input type="file" class="form-control" name='input_imagen' id="input_imagen"
                                                accept="image/jpeg, image/png" required>
+                                    </div>
+                                    <div class="form-group col-md-12">
                                         <img id="imgSalida" width="50%" height="50%" src="../../public/images/1.jpg"/>
                                         <i class="form-group__bar"></i>
                                     </div>

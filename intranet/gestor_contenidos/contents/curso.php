@@ -104,7 +104,7 @@ $detalle = new ParametrosDetalle();
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <form method="post" action="../controller/curso.php">
+                        <form method="post" action="../controller/curso.php" enctype="multipart/form-data">
                             <div class="card-header">
 
                             </div>
@@ -134,7 +134,7 @@ $detalle = new ParametrosDetalle();
                                                 $detalle->setIdParametro(2);
                                                 $amodalidad = $detalle->verFilas();
                                                 foreach ($amodalidad as $fila) {
-                                                    echo "<option value='".$fila['id_detlle']."'>".$fila['nombre']."</option>";
+                                                    echo "<option value='".$fila['id_detalle']."'>".$fila['nombre']."</option>";
                                                 }
                                                 ?>
                                             </select>
@@ -142,6 +142,15 @@ $detalle = new ParametrosDetalle();
                                         <div class="form-group col-md-12">
                                             <label>Lugar del Curso O LINK</label>
                                             <input type="text" class="form-control" name="input_lugar" required>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label>Imagen</label>
+                                            <input type="file" class="form-control" name='input_imagen' id="input_imagen"
+                                                   accept="image/jpeg, image/png" required>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <img id="imgSalida" width="50%" height="50%" src="../../public/images/1.jpg"/>
+                                            <i class="form-group__bar"></i>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Guardar</button>
@@ -197,6 +206,34 @@ $detalle = new ParametrosDetalle();
 <!-- Svganimation scripts -->
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
+
+<script>
+    $(window).on("load",function(){
+
+        $(function () {
+            $('#input_imagen').change(function (e) {
+                addImage(e);
+            });
+
+            function addImage(e) {
+                var file = e.target.files[0],
+                    imageType = /image.*/;
+
+                if (!file.type.match(imageType))
+                    return;
+
+                var reader = new FileReader();
+                reader.onload = fileOnload;
+                reader.readAsDataURL(file);
+            }
+
+            function fileOnload(e) {
+                var result = e.target.result;
+                $('#imgSalida').attr("src", result);
+            }
+        });
+    });
+</script>
 </body>
 
 
