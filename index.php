@@ -762,72 +762,42 @@
                         <h2 class="m-b15 m-t0">ENLACES DE INTERES</h2>
                     </div>
                 </div>
+                <!-- Image Carousel start -->
+                <div class="cr-space">
 
-                <div class="section-content ">
-                    <div class="row">
-                        <div class="col-lg-12 p-lr0">
-                            <!-- blog grid -->
-                            <div id="masonry" class="dez-blog-grid-4">
-                                <div>
-                                    <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-
-                                                <a href="http://app.sis.gob.pe/SisConsultaEnLinea/Consulta/frmConsultaEnLinea.aspx" target="_blank">
-                                                    <img src="images/sisconsulta.jpg" alt=""></a>
-
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <a href="http://ww4.essalud.gob.pe:7777/acredita/?_ga=2.177261029.1563388887.1606966413-2008961574.1603862109" target="_blank">
-                                                    <img src="images/essalud.jpg" alt=""></a>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <a href="https://app1.susalud.gob.pe/registro/" target="_blank">
-                                                    <img src="images/logosusalud.png" alt=""></a>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <a href="https://operaciones.sisfoh.gob.pe/cse/" target="_blank">
-                                                    <img src="images/sisfoh.jpg" alt=""></a>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <a href="https://www.defensoria.gob.pe/" target="_blank">
-                                                    <img src="images/defensoria.jpg" alt=""></a>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <a href="https://www.gob.pe/mimp" target="_blank">
-                                                    <img src="images/mimp.jpg" alt=""></a>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <a href="https://www.gob.pe/midis" target="_blank">
-                                                    <img src="images/Midis2.png" alt=""></a>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <a href="https://www.gob.pe/inabif" target="_blank">
-                                                    <img src="images/inabif.png" alt=""></a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
+                    <div class="section-content">
+                        <div class="owl-carousel img-carousel mfp-gallery gallery owl-btn-center-lr">
+                            <div class="item">
+                                <div class="ow-img dez-img-effect zoom-slow"> <a href="http://app.sis.gob.pe/SisConsultaEnLinea/Consulta/frmConsultaEnLinea.aspx" target="_blank"><img src="images/enlaces_interes/sisconsulta.jpg" alt=""></a> </div>
+                            </div>
+                            <div class="item">
+                                <div class="ow-img dez-img-effect zoom-slow"> <a href="http://ww4.essalud.gob.pe:7777/acredita/?_ga=2.177261029.1563388887.1606966413-2008961574.1603862109" target="_blank"><img src="images/enlaces_interes/essalud.jpg" alt=""></a> </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-img dez-img-effect zoom-slow"> <a href="https://app1.susalud.gob.pe/registro/" target="_blank""><img src="images/enlaces_interes/logosusalud.png" alt=""></a> </div>
+                            </div>
+                            <div class="item">
+                                <div class="ow-img dez-img-effect zoom-slow"> <a href="https://www.defensoria.gob.pe/" target="_blank"><img src="images/enlaces_interes/defensoria.jpg" alt=""></a> </div>
+                            </div>
+                            <div class="item">
+                                <div class="ow-img dez-img-effect zoom-slow"> <a href="https://www.gob.pe/mimp" target="_blank"><img src="images/enlaces_interes/mimp.jpg" alt=""></a> </div>
+                            </div>
+                            <div class="item">
+                                <div class="ow-img dez-img-effect zoom-slow"> <a href="https://www.gob.pe/midis" target="_blank"><img src="images/enlaces_interes/Midis2.png" alt=""></a> </div>
+                            </div>
+                            <div class="item">
+                                <div class="ow-img dez-img-effect zoom-slow"> <a href="http://www.sisfoh.gob.pe/" target="_blank"><img src="images/enlaces_interes/sisfoh.jpg" alt=""></a> </div>
+                            </div>
+                            <div class="item">
+                                <div class="ow-img dez-img-effect zoom-slow"> <a href="https://www.gob.pe/inabif" target="_blank"><img src="images/enlaces_interes/inabif.png" alt=""></a> </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <hr>
+                <!-- Image Carousel start END-->
+
+
             </div>
         </div>
         <!-- Latest Blog -->
