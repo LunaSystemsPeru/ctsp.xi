@@ -103,9 +103,9 @@
                             </div>
                             <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="dez-box dez-gallery-box m-b0">
-                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/img1.jpg" alt=""> </a>
+                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/diats/proGeneraldiaTS.jpeg" alt=""> </a>
                                         <div class="overlay-bx overlay-primary-dark">
-                                            <div class="overlay-icon z-index2"><a href="images/gallery/img1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                            <div class="overlay-icon z-index2"><a href="images/gallery/diats/proGeneraldiaTS.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                         </div>
                                     </div>
                                 </div>
