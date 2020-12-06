@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cursos | Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
     <!-- Datatable -->
-    <link href="../public/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../../public/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
-    <link href="../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="../public/css/style.css" rel="stylesheet">
+    <link href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../../public/css/style.css" rel="stylesheet">
 
 </head>
 

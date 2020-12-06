@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                         <div class="form-group">
-                                            <a href="controller/recuperar_contrasena.php">Olvidaste tu Contraseña?</a>
+                                            <a href="../controller/recuperar_contrasena.php">Olvidaste tu Contraseña?</a>
                                         </div>
                                     </div>
                                     <div class="text-center">

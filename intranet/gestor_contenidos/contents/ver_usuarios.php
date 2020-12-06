@@ -11,10 +11,10 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
     <!-- Datatable -->
-    <link href="../public/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../../public/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
-    	<link href="../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="../public/css/style.css" rel="stylesheet">
+    	<link href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../../public/css/style.css" rel="stylesheet">
 
 </head>
 

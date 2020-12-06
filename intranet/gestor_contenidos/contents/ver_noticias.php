@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Noticias | Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
     <!-- Datatable -->
-    <link href="../public/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../../public/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
-    <link href="../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="../public/css/style.css" rel="stylesheet">
+    <link href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../../public/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -100,9 +100,8 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Noticias</h4>
                             <a href="noticia.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar</a>
-                            <div>
+                            <div class="form-group">
                                 <label>Buscar Mes</label>
                                 <select>
                                     <option>2020-11</option>
@@ -111,6 +110,7 @@
                                     <option>2020-11</option>
                                 </select>
                             </div>
+
                         </div>
                     </div>
                 </div>

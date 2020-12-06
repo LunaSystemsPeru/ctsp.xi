@@ -10,11 +10,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../public/images/favicon.png">
-    <link rel="stylesheet" href="../public/vendor/jqvmap/css/jqvmap.min.css">
-    <link rel="stylesheet" href="../public/vendor/chartist/css/chartist.min.css">
-    <link rel="stylesheet" href="../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
+    <link rel="stylesheet" href="../../public/vendor/jqvmap/css/jqvmap.min.css">
+    <link rel="stylesheet" href="../../public/vendor/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
 
 </head>
 

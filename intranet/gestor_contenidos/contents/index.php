@@ -10,11 +10,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../public/images/favicon.png">
-    <link rel="stylesheet" href="../public/vendor/jqvmap/css/jqvmap.min.css">
-    <link rel="stylesheet" href="../public/vendor/chartist/css/chartist.min.css">
-    <link rel="stylesheet" href="../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
+    <link rel="stylesheet" href="../../public/vendor/jqvmap/css/jqvmap.min.css">
+    <link rel="stylesheet" href="../../public/vendor/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
 
 </head>
 
@@ -61,7 +61,7 @@
     <!--**********************************
         Header start
     ***********************************-->
-    <?php include '../fixed/header.php'?>
+    <?php include '../fixed/header.php' ?>
     <!--**********************************
         Header end ti-comment-alt
     ***********************************-->
@@ -89,7 +89,10 @@
                             <div class="media ai-icon">
 									<span class="mr-3">
 										<!-- <i class="ti-user"></i> -->
-										<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+										<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="30"
+                                             height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                             class="feather feather-user">
 											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
 											<circle cx="12" cy="7" r="4"></circle>
 										</svg>
@@ -107,7 +110,10 @@
                         <div class="card-body">
                             <div class="media ai-icon">
 									<span class="mr-3">
-										<svg id="icon-orders" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+										<svg id="icon-orders" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                             stroke-linecap="round" stroke-linejoin="round"
+                                             class="feather feather-file-text">
 											<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
 											<polyline points="14 2 14 8 20 8"></polyline>
 											<line x1="16" y1="13" x2="8" y2="13"></line>
@@ -128,7 +134,10 @@
                         <div class="card-body">
                             <div class="media ai-icon">
 									<span class="mr-3">
-										<svg id="icon-revenue" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign">
+										<svg id="icon-revenue" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                             stroke-linecap="round" stroke-linejoin="round"
+                                             class="feather feather-dollar-sign">
 											<line x1="12" y1="1" x2="12" y2="23"></line>
 											<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
 										</svg>
@@ -146,7 +155,10 @@
                         <div class="card-body">
                             <div class="media ai-icon">
 									<span class="mr-3">
-										<svg id="icon-database-widget" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-database">
+										<svg id="icon-database-widget" xmlns="http://www.w3.org/2000/svg" width="24"
+                                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                             class="feather feather-database">
 											<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
 											<path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
 											<path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
@@ -166,7 +178,8 @@
                         <div class="card-body">
                             <div class="text-center">
                                 <div class="profile-photo">
-                                    <img src="../../public/images/profile/profile.png" width="100" class="img-fluid rounded-circle" alt="">
+                                    <img src="../../public/images/profile/profile.png" width="100"
+                                         class="img-fluid rounded-circle" alt="">
                                 </div>
                                 <h4 class="mt-4 mb-1">Deangelo Sena</h4>
                                 <p class="text-muted">Senior Doctor</p>
@@ -335,8 +348,10 @@
                         <div class="py-2">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <a class="timeline-panel text-muted d-flex align-items-center" href="javascript:void(0);">
-                                        <img class="rounded-sm" alt="image" width="50" src="../../public/images/avatar/1.jpg">
+                                    <a class="timeline-panel text-muted d-flex align-items-center"
+                                       href="javascript:void(0);">
+                                        <img class="rounded-sm" alt="image" width="50"
+                                             src="../../public/images/avatar/1.jpg">
                                         <div class="col pr-1">
                                             <h5 class="mb-1">James Logan</h5>
                                             <div class="d-flex align-items-center justify-content-between">
@@ -353,8 +368,10 @@
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a class="timeline-panel text-muted d-flex align-items-center" href="javascript:void(0);">
-                                        <img class="rounded-sm" alt="image" width="50" src="../../public/images/avatar/2.jpg">
+                                    <a class="timeline-panel text-muted d-flex align-items-center"
+                                       href="javascript:void(0);">
+                                        <img class="rounded-sm" alt="image" width="50"
+                                             src="../../public/images/avatar/2.jpg">
                                         <div class="col pr-1">
                                             <h5 class="mb-1">Muhammad Clay</h5>
                                             <div class="d-flex align-items-center justify-content-between">
@@ -371,8 +388,10 @@
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a class="timeline-panel text-muted d-flex align-items-center" href="javascript:void(0);">
-                                        <img class="rounded-sm" alt="image" width="50" src="../../public/images/avatar/3.jpg">
+                                    <a class="timeline-panel text-muted d-flex align-items-center"
+                                       href="javascript:void(0);">
+                                        <img class="rounded-sm" alt="image" width="50"
+                                             src="../../public/images/avatar/3.jpg">
                                         <div class="col pr-1">
                                             <h5 class="mb-1">Jacob Tucker</h5>
                                             <div class="d-flex align-items-center justify-content-between">
@@ -389,8 +408,10 @@
                                     </a>
                                 </li>
                                 <li class="list-group-item">
-                                    <a class="timeline-panel text-muted d-flex align-items-center" href="javascript:void(0);">
-                                        <img class="rounded-sm" alt="image" width="50" src="../../public/images/avatar/4.jpg">
+                                    <a class="timeline-panel text-muted d-flex align-items-center"
+                                       href="javascript:void(0);">
+                                        <img class="rounded-sm" alt="image" width="50"
+                                             src="../../public/images/avatar/4.jpg">
                                         <div class="col pr-1">
                                             <h5 class="mb-1">Harry Parker</h5>
                                             <div class="d-flex align-items-center justify-content-between">
@@ -443,27 +464,33 @@
                         <div class="card-body pt-0">
                             <canvas id="activeUser"></canvas>
                             <div class="list-group-flush mt-4">
-                                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 font-weight-semi-bold border-top-0" style="border-color: rgba(255, 255, 255, 0.15)">
+                                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1 font-weight-semi-bold border-top-0"
+                                     style="border-color: rgba(255, 255, 255, 0.15)">
                                     <p class="mb-0">Top Active Pages</p>
                                     <p class="mb-0">Active Users</p>
                                 </div>
-                                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1" style="border-color: rgba(255, 255, 255, 0.05)">
+                                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1"
+                                     style="border-color: rgba(255, 255, 255, 0.05)">
                                     <p class="mb-0">/bootstrap-themes/</p>
                                     <p class="mb-0">3</p>
                                 </div>
-                                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1" style="border-color: rgba(255, 255, 255, 0.05)">
+                                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1"
+                                     style="border-color: rgba(255, 255, 255, 0.05)">
                                     <p class="mb-0">/tags/html5/</p>
                                     <p class="mb-0">3</p>
                                 </div>
-                                <div class="list-group-item bg-transparent d-xxl-flex justify-content-between px-0 py-1 d-none" style="border-color: rgba(255, 255, 255, 0.05)">
+                                <div class="list-group-item bg-transparent d-xxl-flex justify-content-between px-0 py-1 d-none"
+                                     style="border-color: rgba(255, 255, 255, 0.05)">
                                     <p class="mb-0">/</p>
                                     <p class="mb-0">2</p>
                                 </div>
-                                <div class="list-group-item bg-transparent d-xxl-flex justify-content-between px-0 py-1 d-none" style="border-color: rgba(255, 255, 255, 0.05)">
+                                <div class="list-group-item bg-transparent d-xxl-flex justify-content-between px-0 py-1 d-none"
+                                     style="border-color: rgba(255, 255, 255, 0.05)">
                                     <p class="mb-0">/preview/falcon/dashboard/</p>
                                     <p class="mb-0">2</p>
                                 </div>
-                                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1" style="border-color: rgba(255, 255, 255, 0.05)">
+                                <div class="list-group-item bg-transparent d-flex justify-content-between px-0 py-1"
+                                     style="border-color: rgba(255, 255, 255, 0.05)">
                                     <p class="mb-0">/100-best-themes...all-time/</p>
                                     <p class="mb-0">1</p>
                                 </div>
@@ -690,7 +717,7 @@
     <!--**********************************
         Footer start
     ***********************************-->
-    <?php include '../fixed/footer.php'?>
+    <?php include '../fixed/footer.php' ?>
     <!--**********************************
         Footer end
     ***********************************-->
