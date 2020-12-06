@@ -112,13 +112,39 @@
                             </div>
 
                         </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="example" class="display" style="min-width: 845px">
+                                    <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Fecha</th>
+                                        <th>Comunicado</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2020-11-16</td>
+                                        <td>COMUNICADO AL DIRECTOR REGIONAL DE SALUD ANCASH</td>
+                                        <td>
+                                            <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
+                                            <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
-                            <form method="POST" action="../controller/noticia.php" enctype="multipart/form-data">
+                            <form method="POST" action="../controller/comunicado.php" enctype="multipart/form-data">
                             <div class="modal-header">
                                 <h5 class="modal-title">Agregar Comunicado</h5>
                                 <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
@@ -152,38 +178,6 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-xl-4 col-xxl-4 col-lg-4 col-sm-4">
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            <h5 class="card-title"></h5>
-                        </div>
-                        <img class="card-img-bottom img-fluid" src="../../public/images/profile/3.jpg"
-                             alt="Card image cap">
-                        <div class="card-footer">
-                            <a href="mod_noticia.php?id=1" class="card-link float-left btn btn-danger"><i
-                                        class="fa fa-trash"></i> Eliminar</a>
-                            <a href="mod_noticia.php?id=1" class="card-link float-right btn btn-facebook"><i
-                                        class="fa fa-edit"></i> Editar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-xxl-4 col-lg-4 col-sm-4">
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            <h5 class="card-title">Agregar Certificado</h5>
-                        </div>
-                        <img class="card-img-bottom img-fluid" src="../../public/images/profile/3.jpg"
-                             alt="Card image cap">
-                        <div class="card-footer">
-                            <a href="mod_noticia.php?id=1" class="card-link float-left btn btn-danger"><i
-                                        class="fa fa-trash"></i> Eliminar</a>
-                            <a href="mod_noticia.php?id=1" class="card-link float-right btn btn-facebook"><i
-                                        class="fa fa-edit"></i> Editar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!--**********************************
