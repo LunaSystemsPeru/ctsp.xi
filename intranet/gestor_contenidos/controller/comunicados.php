@@ -1,12 +1,11 @@
 <?php
-require '../../models/Noticias.php';
+require '../../models/Comunicados.php';
 
-$noticia = new Noticias();
+$comunica = new Comunicados();
 
-$noticia->generarCodigo();
-$noticia->setFecha(filter_input(INPUT_POST, 'input_fecha'));
-$noticia->setTitulo(filter_input(INPUT_POST, 'input_titulo'));
-$noticia->setContenido(filter_input(INPUT_POST, 'input_contenido'));
+$comunica->generarCodigo();
+$comunica->setFecha(filter_input(INPUT_POST, 'input_fecha'));
+$comunica->setTitulo();Nombre(filter_input(INPUT_POST, 'input_titulo'));
 $afile = $_FILES["input_imagen"];
 
 //cargar imagen y enviar a carpeta.
@@ -22,19 +21,19 @@ if (isset($afile)) {
     if ($afile["error"] > 0) {
         echo "Return Code: " . $afile["error"] . "<br/><br/>";
     } else {
-        $directorio = "../../../images/noticias/";
+        $directorio = "../../../images/comunicados/";
         if (!file_exists($directorio)) {
             if (!mkdir($directorio, 0777, true)) {
                 die('Fallo al crear las carpetas...');
             }
         }
 
-        $new_name = $noticia->getIdnoticias() . '.' . $file_extension;
+        $new_name = $comunica->getIdcomunicado() . '.' . $file_extension;
 
         if (move_uploaded_file($file_temporal, $directorio . $new_name)) {
-            $noticia->setImagen($new_name);
-            if ($noticia->insertar()) {
-                header("Location: ../contents/noticia.php");
+            $comunica->setImagen($new_name);
+            if ($comunica->insertar()) {
+                header("Location: ../contents/ver_comunicados.php");
             }
         } else {
             echo "error no se pudo copiar la imagen a la carpeta";
