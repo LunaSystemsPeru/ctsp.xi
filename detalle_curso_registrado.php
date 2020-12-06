@@ -79,7 +79,7 @@ if (!$curso->getIdCurso()) {
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> <?php echo $curso->getNombre()?></h3>
+                        <h3 class="h3"> <?php echo $curso->getNombre() ?></h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
@@ -90,7 +90,7 @@ if (!$curso->getIdCurso()) {
                     <div class="row">
                         <div class="row portfolio-detail">
                             <div class="col-md-12">
-                                <img src="images/cursos/<?php echo $curso->getImagen()?>" class="m-b30" alt=""/>
+                                <img src="images/cursos/<?php echo $curso->getImagen() ?>" class="m-b30" alt=""/>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h2 class="m-b10 font-weight-700 ">Descripcion del Curso</h2>
@@ -111,78 +111,12 @@ if (!$curso->getIdCurso()) {
                                         </div>
                                     </div>
 
-                                <div class="col-md-6">
-                                    <h3>Inscribete</h3>
-                                    <?php
-                                    if ($curso->getEstado() == 0) {
-                                    ?>
-                                    <form method="post" action="controller/reg_participante_curso.php" enctype="multipart/form-data">
+                                    <div class="col-md-6">
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_apellidos" type="text" required class="form-control" placeholder="Apellidos">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_nombres" type="text" class="form-control" required placeholder="Nombres">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_celular" type="text" required class="form-control" placeholder="Celular">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_email" type="email" required class="form-control" placeholder="email">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_documento" type="text" required class="form-control" placeholder="Nro Documento">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_trabajo" type="text" required class="form-control" placeholder="Lugar de Trabajo">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="col-form-label">Cargar Voucher</label>
-                                                    <div class="input-group">
-                                                        <input type="file" accept="image/jpeg, image/png" name="input_voucher" class="form-control" placeholder="Cargar Voucher">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-12">
-                                                <input type="hidden" name="hidden_curso" value="<?php echo $curso->getIdCurso()?>">
-                                                <input name="submit" type="submit" value="Submit" class="site-button">
-                                            </div>
+                                            <h1 class="text-red">USTED HA SIDO REGISTRADO, GRACIAS</h1>
+                                            <h4>Nos contactaremos con usted luego de verificar la informacion</h4>
                                         </div>
-                                    </form>
-                                    <?php
-                                    } else {
-                                        ?>
-                                        <h1>ESTE CURSO YA FINALIZO</h1>
-                                    <?php
-                                    }
-                                    ?>
-                                </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

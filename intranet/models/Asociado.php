@@ -341,4 +341,13 @@ class Asociado
         return $this->c_conectar->get_Cursor($sql);
     }
 
+    public function buscarAsociado () {
+        $sql = "select a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion
+                from asociados as a 
+                inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
+                inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
+                where a.apellidos like '%".$this->apellido."%' or a.nombres like '%".$this->nombre."%' or a.ctsp = '".$this->ctsp."'";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
 }

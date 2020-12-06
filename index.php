@@ -475,23 +475,19 @@
                     <p>Ingrese los datos para hacer la busqueda de un colegiado</p>
                 </div>
                 <div class="row">
-                    <form class="col-lg-12" method="post" action="#">
+                    <form class="col-lg-12" method="post" action="controller/busqueda_colegiado.php">
                         <div class="form-row">
-                            <div class="form-group col-md-2">
+                            <div class="form-group col-md-3">
                                 <label>Nro Colegiatura</label>
-                                <input type="text" class="form-control" placeholder="999999">
+                                <input type="text" class="form-control" placeholder="999999" name="input_ctsp">
                             </div>
-                            <div class="form-group col-md-3">
-                                <label>Ape. Paterno</label>
-                                <input type="email" class="form-control" placeholder="Paterno">
+                            <div class="form-group col-md-4">
+                                <label>Apellidos</label>
+                                <input type="text" class="form-control" placeholder="Apellidos" name="input_apellidos">
                             </div>
-                            <div class="form-group col-md-3">
-                                <label>Ape. Materno</label>
-                                <input type="email" class="form-control" placeholder="Materno">
-                            </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-md-4">
                                 <label>Nombre</label>
-                                <input type="email" class="form-control" placeholder="Nombres">
+                                <input type="text" class="form-control" placeholder="Nombres" name="input_nombres">
                             </div>
                             <div class="form-group col-md-1">
                                 <button type="submit" class="btn btn-primary">Buscar</button>

@@ -1,3 +1,14 @@
+<?php
+require '../../models/CursosParticipante.php';
+require '../../models/Curso.php';
+$curso = new Curso();
+$participante = new CursosParticipante();
+
+$curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
+$curso->obtenerDatos();
+
+$participante->setIdCurso($curso->getIdCurso());
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -113,21 +124,34 @@
                                         <th>Email</th>
                                         <th>Celular</th>
                                         <th>Estado</th>
-                                        <th>Acciones</th>
+                                        <th width="18%">Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>OYANGUREN GIRON LUIS ENRIQUE</td>
-                                        <td>leog.1992@gmail.com</td>
-                                        <td>936507153</td>
-                                        <td><label class="label label-warning">Por Cobrar</label></td>
-                                        <td>
-                                            <a href="#" class="btn btn-facebook" title="Cobrar"><i class="fa fa-dollar"></i></a>
-                                            <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
-                                        </td>
-                                    </tr>
+                                    <?php
+                                    $aparticipantes = $participante->verParticipantes();
+                                    foreach ($aparticipantes as $fila) {
+                                        $estado = $fila['verificado'];
+                                        $label_estado = '<label class="label label-warning">Por Verificar</label>';
+                                        if ($estado == 1) {
+                                            $label_estado = '<label class="label label-success">Verificado</label>';
+                                        }
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $fila['id_participante'] ?></td>
+                                            <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] ?></td>
+                                            <td><?php echo $fila['email'] ?></td>
+                                            <td><?php echo $fila['celular'] ?></td>
+                                            <td><?php echo $label_estado?></td>
+                                            <td>
+                                                <a href="#" class="btn btn-facebook" title="Cobrar"><i class="fa fa-dollar"></i></a>
+                                                <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                    }
+                                    ?>
+
 
                                     </tbody>
                                     <tfoot>
@@ -152,12 +176,21 @@
                             <h4 class="card-title">Detalle del Curso</h4>
                         </div>
                         <div class="card-body">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label>Nombre Curso</label>
-                                    <input class="form-control" type="text" value="curso 1">
-                                </div>
-                            </form>
+                            <h2 class="m-b10 font-weight-500 "><?php echo $curso->getNombre() ?></h2>
+                            <div class="p-a30 port-info-box bg-gray radius-sm">
+                                <h5>Profesor: <span
+                                            class="m-l10 font-weight-300 text-black"> <?php echo $curso->getProfesor() ?></span>
+                                </h5>
+                                <h5>Via Ponencia: <span
+                                            class="m-l10 font-weight-300 text-black"> <?php echo $curso->getLugar() ?></span>
+                                </h5>
+                                <h5>Fecha: <span
+                                            class="m-l10 font-weight-300 text-black"> <?php echo $curso->getFecha() ?></span>
+                                </h5>
+                                <h5>Monto: <span
+                                            class="m-l10 font-weight-300 text-black"><?php echo $curso->getMonto() ?></span>
+                                </h5>
+                            </div>
                         </div>
                     </div>
                 </div>
