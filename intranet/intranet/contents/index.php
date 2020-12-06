@@ -10,11 +10,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../public/images/favicon.png">
-    <link rel="stylesheet" href="../public/vendor/jqvmap/css/jqvmap.min.css">
-    <link rel="stylesheet" href="../public/vendor/chartist/css/chartist.min.css">
-    <link rel="stylesheet" href="../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
+    <link rel="stylesheet" href="../../public/vendor/jqvmap/css/jqvmap.min.css">
+    <link rel="stylesheet" href="../../public/vendor/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
 
 </head>
 
@@ -44,8 +44,8 @@
     ***********************************-->
     <div class="nav-header">
         <a href="index.php" class="brand-logo">
-            <img class="logo-compact" src="../public/images/logo-text-white.png" alt="" height="50px">
-            <img class="brand-title" src="../public/images/logo-text-white.png" alt="" height="50px">
+            <img class="logo-compact" src="../../public/images/logo-text-white.png" alt="" height="50px">
+            <img class="brand-title" src="../../public/images/logo-text-white.png" alt="" height="50px">
         </a>
 
         <div class="nav-control">
@@ -166,7 +166,7 @@
                         <div class="card-body">
                             <div class="text-center">
                                 <div class="profile-photo">
-                                    <img src="../public/images/profile/profile.png" width="100" class="img-fluid rounded-circle" alt="">
+                                    <img src="../../public/images/profile/profile.png" width="100" class="img-fluid rounded-circle" alt="">
                                 </div>
                                 <h4 class="mt-4 mb-1">Deangelo Sena</h4>
                                 <p class="text-muted">Senior Doctor</p>
@@ -336,7 +336,7 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <a class="timeline-panel text-muted d-flex align-items-center" href="javascript:void(0);">
-                                        <img class="rounded-sm" alt="image" width="50" src="../public/images/avatar/1.jpg">
+                                        <img class="rounded-sm" alt="image" width="50" src="../../public/images/avatar/1.jpg">
                                         <div class="col pr-1">
                                             <h5 class="mb-1">James Logan</h5>
                                             <div class="d-flex align-items-center justify-content-between">
@@ -354,7 +354,7 @@
                                 </li>
                                 <li class="list-group-item">
                                     <a class="timeline-panel text-muted d-flex align-items-center" href="javascript:void(0);">
-                                        <img class="rounded-sm" alt="image" width="50" src="../public/images/avatar/2.jpg">
+                                        <img class="rounded-sm" alt="image" width="50" src="../../public/images/avatar/2.jpg">
                                         <div class="col pr-1">
                                             <h5 class="mb-1">Muhammad Clay</h5>
                                             <div class="d-flex align-items-center justify-content-between">
@@ -372,7 +372,7 @@
                                 </li>
                                 <li class="list-group-item">
                                     <a class="timeline-panel text-muted d-flex align-items-center" href="javascript:void(0);">
-                                        <img class="rounded-sm" alt="image" width="50" src="../public/images/avatar/3.jpg">
+                                        <img class="rounded-sm" alt="image" width="50" src="../../public/images/avatar/3.jpg">
                                         <div class="col pr-1">
                                             <h5 class="mb-1">Jacob Tucker</h5>
                                             <div class="d-flex align-items-center justify-content-between">
@@ -390,7 +390,7 @@
                                 </li>
                                 <li class="list-group-item">
                                     <a class="timeline-panel text-muted d-flex align-items-center" href="javascript:void(0);">
-                                        <img class="rounded-sm" alt="image" width="50" src="../public/images/avatar/4.jpg">
+                                        <img class="rounded-sm" alt="image" width="50" src="../../public/images/avatar/4.jpg">
                                         <div class="col pr-1">
                                             <h5 class="mb-1">Harry Parker</h5>
                                             <div class="d-flex align-items-center justify-content-between">
@@ -713,25 +713,25 @@
     Scripts
 ***********************************-->
 <!-- Required vendors -->
-<script src="../public/vendor/global/global.min.js"></script>
-<script src="../public/js/deznav-init.js"></script>
-<script src="../public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-<script src="../public/js/custom.min.js"></script>
+<script src="../../public/vendor/global/global.min.js"></script>
+<script src="../../public/js/deznav-init.js"></script>
+<script src="../../public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="../../public/js/custom.min.js"></script>
 
 <!-- Vectormap -->
-<script src="../public/vendor/chart.js/Chart.bundle.min.js"></script>
-<script src="../public/vendor/gaugeJS/dist/gauge.min.js"></script>
+<script src="../../public/vendor/chart.js/Chart.bundle.min.js"></script>
+<script src="../../public/vendor/gaugeJS/dist/gauge.min.js"></script>
 
 <!-- Counter Up -->
-<script src="../public/vendor/waypoints/jquery.waypoints.min.js"></script>
-<script src="../public/vendor/jquery.counterup/jquery.counterup.min.js"></script>
+<script src="../../public/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="../../public/vendor/jquery.counterup/jquery.counterup.min.js"></script>
 
 <!-- Demo scripts -->
-<script src="../public/js/dashboard/dashboard.js"></script>
+<script src="../../public/js/dashboard/dashboard.js"></script>
 
 <!-- Svganimation scripts -->
-<script src="../public/vendor/svganimation/vivus.min.js"></script>
-<script src="../public/vendor/svganimation/svg.animation.js"></script>
+<script src="../../public/vendor/svganimation/vivus.min.js"></script>
+<script src="../../public/vendor/svganimation/svg.animation.js"></script>
 
 </body>
 

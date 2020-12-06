@@ -15,12 +15,12 @@ $util = new Util();
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Asociados | Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
     <!-- Datatable -->
-    <link href="../public/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../../public/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <!-- Custom Stylesheet -->
-    <link href="../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="../public/css/style.css" rel="stylesheet">
+    <link href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../../public/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -51,8 +51,8 @@ $util = new Util();
     ***********************************-->
     <div class="nav-header">
         <a href="index.php" class="brand-logo">
-            <img class="logo-compact" src="../public/images/logo-text-white.png" alt="" height="50px">
-            <img class="brand-title" src="../public/images/logo-text-white.png" alt="" height="50px">
+            <img class="logo-compact" src="../../public/images/logo-text-white.png" alt="" height="50px">
+            <img class="brand-title" src="../../public/images/logo-text-white.png" alt="" height="50px">
         </a>
 
         <div class="nav-control">
@@ -194,19 +194,19 @@ $util = new Util();
     Scripts
 ***********************************-->
 <!-- Required vendors -->
-<script src="../public/vendor/global/global.min.js"></script>
-<script src="../public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-<script src="../public/js/deznav-init.js"></script>
-<script src="../public/js/custom.min.js"></script>
+<script src="../../public/vendor/global/global.min.js"></script>
+<script src="../../public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="../../public/js/deznav-init.js"></script>
+<script src="../../public/js/custom.min.js"></script>
 
 
 <!-- Datatable -->
-<script src="../public/vendor/datatables/js/jquery.dataTables.min.js"></script>
-<script src="../public/js/plugins-init/datatables.init.js"></script>
+<script src="../../public/vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script src="../../public/js/plugins-init/datatables.init.js"></script>
 
 <!-- Svganimation scripts -->
-<script src="../public/vendor/svganimation/vivus.min.js"></script>
-<script src="../public/vendor/svganimation/svg.animation.js"></script>
+<script src="../../public/vendor/svganimation/vivus.min.js"></script>
+<script src="../../public/vendor/svganimation/svg.animation.js"></script>
 </body>
 
 
