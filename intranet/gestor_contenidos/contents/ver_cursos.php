@@ -19,6 +19,7 @@ $curso = new Curso();
     <!-- Custom Stylesheet -->
     <link href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="../../public/css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </head>
 
@@ -87,13 +88,12 @@ $curso = new Curso();
             <div class="row page-titles mx-0">
                 <div class="col-sm-6 p-md-0">
                     <div class="welcome-text">
-                        <h4>Hi, welcome back!</h4>
-                        <span class="ml-1">Datatable</span>
+                        <h4>Cursos</h4>
                     </div>
                 </div>
                 <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Colegiatura</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">SG</a></li>
                         <li class="breadcrumb-item active"><a href="javascript:void(0)">Cursos</a></li>
                     </ol>
                 </div>
@@ -117,9 +117,8 @@ $curso = new Curso();
                                         <th>Nombre</th>
                                         <th>Costo</th>
                                         <th>Fec. Inicio</th>
-                                        <th>Matriculados</th>
                                         <th>Estado</th>
-                                        <th>Acciones</th>
+                                        <th width="18%">Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -132,12 +131,11 @@ $curso = new Curso();
                                             <td><?php echo $fila['nombre'] . " | Ponente: " . $fila['profesor'] ?></td>
                                             <td><?php echo number_format($fila['monto'],2) ?></td>
                                             <td><?php echo $fila['fecha'] ?></td>
-                                            <td>21</td>
                                             <td><label class="label label-success">Activo</label></td>
                                             <td>
-                                                <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
+                                                <button class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></button>
                                                 <a href="ver_cursos_detalle.php" class="btn btn-info" title="Ver Participantes"><i class="fa fa-user"></i></a>
-                                                <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+                                                <button type="button" onclick="eliminarCurso('<?php echo $fila['id_curso'] ?>')"  class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></button>
                                             </td>
                                         </tr>
                                     <?php
@@ -196,6 +194,27 @@ $curso = new Curso();
 <!-- Svganimation scripts -->
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
+
+<script>
+    function eliminarCurso (idcurso) {
+        Swal.fire({
+            title: 'Do you want to save the changes?',
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: `Me Equivoque`,
+            denyButtonText: `Eliminar`,
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                //Swal.fire('Saved!', '', 'success')
+                Swal.fire('No se hara nada', '', 'info')
+            } else if (result.isDenied) {
+                window.location = "../controller/curso.php?idcurso=" + idcurso + "&action=3";
+            }
+        })
+    }
+
+</script>
 </body>
 
 

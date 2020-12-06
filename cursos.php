@@ -1,3 +1,7 @@
+<?php
+require 'intranet/models/Curso.php';
+$curso = new Curso();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -78,185 +82,42 @@
                         <div class="col-lg-12 p-lr0">
                             <!-- blog grid -->
                             <div id="masonry" class="dez-blog-grid-3">
-                                <div class="post card-container col-lg-4 col-md-6 col-12">
-                                    <div class="blog-post blog-grid date-style-2">
-                                        <div class="dez-post-media dez-img-effect zoom-slow"><a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a></div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-title ">
-                                                <h3 class="post-title"><a href="#">Seguridad y Salud Ocupacional en tiempos de COVID19</a></h3>
-                                            </div>
-                                            <div class="dez-post-meta ">
-                                                <ul>
-                                                    <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dez-post-text">
-                                                <p>Ponente: Edwin Mantilla</p>
+                                <?php
+                                $acurso = $curso->verFilas();
+                                foreach ($acurso as $fila) {
+                                ?>
+                                    <div class="post card-container col-lg-4 col-md-6 col-12">
+                                        <div class="blog-post blog-grid date-style-2">
+                                            <div class="dez-post-media dez-img-effect zoom-slow">
+                                                <a href="detalle_curso.php?idcurso=<?php echo $fila['id_curso'] ?>">
+                                                    <img src="images/cursos/<?php echo $fila['imagen'] ?>" alt="" style="max-height: 200px">
+                                                </a>
                                             </div>
                                             <div class="dez-post-info">
-                                                <p class="text-black">Precio: <strong>S/ 50.00</strong></p>
+                                                <div class="dez-post-title ">
+                                                    <h3 class="post-title"><a href="#"><?php echo $fila['nombre'] ?></a></h3>
+                                                </div>
+                                                <div class="dez-post-meta ">
+                                                    <ul>
+                                                        <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dez-post-text">
+                                                    <p>Ponente: <?php echo $fila['profesor'] ?></p>
+                                                </div>
+                                                <div class="dez-post-info">
+                                                    <p class="text-black">Precio: <strong>S/ <?php echo number_format($fila['monto'],2) ?></strong></p>
+                                                </div>
+                                                <div class="dez-post-readmore">
+                                                    <a href="detalle_curso.php?idcurso=<?php echo $fila['id_curso'] ?>" title="READ MORE" rel="bookmark" class="btn btn-info">
+                                                        <i class="fa fa-book"></i> Inscribirse <i class="fa fa-angle-double-right"></i>
+                                                    </a></div>
                                             </div>
-                                            <div class="dez-post-readmore">
-                                                <a href="detalle_curso.php" title="READ MORE" rel="bookmark" class="btn btn-info">
-                                                    <i class="fa fa-book"></i> Inscribirse <i class="fa fa-angle-double-right"></i>
-                                                </a></div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="post card-container col-lg-4 col-md-6 col-12">
-                                    <div class="blog-post blog-grid date-style-2">
-                                        <div class="dez-post-media dez-img-effect zoom-slow"><a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a></div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-title ">
-                                                <h3 class="post-title"><a href="#">Seguridad y Salud Ocupacional en tiempos de COVID19</a></h3>
-                                            </div>
-                                            <div class="dez-post-meta ">
-                                                <ul>
-                                                    <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dez-post-text">
-                                                <p>Ponente: Edwin Mantilla</p>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <p class="text-black">Precio: S/ 50.00</p>
-                                            </div>
-                                            <div class="dez-post-readmore"><a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Inscribirse<i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post card-container col-lg-4 col-md-6 col-12">
-                                    <div class="blog-post blog-grid date-style-2">
-                                        <div class="dez-post-media dez-img-effect zoom-slow"><a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a></div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-title ">
-                                                <h3 class="post-title"><a href="#">Seguridad y Salud Ocupacional en tiempos de COVID19</a></h3>
-                                            </div>
-                                            <div class="dez-post-meta ">
-                                                <ul>
-                                                    <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dez-post-text">
-                                                <p>Ponente: Edwin Mantilla</p>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <p class="text-black">Precio: S/ 50.00</p>
-                                            </div>
-                                            <div class="dez-post-readmore"><a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Inscribirse<i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post card-container col-lg-4 col-md-6 col-12">
-                                    <div class="blog-post blog-grid date-style-2">
-                                        <div class="dez-post-media dez-img-effect zoom-slow"><a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a></div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-title ">
-                                                <h3 class="post-title"><a href="#">Seguridad y Salud Ocupacional en tiempos de COVID19</a></h3>
-                                            </div>
-                                            <div class="dez-post-meta ">
-                                                <ul>
-                                                    <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dez-post-text">
-                                                <p>Ponente: Edwin Mantilla</p>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <p class="text-black">Precio: S/ 50.00</p>
-                                            </div>
-                                            <div class="dez-post-readmore"><a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Inscribirse<i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post card-container col-lg-4 col-md-6 col-12">
-                                    <div class="blog-post blog-grid date-style-2">
-                                        <div class="dez-post-media dez-img-effect zoom-slow"><a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a></div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-title ">
-                                                <h3 class="post-title"><a href="#">Seguridad y Salud Ocupacional en tiempos de COVID19</a></h3>
-                                            </div>
-                                            <div class="dez-post-meta ">
-                                                <ul>
-                                                    <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dez-post-text">
-                                                <p>Ponente: Edwin Mantilla</p>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <p class="text-black">Precio: S/ 50.00</p>
-                                            </div>
-                                            <div class="dez-post-readmore"><a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Inscribirse<i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post card-container col-lg-4 col-md-6 col-12">
-                                    <div class="blog-post blog-grid date-style-2">
-                                        <div class="dez-post-media dez-img-effect zoom-slow"><a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a></div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-title ">
-                                                <h3 class="post-title"><a href="#">Seguridad y Salud Ocupacional en tiempos de COVID19</a></h3>
-                                            </div>
-                                            <div class="dez-post-meta ">
-                                                <ul>
-                                                    <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dez-post-text">
-                                                <p>Ponente: Edwin Mantilla</p>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <p class="text-black">Precio: S/ 50.00</p>
-                                            </div>
-                                            <div class="dez-post-readmore"><a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Inscribirse<i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post card-container col-lg-4 col-md-6 col-12">
-                                    <div class="blog-post blog-grid date-style-2">
-                                        <div class="dez-post-media dez-img-effect zoom-slow"><a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a></div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-title ">
-                                                <h3 class="post-title"><a href="#">Seguridad y Salud Ocupacional en tiempos de COVID19</a></h3>
-                                            </div>
-                                            <div class="dez-post-meta ">
-                                                <ul>
-                                                    <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dez-post-text">
-                                                <p>Ponente: Edwin Mantilla</p>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <p class="text-black">Precio: S/ 50.00</p>
-                                            </div>
-                                            <div class="dez-post-readmore"><a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Inscribirse<i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post card-container col-lg-4 col-md-6 col-12">
-                                    <div class="blog-post blog-grid date-style-2">
-                                        <div class="dez-post-media dez-img-effect zoom-slow"><a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a></div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-title ">
-                                                <h3 class="post-title"><a href="#">Seguridad y Salud Ocupacional en tiempos de COVID19</a></h3>
-                                            </div>
-                                            <div class="dez-post-meta ">
-                                                <ul>
-                                                    <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dez-post-text">
-                                                <p>Ponente: Edwin Mantilla</p>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <p class="text-black">Precio: S/ 50.00</p>
-                                            </div>
-                                            <div class="dez-post-readmore"><a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Inscribirse<i class="fa fa-angle-double-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>

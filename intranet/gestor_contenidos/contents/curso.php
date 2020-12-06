@@ -149,7 +149,7 @@ $detalle = new ParametrosDetalle();
                                                    accept="image/jpeg, image/png" required>
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <img id="imgSalida" width="50%" height="50%" src="../../public/images/1.jpg"/>
+                                            <img id="imgSalida" width="70%" height="70%" src="../../public/images/1.jpg"/>
                                             <i class="form-group__bar"></i>
                                         </div>
                                     </div>

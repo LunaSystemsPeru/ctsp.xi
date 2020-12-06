@@ -182,7 +182,7 @@ class Curso
     }
 
     public function verFilas () {
-        $sql = "select id_curso, nombre, profesor, monto, fecha, estado 
+        $sql = "select id_curso, nombre, profesor, monto, fecha, estado, imagen 
                 from cursos ";
         return $this->c_conectar->get_Cursor($sql);
     }

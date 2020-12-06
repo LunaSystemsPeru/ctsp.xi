@@ -1,3 +1,16 @@
+<?php
+require 'intranet/models/Curso.php';
+$curso = new Curso();
+
+$curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
+
+if (!$curso->getIdCurso()) {
+    header("Location: cursos.php");
+} else {
+    $curso->obtenerDatos();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -66,7 +79,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Seguridad y Salud Ocupacional en tiempos de COVID19</h3>
+                        <h3 class="h3"> <?php echo $curso->getNombre()?></h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
@@ -77,94 +90,81 @@
                     <div class="row">
                         <div class="row portfolio-detail">
                             <div class="col-md-12">
-                                <img src="images/details.jpg" class="m-b30" alt=""/>
+                                <img src="images/cursos/<?php echo $curso->getImagen()?>" class="m-b30" alt=""/>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h2 class="m-b10 font-weight-700 ">Descripcion del Curso</h2>
-                                        <p class="m-b50">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and
-                                            web
-                                            page editors now use Lorem Ipsum as their default model text,</p>
-                                        <div class="p-a30 port-info-box bg-gray radius-sm"
-                                        ">
-                                        <h4>Que voy a aprender?</h4>
-                                        <ul class="list-check-circle primary">
-                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
-                                            <li>Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</li>
-                                            <li>Printer took a galley of type and scrambled it to make a type specimen book. </li>
-                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</li>
-                                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
-                                            <li>Eorem ipsum dolor sit amet</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
+                                        <p class="m-b50"><?php echo $curso->getNombre()?></p>
                                     <div class="p-a30 port-info-box bg-gray radius-sm">
-                                        <h5>Profesor: <span class="m-l10 font-weight-300 text-black"> Business Accounting</span></h5>
-                                        <h5>Horas: <span class="m-l10 font-weight-300 text-black"> Company Name Inc.</span></h5>
-                                        <h5>Via Ponencia: <span class="m-l10 font-weight-300 text-black"> August 18, 2020</span></h5>
-                                        <h5>Fecha: <span class="m-l10 font-weight-300 text-black"> August 18, 2020</span></h5>
-                                        <h5>Hora Inicio: <span class="m-l10 font-weight-300 text-black">www.example.com</span></h5>
-                                        <h5>Monto: <span class="m-l10 font-weight-300 text-black">www.example.com</span></h5>
+                                        <h5>Profesor: <span class="m-l10 font-weight-300 text-black"> <?php echo $curso->getProfesor()?></span></h5>
+                                        <h5>Via Ponencia: <span class="m-l10 font-weight-300 text-black"> <?php echo $curso->getLugar() ?></span></h5>
+                                        <h5>Fecha: <span class="m-l10 font-weight-300 text-black"> <?php echo $curso->getFecha()?></span></h5>
+                                        <h5>Monto: <span class="m-l10 font-weight-300 text-black"><?php echo $curso->getMonto()?></span></h5>
                                     </div>
-                                    <br>
+                                    </div>
+
+                                <div class="col-md-6">
                                     <h3>Inscribete</h3>
-                                    <form method="post" class="dzForm" action="script/contact.php">
+                                    <form method="post" class="dzForm" action="controller/reg_participante_curso.php">
                                         <input type="hidden" value="Contact" name="dzToDo">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <div class="input-group">
-                                                        <input name="dzName" type="text" required class="form-control" placeholder="Apellidos">
+                                                        <input name="input_apellidos" type="text" required class="form-control" placeholder="Apellidos">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <div class="input-group">
-                                                        <input name="dzEmail" type="text" class="form-control" required placeholder="Nombres">
+                                                        <input name="input_nombres" type="text" class="form-control" required placeholder="Nombres">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <div class="input-group">
-                                                        <input name="dzOther[Phone]" type="text" required class="form-control" placeholder="Celular">
+                                                        <input name="input_celular" type="text" required class="form-control" placeholder="Celular">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <div class="input-group">
-                                                        <input name="dzOther[Subject]" type="email" required class="form-control" placeholder="email">
+                                                        <input name="input_email" type="email" required class="form-control" placeholder="email">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <div class="input-group">
-                                                        <input name="dzOther[Phone]" type="text" required class="form-control" placeholder="Cod. CTS">
+                                                        <input name="input_documento" type="text" required class="form-control" placeholder="Nro Documento">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <div class="input-group">
-                                                        <input name="dzOther[Phone]" type="text" required class="form-control" placeholder="Lugar de Trabajo">
+                                                        <input name="input_trabajo" type="text" required class="form-control" placeholder="Lugar de Trabajo">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12">
+                                            <div class="col-md-12">
                                                 <div class="form-group">
+                                                    <label class="col-form-label">Cargar Voucher</label>
                                                     <div class="input-group">
-                                                        <input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                                        <input type="file" accept="image/jpeg, image/png" name="input_voucher" class="form-control" placeholder="Cargar Voucher">
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="col-md-12">
                                                 <button name="submit" type="submit" value="Submit" class="site-button "><span>Submit</span></button>
                                             </div>
                                         </div>
                                     </form>
+                                </div>
                                 </div>
                             </div>
                         </div>

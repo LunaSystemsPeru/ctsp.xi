@@ -6,7 +6,7 @@ class Conectar
 
     private static $_instancia;
     private $_connection;
-    private $_host = "192.168.7.201";
+    private $_host = "192.168.7.208";
     private $_user = "root_lsp";
     private $_pass = "root/*123";
     // Almacenar una unica instancia
