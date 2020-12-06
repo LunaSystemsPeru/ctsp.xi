@@ -1,12 +1,8 @@
 <?php
-
-
 require_once 'Conectar.php';
-
 
 class CursosParticipante
 {
-
     private $idParticipante;
     private $apellido;
     private $nombre;
@@ -15,6 +11,7 @@ class CursosParticipante
     private $celular;
     private $idCurso;
     private $idMovimiento;
+    private $voucher;
 
     private $c_conectar;
 
@@ -113,35 +110,47 @@ class CursosParticipante
 
     public function insertar()
     {
-        $sql = "insert into cursos_participantes values ('$this->idParticipante', '$this->apellido', '$this->nombre', '$this->nroDocumento', '$this->email', '$this->celular', '$this->idCurso', '$this->idMovimiento')";
+        $sql = "insert into cursos_participantes 
+                values (
+                        '$this->idParticipante', 
+                        '$this->apellido', 
+                        '$this->nombre', 
+                        '$this->nroDocumento', 
+                        '$this->email', 
+                        '$this->celular', 
+                        '$this->idCurso', 
+                        '$this->idMovimiento', 
+                        '$this->voucher'
+                        )";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function obtenerDatos()
     {
         $sql = "select * from cursos_participantes 
-        where id_participante = '$this->idParticipante'" ;
+        where id_participante = '$this->idParticipante'";
         $resultado = $this->c_conectar->get_Row($sql);
-         $this->apellido = $resultado['apellidos'];
+        $this->apellido = $resultado['apellidos'];
         $this->nombre = $resultado['nombres'];
         $this->nroDocumento = $resultado['nro_documento'];
         $this->email = $resultado['email'];
         $this->celular = $resultado['celular'];
         $this->idCurso = $resultado['id_curso'];
         $this->idMovimiento = $resultado['id_movimiento'];
+        $this->voucher = $resultado['voucher'];
     }
 
     public function actualizar()
     {
         $sql = "UPDATE cursos_participantes
-                SET  id_movimiento = '$this->idMovimiento' WHERE  id_participante = '$this->idParticipante' " ;
-         return $this->c_conectar->ejecutar_idu($sql);
+                SET  id_movimiento = '$this->idMovimiento' WHERE  id_participante = '$this->idParticipante' ";
+        return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function eliminar()
     {
         $sql = "DELETE FROM cursos_participantes
-                WHERE  id_participante = '$this->idParticipante'  " ; 
+                WHERE  id_participante = '$this->idParticipante'  ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
