@@ -118,7 +118,7 @@ $curso = new Curso();
                                         <th>Costo</th>
                                         <th>Fec. Inicio</th>
                                         <th>Estado</th>
-                                        <th width="18%">Acciones</th>
+                                        <th width="13%">Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -134,7 +134,6 @@ $curso = new Curso();
                                             <td><label class="label label-success">Activo</label></td>
                                             <td>
                                                 <button class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></button>
-                                                <a href="ver_cursos_detalle.php" class="btn btn-info" title="Ver Participantes"><i class="fa fa-user"></i></a>
                                                 <button type="button" onclick="eliminarCurso('<?php echo $fila['id_curso'] ?>')"  class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></button>
                                             </td>
                                         </tr>

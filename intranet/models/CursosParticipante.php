@@ -13,6 +13,7 @@ class CursosParticipante
     private $idMovimiento;
     private $centroTrabajo;
     private $voucher;
+    private $verificado;
 
     private $c_conectar;
 
@@ -102,6 +103,53 @@ class CursosParticipante
         $this->idMovimiento = $idMovimiento;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getCentroTrabajo()
+    {
+        return $this->centroTrabajo;
+    }
+
+    /**
+     * @param mixed $centroTrabajo
+     */
+    public function setCentroTrabajo($centroTrabajo)
+    {
+        $this->centroTrabajo = $centroTrabajo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVoucher()
+    {
+        return $this->voucher;
+    }
+
+    /**
+     * @param mixed $voucher
+     */
+    public function setVoucher($voucher)
+    {
+        $this->voucher = $voucher;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVerificado()
+    {
+        return $this->verificado;
+    }
+
+    /**
+     * @param mixed $verificado
+     */
+    public function setVerificado($verificado)
+    {
+        $this->verificado = $verificado;
+    }
 
     public function generarCodigo()
     {
@@ -122,7 +170,8 @@ class CursosParticipante
                         '$this->idCurso', 
                         '$this->idMovimiento',
                         '$this->centroTrabajo',  
-                        '$this->voucher'
+                        '$this->voucher', 
+                        '0'
                         )";
         return $this->c_conectar->ejecutar_idu($sql);
     }
@@ -141,6 +190,7 @@ class CursosParticipante
         $this->idMovimiento = $resultado['id_movimiento'];
         $this->centroTrabajo = $resultado['centro_trabajo'];
         $this->voucher = $resultado['voucher'];
+        $this->verificado = $resultado['verificado'];
     }
 
     public function actualizar()
@@ -157,4 +207,8 @@ class CursosParticipante
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
+    public function verParticipantes () {
+        $sql = "select * from cursos_participantes where id_curso = '$this->idCurso'";
+        return $this->c_conectar->get_Cursor($sql);
+    }
 }

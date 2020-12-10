@@ -178,21 +178,21 @@ $detalle = new ParametrosDetalle();
                                             </div>
 
                                             <div>
-                                                <input type="file" name="input_file_perfil" id="input_file_perfil" required accept="image/jpeg" >
+                                                <input type="file" name="input_file_perfil" id="input_file_perfil" accept="image/jpeg" >
                                             </div>
                                         </div>
                                         <div class="col-lg-8">
                                             <div class="form-group col-md-12">
                                                 <label>Ficha Inscripcion</label>
-                                                <input type="file" class="form-control" name="file_ficha_inscripcion" required accept="application/pdf">
+                                                <input type="file" class="form-control" name="file_ficha_inscripcion" accept="application/pdf">
                                             </div>
                                             <div class="form-group col-md-12">
                                                 <label>Titulo scan</label>
-                                                <input type="file" class="form-control" name="file_titulo" required accept="application/pdf">
+                                                <input type="file" class="form-control" name="file_titulo" accept="application/pdf">
                                             </div>
                                             <div class="form-group col-md-12">
                                                 <label>Certificado SUNEDU</label>
-                                                <input type="file" class="form-control" name="file_sunedu" required accept="application/pdf">
+                                                <input type="file" class="form-control" name="file_sunedu" accept="application/pdf">
                                             </div>
                                         </div>
                                     </div>

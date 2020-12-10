@@ -100,7 +100,7 @@
                                             <li><i class="fa fa-check"></i> Cursos</li>
                                             <li><i class="fa fa-check"></i> Actividades Conmemorativas</li>
                                         </ul>
-                                        <div class="pricingtable-footer"><a href="#" class="site-button radius-no">Ingresar</a></div>
+                                        <div class="pricingtable-footer"><a href="intranet/gestor_contenidos/index.php" class="site-button radius-no">Ingresar</a></div>
                                     </div>
                                 </div>
                             </div>

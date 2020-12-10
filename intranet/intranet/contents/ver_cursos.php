@@ -136,7 +136,7 @@ $curso = new Curso();
                                             <td><label class="label label-success">Activo</label></td>
                                             <td>
                                                 <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
-                                                <a href="ver_cursos_detalle.php" class="btn btn-info" title="Ver Participantes"><i class="fa fa-user"></i></a>
+                                                <a href="ver_cursos_detalle.php?idcurso=<?php echo $fila['id_curso'] ?>" class="btn btn-info" title="Ver Participantes"><i class="fa fa-user"></i></a>
                                                 <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
                                             </td>
                                         </tr>

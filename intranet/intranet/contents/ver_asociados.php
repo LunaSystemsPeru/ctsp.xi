@@ -1,3 +1,10 @@
+<?php
+require '../../models/Asociado.php';
+require '../../tools/Util.php';
+$asociado = new Asociado();
+$util = new Util();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -109,8 +116,8 @@
                                         <thead>
                                             <tr>
                                                 <th>Apellidos y Nombres</th>
+                                                <th>Trabajo</th>
                                                 <th>Edad</th>
-                                                <th>Cumpleaños</th>
                                                 <th>Fecha Afiliacion</th>
                                                 <th>Ultimo Pago</th>
                                                 <th>Condicion</th>
@@ -119,19 +126,36 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        <?php
+                                        $asociado->setEstado(0);
+                                        $aasociados = $asociado->verAsociados();
+                                        $labelnuevo = '<label class="label label-success">Nuevo</label>';
+                                        $labeltraslado = '<label class="label label-default">Traslado</label>';
+                                        $label = "";
+                                        foreach ($aasociados as $fila) {
+                                        if ($fila['id_tipo_inscripcion'] == 4) {
+                                            $label = $labelnuevo;
+                                        } else {
+                                            $label = $labeltraslado;
+                                        }
+                                        $edad = $util->calculaEdad($fila['fecha_nac']);
+                                        ?>
                                             <tr>
-                                                <td>OYANGUREN GIRON LUIS ENRIQUE</td>
-                                                <td>28</td>
-                                                <td>05-10</td>
-                                                <td>2020-10-04</td>
-                                                <td>2020-10-10</td>
-                                                <td><label class="label label-success">Nuevo</label></td>
+                                                <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] ?></td>
+                                                <td><?php echo $fila['centro_trabajo'] ?></td>
+                                                <td><?php echo $edad ?></td>
+                                                <td><?php echo $fila['fecha_inscripcion'] ?></td>
+                                                <td><?php echo $fila['email'] ?></td>
+                                                <td><?php echo $label ?></td>
                                                 <td><label class="label label-success">Activo</label></td>
                                                 <td>
                                                     <button type="button" class="btn btn-success btn-xs" title="Permisos"><i class="fa fa-user"></i></button>
                                                     <button type="button" class="btn btn-warning btn-xs" title="Eliminar"><i class="fa fa-trash"></i></button>
                                                 </td>
                                             </tr>
+                                            <?php
+                                        }
+                                        ?>
                                             <tr>
                                                 <td>DE LA CRUZ ESPINOZA ANDREA TATIANA</td>
                                                 <td>27</td>
