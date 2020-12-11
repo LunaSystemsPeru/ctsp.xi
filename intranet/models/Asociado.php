@@ -315,7 +315,7 @@ class Asociado
         $this->titulo = $resultado['titulo'];
         $this->registroSunedu = $resultado['registro_sunedu'];
         $this->tipo_documento = $resultado['id_tipo_documento'];
-        $this->tipo_registro = $resultado['id_tipo_registro'];
+        $this->tipo_registro = $resultado['id_tipo_inscripcion'];
     }
 
     public function actualizar()
@@ -333,7 +333,7 @@ class Asociado
     }
 
     public function verAsociados () {
-        $sql = "select a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion
+        $sql = "select a.id_asociado, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion
                 from asociados as a 
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
@@ -342,12 +342,12 @@ class Asociado
     }
 
     public function buscarAsociado () {
-        $sql = "select a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion
+        $sql = "select a.dni, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, a.ctsp, pdr.nombre as tipo_registro, a.celular, a.estado, a.email, a.id_tipo_inscripcion
                 from asociados as a 
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
                 where a.apellidos like '%".$this->apellido."%' or a.nombres like '%".$this->nombre."%' or a.ctsp = '".$this->ctsp."'";
-        return $this->c_conectar->get_Cursor($sql);
+                return $this->c_conectar->get_Cursor($sql);
     }
 
 }

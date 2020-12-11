@@ -148,7 +148,7 @@ $util = new Util();
                                             <td><?php echo $label ?></td>
                                             <td><label class="label label-warning">Pendiente</label></td>
                                             <td>
-                                                <button type="button" class="btn btn-default btn-xs" title="Ver Detalle"><i class="fa fa-user"></i></button>
+                                                <a href="det_asociado.php?idasociado=<?php echo $fila['id_asociado']?>" class="btn btn-default btn-xs" title="Ver Detalle"><i class="fa fa-user"></i></a>
                                             </td>
                                         </tr>
                                         <?php
