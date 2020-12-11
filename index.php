@@ -475,7 +475,7 @@
                     <p>Ingrese los datos para hacer la busqueda de un colegiado</p>
                 </div>
                 <div class="row">
-                    <form class="col-lg-12" method="post" action="controller/busqueda_colegiado.php">
+                    <form class="col-lg-12" method="post" action="resultado_colegiado.php">
                         <div class="form-row">
                             <div class="form-group col-md-3">
                                 <label>Nro Colegiatura</label>

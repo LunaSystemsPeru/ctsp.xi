@@ -1,9 +1,20 @@
 <?php
 require '../../models/Asociado.php';
+require '../../models/ParametrosDetalle.php';
 require '../../tools/Util.php';
+
 $asociado = new Asociado();
+$detalle = new ParametrosDetalle();
+
 $util = new Util();
+
+$asociado->setIdAsociado(filter_input(INPUT_GET, 'idasociado'));
+$asociado->obtenerDatos();
+
+$detalle->setIdDetalle($asociado->getTipoDocumento());
+$detalle->obtenerDatos();
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,7 +24,7 @@ $util = new Util();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Asociados | Sistema de Gestion - CTSP Region XI Ancash </title>
+    <title>Perfil del Asociado | Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
     <!-- Datatable -->
@@ -89,7 +100,7 @@ $util = new Util();
             <div class="row page-titles mx-0">
                 <div class="col-sm-6 p-md-0">
                     <div class="welcome-text">
-                        <h4>Listar Solicitudes</h4>
+                        <h4>Perfil del Asociado</h4>
                     </div>
                 </div>
                 <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
@@ -103,60 +114,35 @@ $util = new Util();
 
 
             <div class="row">
-                <div class="col-12">
+                <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12">
+                    <div class="card">
+                        <div class="text-center py-4 px-5 overlay-box" style="background-image: url(images/big/img1.jpg);">
+                            <div class="profile-photo">
+                                <img src="../../../images/asociados/perfil/<?php echo $asociado->getFoto()?>" width="100" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <h3 class="mt-3 mb-1 text-white"><?php echo $asociado->getNombre()?></h3>
+                            <p class="text-white mb-0"><?php echo $asociado->getApellido()?></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Tipo Documento</span> <strong class="text-muted"><?php echo $detalle->getNombre()?>	</strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Nro Documento</span> 		<strong class="text-muted"><?php echo $asociado->getDni()?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Fecha Nacimiento</span> <strong class="text-muted"><?php echo $asociado->getFechaNac()?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Edad</span> <strong class="text-muted"><?php echo $util->calculaEdad($asociado->getFechaNac())?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Nro Celular</span> <strong class="text-muted"><?php echo $asociado->getCelular()?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Email</span> <strong class="text-muted"><?php echo $asociado->getEmail()?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Centro de Trabajo</span> <strong class="text-muted"><?php echo $asociado->getCentroTrabajo()?></strong></li>
+                        </ul>
+                        <div class="card-footer border-0 mt-0">
+                            <button class="btn btn-primary btn-lg btn-block">
+                                <h4 class="m-0 text-white"><i class="fa fa-bell-o"></i> Reminder Alarm</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-xxl-8 col-lg-8 col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Solicitud de Inscripciones por Aprobar</h4>
-                            <a href="reg_asociado.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar</a>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table id="example2" class="display" style="width:100%">
-                                    <thead>
-                                    <tr>
-                                        <th>Apellidos y Nombres</th>
-                                        <th>Centro Trabajo</th>
-                                        <th>Edad</th>
-                                        <th>Fecha Afiliacion</th>
-                                        <th>Email</th>
-                                        <th>Condicion</th>
-                                        <th>Estado</th>
-                                        <th>Acciones</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php
-                                    $asociado->setEstado(0);
-                                    $aasociados = $asociado->verAsociados();
-                                    $labelnuevo = '<label class="label label-success">Nuevo</label>';
-                                    $labeltraslado = '<label class="label label-default">Traslado</label>';
-                                    $label = "";
-                                    foreach ($aasociados as $fila) {
-                                        if ($fila['id_tipo_inscripcion'] == 4) {
-                                            $label = $labelnuevo;
-                                        } else {
-                                            $label = $labeltraslado;
-                                        }
-                                        $edad = $util->calculaEdad($fila['fecha_nac']);
-                                        ?>
-                                        <tr>
-                                            <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] ?></td>
-                                            <td><?php echo $fila['centro_trabajo'] ?></td>
-                                            <td><?php echo $edad ?></td>
-                                            <td><?php echo $fila['fecha_inscripcion'] ?></td>
-                                            <td><?php echo $fila['email'] ?></td>
-                                            <td><?php echo $label ?></td>
-                                            <td><label class="label label-warning">Pendiente</label></td>
-                                            <td>
-                                                <a href="det_asociado.php?idasociado=<?php echo $fila['id_asociado']?>" class="btn btn-default btn-xs" title="Ver Detalle"><i class="fa fa-user"></i></a>
-                                            </td>
-                                        </tr>
-                                        <?php
-                                    }
-                                    ?>
-                                    </tbody>
-                                </table>
-                            </div>
+                    <button class="btn btn-success"> <i class="fa fa-check"> </i> Aprobar Solicitud</button>
                         </div>
                     </div>
                 </div>
@@ -207,6 +193,31 @@ $util = new Util();
 <!-- Svganimation scripts -->
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
+
+<script>
+    document.getElementById("input_file_perfil").onchange = function(e) {
+        var file = this.files[0];
+        var imagefile = file.type;
+        var match = ["image/jpeg", "image/png", "image/jpg"];
+        if (!((imagefile == match[0]) || (imagefile == match[1]) || (imagefile == match[2]))) {
+            $('#img_perfil').attr('src', 'noimage.png');
+            return false;
+        } else {
+            var reader = new FileReader();
+            reader.onload = imageIsLoaded_lado1;
+            reader.readAsDataURL(this.files[0]);
+        }
+
+    }
+
+    function imageIsLoaded_lado1(e) {
+        //$("#file_lado1").css("color", "green");
+        //$('#image_preview_lado1').css("display", "block");
+        $('#img_perfil').attr('src', e.target.result);
+        $('#img_perfil').attr('width', '100%');
+        //$('#previewing').attr('height', '300px');
+    }
+</script>
 </body>
 
 

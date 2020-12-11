@@ -1,3 +1,13 @@
+<?php
+require 'intranet/models/Asociado.php';
+
+$asociado = new Asociado();
+
+$asociado->setNombre(filter_input(INPUT_POST, 'input_nombres'));
+$asociado->setApellido(filter_input(INPUT_POST, 'input_apellidos'));
+$asociado->setCtsp(filter_input(INPUT_POST, 'input_ctsp'));
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,7 +21,8 @@
     <meta name="robots" content=""/>
     <meta name="description" content=""/>
     <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
-    <meta property="og:description" content="Requisitos de Colegiacion para Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
+    <meta property="og:description"
+          content="Requisitos de Colegiacion para Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
     <meta property="og:image" content=""/>
     <meta name="format-detection" content="telephone=no">
 
@@ -64,101 +75,83 @@
         <!-- Our Awesome Services -->
         <div class="section-full bg-white content-inner">
             <div class="container">
-                <div class="section-full doctor-stats-bx" style="background-image:url(images/background/bg10.jpg); background-repeat:no-repeat; background-position:bottom; ba">
+                <div class="section-full doctor-stats-bx"
+                     style="background-image:url(images/background/bg10.jpg); background-repeat:no-repeat; background-position:bottom; ba">
                     <div class="container">
                         <div class="section-head text-center ">
                             <h3 class="h3 text-uppercase">Buscar <span class="text-primary">Colegiado.</span></h3>
                             <p>Ingrese los datos para hacer la busqueda de un colegiado</p>
                         </div>
-                        <div class="row">
-                            <form class="col-lg-12" method="post" action="controller/busqueda_colegiado.php">
-                                <div class="form-row">
-                                    <div class="form-group col-md-3">
-                                        <label>Nro Colegiatura</label>
-                                        <input type="text" class="form-control" placeholder="999999" name="input_ctsp">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label>Apellidos</label>
-                                        <input type="text" class="form-control" placeholder="Apellidos" name="input_apellidos">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label>Nombre</label>
-                                        <input type="text" class="form-control" placeholder="Nombres" name="input_nombres">
-                                    </div>
-                                    <div class="form-group col-md-1">
-                                        <button type="submit" class="btn btn-primary">Buscar</button>
-                                    </div>
-
+                    </div>
+                    <div class="row">
+                        <form class="col-lg-12" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label>Nro Colegiatura</label>
+                                    <input type="text" class="form-control" placeholder="999999" name="input_ctsp">
                                 </div>
-                            </form>
-                        </div>
+                                <div class="form-group col-md-4">
+                                    <label>Apellidos</label>
+                                    <input type="text" class="form-control" placeholder="Apellidos"
+                                           name="input_apellidos">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control" placeholder="Nombres" name="input_nombres">
+                                </div>
+                                <div class="form-group col-md-1">
+                                    <button type="submit" class="btn btn-primary">Buscar</button>
+                                </div>
+
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="section-full content-inner doctor-stats-bx" >
-                    <div class="container">
 
-                        <div class="row">
-                            <div>
-                                <table id="example2" class="display" style="width:100%">
+                <div class="section-full content-inner ">
+                    <div class="container">
+                        <div class="section-head text-center ">
+                            <h3 class="h3 text-uppercase">Resultados</h3>
+                        </div>
+                        <div class="row col-lg-12">
+                            <div class="table-responsive">
+                                <table id="example2" class="table table-striped" style="width:100%">
                                     <thead>
                                     <tr>
                                         <th>Item</th>
-                                        <th>Fecha</th>
-                                        <th>Titulo</th>
-                                        <th>Telefono</th>
+                                        <th>Nro CTSP</th>
+                                        <th>Apellidos y Nombres</th>
+                                        <th>Fec. Inscripcion</th>
                                         <th>Estado</th>
                                         <th>Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>loyangureng</td>
-                                        <td>OYANGUREN GIRON LUIS ENRIQUE</td>
-                                        <td>leog.1992@gmail.com</td>
-                                        <td>936507153</td>
-                                        <td><label class="label label-success">Activo</label></td>
-                                        <td>
-                                            <button type="button" class="btn btn-info" title="Editar"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-success" title="Permisos"><i class="fa fa-user"></i></button>
-                                            <button type="button" class="btn btn-warning" title="Eliminar"><i class="fa fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Garrett Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>63</td>
-                                        <td>2011/07/25</td>
-                                        <td>$170,750</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ashton Cox</td>
-                                        <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
-                                        <td>66</td>
-                                        <td>2009/01/12</td>
-                                        <td>$86,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cedric Kelly</td>
-                                        <td>Senior Javascript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>22</td>
-                                        <td>2012/03/29</td>
-                                        <td>$433,060</td>
-                                    </tr>
+                                    <?php
+                                    $item =0;
+                                    $aasociados = $asociado->buscarAsociado();
+                                    foreach ($aasociados as $fila) {
+                                        $item++;
+                                        $label = '<label class="badge badge-success">Activo</label>';
+                                        if ($fila['estado'] == 0) {
+                                            $label = '<label class="badge badge-warning">No Habilitado</label>';
+                                        }
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $item?></td>
+                                            <td><?php echo $fila['ctsp'] ?></td>
+                                            <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] ?></td>
+                                            <td><?php echo $fila['fecha_inscripcion'] ?></td>
+                                            <td><?php echo $label ?></td>
+                                            <td>
+                                                <button type="button" class="btn btn-info" title="Ver Perfil"><i
+                                                            class="fa fa-user"></i></button>
+                                            </td>
+                                        </tr>
+                                    <?php
+                                    }
+                                    ?>
 
-                                    </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Username</th>
-                                        <th>Datos</th>
-                                        <th>Email</th>
-                                        <th>Telefono</th>
-                                        <th>Estado</th>
-                                        <th>Acciones</th>
-                                    </tr>
-                                    </tfoot>
                                 </table>
                             </div>
                         </div>
