@@ -4,8 +4,17 @@ require 'intranet/models/Asociado.php';
 $asociado = new Asociado();
 
 $asociado->setNombre(filter_input(INPUT_POST, 'input_nombres'));
+if ($asociado->getNombre() == "") {
+    $asociado->setNombre("-");
+}
 $asociado->setApellido(filter_input(INPUT_POST, 'input_apellidos'));
+if ($asociado->getApellido() == "") {
+    $asociado->setApellido("-");
+}
 $asociado->setCtsp(filter_input(INPUT_POST, 'input_ctsp'));
+if ($asociado->getCtsp() == "") {
+    $asociado->setCtsp("-");
+}
 
 ?>
 <!DOCTYPE html>

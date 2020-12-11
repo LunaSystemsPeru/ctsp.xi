@@ -347,7 +347,7 @@ class Asociado
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
                 where a.apellidos like '%".$this->apellido."%' or a.nombres like '%".$this->nombre."%' or a.ctsp = '".$this->ctsp."'";
-        return $this->c_conectar->get_Cursor($sql);
+                return $this->c_conectar->get_Cursor($sql);
     }
 
 }
