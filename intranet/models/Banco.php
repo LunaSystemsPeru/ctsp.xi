@@ -59,11 +59,11 @@ class Banco
 
     public function obtenerDatos()
     {
-        $sql = "select * from bancos 
-        where id_banco = '$this->idBanco'";
+        $sql = "select * from bancos where id_banco = '$this->idBanco'";//where id_banco = '$this->idBanco
         $resultado = $this->c_conectar->get_Row($sql);
         $this->nombre = $resultado['nombre'];
         $this->monto = $resultado['monto'];
+        echo $sql;
     }
 
     public function actualizar()
