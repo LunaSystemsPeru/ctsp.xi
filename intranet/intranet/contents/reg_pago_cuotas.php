@@ -104,25 +104,19 @@
                                 <form>
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
-                                            <label>Buscar por</label>
-                                            <select class="form-control">
-                                                <option>Nro Colegiatura</option>
-                                                <option>Nro DNI</option>
-                                                <option>Nro Carnet Extranjeria</option>
-                                                <option>Nro Cedula Identidad</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                            <label>Numero</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <label>Numero CTSP</label>
+                                            <input type="text" class="form-control" placeholder="">
                                         </div>
                                         <div class="form-group col-md-7">
-                                            <label>o escriba los Datos del colegiado y luego clic en la sugerencia</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <label>o escriba los Datos del colegiado y luego clic en la
+                                                sugerencia</label>
+                                            <input type="text" class="form-control" placeholder="" id="inputDatos">
                                         </div>
-                                        <div class="form-group col-md-1">
+                                        <div class="form-group col-md-2">
                                             <label>Cargar datos</label>
-                                            <button type="button" class="btn btn-primary" ><i class="fa fa-search"></i> Buscar</button>
+                                            <button type="button" class="btn btn-primary"><i class="fa fa-search"></i>
+                                                Buscar
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
@@ -181,23 +175,23 @@
                                 <div class="table-responsive">
                                     <table class="table " style="width:100%">
                                         <thead>
-                                            <tr>
-                                                <th>Fecha</th>
-                                                <th>Monto</th>
-                                                <th>Nro Meses</th>
-                                            </tr>
+                                        <tr>
+                                            <th>Fecha</th>
+                                            <th>Monto</th>
+                                            <th>Nro Meses</th>
+                                        </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td class="text-center">2020-10-04</td>
-                                                <td class="text-right">S/ 30.00</td>
-                                                <td class="text-right">3</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">2020-07-05</td>
-                                                <td class="text-right">S/ 30.00</td>
-                                                <td class="text-right">3</td>
-                                            </tr>
+                                        <tr>
+                                            <td class="text-center">2020-10-04</td>
+                                            <td class="text-right">S/ 30.00</td>
+                                            <td class="text-right">3</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2020-07-05</td>
+                                            <td class="text-right">S/ 30.00</td>
+                                            <td class="text-right">3</td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -280,10 +274,10 @@
 ***********************************-->
 <!-- Required vendors -->
 <script src="../../public/vendor/global/global.min.js"></script>
+
 <script src="../../public/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 <script src="../../public/js/deznav-init.js"></script>
 <script src="../../public/js/custom.min.js"></script>
-
 
 <!-- Datatable -->
 <script src="../../public/vendor/datatables/js/jquery.dataTables.min.js"></script>
@@ -292,6 +286,44 @@
 <!-- Svganimation scripts -->
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
+
+<link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+
+<script>
+    $(function () {
+        var availableTags = [
+            "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"
+        ];
+        $("#inputDatos").autocomplete({
+            source: '../controller/getJson/lista_Asociados.php'
+        });
+    });
+
+</script>
 </body>
 
 

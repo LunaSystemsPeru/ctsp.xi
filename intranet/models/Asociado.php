@@ -296,6 +296,7 @@ class Asociado
         $sql = "select * from asociados 
         where id_asociado = '$this->idAsociado'";
         $resultado = $this->c_conectar->get_Row($sql);
+        if ($resultado) {
         $this->dni = $resultado['dni'];
         $this->apellido = $resultado['apellidos'];
         $this->nombre = $resultado['nombres'];
@@ -316,6 +317,18 @@ class Asociado
         $this->registroSunedu = $resultado['registro_sunedu'];
         $this->tipo_documento = $resultado['id_tipo_documento'];
         $this->tipo_registro = $resultado['id_tipo_inscripcion'];
+        }
+    }
+
+    public function validarCTSP()
+    {
+        $sql = "select id_asociado 
+        from asociados 
+        where ctsp = '$this->ctsp'";
+        $resultado = $this->c_conectar->get_Row($sql);
+        if ($resultado) {
+            $this->idAsociado = $resultado['id_asociado'];
+        }
     }
 
     public function actualizar()
@@ -338,6 +351,15 @@ class Asociado
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
                 where a.estado = '$this->estado'";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
+    public function getAsociadosJson ($termino) {
+        $sql = "select a.id_asociado, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion  
+                from asociados as a 
+                inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
+                inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
+                where a.estado = '$this->estado' and concat(a.apellidos, ' ', a.nombres) like '%$termino%' ";
         return $this->c_conectar->get_Cursor($sql);
     }
 
