@@ -127,6 +127,7 @@ class BancoMovimiento
         return $this->c_conectar->get_Cursor($sql);
     }
 
+
     public function obtenerSaldo($year, $month)
     {
         $saldo = 0;
@@ -137,13 +138,15 @@ class BancoMovimiento
         return $saldo;
     }
 
-    public function verFilas($periodo)
+    public function verFilas($periodo)//$periodo
     {
         $sql = "select bm.fecha, bm.concepto, bm.id_movimiento, bm.ingresa, bm.sale 
                 from banco_movimientos as bm 
                 where bm.id_banco = '$this->idBanco' and concat(year(bm.fecha),'-',LPAD(month(bm.fecha), 2, '0'))  = '$periodo'
                 order by bm.fecha asc";
+        //echo $sql;
         return $this->c_conectar->get_Cursor($sql);
     }
 
 }
+//'$this->idBanco'

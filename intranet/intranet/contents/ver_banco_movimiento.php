@@ -12,6 +12,7 @@ $periodo = date("Y-m");
 
 if (filter_input(INPUT_GET, 'periodo')) {
     $periodo = filter_input(INPUT_GET, 'periodo');
+    //echo $periodo;
 }
 
 $movimiento->setIdBanco($banco->getIdBanco());
@@ -36,6 +37,10 @@ $year = date("Y");
     <link href="../../public/css/style.css" rel="stylesheet">
 
 </head>
+
+
+
+
 
 <body>
 
@@ -124,9 +129,11 @@ $year = date("Y");
                             <button class="btn btn-facebook" data-toggle="modal" data-target="#basicModal">
                                 <i class="fa fa-plus"></i> Agregar Movimiento <i class="fa fa-dollar"></i>
                             </button>
+
                             <div class="col-lg-3">
                                 <label>Sel. Periodo</label>
-                                <select class="form-control" name="select_periodo">
+                                <select class="form-control" name="select_periodo" id="select_periodo" onchange="obtenerPeriodo()">
+                                    <option value="">Select Periodo</option>
                                     <?php
                                     $aperiodos = $movimiento->verPeriodos($year);
                                     foreach ($aperiodos as $fila) {
@@ -170,7 +177,7 @@ $year = date("Y");
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <input type="hidden" value="<?php echo $banco->getIdBanco() ?>" name="hidden_banco">
+                                                <input type="hidden" value="<?php echo $banco->getIdBanco() ?>" name="hidden_banco" id="hidden_banco">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                                 <button type="submit" class="btn btn-primary">Guardar</button>
                                             </div>
@@ -181,7 +188,7 @@ $year = date("Y");
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="example" class="display" style="min-width: 845px">
+                                <table id="example" class="table-bordered" style="min-width: 845px">
                                     <thead>
                                     <tr>
                                         <th>Item</th>
@@ -301,6 +308,25 @@ $year = date("Y");
 <!-- Svganimation scripts -->
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
+
+<script>
+    function obtenerPeriodo() {
+
+            var selperiodo = $("#select_periodo").val();
+            var selidbanco=$("#hidden_banco").val();
+
+            //enviar variables obtenidas al controlador
+        window.location="ver_banco_movimiento.php?periodo="+selperiodo+"&idbanco="+selidbanco;
+
+
+
+    }
+
+
+
+</script>
+
+
 </body>
 
 
