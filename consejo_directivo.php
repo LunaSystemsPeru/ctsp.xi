@@ -158,7 +158,7 @@
 						</div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
 							<div class="dez-box team-bx1">
-								<div class="dez-media"> <a href="#"><img src="images/our-team/small/pic2.jpg" alt=""></a> </div>
+								<div class="dez-media"> <a href="#"><img src="images/our-team/small/vicedecana2.jpg" alt=""></a> </div>
 								<div class="dez-info p-t20">
 									<h4 class="dez-title m-b10"><a href="#">Lic. T. S. Nancy Elizabeth Diestra  Pastor </a></h4>
 									<h6 class="dez-title">Vice Decana</h6>
