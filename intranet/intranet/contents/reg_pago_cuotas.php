@@ -105,7 +105,7 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label>Numero CTSP</label>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" class="form-control" id="inputCtsp">
                                         </div>
                                         <div class="form-group col-md-7">
                                             <label>o escriba los Datos del colegiado y luego clic en la
@@ -114,7 +114,8 @@
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Cargar datos</label>
-                                            <button type="button" class="btn btn-primary"><i class="fa fa-search"></i>
+                                            <button type="button" class="btn btn-primary" onclick="buscarColegiado()"><i
+                                                        class="fa fa-search"></i>
                                                 Buscar
                                             </button>
                                         </div>
@@ -132,31 +133,31 @@
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label>Nro Colegiatura</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <input type="text" class="form-control" id="inputNroCTSP" readonly>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Nro Doc</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <input type="text" class="form-control" id="inputNroDoc" readonly>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label>Apellidos</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <input type="text" class="form-control" id="inputApellidos" readonly>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label>Nombres</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <input type="text" class="form-control" id="inputNombres" readonly>
                                         </div>
                                         <div class="form-group col-md-12">
                                             <label>Domicilio Actual</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" id="inputDomicilio" readonly>
                                         </div>
                                         <div class="form-group col-md-3">
                                             <label>Fecha Nacimiento</label>
-                                            <input type="date" class="form-control">
+                                            <input type="date" class="form-control" id="inputFechaNacimiento" readonly>
                                         </div>
                                         <div class="form-group col-md-9">
                                             <label>Centro Trabajo Actual</label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" id="inputTrabajo" readonly>
                                         </div>
                                     </div>
                                 </form>
@@ -202,41 +203,45 @@
 
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-body">
-                            <div class="basic-form">
-                                <form>
+                        <form method="post" action="../controller/pagocuotas.php">
+                            <div class="card-body">
+                                <div class="basic-form">
+
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label>Cuotas Pendientes</label>
-                                            <input type="text" class="form-control" placeholder="" disabled>
+                                            <input type="number" class="form-control" id="inputCuotasPendientes" readonly>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Fecha Pago</label>
-                                            <input type="date" class="form-control" placeholder="" disabled>
+                                            <input type="date" class="form-control" id="inputFechaPago" value="<?php echo date("Y-m-d") ?>">
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Nro Cuotas a Pagar</label>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="number" class="form-control" id="inputCuotasPagadas" onkeyup="CalcularCuotas()">
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Monto Total</label>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" class="form-control" id="inputMontoPagar">
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Destino</label>
-                                            <select class="form-control">
+                                            <select class="form-control" id="selectDestino">
                                                 <option>Banco</option>
                                                 <option>Caja Efectivo</option>
                                             </select>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Nro Operacion</label>
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" class="form-control" id="inputNroOperacion">
                                         </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
-                        </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Guardar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -294,34 +299,36 @@
 
 <script>
     $(function () {
-        var availableTags = [
-            "ActionScript",
-            "AppleScript",
-            "Asp",
-            "BASIC",
-            "C",
-            "C++",
-            "Clojure",
-            "COBOL",
-            "ColdFusion",
-            "Erlang",
-            "Fortran",
-            "Groovy",
-            "Haskell",
-            "Java",
-            "JavaScript",
-            "Lisp",
-            "Perl",
-            "PHP",
-            "Python",
-            "Ruby",
-            "Scala",
-            "Scheme"
-        ];
         $("#inputDatos").autocomplete({
-            source: '../controller/getJson/lista_Asociados.php'
+            source: '../controller/getJson/lista_Asociados.php',
+            minLength: 2,
+            select: function (event, ui) {
+                $("#inputCtsp").val(ui.item.nroctsp);
+            }
         });
     });
+
+    function buscarColegiado() {
+        var nroCtsp = $("#inputCtsp").val();
+        $("#inputDatos").val("");
+        $("#inputCtsp").val("");
+        $.post("../controller/getJson/datos_asociado.php", {inputCTSP: nroCtsp})
+            .done(function (data) {
+                var jdata = JSON.parse(data);
+                $("#inputApellidos").val(jdata.apellidos);
+                $("#inputNombres").val(jdata.nombres);
+                $("#inputNroCTSP").val(jdata.ctsp);
+                $("#inputDomicilio").val(jdata.domicilio);
+                $("#inputFechaNacimiento").val(jdata.fechanacimiento);
+                $("#inputTrabajo").val(jdata.trabajo);
+            });
+    }
+
+    function CalcularCuotas(){
+        var nrocuotas = $("#inputCuotasPagadas").val();
+        var montoCuota = nrocuotas * 10;
+        $("#inputMontoPagar").val(montoCuota);
+    }
 
 </script>
 </body>

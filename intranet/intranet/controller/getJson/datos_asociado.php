@@ -3,7 +3,7 @@ require '../../../models/Asociado.php';
 
 $asociado = new Asociado();
 
-$asociado->setCtsp(filter_input(INPUT_GET, 'inputCTSP'));
+$asociado->setCtsp(filter_input(INPUT_POST, 'inputCTSP'));
 $asociado->validarCTSP();
 
 $aresultado = Array();

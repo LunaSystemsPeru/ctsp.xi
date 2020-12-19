@@ -8,12 +8,13 @@ $termino = filter_input(INPUT_GET, 'term');
 
 $respuesta = $asociado->getAsociadosJson($termino);
 
-$arrayrespuesta = Array();
+$arrayrespuesta = array();
 
 foreach ($respuesta as $item) {
     $arrayrespuesta[] = [
-        "value" => $item['apellidos']. " " . $item['nombre'],
-    "idasociado" => $item['id_asociado']
+        "value" => $item['apellidos'] . " " . $item['nombres'],
+        "idasociado" => $item['id_asociado'],
+        "nroctsp" => $item['ctsp']
     ];
 }
 

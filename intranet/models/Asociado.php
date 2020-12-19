@@ -355,7 +355,7 @@ class Asociado
     }
 
     public function getAsociadosJson ($termino) {
-        $sql = "select a.id_asociado, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion  
+        $sql = "select a.id_asociado, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion, a.ctsp  
                 from asociados as a 
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
