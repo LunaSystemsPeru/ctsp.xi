@@ -1,12 +1,12 @@
 <?php
 require '../../models/Comunicados.php';
 
-$comunica = new Comunicados();
+$comunica = new Comunicado();
 
 $comunica->generarCodigo();
 $comunica->setFecha(filter_input(INPUT_POST, 'input_fecha'));
-$comunica->setTitulo();Nombre(filter_input(INPUT_POST, 'input_titulo'));
-$afile = $_FILES["input_imagen"];
+$comunica->setTitulo(filter_input(INPUT_POST, 'input_titulo'));
+$afile = $_FILES["input_archivo"];
 
 //cargar imagen y enviar a carpeta.
 if (isset($afile)) {

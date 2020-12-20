@@ -109,9 +109,9 @@ class SolicitudHabilidad
     public function obtenerDatos()
     {
         $sql = "select * from solicitud_habilidad 
-        where id_solicitud = '$this->idSolicitud'" ;
+        where id_solicitud = '$this->idSolicitud'";
         $resultado = $this->c_conectar->get_Row($sql);
-         $this->idAsociado = $resultado['id_asociado'];
+        $this->idAsociado = $resultado['id_asociado'];
         $this->fechaSolicitud = $resultado['fecha_solicitud'];
         $this->fechaUltimoPago = $resultado['fecha_ultimo_pago'];
         $this->pago = $resultado['pago'];
@@ -122,14 +122,14 @@ class SolicitudHabilidad
     public function actualizar()
     {
         $sql = "UPDATE solicitud_habilidad
-                SET  voucher = '$this->voucher' WHERE  id_solicitud = '$this->idSolicitud' " ;
-         return $this->c_conectar->ejecutar_idu($sql);
+                SET  voucher = '$this->voucher' WHERE  id_solicitud = '$this->idSolicitud' ";
+        return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function eliminar()
     {
         $sql = "DELETE FROM solicitud_habilidad
-                WHERE  id_solicitud = '$this->idSolicitud'  " ; 
+                WHERE  id_solicitud = '$this->idSolicitud'  ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 

@@ -192,15 +192,19 @@ $banco = new Banco();
                         </div>
                     </div>
                 </div>
+                <div id="alertRespuesta" class="col-md-12">
+
+                </div>
 
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header">
-                            <h4 class="text-tittle">Emitir Constancia</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="basic-form">
-                                <form>
+                        <form method="post" action="../controller/generar_certificado_habilitado.php">
+                            <input type="hidden" name="inputIdAsociado" id="inputIdAsociado">
+                            <div class="card-header">
+                                <h4 class="text-tittle">Emitir Constancia</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form">
                                     <div class="form-row">
                                         <div class="form-group col-md-3">
                                             <label>Ultimo Pago:</label>
@@ -233,14 +237,15 @@ $banco = new Banco();
                                             </select>
                                         </div>
                                     </div>
-                                </form>
+
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-success"><i class="fa fa-file-pdf-o"></i> Generar
-                                Certificado
-                            </button>
-                        </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-facebook" id="buttonGrabar" disabled><i class="fa fa-file-pdf-o"></i> Generar
+                                    Certificado
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
@@ -311,39 +316,41 @@ $banco = new Banco();
 
     function buscarColegiado() {
         var nroCtsp = $("#inputCtsp").val();
-        $("#inputDatos").val("");
-        $("#inputCtsp").val("");
-        $.post("../controller/getJson/datos_asociado.php", {inputCTSP: nroCtsp})
-            .done(function (data) {
-                var jdata = JSON.parse(data);
-                $("#inputApellidos").val(jdata.apellidos);
-                $("#inputNombres").val(jdata.nombres);
-                $("#inputNroCTSP").val(jdata.ctsp);
-                $("#inputDomicilio").val(jdata.domicilio);
-                $("#inputFechaNacimiento").val(jdata.fechanacimiento);
-                $("#inputTrabajo").val(jdata.trabajo);
-                $("#inputIdAsociado").val(jdata.idasociado);
-                $("#inputUltimoPago").val(jdata.ultimopago);
-                var diasdiferencia = jdata.diasdiferencia;
+        if (nroCtsp != "") {
+            $("#inputDatos").val("");
+            $("#inputCtsp").val("");
+            $.post("../controller/getJson/datos_asociado.php", {inputCTSP: nroCtsp})
+                .done(function (data) {
 
-                if (diasdiferencia < 125) {
-                    alert("EL ASOCIADO NO COMPLE CON LOS TRES MESES MINIMOS, POR FAVOR PONERSE ALDIA CON LOS PAGOS")
-                } else {
+                    var jdata = JSON.parse(data);
+                    $("#inputApellidos").val(jdata.apellidos);
+                    $("#inputNombres").val(jdata.nombres);
+                    $("#inputNroCTSP").val(jdata.ctsp);
+                    $("#inputDomicilio").val(jdata.domicilio);
+                    $("#inputFechaNacimiento").val(jdata.fechanacimiento);
+                    $("#inputTrabajo").val(jdata.trabajo);
+                    $("#inputIdAsociado").val(jdata.idasociado);
+                    $("#inputUltimoPago").val(jdata.ultimopago);
+                    var diasdiferencia = jdata.diasdiferencia;
 
-                }
-            });
+                    if (parseInt(diasdiferencia) < 90) {
+                        $("#alertRespuesta").html('<div class="alert alert-success solid "><strong>HABILITADO!</strong> Asociado al dia en sus pagos.</div>');
+                        document.getElementById("buttonGrabar").disabled=false;
+                    } else {
+                        $("#alertRespuesta").html('<div class="alert alert-danger solid "><strong>NO HABILITADO!</strong> Asociado no cumple con los tres meses minimos.</div>');
+                        document.getElementById("buttonGrabar").disabled=true;
+                    }
+
+                });
 
 
-        $.post("../controller/getJson/pagos_asociado.php", {inputCTSP: nroCtsp})
-            .done(function (data) {
-                $("#tablaPagos").html(data);
-            });
-    }
-
-    function CalcularCuotas() {
-        var nrocuotas = $("#inputCuotasPagadas").val();
-        var montoCuota = nrocuotas * 10;
-        $("#inputMontoPagar").val(montoCuota);
+            $.post("../controller/getJson/pagos_asociado.php", {inputCTSP: nroCtsp})
+                .done(function (data) {
+                    $("#tablaPagos").html(data);
+                });
+        } else {
+            alert("POR FAVOR SELECCIONE A UN(A) ASOCIADO(A)")
+        }
     }
 
 </script>

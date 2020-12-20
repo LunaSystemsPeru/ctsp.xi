@@ -6,16 +6,23 @@ $asociado = new Asociado();
 $asociado->setCtsp(filter_input(INPUT_POST, 'inputCTSP'));
 $asociado->validarCTSP();
 
-$aresultado = Array();
+$aresultado = array();
 
 if ($asociado->getIdAsociado()) {
     $asociado->obtenerDatos();
 
     $date1 = new DateTime($asociado->getUltimoPago());
     $date2 = new DateTime(date("Y-m-d"));
-    $diff = $date1->diff($date2);
+    $diff = $date2->diff($date1);
 
-    $diasdesdepago = $diff;
+    $fecha_actual = strtotime(date("d-m-Y"));
+    $fecha_entrada = strtotime($asociado->getUltimoPago());
+
+    if ($fecha_actual < $fecha_entrada) {
+        $diasdesdepago = 0;
+    } else {
+        $diasdesdepago = $diff->days;
+    }
 
     $aresultado = [
         "success" => true,

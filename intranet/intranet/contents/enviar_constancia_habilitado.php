@@ -1,6 +1,8 @@
 <?php
-require '../../models/Comunicados.php';
-$comunicado = new Comunicado();
+require '../../models/SolicitudHabilidad.php';
+$constancia = new SolicitudHabilidad();
+$constancia->setIdSolicitud(filter_input(INPUT_GET, 'idSolicitud'));
+$constancia->obtenerDatos();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -11,7 +13,7 @@ $comunicado = new Comunicado();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Comunicados | Sistema de Gestion - CTSP Region XI Ancash </title>
+    <title>Revisar Constancia de Habilitados | Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
     <!-- Datatable -->
@@ -87,13 +89,13 @@ $comunicado = new Comunicado();
             <div class="row page-titles mx-0">
                 <div class="col-sm-6 p-md-0">
                     <div class="welcome-text">
-                        <h4>Listar Comunicados</h4>
+                        <h4>Constancia Habilitado</h4>
                     </div>
                 </div>
                 <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">SG</a></li>
-                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Comunicados</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Usuarios</a></li>
                     </ol>
                 </div>
             </div>
@@ -101,95 +103,28 @@ $comunicado = new Comunicado();
 
 
             <div class="row">
-                <div class="col-12">
+                <div class="col-4">
                     <div class="card">
-                        <div class="card-header">
-                            <button type="submit" class="btn btn-facebook" data-toggle="modal" data-target=".bd-example-modal-lg"> <i class="fa fa-plus"></i> Agregar</button>
-                            <div class="form-group">
-                                <label>Buscar Mes</label>
-                                <select>
-                                    <option>2020-11</option>
-                                    <option>2020-11</option>
-                                    <option>2020-11</option>
-                                    <option>2020-11</option>
-                                </select>
-                            </div>
-
-                        </div>
                         <div class="card-body">
-                            <div class="table-responsive">
-                                <table id="example" class="display" style="min-width: 845px">
-                                    <thead>
-                                    <tr>
-                                        <th>Item</th>
-                                        <th>Fecha</th>
-                                        <th>Comunicado</th>
-                                        <th>Acciones</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php
-                                    $acomunicados = $comunicado->verComunicados('12'. '2020');
-                                    foreach ($acomunicados as $item) {
-                                        ?>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>2020-11-16</td>
-                                            <td>COMUNICADO AL DIRECTOR REGIONAL DE SALUD ANCASH</td>
-                                            <td>
-                                                <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
-                                                <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
-                                            </td>
-                                        </tr>
-                                    <?php
-                                    }
-                                    ?>
-
-
-                                    </tbody>
-                                </table>
-                            </div>
+                            <a href="reg_constancia_habilitado.php" class="btn btn-google" ><i class="fa fa-arrow-left"></i> Retornar</a>
+                            <button type="button"
+                                    class="btn btn-warning"><i class="fa fa-envelope"></i> Enviar por
+                                Email
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <form method="POST" action="../controller/comunicados.php" enctype="multipart/form-data">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Agregar Comunicado</h5>
-                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="basic-form">
-                                    <div class="form-row">
-                                        <div class="form-group col-md-12">
-                                            <label>Titulo Comunicado</label>
-                                            <input type="text" class="form-control" name="input_titulo" required>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label>Fecha</label>
-                                            <input type="date" class="form-control" name="input_fecha" required>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label>Imagen</label>
-                                            <input type="file" class="form-control" name='input_archivo' id="input_archivo" required>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-close"></i> Cerrar</button>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
-                            </div>
-                            </form>
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <embed src="../../reports/rptConstanciaHabilidad.php?idSolicitud=<?php echo $constancia->getIdSolicitud() ?>"
+                                   width="100%" height="500px">
                         </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
     </div>
     <!--**********************************
@@ -237,7 +172,63 @@ $comunicado = new Comunicado();
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
 
+<link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
 
+
+<script>
+    $(function () {
+        $("#inputDatos").autocomplete({
+            source: '../controller/getJson/lista_Asociados.php',
+            minLength: 2,
+            select: function (event, ui) {
+                $("#inputCtsp").val(ui.item.nroctsp);
+            }
+        });
+    });
+
+    function buscarColegiado() {
+        var nroCtsp = $("#inputCtsp").val();
+        if (nroCtsp != "") {
+            $("#inputDatos").val("");
+            $("#inputCtsp").val("");
+            $.post("../controller/getJson/datos_asociado.php", {inputCTSP: nroCtsp})
+                .done(function (data) {
+
+                    var jdata = JSON.parse(data);
+                    $("#inputApellidos").val(jdata.apellidos);
+                    $("#inputNombres").val(jdata.nombres);
+                    $("#inputNroCTSP").val(jdata.ctsp);
+                    $("#inputDomicilio").val(jdata.domicilio);
+                    $("#inputFechaNacimiento").val(jdata.fechanacimiento);
+                    $("#inputTrabajo").val(jdata.trabajo);
+                    $("#inputIdAsociado").val(jdata.idasociado);
+                    $("#inputUltimoPago").val(jdata.ultimopago);
+                    var diasdiferencia = jdata.diasdiferencia;
+
+                    if (parseInt(diasdiferencia) < 90) {
+                        $("#alertRespuesta").html('<div class="alert alert-success solid "><strong>HABILITADO!</strong> Asociado al dia en sus pagos.</div>');
+                        document.getElementById("buttonGrabar").disabled = false;
+                    } else {
+                        $("#alertRespuesta").html('<div class="alert alert-danger solid "><strong>NO HABILITADO!</strong> Asociado no cumple con los tres meses minimos.</div>');
+                        document.getElementById("buttonGrabar").disabled = true;
+                    }
+
+                });
+
+
+            $.post("../controller/getJson/pagos_asociado.php", {inputCTSP: nroCtsp})
+                .done(function (data) {
+                    $("#tablaPagos").html(data);
+                });
+        } else {
+            alert("POR FAVOR SELECCIONE A UN(A) ASOCIADO(A)")
+        }
+    }
+
+</script>
 </body>
 
 
