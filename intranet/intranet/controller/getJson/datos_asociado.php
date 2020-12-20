@@ -11,6 +11,12 @@ $aresultado = Array();
 if ($asociado->getIdAsociado()) {
     $asociado->obtenerDatos();
 
+    $date1 = new DateTime($asociado->getUltimoPago());
+    $date2 = new DateTime(date("Y-m-d"));
+    $diff = $date1->diff($date2);
+
+    $diasdesdepago = $diff;
+
     $aresultado = [
         "success" => true,
         "idasociado" => $asociado->getIdAsociado(),
@@ -20,7 +26,8 @@ if ($asociado->getIdAsociado()) {
         "domicilio" => $asociado->getDomicilio(),
         "trabajo" => $asociado->getCentroTrabajo(),
         "fechanacimiento" => $asociado->getFechaNac(),
-        "ultimopago" => $asociado->getUltimoPago()
+        "ultimopago" => $asociado->getUltimoPago(),
+        "diasdiferencia" => $diasdesdepago
     ];
 
 } else {

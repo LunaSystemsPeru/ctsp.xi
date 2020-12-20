@@ -14,7 +14,7 @@ class Cuota
     private $nota;
     private $imgdeposito;
     private $idMovimiento;
-    private $periodo;
+    private $nrocuotas;
 
     private $c_conectar;
 
@@ -94,16 +94,21 @@ class Cuota
         $this->idMovimiento = $idMovimiento;
     }
 
-    public function getPeriodo()
+    /**
+     * @return mixed
+     */
+    public function getNrocuotas()
     {
-        return $this->periodo;
+        return $this->nrocuotas;
     }
 
-    public function setPeriodo($periodo)
+    /**
+     * @param mixed $nrocuotas
+     */
+    public function setNrocuotas($nrocuotas)
     {
-        $this->periodo = $periodo;
+        $this->nrocuotas = $nrocuotas;
     }
-
 
     public function generarCodigo()
     {
@@ -113,7 +118,7 @@ class Cuota
 
     public function insertar()
     {
-        $sql = "insert into cuotas values ('$this->idCuota', '$this->idAsociado', '$this->fecha', '$this->monto', '$this->nota', '$this->imgdeposito', '$this->idMovimiento', '$this->periodo')";
+        $sql = "insert into cuotas values ('$this->idCuota', '$this->idAsociado', '$this->fecha', '$this->monto', '$this->nota', '$this->imgdeposito', '$this->idMovimiento', '$this->nrocuotas')";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
@@ -128,7 +133,7 @@ class Cuota
         $this->nota = $resultado['nota'];
         $this->imgdeposito = $resultado['imgdeposito'];
         $this->idMovimiento = $resultado['id_movimiento'];
-        $this->periodo = $resultado['periodo'];
+        $this->nrocuotas = $resultado['nrocuotas'];
     }
 
     public function actualizar()
@@ -143,6 +148,15 @@ class Cuota
         $sql = "DELETE FROM cuotas
                 WHERE  id_cuota = '$this->idCuota'  " ; 
         return $this->c_conectar->ejecutar_idu($sql);
+    }
+
+    public function verPagos()
+    {
+        $sql = "select fecha, monto, nrocuotas  
+                from cuotas 
+                where id_asociado = '$this->idAsociado' 
+                order by fecha asc";
+        return $this->c_conectar->get_Cursor($sql);
     }
 
 }

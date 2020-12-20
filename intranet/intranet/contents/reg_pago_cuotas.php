@@ -1,3 +1,7 @@
+<?php
+require '../../models/Banco.php';
+$banco = new Banco();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -173,7 +177,7 @@
                         </div>
                         <div class="card-body">
                             <div class="basic-form">
-                                <div class="table-responsive">
+                                <div class="table-responsive" id="tablaPagos">
                                     <table class="table " style="width:100%">
                                         <thead>
                                         <tr>
@@ -182,18 +186,6 @@
                                             <th>Nro Meses</th>
                                         </tr>
                                         </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td class="text-center">2020-10-04</td>
-                                            <td class="text-right">S/ 30.00</td>
-                                            <td class="text-right">3</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">2020-07-05</td>
-                                            <td class="text-right">S/ 30.00</td>
-                                            <td class="text-right">3</td>
-                                        </tr>
-                                        </tbody>
                                     </table>
                                 </div>
                             </div>
@@ -203,10 +195,10 @@
 
                 <div class="col-12">
                     <div class="card">
-                        <form method="post" action="../controller/pagocuotas.php">
+                        <form method="post" action="../controller/pago_cuotas.php">
                             <div class="card-body">
                                 <div class="basic-form">
-
+                                    <input type="hidden" id="inputIdAsociado" name="inputIdAsociado">
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
                                             <label>Cuotas Pendientes</label>
@@ -214,26 +206,32 @@
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Fecha Pago</label>
-                                            <input type="date" class="form-control" id="inputFechaPago" value="<?php echo date("Y-m-d") ?>">
+                                            <input type="date" class="form-control" id="inputFechaPago" name="inputFechaPago" value="<?php echo date("Y-m-d") ?>">
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Nro Cuotas a Pagar</label>
-                                            <input type="number" class="form-control" id="inputCuotasPagadas" onkeyup="CalcularCuotas()">
+                                            <input type="number" class="form-control" id="inputCuotasPagadas" name="inputCuotasPagadas" onkeyup="CalcularCuotas()">
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Monto Total</label>
-                                            <input type="text" class="form-control" id="inputMontoPagar">
+                                            <input type="text" class="form-control" id="inputMontoPagar" name="inputMontoPagar">
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Destino</label>
-                                            <select class="form-control" id="selectDestino">
-                                                <option>Banco</option>
-                                                <option>Caja Efectivo</option>
+                                            <select class="form-control" id="selectDestino" name="selectDestino">
+                                                <?php
+                                                $abanco = $banco->verFilas();
+                                                foreach ($abanco as $item) {
+                                                    ?>
+                                                    <option value="<?php echo $item['id_banco'] ?>"><?php echo $item['nombre'] ?></option>
+                                                <?php
+                                                }
+                                                ?>
                                             </select>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <label>Nro Operacion</label>
-                                            <input type="text" class="form-control" id="inputNroOperacion">
+                                            <input type="text" class="form-control" id="inputNroOperacion" name="inputNroOperacion">
                                         </div>
                                     </div>
                                 </div>
@@ -321,6 +319,13 @@
                 $("#inputDomicilio").val(jdata.domicilio);
                 $("#inputFechaNacimiento").val(jdata.fechanacimiento);
                 $("#inputTrabajo").val(jdata.trabajo);
+                $("#inputIdAsociado").val(jdata.idasociado);
+            });
+
+
+        $.post("../controller/getJson/pagos_asociado.php", {inputCTSP: nroCtsp})
+            .done(function (data) {
+                $("#tablaPagos").html(data);
             });
     }
 
