@@ -1,3 +1,10 @@
+<?php
+require 'intranet/models/Curso.php';
+require 'intranet/models/Noticias.php';
+
+$curso = new Curso();
+$noticias = new Noticias();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -506,39 +513,23 @@
                 </div>
                 <div class="section-content ">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-                            <div class="dez-box">
-                                <div class="dez-media"><a href="#"><img src="images/our-services/service/pic1.jpg" alt=""></a></div>
-                                <div class="dez-info p-a30 border-1">
-                                    <h4 class="dez-title m-t0"><a href="#">Seguridad Y Salud Ocupacional en tiempos de COVID-19</a></h4>
-                                    <div class="dez-separator bg-primary"></div>
-                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius. </p>
-                                    <a href="#" class="site-button-link black">Estoy Interesado <i class="fa fa-long-arrow-right"></i></a>
+                        <?php
+                        $acursos = $curso->verCursosActivos();
+                        foreach ($acursos as $fila) {
+                            ?>
+                            <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+                                <div class="dez-box">
+                                    <div class="dez-media"><a href="detalle_curso.php?idcurso=<?php echo $fila['id_curso'] ?>"><img src="images/cursos/<?php echo $fila['imagen'] ?>" alt=""></a></div>
+                                    <div class="dez-info p-a30 border-1">
+                                        <h4 class="dez-title m-t0"><a href="detalle_curso.php?idcurso=<?php echo $fila['id_curso'] ?>"><?php echo $fila['nombre'] ?></a></h4>
+                                        <div class="dez-separator bg-primary"></div>
+                                        <a href="detalle_curso.php?idcurso=<?php echo $fila['id_curso'] ?>" class="site-button-link black">Estoy Interesado <i class="fa fa-long-arrow-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-                            <div class="dez-box">
-                                <div class="dez-media"><a href="#"><img src="images/our-services/service/pic1.jpg" alt=""></a></div>
-                                <div class="dez-info p-a30 border-1">
-                                    <h4 class="dez-title m-t0"><a href="#">Auditoria SUNAFIL</a></h4>
-                                    <div class="dez-separator bg-primary"></div>
-                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius. </p>
-                                    <a href="#" class="site-button-link black">Estoy Interesado <i class="fa fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-                            <div class="dez-box">
-                                <div class="dez-media"><a href="#"><img src="images/our-services/service/pic1.jpg" alt=""></a></div>
-                                <div class="dez-info p-a30 border-1">
-                                    <h4 class="dez-title m-t0"><a href="#">Dental Fillings</a></h4>
-                                    <div class="dez-separator bg-primary"></div>
-                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius. </p>
-                                    <a href="#" class="site-button-link black">Read More <i class="fa fa-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -552,25 +543,32 @@
                 </div>
                 <div class="section-content ">
                     <div class="blog-carousel owl-carousel owl-theme owl-btn-1 primary owl-btn-center-lr owl-dots-black-full">
-                        <div class="item">
-                            <div class="dez-box">
-                                <div class="dez-media">
-                                    <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
-                                </div>
-                                <div class="dez-info p-a20 border-1">
-                                    <div class="dez-post-meta ">
-                                        <ul>
-                                            <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                            <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
-                                            <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
-                                        </ul>
+                        <?php
+                        $anoticias = $noticias->verUltimasNoticias();
+                        foreach ($anoticias as $fila) {
+                            ?>
+                            <div class="item">
+                                <div class="dez-box">
+                                    <div class="dez-media">
+                                        <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
                                     </div>
-                                    <h4 class="dez-title m-t5 m-b10"><a href="#">Provide qualtiy productivity..</a></h4>
-                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
-                                    <a href="#" class="site-button">Read More</a>
+                                    <div class="dez-info p-a20 border-1">
+                                        <div class="dez-post-meta ">
+                                            <ul>
+                                                <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
+                                                <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
+                                            </ul>
+                                        </div>
+                                        <h4 class="dez-title m-t5 m-b10"><a href="#"><?php echo $fila['titulo'] ?></a></h4>
+                                        <a href="detalle_notica.php?idnoticia=<?php echo $fila['idnoticias'] ?>" class="site-button">Leer mas</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php
+                        }
+                        ?>
+
                         <div class="item">
                             <div class="dez-box">
                                 <div class="dez-media">

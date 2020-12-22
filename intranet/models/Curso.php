@@ -187,4 +187,11 @@ class Curso
         return $this->c_conectar->get_Cursor($sql);
     }
 
+    public function verCursosActivos () {
+        $sql = "select id_curso, nombre, profesor, monto, fecha, estado, imagen 
+                from cursos 
+                where fecha >= current_date()";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
 }
