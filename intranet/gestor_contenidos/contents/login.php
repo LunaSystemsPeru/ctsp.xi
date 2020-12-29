@@ -28,14 +28,14 @@
                                 </div>
                                 <hr class="">
                                 <h4 class="text-center mb-4 text-uppercase">Soy Colegiado</h4>
-                                <form action="#">
+                                <form action="../controller/login.php" method="post">
                                     <div class="form-group">
                                         <label><strong>Email</strong></label>
-                                        <input type="email" class="form-control" value="colegiado@correo.com">
+                                        <input type="email" class="form-control" value="colegiado@correo.com" name="inputUsuario">
                                     </div>
                                     <div class="form-group">
                                         <label><strong>Contraseña</strong></label>
-                                        <input type="password" class="form-control" value="Contraseña">
+                                        <input type="password" class="form-control" value="Contraseña" name="inputPassword">
                                     </div>
                                     <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                         <div class="form-group">

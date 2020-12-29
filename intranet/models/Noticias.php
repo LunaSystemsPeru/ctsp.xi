@@ -141,7 +141,16 @@ class noticias
         return $this->c_conectar->ejecutar_idu($sql);
     }
     public function verNoticias ($mes,$anio) {
-        $sql = "select idnoticias, fecha,titulo, contenido, imagen from noticias where year(fecha)=$anio and month(fecha)=$mes ";
+        $sql = "select idnoticias, fecha,titulo, contenido, imagen 
+                from noticias where year(fecha)=$anio and month(fecha)=$mes ";
+        //echo $sql;
+        return $this->c_conectar->get_Cursor($sql);
+
+    }
+
+    public function verNoticiasEncabezado ($mes,$anio) {
+        $sql = "select idnoticias, fecha,titulo, imagen 
+                from noticias where year(fecha)=$anio and month(fecha)=$mes ";
         //echo $sql;
         return $this->c_conectar->get_Cursor($sql);
 
