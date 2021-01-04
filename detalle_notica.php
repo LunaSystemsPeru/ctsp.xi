@@ -1,5 +1,5 @@
 <?php
-require 'intranet/models/noticias.php';
+require 'intranet/models/Noticias.php';
 $noticia = new noticias();
 
 $noticia->setIdnoticias(filter_input(INPUT_GET, 'idnoticia'));

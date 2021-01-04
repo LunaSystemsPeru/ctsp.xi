@@ -92,8 +92,10 @@ class Comunicado
                 WHERE  idcomunicado = '$this->idcomunicado'  " ;
         return $this->c_conectar->ejecutar_idu($sql);
     }
+
     public function verComunicados ($mes,$anio) {
-        $sql = "select idcomunicado, fecha,titulo, imagen from comunicados where year(fecha)='$anio' and month(fecha)='$mes' ";
+        $sql = "select idcomunicado, fecha,titulo, imagen 
+                from comunicados where year(fecha)='$anio' and month(fecha)>='$mes' ";
         return $this->c_conectar->get_Cursor($sql);
     }
 

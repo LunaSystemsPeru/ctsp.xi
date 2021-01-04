@@ -1,9 +1,14 @@
 <?php
 require 'intranet/models/Curso.php';
 require 'intranet/models/Noticias.php';
+require 'intranet/models/Comunicados.php';
+require 'intranet/tools/Util.php';
 
 $curso = new Curso();
-$noticias = new Noticias();
+$noticias = new noticias();
+$comunicado = new Comunicado();
+$util = new Util();
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -515,15 +520,20 @@ $noticias = new Noticias();
                     <div class="row">
                         <?php
                         $acursos = $curso->verCursosActivos();
-                        foreach ($acursos as $fila) {
+                        foreach ($acursos as $item) {
                             ?>
                             <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
                                 <div class="dez-box">
-                                    <div class="dez-media"><a href="detalle_curso.php?idcurso=<?php echo $fila['id_curso'] ?>"><img src="images/cursos/<?php echo $fila['imagen'] ?>" alt=""></a></div>
+                                    <div class="dez-media">
+                                        <a href="detalle_curso.php?idcurso=<?php echo $item['id_curso'] ?>">
+                                            <img src="images/cursos/<?php echo $item['imagen'] ?>" alt="">
+                                        </a>
+                                    </div>
                                     <div class="dez-info p-a30 border-1">
-                                        <h4 class="dez-title m-t0"><a href="detalle_curso.php?idcurso=<?php echo $fila['id_curso'] ?>"><?php echo $fila['nombre'] ?></a></h4>
+                                        <h4 class="dez-title m-t0"><a href="detalle_curso.php?idcurso=<?php echo $item['id_curso'] ?>"><?php echo $item['nombre'] ?></a></h4>
                                         <div class="dez-separator bg-primary"></div>
-                                        <a href="detalle_curso.php?idcurso=<?php echo $fila['id_curso'] ?>" class="site-button-link black">Estoy Interesado <i class="fa fa-long-arrow-right"></i></a>
+                                        <p class="m-b15">Profesor(es) <?php echo $item['profesor'] ?> </p>
+                                        <a href="detalle_curso.php?idcurso=<?php echo $item['id_curso'] ?>" class="site-button-link black">Estoy Interesado <i class="fa fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -544,24 +554,26 @@ $noticias = new Noticias();
                 <div class="section-content ">
                     <div class="blog-carousel owl-carousel owl-theme owl-btn-1 primary owl-btn-center-lr owl-dots-black-full">
                         <?php
-                        $anoticias = $noticias->verUltimasNoticias();
-                        foreach ($anoticias as $fila) {
+                        $anoticias = $noticias->verNoticiasEncabezado(date("m"), date("Y"));
+                        foreach ($anoticias as $item) {
+                            $fechalarga = $util->fechaCastellano($item['fecha']);
                             ?>
                             <div class="item">
                                 <div class="dez-box">
                                     <div class="dez-media">
-                                        <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
+                                        <a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>"><img src="images/noticias/<?php echo $item['imagen'] ?>" alt=""></a>
                                     </div>
                                     <div class="dez-info p-a20 border-1">
                                         <div class="dez-post-meta ">
                                             <ul>
-                                                <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
+                                                <li class=""><i class="fa fa-calendar"></i><?php echo $fechalarga ?></span></li>
+                                                <!--<li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>-->
                                             </ul>
                                         </div>
-                                        <h4 class="dez-title m-t5 m-b10"><a href="#"><?php echo $fila['titulo'] ?></a></h4>
-                                        <a href="detalle_notica.php?idnoticia=<?php echo $fila['idnoticias'] ?>" class="site-button">Leer mas</a>
+                                        <h4 class="dez-title m-t5 m-b10"><a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>"><?php echo $item['titulo'] ?></a></h4>
+                                        <!--<p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>-->
+                                        <a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>" class="site-button">Leer Mas</a>
                                     </div>
                                 </div>
                             </div>
@@ -569,44 +581,6 @@ $noticias = new Noticias();
                         }
                         ?>
 
-                        <div class="item">
-                            <div class="dez-box">
-                                <div class="dez-media">
-                                    <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
-                                </div>
-                                <div class="dez-info p-a20 border-1">
-                                    <div class="dez-post-meta ">
-                                        <ul>
-                                            <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                            <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
-                                            <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="dez-title m-t5 m-b10"><a href="#">Provide qualtiy productivity..</a></h4>
-                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
-                                    <a href="#" class="site-button">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="dez-box">
-                                <div class="dez-media">
-                                    <a href="#"><img src="images/our-services/service/pic2.jpg" alt=""></a>
-                                </div>
-                                <div class="dez-info p-a20 border-1">
-                                    <div class="dez-post-meta ">
-                                        <ul>
-                                            <li class=""><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                            <li class="post-author"><i class="fa fa-user"></i>By <a href="#">Jone</a></li>
-                                            <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0</a></li>
-                                        </ul>
-                                    </div>
-                                    <h4 class="dez-title m-t5 m-b10"><a href="#">Provide qualtiy productivity..</a></h4>
-                                    <p class="m-b15">Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur Fusce varius . </p>
-                                    <a href="#" class="site-button">Read More</a>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
 
@@ -630,69 +604,34 @@ $noticias = new Noticias();
                             <div id="masonry" class="dez-blog-grid-4">
                                 <div>
                                     <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon">
-                                                            <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here">
-                                                                <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                            </a>
+                                        <?php
+                                        $acomunicados = $comunicado->verComunicados(date("m") - 1, date("Y"));
+                                        foreach ($acomunicados as $item) {
+                                            ?>
+
+                                            <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                                <div class="dez-box  dez-gallery-bx">
+                                                    <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/comunicados/<?php echo $item['imagen']?>" alt=""> </a>
+                                                        <div class="overlay-bx">
+                                                            <div class="overlay-icon">
+                                                                <a href="images/comunicados/<?php echo $item['imagen'] ?>" class="mfp-link" title="DexignZone" title="<?php echo $item['titulo'] ?>">
+                                                                    <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title text-white ">Apoyo a Afectados por Covid</h3>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                            </a></div>
+                                                <div class="dez-post-info">
+                                                    <div class="dez-post-title ">
+                                                        <h3 class="post-title text-white "><?php echo $item['titulo'] ?></h3>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                            </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                            </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
+                                            </li>
+
+                                            <?php
+                                        }
+                                        ?>
+
                                     </ul>
                                 </div>
 
@@ -730,9 +669,9 @@ $noticias = new Noticias();
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-openid"></i></a></div>
+                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-id-card"></i></a></div>
                                 <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Oportunidad Laboral</h5>
+                                    <h5 class="dez-tilte text-uppercase">Convenios</h5>
                                 </div>
                             </div>
                         </div>
