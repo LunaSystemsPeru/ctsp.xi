@@ -669,9 +669,9 @@ $util = new Util();
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-openid"></i></a></div>
+                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-id-card"></i></a></div>
                                 <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Oportunidad Laboral</h5>
+                                    <h5 class="dez-tilte text-uppercase">Convenios</h5>
                                 </div>
                             </div>
                         </div>
