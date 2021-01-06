@@ -35,11 +35,10 @@ $year = date("Y");
     <!-- Custom Stylesheet -->
     <link href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="../../public/css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.12.7/dist/sweetalert2.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.12.7/dist/sweetalert2.css">
 
 </head>
-
-
-
 
 
 <body>
@@ -125,14 +124,16 @@ $year = date("Y");
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Ver Movimiento de Cajas - Bancos | <?php echo $banco->getNombre() ?></h4>
+                            <h4 class="card-title">Ver Movimiento de Cajas - Bancos
+                                | <?php echo $banco->getNombre() ?></h4>
                             <button class="btn btn-facebook" data-toggle="modal" data-target="#basicModal">
                                 <i class="fa fa-plus"></i> Agregar Movimiento <i class="fa fa-dollar"></i>
                             </button>
 
                             <div class="col-lg-3">
                                 <label>Sel. Periodo</label>
-                                <select class="form-control" name="select_periodo" id="select_periodo" onchange="obtenerPeriodo()">
+                                <select class="form-control" name="select_periodo" id="select_periodo"
+                                        onchange="obtenerPeriodo()">
                                     <option value="">Select Periodo</option>
                                     <?php
                                     $aperiodos = $movimiento->verPeriodos($year);
@@ -150,14 +151,16 @@ $year = date("Y");
                                         <form method="post" action="../controller/banco_movimiento.php">
                                             <div class="modal-header">
                                                 <h5 class="modal-title">Agregar Movimiento</h5>
-                                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <span>&times;</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                         <label>Fecha</label>
-                                                        <input type="date" class="form-control" name="input_fecha" value="<?php echo date("Y-m-d") ?>">
+                                                        <input type="date" class="form-control" name="input_fecha"
+                                                               value="<?php echo date("Y-m-d") ?>">
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label>Tipo</label>
@@ -168,17 +171,23 @@ $year = date("Y");
                                                     </div>
                                                     <div class="form-group col-md-12">
                                                         <label>Descripcion</label>
-                                                        <input type="text" class="form-control" placeholder="Descripcion Movimiento" name="input_descripcion">
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Descripcion Movimiento"
+                                                               name="input_descripcion">
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label>Monto</label>
-                                                        <input type="text" class="form-control text-right" placeholder="0.00" name="input_monto">
+                                                        <input type="text" class="form-control text-right"
+                                                               placeholder="0.00" name="input_monto">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <input type="hidden" value="<?php echo $banco->getIdBanco() ?>" name="hidden_banco" id="hidden_banco">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                <input type="hidden" value="<?php echo $banco->getIdBanco() ?>"
+                                                       name="hidden_banco" id="hidden_banco">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                    Cerrar
+                                                </button>
                                                 <button type="submit" class="btn btn-primary">Guardar</button>
                                             </div>
                                         </form>
@@ -204,17 +213,17 @@ $year = date("Y");
                                     <?php
                                     $amovimiento = $movimiento->verFilas($periodo);
                                     $item = 2;
-                                    $year = substr($periodo, 0,4);
-                                    $month = substr($periodo, 5,2);
+                                    $year = substr($periodo, 0, 4);
+                                    $month = substr($periodo, 5, 2);
                                     $saldo = $movimiento->obtenerSaldo($year, $month);
                                     ?>
                                     <tr>
                                         <td class="text-center"><?php echo "1" ?></td>
-                                        <td class="text-center"><?php echo $year . "-" . $month. '-01' ?></td>
+                                        <td class="text-center"><?php echo $year . "-" . $month . '-01' ?></td>
                                         <td><?php echo "SALDO DEL MES ANTERIOR" ?></td>
-                                        <td class="text-right"><?php echo number_format($saldo,2) ?></td>
-                                        <td class="text-right"><?php echo number_format(0,2) ?></td>
-                                        <td class="text-right"><?php echo number_format($saldo,2) ?></td>
+                                        <td class="text-right"><?php echo number_format($saldo, 2) ?></td>
+                                        <td class="text-right"><?php echo number_format(0, 2) ?></td>
+                                        <td class="text-right"><?php echo number_format($saldo, 2) ?></td>
                                         <td class="text-center">
                                             <button class="btn btn-danger text-white">
                                                 <i class="fa fa-trash"></i> Eliminar
@@ -231,9 +240,9 @@ $year = date("Y");
                                             <td class="text-center"><?php echo $item ?></td>
                                             <td class="text-center"><?php echo $fila['fecha'] ?></td>
                                             <td><?php echo $fila['concepto'] ?></td>
-                                            <td class="text-right"><?php echo number_format($ingresa,2) ?></td>
-                                            <td class="text-right"><?php echo number_format($sale,2) ?></td>
-                                            <td class="text-right"><?php echo number_format($saldo,2) ?></td>
+                                            <td class="text-right"><?php echo number_format($ingresa, 2) ?></td>
+                                            <td class="text-right"><?php echo number_format($sale, 2) ?></td>
+                                            <td class="text-right"><?php echo number_format($saldo, 2) ?></td>
                                             <td class="text-center">
                                                 <button class="btn btn-danger text-white">
                                                     <i class="fa fa-trash"></i> Eliminar
@@ -311,17 +320,15 @@ $year = date("Y");
 
 <script>
     function obtenerPeriodo() {
-
-            var selperiodo = $("#select_periodo").val();
-            var selidbanco=$("#hidden_banco").val();
-
-            //enviar variables obtenidas al controlador
-        window.location="ver_banco_movimiento.php?periodo="+selperiodo+"&idbanco="+selidbanco;
-
-
-
+        var selperiodo = $("#select_periodo").val();
+        var selidbanco = $("#hidden_banco").val();
+        //enviar variables obtenidas al controlador
+        window.location = "ver_banco_movimiento.php?periodo=" + selperiodo + "&idbanco=" + selidbanco;
     }
 
+    function eliminarMovimiento () {
+
+    }
 
 
 </script>
