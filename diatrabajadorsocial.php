@@ -1,3 +1,23 @@
+<?php
+require 'intranet/models/Evento.php';
+require 'intranet/models/EventoDetalle.php';
+$evento = new Evento();
+$galeria = new EventoDetalle();
+$evento->setIdTipoEvento(10);
+$anio = date("Y");
+
+if (filter_input(INPUT_GET, 'anio')) {
+    $anio = filter_input(INPUT_GET, 'anio');
+}
+
+$evento->setAnio($anio);
+if ($evento->obtenerDatosporTipo()) {
+    $evento->obtenerDatos();
+} else {
+    header("index.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,7 +34,6 @@
     <meta property="og:description" content="Comunicados del Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
     <meta property="og:image" content=""/>
     <meta name="format-detection" content="telephone=no">
-    ctsprxiancash.org.pe
     <!-- FAVICONS ICON -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>

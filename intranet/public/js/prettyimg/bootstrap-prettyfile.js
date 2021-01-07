@@ -9,7 +9,7 @@
 	$.fn.extend({
 		prettyFile: function( options ) {
 			var defaults = {
-				text : "Seleccionar Imagenes (Max 05)"
+				text : "Seleccionar Imagenes"
 			};
 
 			var options =  $.extend(defaults, options);

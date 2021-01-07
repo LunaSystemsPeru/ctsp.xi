@@ -97,6 +97,7 @@ class Evento
     {
         $this->id_tipo_evento = $id_tipo_evento;
     }
+
     public function generarCodigo()
     {
         $sql = "select ifnull(max(idevento) +1, 1) as codigo from eventos";
@@ -106,7 +107,7 @@ class Evento
     public function obtenerDatos()
     {
         $sql = "select * from eventos 
-        where id = '$this->id'";
+        where idevento = '$this->id'";
         $resultado = $this->c_conectar->get_Row($sql);
         $this->anio = $resultado['anio'];
         $this->id_tipo_evento = $resultado['id_tipo_evento'];
@@ -117,11 +118,11 @@ class Evento
 
     public function obtenerDatosporTipo()
     {
-        $sql = "select id from eventos 
-        where id_tipo_evento = '$this->id_tipo_evento' and anio = '$this->anio'";
+        $sql = "select idevento from eventos 
+        where id_tipo_evento = '$this->id_tipo_evento' and anio = '$this->anio' ";
         $resultado = $this->c_conectar->get_Row($sql);
         if ($resultado) {
-            $this->id = $resultado['id'];
+            $this->id = $resultado['idevento'];
         }
 
     }
@@ -141,15 +142,15 @@ class Evento
 
     public function eliminar()
     {
-        $sql = "DELETE FROM evento
-                WHERE  id = '$this->id'  ";
+        $sql = "DELETE FROM eventos
+                WHERE  idevento = '$this->id'  ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function verEventos()
     {
         $sql = "select * from eventos 
-where anio = '$this->anio'";
+                where anio = '$this->anio'";
         //echo $sql;
         return $this->c_conectar->get_Cursor($sql);
 
@@ -158,7 +159,7 @@ where anio = '$this->anio'";
     public function verEventosegunAnioTipo()
     {
         $sql = "select * from eventos 
-where anio = '$this->anio' and id_tipo_evento = '$this->id_tipo_evento'";
+                where anio = '$this->anio' and id_tipo_evento = '$this->id_tipo_evento'";
         //echo $sql;
         return $this->c_conectar->get_Cursor($sql);
 
