@@ -123,6 +123,9 @@ class Evento
         $resultado = $this->c_conectar->get_Row($sql);
         if ($resultado) {
             $this->id = $resultado['idevento'];
+            return true;
+        } else {
+            return false;
         }
 
     }
