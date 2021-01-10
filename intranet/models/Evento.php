@@ -116,6 +116,13 @@ class Evento
 
     }
 
+    public function obtenerUltimoAño()
+    {
+        $sql = "select max(anio) as anio from eventos where id_tipo_evento = '$this->id_tipo_evento'";
+        return $this->c_conectar->get_valor_query($sql, "anio");
+
+    }
+
     public function obtenerDatosporTipo()
     {
         $sql = "select idevento from eventos 
