@@ -600,7 +600,9 @@ $util = new Util();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white ">
-                        <h2 class="m-b15 m-t0">Comunicados</h2>
+                        <h2 class="m-b10 m-t0">Comunicados </h2>
+                        <h6>(hacer clic en el titulo)</h6>
+                        <br>
                     </div>
                 </div>
 
@@ -612,29 +614,19 @@ $util = new Util();
                                 <div>
                                     <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
                                         <?php
-                                        $acomunicados = $comunicado->verComunicados(date("m") - 1, date("Y"));
+                                        $acomunicados = $comunicado->verComunicados(12);
                                         foreach ($acomunicados as $item) {
-                                            ?>
-
+                                        $imagen = $item['imagen'];
+                                        ?>
                                             <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                                <div class="dez-box  dez-gallery-bx">
-                                                    <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/comunicados/<?php echo $item['imagen']?>" alt=""> </a>
-                                                        <div class="overlay-bx">
-                                                            <div class="overlay-icon">
-                                                                <a href="images/comunicados/<?php echo $item['imagen'] ?>" class="mfp-link" title="DexignZone" title="<?php echo $item['titulo'] ?>">
-                                                                    <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                                </a>
-                                                            </div>
+                                                <a href="#" onclick="cargarArchivo('<?php echo $item['imagen'] ?>')">
+                                                    <div class="dez-post-info">
+                                                        <div class="dez-post-title ">
+                                                            <h3 class="post-title text-white"><?php echo $item['titulo'] ?></h3>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="dez-post-info">
-                                                    <div class="dez-post-title ">
-                                                        <h3 class="post-title text-white "><?php echo $item['titulo'] ?></h3>
-                                                    </div>
-                                                </div>
+                                                </a>
                                             </li>
-
                                             <?php
                                         }
                                         ?>
@@ -840,6 +832,26 @@ $util = new Util();
                         </div>
                     </div>
                 </div>
+
+                <!-- -->
+                <div class="modal fade" id="basicModal">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Ver Comunicado </h5>
+                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <embed src="images/comunicados/logopdf.jpeg" id="embedPDF" width="100%" height="500px" >
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -920,10 +932,17 @@ $util = new Util();
 <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <script src="js/rev.slider.js"></script>
 <script>
+
+
     jQuery(document).ready(function () {
         'use strict';
         dz_rev_slider_5();
     });	/*ready*/
+
+    function cargarArchivo (archivo) {
+        $("#basicModal").modal("toggle");
+        $("#embedPDF").attr("src", "images/comunicados/" + archivo)
+    }
 </script>
 
 </body>
