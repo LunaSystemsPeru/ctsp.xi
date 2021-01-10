@@ -50,7 +50,9 @@ if (isset($afile)) {
                 $email->setAsunto("REGISTRO AL CURSO: " . strtoupper($curso->getNombre()));
                 $email->setCorreo($participantes->getEmail());
                 $email->setNombreReceptor($participantes->getApellido() . " " . $participantes->getNombre());
-                $email->setUrl("../intranet/plantilla_emails/email_inscripcion_curso.php");
+                $host= $_SERVER["HTTP_HOST"];
+                $url= $_SERVER["REQUEST_URI"];
+                $email->setUrl("http://" . $host . $url."/../../intranet/plantilla_emails/email_inscripcion_curso.php?idcurso=" . $participantes->getIdCurso());
                 $email->EnviarEmail();
                 header("Location: ../detalle_curso_registrado.php?idcurso=" . $participantes->getIdCurso());
             }

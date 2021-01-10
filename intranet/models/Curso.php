@@ -190,7 +190,7 @@ class Curso
     }
 
     public function verTodoCursos () {
-        $sql = "select id_curso, nombre, profesor, monto, fecha, estado, imagen 
+        $sql = "select id_curso, nombre, profesor, monto, fecha, estado, imagen, (select count(*) from cursos_participantes as cp where cp.id_curso = cursos.id_curso)  as matriculados
                 from cursos 
                 order by fecha desc";
         return $this->c_conectar->get_Cursor($sql);

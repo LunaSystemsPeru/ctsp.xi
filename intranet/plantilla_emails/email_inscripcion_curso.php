@@ -1,17 +1,30 @@
 <?php
 require '../models/Curso.php';
+require '../models/ParametrosDetalle.php';
+require '../tools/Util.php';
+
 $curso = new Curso();
+$detalle = new ParametrosDetalle();
+$util = new Util();
+
 $curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
 $curso->obtenerDatos();
+
+$detalle->setIdDetalle($curso->getIdModalidad());
+$detalle->obtenerDatos();
+
+$host= $_SERVER["HTTP_HOST"];
+$url= $_SERVER["REQUEST_URI"];
+$url_imagen = "http://" . $host . $url."/../../../public/images/favicon.ico";
 ?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <title></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <style type="text/css">
         @media screen {
             @font-face {
@@ -93,7 +106,7 @@ $curso->obtenerDatos();
         }
 
         /* MOBILE STYLES */
-        @media screen and (max-width:600px) {
+        @media screen and (max-width: 600px) {
             h1 {
                 font-size: 32px !important;
                 line-height: 32px !important;
@@ -109,14 +122,14 @@ $curso->obtenerDatos();
 
 <body style="background-color: #f4f4f4; margin: 0 !important; padding: 0 !important;">
 <!-- HIDDEN PREHEADER TEXT -->
-<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: 'Lato', Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> We're thrilled to have you here! Get ready to dive into your new account. </div>
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: 'Lato', Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> We're thrilled to have you here! Get ready to dive into your new account.</div>
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <!-- LOGO -->
     <tr>
         <td bgcolor="#305598" align="center">
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                 <tr>
-                    <td align="center" valign="top" style="padding: 40px 10px 40px 10px;"> </td>
+                    <td align="center" valign="top" style="padding: 40px 10px 40px 10px;"></td>
                 </tr>
             </table>
         </td>
@@ -126,7 +139,7 @@ $curso->obtenerDatos();
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                 <tr>
                     <td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
-                        <h1 style="font-size: 48px; font-weight: 400; margin: 2;">Conforme!</h1> <img src="../public/images/favicon.ico" width="125" height="120" style="display: block; border: 0px;" />
+                        <h1 style="font-size: 48px; font-weight: 400; margin: 2;">Registrado en el Curso, pago por confirmar</h1> <img src="<?php echo $url_imagen?>" width="125" height="120" style="display: block; border: 0px;"/>
                     </td>
                 </tr>
             </table>
@@ -137,27 +150,42 @@ $curso->obtenerDatos();
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                 <tr>
                     <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-                        <p style="margin: 0;">te has inscrito saticfactoriamente al curso de: <?php echo $curso->getNombre()?></p>
+                        <p style="margin: 0;">te has inscrito saticfactoriamente al curso de: <?php echo $curso->getNombre() ?></p>
                     </td>
                 </tr>
                 <tr>
                     <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 0px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-                        <p style="margin: 0;">Fecha de Curso: <?php echo $curso->getFecha()?></p>
+                        <p style="margin: 0;">Fecha de Curso: <?php echo $util->fechaCastellano($curso->getFecha()) ?></p>
                     </td>
                 </tr> <!-- COPY -->
                 <tr>
+                    <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 0px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                        <p style="margin: 0;">Profesor: <?php echo $curso->getProfesor() ?></p>
+                    </td>
+                </tr> <!-- COPY -->
+                <tr>
+                    <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 0px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                        <p style="margin: 0;">Modalidad: <?php echo $detalle->getNombre() ?></p>
+                    </td>
+                </tr> <!-- COPY -->
+                <tr>
+                    <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 0px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                        <br>
+                    </td>
+                </tr>
+                <!-- <tr>
                     <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
                         <p style="margin: 0;"><a href="#" target="_blank" style="color: #FFA73B;">https://bit.li.utlddssdstueincx</a></p>
                     </td>
-                </tr>
+                </tr>-->
                 <tr>
                     <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-                        <p style="margin: 0;">If you have any questions, just reply to this email—we're always happy to help out.</p>
+                        <p style="margin: 0;">En los proximos dias estaremos verificando el voucher enviado, caso contrario nos comunicaremos con usted para confirmar su pago.</p>
                     </td>
                 </tr>
                 <tr>
                     <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 40px 30px; border-radius: 0px 0px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-                        <p style="margin: 0;">Cheers,<br>BBB Team</p>
+                        <p style="margin: 0;">Tesoreria,<br>Colegio de Trabajadores Sociales del Peru - Region XI Ancash</p>
                     </td>
                 </tr>
             </table>
@@ -167,20 +195,9 @@ $curso->obtenerDatos();
         <td bgcolor="#f4f4f4" align="center" style="padding: 30px 10px 0px 10px;">
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                 <tr>
-                    <td bgcolor="#FFECD1" align="center" style="padding: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-                        <h2 style="font-size: 20px; font-weight: 400; color: #111111; margin: 0;">Need more help?</h2>
-                        <p style="margin: 0;"><a href="#" target="_blank" style="color: #FFA73B;">We&rsquo;re here to help you out</a></p>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <tr>
-        <td bgcolor="#f4f4f4" align="center" style="padding: 0px 10px 0px 10px;">
-            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
-                <tr>
-                    <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;"> <br>
-                        <p style="margin: 0;">If these emails get annoying, please feel free to <a href="#" target="_blank" style="color: #111111; font-weight: 700;">unsubscribe</a>.</p>
+                    <td bgcolor="#305598" align="center" style="padding: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                        <h2 style="font-size: 20px; font-weight: 400; color: #111111; margin: 0;">Necesita Ayuda?</h2>
+                        <p style="margin: 0;"><a href="#" target="_blank" style="color: #FFFFFF;">Escribanos a: 933665544</a></p>
                     </td>
                 </tr>
             </table>
