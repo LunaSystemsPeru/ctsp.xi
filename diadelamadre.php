@@ -4,7 +4,7 @@ require 'intranet/models/EventoDetalle.php';
 $evento = new Evento();
 $galeria = new EventoDetalle();
 $evento->setIdTipoEvento(8);
-$anio = date("Y");
+$anio = $evento->obtenerUltimoAño();
 
 if (filter_input(INPUT_GET, 'anio')) {
     $anio = filter_input(INPUT_GET, 'anio');
