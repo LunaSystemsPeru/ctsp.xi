@@ -1,3 +1,8 @@
+<?php
+require 'intranet/models/Comunicados.php';
+$comunicado = new Comunicado();
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -79,66 +84,34 @@
                             <div id="masonry" class="dez-blog-grid-4">
                                 <div>
                                     <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon">
-                                                            <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here">
-                                                                <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                            </a>
+                                        <?php
+                                        $acomunicados = $comunicado->verComunicados(date("m") - 1, date("Y"));
+                                        foreach ($acomunicados as $item) {
+                                            ?>
+
+                                            <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                                <div class="dez-box  dez-gallery-bx">
+                                                    <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/comunicados/<?php echo $item['imagen']?>" alt=""> </a>
+                                                        <div class="overlay-bx">
+                                                            <div class="overlay-icon">
+                                                                <a href="images/comunicados/<?php echo $item['imagen'] ?>" class="mfp-link" title="DexignZone" title="<?php echo $item['titulo'] ?>">
+                                                                    <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                <div class="dez-post-info">
+                                                    <div class="dez-post-title ">
+                                                        <h3 class="post-title"><?php echo $item['titulo'] ?></h3>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
+                                            </li>
+
+                                            <?php
+                                        }
+                                        ?>
+
                                     </ul>
                                 </div>
 

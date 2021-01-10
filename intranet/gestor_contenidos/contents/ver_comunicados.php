@@ -133,9 +133,9 @@ $comunicado = new Comunicado();
                                     foreach ($acomunicados as $item) {
                                         ?>
                                         <tr>
-                                            <td>1</td>
-                                            <td>2020-11-16</td>
-                                            <td>COMUNICADO AL DIRECTOR REGIONAL DE SALUD ANCASH</td>
+                                            <td><?PHP echo $item["idcomunicado"] ?></td>
+                                            <td><?PHP echo $item["fecha"] ?></td>
+                                            <td><?PHP echo $item["titulo"] ?></td>
                                             <td>
                                                 <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
                                                 <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
