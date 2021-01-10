@@ -108,4 +108,13 @@ class Util
         return $nombredia." ".$numeroDia." de ".$nombreMes." de ".$anio;
     }
 
+    function Mes3Letras ($fecha) {
+        $month= date('F', $fecha);
+        $meses_ES = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+        $meses_EN = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+        $nombreMes = str_replace($meses_EN, $meses_ES, $month);
+        $month= substr($nombreMes, 0,3);
+        return $month;
+    }
+
 }

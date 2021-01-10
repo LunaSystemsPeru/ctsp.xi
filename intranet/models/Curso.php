@@ -181,16 +181,18 @@ class Curso
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
-    public function verFilas () {
+    public function verUltimosCursos () {
         $sql = "select id_curso, nombre, profesor, monto, fecha, estado, imagen 
-                from cursos ";
+                from cursos 
+                order by fecha desc 
+                limit 6";
         return $this->c_conectar->get_Cursor($sql);
     }
 
-    public function verCursosActivos () {
+    public function verTodoCursos () {
         $sql = "select id_curso, nombre, profesor, monto, fecha, estado, imagen 
                 from cursos 
-                where current_date() < fecha";
+                order by fecha desc";
         return $this->c_conectar->get_Cursor($sql);
     }
 
