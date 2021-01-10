@@ -5,7 +5,7 @@ require 'intranet/models/Comunicados.php';
 require 'intranet/tools/Util.php';
 
 $curso = new Curso();
-$noticias = new noticias();
+$noticia = new noticias();
 $comunicado = new Comunicado();
 $util = new Util();
 
@@ -561,14 +561,19 @@ $util = new Util();
                 <div class="section-content ">
                     <div class="blog-carousel owl-carousel owl-theme owl-btn-1 primary owl-btn-center-lr owl-dots-black-full">
                         <?php
-                        $anoticias = $noticias->verNoticiasEncabezado(date("m"), date("Y"));
+                        $anoticias = $noticia->verNoticiasImagen();
+                        $fecha_actual = strtotime(date("Y-m-d"));
                         foreach ($anoticias as $item) {
+                            $fecha_entrada = strtotime($item['fecha']);
                             $fechalarga = $util->fechaCastellano($item['fecha']);
+                            $year= date('Y', $fecha_entrada);
+                            $day= date('d', $fecha_entrada);
+                            $month = $util->Mes3Letras($fecha_entrada);
                             ?>
                             <div class="item">
                                 <div class="dez-box">
                                     <div class="dez-media">
-                                        <a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>"><img src="images/noticias/<?php echo $item['imagen'] ?>" alt=""></a>
+                                        <a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>"><img src="archivos/noticias/imagenes/<?php echo $item['imagen'] ?>" alt=""></a>
                                     </div>
                                     <div class="dez-info p-a20 border-1">
                                         <div class="dez-post-meta ">
@@ -642,7 +647,7 @@ $util = new Util();
         </div>
         <!-- Our Project END -->
         <!-- Meet Our Team -->
-        <!-- Team member -->
+        <!-- Team member
         <div class="section-full content-inner bg-gray">
             <div class="container">
                 <div class="section-head text-center ">
@@ -686,7 +691,7 @@ $util = new Util();
                 </div>
             </div>
         </div>
-        <!-- Team member END -->
+        Team member END -->
         <div class="section-full bg-img-fix overlay-primary-dark content-inner-1 dez-support" style="background-image:url(images/background/bg5.jpg);">
             <div class="container">
                 <div class="row">
@@ -732,7 +737,7 @@ $util = new Util();
 
             </div>
         </div>
-        <!-- Latest Blog -->
+        <!-- Latest Blog
         <div class="section-full bg-white content-inner-1">
             <div class="container">
                 <div class="section-head text-center ">
@@ -833,7 +838,7 @@ $util = new Util();
                     </div>
                 </div>
 
-                <!-- -->
+                 -->
                 <div class="modal fade" id="basicModal">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">

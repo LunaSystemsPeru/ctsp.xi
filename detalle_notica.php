@@ -36,7 +36,7 @@ if (!$noticia->getIdnoticias()) {
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
 
     <!-- PAGE TITLE HERE -->
-    <title><?php echo $noticia->getTitulo()?> | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title><?php echo $noticia->getTitulo() ?> | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,7 +82,7 @@ if (!$noticia->getIdnoticias()) {
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> <?php echo $noticia->getTitulo()?></h3>
+                        <h3 class="h3"> <?php echo $noticia->getTitulo() ?></h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
@@ -91,29 +91,38 @@ if (!$noticia->getIdnoticias()) {
 
                 <div class="section-content ">
                     <div class="row">
-                        <div class="row portfolio-detail">
-                            <div class="col-md-8">
-                                <div class="owl-carousel owl-fade-one owl-dots-none owl-theme">
-                                    <?php
-                                    $agaleria = $galeria->verImagenes();
-                                    foreach ($agaleria as $fila) {
+                        <div class="col-md-9">
+                            <div class="row m-lr0">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-tb20">
+                                    <div id="masonry" class="row m-lr0 dez-blog-grid-3 dez-gallery-listing gallery-grid-4 gallery mfp-gallery">
+                                        <?php
+                                        $agaleria = $galeria->verImagenes();
+                                        foreach ($agaleria as $fila) {
+                                            ?>
+                                            <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
+                                                <div class="dez-box dez-gallery-box m-b0">
+                                                    <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a
+                                                                href="javascript:void(0);"> <img
+                                                                    src="archivos/noticias/imagenes/<?php echo $fila['imagen'] ?>" alt=""> </a>
+                                                        <div class="overlay-bx overlay-primary-dark">
+                                                            <div class="overlay-icon z-index2"><a
+                                                                        href="archivos/noticias/imagenes/<?php echo $fila['imagen'] ?>" class="mfp-link"
+                                                                        title="Foto"> <i
+                                                                            class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <?php
+                                        }
                                         ?>
-                                        <div class="item">
-                                            <div class="dez-thum-bx"> <img src="archivos/noticias/imagenes/<?php echo $fila['imagen']?>" alt=""> </div>
-                                        </div>
-                                    <?php
-                                    }
-                                    ?>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h2 class="m-b10 font-weight-700 "><?php echo $noticia->getTitulo() ?></h2>
-                                        <?php echo $noticia->getContenido()?>
                                     </div>
                                 </div>
+
                             </div>
+                        </div>
+                        <div class="col-md-3">
+                            <?php echo $noticia->getContenido() ?>
                         </div>
                     </div>
                 </div>
