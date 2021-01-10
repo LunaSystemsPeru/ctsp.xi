@@ -119,13 +119,18 @@ class Usuario
         $sql = "select * from usuarios 
         where id_usuario = '$this->idUsuario'";
         $resultado = $this->c_conectar->get_Row($sql);
-        $this->usuario = $resultado['usuario'];
-        $this->password = $resultado['password'];
-        $this->dato = $resultado['datos'];
-        $this->email = $resultado['email'];
-        $this->celular = $resultado['celular'];
-        $this->estado = $resultado['estado'];
-        $this->ultimoIngreso = $resultado['ultimo_ingreso'];
+        if ($resultado) {
+            $this->usuario = $resultado['usuario'];
+            $this->password = $resultado['password'];
+            $this->dato = $resultado['datos'];
+            $this->email = $resultado['email'];
+            $this->celular = $resultado['celular'];
+            $this->estado = $resultado['estado'];
+            $this->ultimoIngreso = $resultado['ultimo_ingreso'];
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public function validarUsuario()

@@ -77,3 +77,5 @@ for ($i= 0; $i < count($agaleria['name']); $i++) {
         }
     }
 }
+
+header("Location: ../contents/ver_actividades.php");

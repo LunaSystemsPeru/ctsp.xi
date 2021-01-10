@@ -1,3 +1,10 @@
+<?php
+session_start();
+if ($_SESSION['_logueado']) {
+    header("Location: ../contents/index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -28,21 +35,40 @@
                                 </div>
                                 <hr class="">
                                 <h4 class="text-center mb-4 text-uppercase">Acesso Intranet</h4>
+                                <?php
+                                $error = filter_input(INPUT_GET, 'error');
+                                if (isset($error) || $error != "" || !is_null($error)) {
+                                    $tipo_error = "";
+                                    if ($error == 1) {
+                                        $tipo_error = "CONTRASEÑA INCORRECTA";
+                                    }
+                                    if ($error == 2) {
+                                        $tipo_error = "USUARIO NO EXISTE";
+                                    }
+                                    ?>
+                                    <div class="col-lg-12">
+                                        <div class="alert alert-warning solid">
+                                                <?php echo $tipo_error?>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                                ?>
                                 <form action="../controller/login.php" method="post">
                                     <div class="form-group">
                                         <label><strong>Usuario</strong></label>
-                                        <input type="text" class="form-control" placeholder="Admin" name="inputUsuario">
+                                        <input type="text" class="form-control" placeholder="Admin" name="inputUsuario" required>
                                     </div>
                                     <div class="form-group">
                                         <label><strong>Contraseña</strong></label>
-                                        <input type="password" class="form-control" placeholder="pass" name="inputPassword">
+                                        <input type="password" class="form-control" placeholder="pass" name="inputPassword" required>
                                     </div>
                                     <div class="form-row d-flex justify-content-between mt-4 mb-2">
-                                       <!--
-                                        <div class="form-group">
-                                            <a href="../controller/recuperar_contrasena.php">Olvidaste tu Contraseña?</a>
-                                        </div>
-                                        -->
+                                        <!--
+                                         <div class="form-group">
+                                             <a href="../controller/recuperar_contrasena.php">Olvidaste tu Contraseña?</a>
+                                         </div>
+                                         -->
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-user"></i> ingresar</button>

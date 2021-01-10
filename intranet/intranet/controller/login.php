@@ -5,7 +5,7 @@ require '../../models/Usuario.php';
 $usuario = new Usuario();
 
 $usuario->setUsuario(filter_input(INPUT_POST, 'inputUsuario'));
-$pass_formulario = filter_input(INPUT_POST, 'inputPassword');
+$pass_formulario = trim(filter_input(INPUT_POST, 'inputPassword'));
 
 if ($usuario->validarUsuario()) {
     if ($usuario->obtenerDatos()) {

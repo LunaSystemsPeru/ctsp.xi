@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Noticias | Sistema de Gestion - CTSP Region XI Ancash </title>
+    <title>Eventos | Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
     <!-- Datatable -->
@@ -16,6 +16,7 @@
     <link href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="../../public/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../../public/vendor/trumbowyg/dist/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="../../public/js/prettyimg/jpreview.css">
 
 </head>
 
@@ -84,13 +85,13 @@
             <div class="row page-titles mx-0">
                 <div class="col-sm-6 p-md-0">
                     <div class="welcome-text">
-                        <h4>Listar Noticias</h4>
+                        <h4>Listar Eventos</h4>
                     </div>
                 </div>
                 <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">SG</a></li>
-                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Noticias</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Eventos</a></li>
                     </ol>
                 </div>
             </div>
@@ -102,13 +103,13 @@
                     <div class="card">
                         <form method="POST" action="../controller/noticia.php" enctype="multipart/form-data">
                         <div class="card-header">
-                            <h4 class="card-title">Noticias</h4>
+                            <h4 class="card-title">Eventos</h4>
                         </div>
                         <div class="card-body">
                             <div class="basic-form">
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
-                                        <label>Titulo Noticia</label>
+                                        <label>Titulo Evento</label>
                                         <input type="text" class="form-control" name="input_titulo" required>
                                     </div>
                                     <div class="form-group col-md-12">
@@ -120,13 +121,12 @@
                                         <textarea name="input_contenido" id="trumbowyg-demo" class="wysiwyg-editor" style="width: 100%"></textarea>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <label>Imagen</label>
-                                        <input type="file" class="form-control" name='input_imagen' id="input_imagen"
-                                               accept="image/jpeg, image/png" required>
-                                    </div>
-                                    <div class="form-group col-md-12">
-                                        <img id="imgSalida" width="50%" height="50%" src="../../public/images/1.jpg"/>
-                                        <i class="form-group__bar"></i>
+                                        <div class="form-group">
+                                            <label>Cargar Galeria de Imagenes</label>
+                                            <input type="file" name="filefotos[]" class="demo" multiple id="inputPretty"
+                                                   data-jpreview-container="#demo-1-container" accept="image/*">
+                                        </div>
+                                        <div id="demo-1-container" class="jpreview-container"></div>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Guardar
@@ -182,11 +182,16 @@
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
 <script src="../../public/vendor/trumbowyg/dist/trumbowyg.min.js"></script>
 
+<script src="../../public/js/prettyimg/bootstrap-prettyfile.js"></script>
+<script src="../../public/js/prettyimg/jpreview.js"></script>
+
 <script>
     $(window).on("load",function(){
 
         $(function () {
             $('#trumbowyg-demo').trumbowyg();
+            $('#inputPretty').prettyFile();
+            $('.demo').jPreview();
 
             $('#input_imagen').change(function (e) {
                 addImage(e);
