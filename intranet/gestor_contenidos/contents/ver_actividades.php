@@ -117,7 +117,38 @@ $evento = new Evento();
 
                         </div>
                         <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="example" class="display" style="min-width: 845px">
+                                    <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Fecha</th>
+                                        <th>Comunicado</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php
+                                    $acomunicados = $comunicado->verComunicados();
+                                    foreach ($acomunicados as $item) {
+                                        ?>
+                                        <tr>
+                                            <td><?PHP echo $item["idcomunicado"] ?></td>
+                                            <td><?PHP echo $item["fecha"] ?></td>
+                                            <td><?PHP echo $item["titulo"] ?></td>
+                                            <td>
+                                                <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
+                                                <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                    }
+                                    ?>
 
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
