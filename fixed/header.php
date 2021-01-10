@@ -109,7 +109,7 @@
                                 <ul class="sub-menu">
                                     <li><a href="noticias.php">Eventos</a></li>
                                     <li><a href="comunicados.php">Comunicados</a></li>
-                                    <li><a href="revistas.php">Revistas</a></li>
+                                    <li><a href="#">Revistas</a></li>
                                     <li><a href="cursos.php">Cursos</a></li>
                                 </ul>
                             </li>
