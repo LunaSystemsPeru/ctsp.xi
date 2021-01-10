@@ -87,13 +87,13 @@ $evento = new Evento();
             <div class="row page-titles mx-0">
                 <div class="col-sm-6 p-md-0">
                     <div class="welcome-text">
-                        <h4>Listar Comunicados</h4>
+                        <h4>Listar Actividades Conmemorativas</h4>
                     </div>
                 </div>
                 <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">SG</a></li>
-                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Comunicados</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Actividades Conmemorativas</a></li>
                     </ol>
                 </div>
             </div>
@@ -122,20 +122,24 @@ $evento = new Evento();
                                     <thead>
                                     <tr>
                                         <th>Item</th>
-                                        <th>Fecha</th>
-                                        <th>Comunicado</th>
+                                        <th>Año</th>
+                                        <th>Nombre Evento</th>
+                                        <th>Programa </th>
+                                        <th>Video</th>
                                         <th>Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <?php
-                                    $acomunicados = $comunicado->verComunicados();
-                                    foreach ($acomunicados as $item) {
+                                    $aeventos = $evento->verEventos();
+                                    foreach ($aeventos as $item) {
                                         ?>
                                         <tr>
-                                            <td><?PHP echo $item["idcomunicado"] ?></td>
-                                            <td><?PHP echo $item["fecha"] ?></td>
-                                            <td><?PHP echo $item["titulo"] ?></td>
+                                            <td><?PHP echo $item["idevento"] ?></td>
+                                            <td><?PHP echo $item["anio"] ?></td>
+                                            <td><?PHP echo $item["nombre"] ?></td>
+                                            <td><?PHP echo $item["programapdf"] ?></td>
+                                            <td><?PHP echo $item["video"] ?></td>
                                             <td>
                                                 <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
                                                 <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
