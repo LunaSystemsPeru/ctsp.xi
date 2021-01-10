@@ -93,8 +93,8 @@ $comunicado = new Comunicado();
                                             if ($extesionfinal == "pdf") {
                                                 $imagen = "logopdf.jpeg";
                                                 ?>
-                                                <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                                    <a href="#" data-toggle="modal" data-target="#basicModal">
+                                                <li class="card-container col-lg-2 col-md-6 col-sm-6 m-b30 home">
+                                                    <a href="#" onclick="cargarArchivo('<?php echo $item['imagen'] ?>')">
                                                     <div class="">
                                                         <img src="images/comunicados/<?php echo $imagen ?>" alt="">
                                                     </div>
@@ -109,12 +109,12 @@ $comunicado = new Comunicado();
                                                 <?php
                                             } else {
                                                 ?>
-                                                <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
+                                                <li class="card-container col-lg-2 col-md-6 col-sm-6 m-b30 home">
                                                     <div class="dez-box  dez-gallery-bx">
                                                         <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/comunicados/<?php echo $imagen ?>" alt=""> </a>
                                                             <div class="overlay-bx">
                                                                 <div class="overlay-icon">
-                                                                    <a href="images/comunicados/<?php echo $imagen ?>" class="mfp-link" title="DexignZone" title="<?php echo $item['titulo'] ?>">
+                                                                    <a href="images/comunicados/<?php echo $imagen ?>" class="mfp-link" title="<?php echo $item['titulo'] ?>">
                                                                         <i class="fa fa-picture-o icon-bx-xs"></i>
                                                                     </a>
                                                                 </div>
@@ -150,7 +150,7 @@ $comunicado = new Comunicado();
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <embed src="images/comunicados/logopdf.jpeg" id="embedPDF">
+                                <embed src="images/comunicados/logopdf.jpeg" id="embedPDF" width="100%" height="500px" >
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -174,10 +174,16 @@ $comunicado = new Comunicado();
 <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <script src="js/rev.slider.js"></script>
 <script>
+    function cargarArchivo (archivo) {
+        $("#basicModal").modal("toggle");
+        $("#embedPDF").attr("src", "images/comunicados/" + archivo)
+    }
+</script>
+<script>
     jQuery(document).ready(function () {
         'use strict';
         dz_rev_slider_5();
-    });	/*ready*/
+    });
 </script>
 </body>
 
