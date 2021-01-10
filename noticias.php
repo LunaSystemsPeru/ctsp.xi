@@ -26,7 +26,7 @@ $util = new Util();
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
 
     <!-- PAGE TITLE HERE -->
-    <title>Noticas | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>Eventos | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,7 +72,7 @@ $util = new Util();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Noticias</h3>
+                        <h3 class="h3"> Eventos</h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
