@@ -1,13 +1,18 @@
 <?php
 require '../models/Curso.php';
+require '../models/CursosParticipante.php';
 require '../models/ParametrosDetalle.php';
 require '../tools/Util.php';
 
+$participante = new CursosParticipante();
 $curso = new Curso();
 $detalle = new ParametrosDetalle();
 $util = new Util();
 
-$curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
+$participante->setIdParticipante(filter_input(INPUT_GET, 'idparticipante'));
+$participante->obtenerDatos();
+
+$curso->setIdCurso($participante->getIdCurso());
 $curso->obtenerDatos();
 
 $detalle->setIdDetalle($curso->getIdModalidad());
@@ -15,7 +20,11 @@ $detalle->obtenerDatos();
 
 $host= $_SERVER["HTTP_HOST"];
 $url= $_SERVER["REQUEST_URI"];
-$url_imagen = "http://" . $host . $url."/../../../public/images/favicon.ico";
+//$url_server = "http://" . $host . "/clientes/ctsp.xi";
+$url_server = "http://" . $host ;
+$url_imagen = $url_server ."/intranet/public/images/favicon.ico";
+//943889676
+$url_whatsapp = "https://wa.me/51943889676?text=Hola, mi nombre es " . $participante->getApellido() . " " . $participante->getNombre() . " y tengo una consulta con el curso de: " . $curso->getNombre();
 ?>
 <!DOCTYPE html>
 <html>
@@ -197,7 +206,7 @@ $url_imagen = "http://" . $host . $url."/../../../public/images/favicon.ico";
                 <tr>
                     <td bgcolor="#305598" align="center" style="padding: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
                         <h2 style="font-size: 20px; font-weight: 400; color: #111111; margin: 0;">Necesita Ayuda?</h2>
-                        <p style="margin: 0;"><a href="#" target="_blank" style="color: #FFFFFF;">Escribanos a: 933665544</a></p>
+                        <p style="margin: 0;"><a href="<?php echo $url_whatsapp?>" target="_blank" style="color: #FFFFFF;">Escribanos a: 943889676</a></p>
                     </td>
                 </tr>
             </table>
