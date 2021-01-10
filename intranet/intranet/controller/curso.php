@@ -4,11 +4,14 @@ require '../../models/Curso.php';
 
 $curso = new Curso();
 
-$accion = filter_input(INPUT_GET, 'action');
+$accion = '';
+if ( isset( $_REQUEST["action"] ) ) {
+    $accion = filter_var( $_REQUEST["action"], FILTER_SANITIZE_STRING );
+}
 // accion = 1 => añadir
 // accion = 2 => modificar
 // accion = 3 => eliminar
-if (!$accion) {
+if ($accion== 1) {
     $curso->generarCodigo();
 
     $curso->setFecha(filter_input(INPUT_POST, 'input_fecha'));
@@ -58,6 +61,13 @@ if (!$accion) {
         echo "tipo archivo " . $afile['type'];
         //header("Location: ../reg_productos.php?error=2");
     }
+}
+
+if ($accion == 2) {
+    $curso->setIdCurso(filter_input(INPUT_POST, 'idcurso'));
+    $curso->setLugar(filter_input(INPUT_POST, 'input_url'));
+    $curso->actualizar();
+    header("Location: ../contents/ver_cursos_detalle.php?idcurso=" . $curso->getIdCurso());
 }
 
 if ($accion == 3) {

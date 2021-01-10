@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require '../intranet/models/CursosParticipante.php';
 require '../intranet/models/Curso.php';
 require '../intranet/tools/Util.php';
@@ -66,3 +67,4 @@ if (isset($afile)) {
     echo "tipo archivo " . $afile['type'];
     //header("Location: ../reg_productos.php?error=2");
 }
+ob_end_flush();

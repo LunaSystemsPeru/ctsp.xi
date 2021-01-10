@@ -96,9 +96,9 @@ class Email
             $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
             //Recipients
-            $mail->setFrom('consultas@ctsprxiancash.org.pe', 'Consultas CTSP Region XI Ancash');
+            $mail->setFrom('consultas@ctsprxiancash.org.pe', 'Consultas CTSP RXI Ancash');
             $mail->addAddress($this->correo, $this->nombre_receptor);     // Add a recipient
-            $mail->addReplyTo('consultas@ctsprxiancash.org.pe', 'Consultas CTSP Region XI Ancash');
+            $mail->addReplyTo('consultas@ctsprxiancash.org.pe', 'Consultas CTSP RXI Ancash');
             //$mail->addCC('cc@example.com');
             //$mail->addBCC('bcc@example.com');
 
@@ -113,7 +113,7 @@ class Email
             $mail->AltBody = 'Gracias por registrarse al curso, unas horas antes del inicio, le enviaremos un correo con el acceso al curso';
             $mail->CharSet = 'UTF-8';
             $mail->send();
-            echo 'Message has been sent';
+            //echo 'Message has been sent';
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
