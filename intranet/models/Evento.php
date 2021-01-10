@@ -159,8 +159,11 @@ class Evento
 
     public function verEventos()
     {
-        $sql = "select * from eventos 
-                where anio = '$this->anio'";
+        $sql = "select e.idevento, e.anio, e.programapdf, e.video, pd.nombre 
+                from eventos as e 
+                inner join parametros_detalles pd on e.id_tipo_evento = pd.id_detalle
+                order by anio desc
+               ";
         //echo $sql;
         return $this->c_conectar->get_Cursor($sql);
 
