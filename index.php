@@ -556,7 +556,7 @@ $util = new Util();
         <div class="section-full bg-white content-inner" id="services">
             <div class="container">
                 <div class="section-head text-center ">
-                    <h3 class="h3 text-uppercase">Noticias</h3>
+                    <h3 class="h3 text-uppercase">EVENTOS</h3>
                 </div>
                 <div class="section-content ">
                     <div class="blog-carousel owl-carousel owl-theme owl-btn-1 primary owl-btn-center-lr owl-dots-black-full">
@@ -645,53 +645,16 @@ $util = new Util();
                 </div>
             </div>
         </div>
+
         <!-- Our Project END -->
         <!-- Meet Our Team -->
-        <!-- Team member
+        <!-- Team member-->
         <div class="section-full content-inner bg-gray">
             <div class="container">
-                <div class="section-head text-center ">
-                    <h3 class="h3 text-uppercase">Servicios</h3>
-                </div>
-                <div class="section-content text-center ">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-cogs"></i></a></div>
-                                <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Bienestar Social</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-recycle"></i></a></div>
-                                <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Fondo de Apoyo</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-id-card"></i></a></div>
-                                <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Convenios</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-openid"></i></a></div>
-                                <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Oportunidad Laboral</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
-        Team member END -->
+        <!--Team member END -->
         <div class="section-full bg-img-fix overlay-primary-dark content-inner-1 dez-support" style="background-image:url(images/background/bg5.jpg);">
             <div class="container">
                 <div class="row">
