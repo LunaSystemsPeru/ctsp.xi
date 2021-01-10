@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Soy Colegiado - Acceso a mi Perfil del CTSP Region XI Ancash</title>
+    <title>Acceso para cambiar informacion de la WEB</title>
     <!-- Favicon icon -->
     <link rel="icon" type="../../public/image/png" sizes="16x16" href="../../public/images/favicon.png">
     <link href="../../public/css/style.css" rel="stylesheet">
@@ -27,11 +27,11 @@
                                     <img src="../../../images/logo.png" height="80px">
                                 </div>
                                 <hr class="">
-                                <h4 class="text-center mb-4 text-uppercase">Soy Colegiado</h4>
+                                <h4 class="text-center mb-4 text-uppercase">Acceder al Gestor de Contenidos</h4>
                                 <form action="../controller/login.php" method="post">
                                     <div class="form-group">
-                                        <label><strong>Email</strong></label>
-                                        <input type="email" class="form-control" value="colegiado@correo.com" name="inputUsuario">
+                                        <label><strong>Usuario</strong></label>
+                                        <input type="text" class="form-control" value="nombreusuario" name="inputUsuario">
                                     </div>
                                     <div class="form-group">
                                         <label><strong>Contraseña</strong></label>
@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                         <div class="form-group">
-                                            <a href="http://medico.dexignzone.com/xhtml/error-404.html">Olvidaste tu Contraseña?</a>
+                                            <!--<a href="http://medico.dexignzone.com/xhtml/error-404.html">Olvidaste tu Contraseña?</a>-->
                                         </div>
                                     </div>
                                     <div class="text-center">

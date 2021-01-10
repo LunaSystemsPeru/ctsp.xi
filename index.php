@@ -514,13 +514,19 @@ $util = new Util();
         <div class="section-full bg-white content-inner" id="services">
             <div class="container">
                 <div class="section-head text-center ">
-                    <h3 class="h3 text-uppercase">Cursos</h3>
+                    <a href="cursos.php"><h3 class="h3 text-uppercase">Cursos</h3></a>
                 </div>
                 <div class="section-content ">
                     <div class="row">
                         <?php
-                        $acursos = $curso->verCursosActivos();
+                        $acursos = $curso->verUltimosCursos();
+                        $fecha_actual = strtotime(date("Y-m-d"));
                         foreach ($acursos as $item) {
+                            $fecha_entrada = strtotime($item['fecha']);
+                            $label = '<label class="badge badge-success"> Activo</label>';
+                            if ($fecha_entrada < $fecha_actual) {
+                                $label = '<label class="badge badge-danger"> Cerrado</label>';
+                            }
                             ?>
                             <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
                                 <div class="dez-box">
@@ -530,8 +536,9 @@ $util = new Util();
                                         </a>
                                     </div>
                                     <div class="dez-info p-a30 border-1">
-                                        <h4 class="dez-title m-t0"><a href="detalle_curso.php?idcurso=<?php echo $item['id_curso'] ?>"><?php echo $item['nombre'] ?></a></h4>
+                                        <h4 class="dez-title m-t0"><a href="detalle_curso.php?idcurso=<?php echo $item['id_curso'] ?>"><?php echo $item['nombre'] ?></a> <?php echo $label?></h4>
                                         <div class="dez-separator bg-primary"></div>
+                                        <p class="m-b15">Fecha: <?php echo $util->fechaCastellano($item['fecha']) ?> </p>
                                         <p class="m-b15">Profesor(es) <?php echo $item['profesor'] ?> </p>
                                         <a href="detalle_curso.php?idcurso=<?php echo $item['id_curso'] ?>" class="site-button-link black">Estoy Interesado <i class="fa fa-long-arrow-right"></i></a>
                                     </div>

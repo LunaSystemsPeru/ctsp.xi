@@ -28,7 +28,7 @@
                                 </div>
                                 <hr class="">
                                 <h4 class="text-center mb-4 text-uppercase">Acesso Intranet</h4>
-                                <form action="#">
+                                <form action="index.php">
                                     <div class="form-group">
                                         <label><strong>Usuario</strong></label>
                                         <input type="email" class="form-control" placeholder="Admin">

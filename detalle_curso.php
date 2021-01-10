@@ -1,6 +1,8 @@
 <?php
 require 'intranet/models/Curso.php';
+require 'intranet/tools/Util.php';
 $curso = new Curso();
+$util = new Util();
 
 $curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
 
@@ -9,6 +11,8 @@ if (!$curso->getIdCurso()) {
 } else {
     $curso->obtenerDatos();
 }
+
+$fecha_curso = $util->fechaCastellano($curso->getFecha());
 ?>
 
 <!DOCTYPE html>
@@ -79,7 +83,7 @@ if (!$curso->getIdCurso()) {
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> <?php echo $curso->getNombre()?></h3>
+                        <h3 class="h3"> <?php echo $curso->getNombre() ?></h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
@@ -90,99 +94,103 @@ if (!$curso->getIdCurso()) {
                     <div class="row">
                         <div class="row portfolio-detail">
                             <div class="col-md-12">
-                                <img src="images/cursos/<?php echo $curso->getImagen()?>" class="m-b30" alt=""/>
+                                <img src="images/cursos/<?php echo $curso->getImagen() ?>" class="m-b30" alt=""/>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <h2 class="m-b10 font-weight-700 ">Descripcion del Curso</h2>
-                                        <p class="m-b50"><?php echo $curso->getNombre() ?></p>
+                                        <h2 class="m-b10 font-weight-700 ">Detalle del Curso</h2>
                                         <div class="p-a30 port-info-box bg-gray radius-sm">
-                                            <h5>Profesor: <span
+                                            <h5>Profesor(es): <span
                                                         class="m-l10 font-weight-300 text-black"> <?php echo $curso->getProfesor() ?></span>
                                             </h5>
                                             <h5>Via Ponencia: <span
                                                         class="m-l10 font-weight-300 text-black"> <?php echo $curso->getLugar() ?></span>
                                             </h5>
                                             <h5>Fecha: <span
-                                                        class="m-l10 font-weight-300 text-black"> <?php echo $curso->getFecha() ?></span>
+                                                        class="m-l10 font-weight-300 text-black"> <?php echo $fecha_curso ?></span>
                                             </h5>
                                             <h5>Monto: <span
-                                                        class="m-l10 font-weight-300 text-black"><?php echo $curso->getMonto() ?></span>
+                                                        class="m-l10 font-weight-300 text-black">S/ <?php echo number_format($curso->getMonto(), 2) ?></span>
                                             </h5>
                                         </div>
                                     </div>
 
-                                <div class="col-md-6">
-                                    <h3>Inscribete</h3>
-                                    <?php
-                                    if ($curso->getEstado() == 0) {
-                                    ?>
-                                    <form method="post" action="controller/reg_participante_curso.php" enctype="multipart/form-data">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_apellidos" type="text" required class="form-control" placeholder="Apellidos">
+                                    <div class="col-md-6">
+                                        <?php
+                                        $fecha_actual = strtotime(date("Y-m-d"));
+                                        $fecha_entrada = strtotime($curso->getFecha());
+                                        if ($fecha_entrada > $fecha_actual) {
+                                            ?>
+                                            <div class="alert bg-success text-white"><i class="fa fa-address-book"></i> <strong> INSCRIBITE ONLINE!!</strong></div>
+                                            <form method="post" action="controller/reg_participante_curso.php" enctype="multipart/form-data">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <input name="input_apellidos" type="text" required class="form-control" placeholder="Apellidos">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_nombres" type="text" class="form-control" required placeholder="Nombres">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <input name="input_nombres" type="text" class="form-control" required placeholder="Nombres">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_celular" type="text" required class="form-control" placeholder="Celular">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <input name="input_celular" type="text" required class="form-control" placeholder="Celular">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_email" type="email" required class="form-control" placeholder="email">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <input name="input_email" type="email" required class="form-control" placeholder="email">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_documento" type="text" required class="form-control" placeholder="Nro Documento">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <input name="input_documento" type="text" required class="form-control" placeholder="Nro Documento">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <div class="input-group">
-                                                        <input name="input_trabajo" type="text" required class="form-control" placeholder="Lugar de Trabajo">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <div class="input-group">
+                                                                <input name="input_trabajo" type="text" required class="form-control" placeholder="Lugar de Trabajo">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="col-form-label">Cargar Voucher</label>
-                                                    <div class="input-group">
-                                                        <input type="file" accept="image/jpeg, image/png" name="input_voucher" class="form-control" placeholder="Cargar Voucher">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="col-form-label">Cargar Voucher</label>
+                                                            <div class="input-group">
+                                                                <input type="file" accept="image/jpeg, image/png" name="input_voucher" class="form-control" placeholder="Cargar Voucher">
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="col-md-12">
-                                                <input type="hidden" name="hidden_curso" value="<?php echo $curso->getIdCurso()?>">
-                                                <input name="submit" type="submit" value="Submit" class="site-button">
+                                                    <div class="col-md-12">
+                                                        <input type="hidden" name="hidden_curso" value="<?php echo $curso->getIdCurso() ?>">
+                                                        <input name="submit" type="submit" value="Inscribirse!" class="btn btn-success">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <?php
+                                        } else {
+                                            ?>
+                                            <div class="card-header">
+                                                <div class="alert bg-danger text-white"><i class="fa fa-exclamation-triangle"></i> ESTE CURSO YA FINALIZO</div>
+                                                <a href="cursos.php"> <i class="fa fa-arrow-left"></i> Ver Todos los Cursos</a>
                                             </div>
-                                        </div>
-                                    </form>
-                                    <?php
-                                    } else {
+                                            <?php
+                                        }
                                         ?>
-                                        <h1>ESTE CURSO YA FINALIZO</h1>
-                                    <?php
-                                    }
-                                    ?>
-                                </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

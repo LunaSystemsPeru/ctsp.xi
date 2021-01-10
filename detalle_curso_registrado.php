@@ -1,6 +1,8 @@
 <?php
 require 'intranet/models/Curso.php';
+require 'intranet/tools/Util.php';
 $curso = new Curso();
+$util = new Util();
 
 $curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
 
@@ -9,8 +11,9 @@ if (!$curso->getIdCurso()) {
 } else {
     $curso->obtenerDatos();
 }
-?>
 
+$fecha_curso = $util->fechaCastellano($curso->getFecha());
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -93,28 +96,28 @@ if (!$curso->getIdCurso()) {
                                 <img src="images/cursos/<?php echo $curso->getImagen() ?>" class="m-b30" alt=""/>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <h2 class="m-b10 font-weight-700 ">Descripcion del Curso</h2>
-                                        <p class="m-b50"><?php echo $curso->getNombre() ?></p>
-                                        <div class="p-a30 port-info-box bg-gray radius-sm">
-                                            <h5>Profesor: <span
-                                                        class="m-l10 font-weight-300 text-black"> <?php echo $curso->getProfesor() ?></span>
-                                            </h5>
-                                            <h5>Via Ponencia: <span
-                                                        class="m-l10 font-weight-300 text-black"> <?php echo $curso->getLugar() ?></span>
-                                            </h5>
-                                            <h5>Fecha: <span
-                                                        class="m-l10 font-weight-300 text-black"> <?php echo $curso->getFecha() ?></span>
-                                            </h5>
-                                            <h5>Monto: <span
-                                                        class="m-l10 font-weight-300 text-black"><?php echo $curso->getMonto() ?></span>
-                                            </h5>
-                                        </div>
+                                    <h2 class="m-b10 font-weight-700 ">Detalle del Curso</h2>
+                                    <div class="p-a30 port-info-box bg-gray radius-sm">
+                                        <h5>Profesor(es): <span
+                                                    class="m-l10 font-weight-300 text-black"> <?php echo $curso->getProfesor() ?></span>
+                                        </h5>
+                                        <h5>Via Ponencia: <span
+                                                    class="m-l10 font-weight-300 text-black"> <?php echo $curso->getLugar() ?></span>
+                                        </h5>
+                                        <h5>Fecha: <span
+                                                    class="m-l10 font-weight-300 text-black"> <?php echo $fecha_curso ?></span>
+                                        </h5>
+                                        <h5>Monto: <span
+                                                    class="m-l10 font-weight-300 text-black"><?php echo number_format($curso->getMonto(), 2) ?></span>
+                                        </h5>
                                     </div>
+                                </div>
 
                                     <div class="col-md-6">
                                         <div class="row">
-                                            <h1 class="text-red">USTED HA SIDO REGISTRADO, GRACIAS</h1>
+                                            <div class="alert bg-success text-white font-weight-bold"><i class="fa fa-check"></i> USTED HA SIDO REGISTRADO, GRACIAS</div>
                                             <h4>Nos contactaremos con usted luego de verificar la informacion</h4>
+                                            <a href="cursos.php"> <i class="fa fa-arrow-left"></i> Ver Todos los Cursos</a>
                                         </div>
                                     </div>
                                 </div>
