@@ -8,10 +8,7 @@
                 </div>
                 <div class="col-lg-9">
                     <ul class="contact-info style-1 clearfix text-primary">
-                        <li>
-                            <h6 class="text-primary"><i class="fa fa-phone"></i> Consultas</h6>
-                            <span>0800-000050</span>
-                        </li>
+
                         <li>
                             <h6 class="text-primary"><i class="fa fa-envelope-o"></i> Escribenos</h6>
                             <span>consultas@ctsprxiancash.org.pe</span>
