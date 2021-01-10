@@ -1,6 +1,8 @@
 <?php
 require 'intranet/models/Noticias.php';
+require 'intranet/models/NoticiaImagen.php';
 $noticia = new noticias();
+$galeria = new NoticiaImagen();
 
 $noticia->setIdnoticias(filter_input(INPUT_GET, 'idnoticia'));
 
@@ -8,6 +10,7 @@ if (!$noticia->getIdnoticias()) {
     header("Location: noticias.php");
 } else {
     $noticia->obtenerDatos();
+    $galeria->setIdnoticia($noticia->getIdnoticias());
 }
 ?>
 
@@ -89,8 +92,21 @@ if (!$noticia->getIdnoticias()) {
                 <div class="section-content ">
                     <div class="row">
                         <div class="row portfolio-detail">
-                            <div class="col-md-12">
-                                <img src="images/noticias/<?php echo $noticia->getImagen()?>" class="m-b30" alt=""/>
+                            <div class="col-md-8">
+                                <div class="owl-carousel owl-fade-one owl-dots-none owl-theme">
+                                    <?php
+                                    $agaleria = $galeria->verImagenes();
+                                    foreach ($agaleria as $fila) {
+                                        ?>
+                                        <div class="item">
+                                            <div class="dez-thum-bx"> <img src="archivos/noticias/imagenes/<?php echo $fila['imagen']?>" alt=""> </div>
+                                        </div>
+                                    <?php
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h2 class="m-b10 font-weight-700 "><?php echo $noticia->getTitulo() ?></h2>

@@ -1,6 +1,8 @@
 <?php
 require 'intranet/models/Noticias.php';
+require 'intranet/tools/Util.php';
 $noticia = new noticias();
+$util = new Util();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -81,31 +83,45 @@ $noticia = new noticias();
                         <div class="col-lg-12 p-lr0">
                             <!-- blog grid -->
                             <div id="masonry" class="dez-blog-grid-3">
-                                <div class="post card-container col-lg-4 col-md-6 col-12">
-                                    <div class="blog-post blog-grid date-style-2">
-                                        <div class="dez-post-media dez-img-effect zoom-slow"><a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a></div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-title ">
-                                                <h3 class="post-title"><a href="#">Title of first blog post</a></h3>
+                                <?php
+                                $anoticias = $noticia->verNoticiasImagen();
+                                $fecha_actual = strtotime(date("Y-m-d"));
+                                foreach ($anoticias as $item) {
+                                    $fecha_entrada = strtotime($item['fecha']);
+                                    $year= date('Y', $fecha_entrada);
+                                    $day= date('d', $fecha_entrada);
+                                    $month = $util->Mes3Letras($fecha_entrada);
+                                ?>
+                                    <div class="post card-container col-lg-4 col-md-6 col-12">
+                                        <div class="blog-post blog-grid date-style-2">
+                                            <div class="dez-post-media dez-img-effect zoom-slow">
+                                                <a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>">
+                                                    <img src="archivos/noticias/imagenes/<?php echo $item['imagen'] ?>" alt="">
+                                                </a>
                                             </div>
-                                            <div class="dez-post-meta ">
-                                                <ul>
-                                                    <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
-                                                    <li class="post-author"><i class="fa fa-user"></i>By <a href="#">demongo</a></li>
-                                                    <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0 Comments</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="dez-post-text">
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                            </div>
-                                            <div class="dez-post-readmore"><a href="#" title="READ MORE" rel="bookmark" class="site-button-link">READ MORE<i class="fa fa-angle-double-right"></i></a></div>
-                                            <div class="dez-post-tags">
-                                                <div class="post-tags"><a href="#">Child </a> <a href="#">Eduction </a> <a href="#">Money </a> <a href="#">Resturent </a></div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-title ">
+                                                    <h3 class="post-title"><a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>"><?php echo $item['titulo'] ?></a></h3>
+                                                </div>
+                                                <div class="dez-post-meta ">
+                                                    <ul>
+                                                        <li class="post-date"><i class="fa fa-calendar"></i><strong><?php echo $day . " " , $month?></strong> <span> <?php echo $year?></span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dez-post-text">
+
+                                                </div>
+                                                <div class="dez-post-readmore"><a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>" title="LEER MAS" rel="bookmark" class="site-button-link">LEER MAS<i class="fa fa-angle-double-right"></i></a></div>
+                                                <div class="dez-post-tags">
+                                                    <div class="post-tags"><a href="#">Child </a> <a href="#">Eduction </a> <a href="#">Money </a> <a href="#">Resturent </a></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                <?php
+                                }
+                                ?>
+
                             </div>
                         </div>
                     </div>

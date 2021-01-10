@@ -154,6 +154,15 @@ class noticias
 
     }
 
+    public function verNoticiasImagen()
+    {
+        $sql = "select idnoticias,titulo, fecha, (select imagen from noticias_imagenes where noticias_imagenes.idnoticias = noticias.idnoticias order by RAND() limit 1) as imagen  
+                from noticias 
+                order by fecha desc";
+        return $this->c_conectar->get_Cursor($sql);
+
+    }
+
     public function verNoticiasEncabezado($mes, $anio)
     {
         $sql = "select idnoticias, fecha,titulo, imagen 
