@@ -91,20 +91,7 @@ $participante->setIdCurso($curso->getIdCurso());
     ***********************************-->
     <div class="content-body">
         <div class="container-fluid">
-            <div class="row page-titles mx-0">
-                <div class="col-sm-6 p-md-0">
-                    <div class="welcome-text">
-                        <h4>Hi, welcome back!</h4>
-                        <span class="ml-1">Datatable</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Colegiatura</a></li>
-                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Cursos</a></li>
-                    </ol>
-                </div>
-            </div>
+
             <!-- row -->
 
 
@@ -113,8 +100,8 @@ $participante->setIdCurso($curso->getIdCurso());
                     <div class="card">
                         <div class="card-header">
                             <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar Participante</a>
-                            <a href="#" class="btn btn-success"> <i class="fa fa-plus"></i> Excel Participantes</a>
-                            <button class="btn btn-success"> <i class="fa fa-plus"></i> </button>
+                            <a href="#" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#basicModal"> <i class="fa fa-upload"></i> Cargar Link </button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -192,7 +179,28 @@ $participante->setIdCurso($curso->getIdCurso());
                                 <h5>Monto: <span
                                             class="m-l10 font-weight-300 text-black"><?php echo $curso->getMonto() ?></span>
                                 </h5>
+
+                                <h5>URL Zoom: <span
+                                            class="m-l10 font-weight-300 text-black"><?php echo $curso->getLugar() ?></span>
+                                </h5>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="basicModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Modal body text goes here.</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
