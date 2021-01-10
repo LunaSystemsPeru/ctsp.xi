@@ -1,8 +1,5 @@
 <?php
-
-
 require_once 'Conectar.php';
-
 
 class Usuario
 {
@@ -120,9 +117,9 @@ class Usuario
     public function obtenerDatos()
     {
         $sql = "select * from usuarios 
-        where id_usuario = '$this->idUsuario'" ;
+        where id_usuario = '$this->idUsuario'";
         $resultado = $this->c_conectar->get_Row($sql);
-         $this->usuario = $resultado['usuario'];
+        $this->usuario = $resultado['usuario'];
         $this->password = $resultado['password'];
         $this->dato = $resultado['datos'];
         $this->email = $resultado['email'];
@@ -131,17 +128,30 @@ class Usuario
         $this->ultimoIngreso = $resultado['ultimo_ingreso'];
     }
 
+    public function validarUsuario()
+    {
+        $sql = "select * from usuarios 
+        where usuario = '$this->usuario'";
+        $resultado = $this->c_conectar->get_Row($sql);
+        if ($resultado) {
+            $this->idUsuario = $resultado['id_usuario'];
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public function actualizar()
     {
         $sql = "UPDATE usuarios
-                SET  ultimo_ingreso = '$this->ultimoIngreso' WHERE  id_usuario = '$this->idUsuario' " ;
-         return $this->c_conectar->ejecutar_idu($sql);
+                SET  ultimo_ingreso = '$this->ultimoIngreso' WHERE  id_usuario = '$this->idUsuario' ";
+        return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function eliminar()
     {
         $sql = "DELETE FROM usuarios
-                WHERE  id_usuario = '$this->idUsuario'  " ; 
+                WHERE  id_usuario = '$this->idUsuario'  ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
