@@ -113,6 +113,8 @@ $participante->setIdCurso($curso->getIdCurso());
                     <div class="card">
                         <div class="card-header">
                             <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar Participante</a>
+                            <a href="#" class="btn btn-success"> <i class="fa fa-plus"></i> Excel Participantes</a>
+                            <button class="btn btn-success"> <i class="fa fa-plus"></i> </button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">

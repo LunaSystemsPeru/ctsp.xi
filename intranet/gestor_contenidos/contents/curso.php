@@ -206,6 +206,7 @@ $detalle = new ParametrosDetalle();
 <!-- Svganimation scripts -->
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
+
 <script>
     $(window).on("load",function(){
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['_logueado']) {
+if (isset($_SESSION['_logueado'])) {
     header("Location: ../contents/index.php");
 }
 ?>

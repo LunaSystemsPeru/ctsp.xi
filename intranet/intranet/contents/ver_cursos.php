@@ -119,14 +119,16 @@ $curso = new Curso();
                                         <th>Fec. Inicio</th>
                                         <th>Matriculados</th>
                                         <th>Estado</th>
-                                        <th>Acciones</th>
+                                        <th width="16%">Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <?php
                                     $acurso = $curso->verTodoCursos();
                                     $fecha_actual = strtotime(date("Y-m-d"));
+                                    $nrofila = 0;
                                     foreach ($acurso as $fila) {
+                                        $nrofila++;
                                         $fecha_entrada = strtotime($fila['fecha']);
                                         $label = '<label class="badge badge-success"> Activo</label>';
                                         if ($fecha_entrada < $fecha_actual) {
@@ -134,7 +136,7 @@ $curso = new Curso();
                                         }
                                         ?>
                                         <tr>
-                                            <td><?php echo $fila['id_curso'] ?></td>
+                                            <td><?php echo $nrofila?></td>
                                             <td><?php echo $fila['nombre'] . " | Ponente: " . $fila['profesor'] ?></td>
                                             <td><?php echo number_format($fila['monto'],2) ?></td>
                                             <td><?php echo $fila['fecha'] ?></td>

@@ -11,6 +11,7 @@ if ($usuario->validarUsuario()) {
     if ($usuario->obtenerDatos()) {
         if ($pass_formulario == $usuario->getPassword()) {
             $_SESSION['_logueado'] = true;
+            $_SESSION['idusuario'] = $usuario->getIdUsuario();
             header("Location: ../contents/index.php");
         } else {
             //contraseña incorrecta
