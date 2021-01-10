@@ -114,7 +114,7 @@ $util = new Util();
                                 data-param10="{&quot;revslider-weather-addon&quot; : { &quot;type&quot; : &quot;&quot; ,&quot;name&quot; : &quot;&quot; ,&quot;woeid&quot; : &quot;&quot; ,&quot;unit&quot; : &quot;&quot; }}"
                                 data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="images/main-slider/baner22.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" 2 data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                <img src="images/main-slider/banner11.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" 2 data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
                                      data-blurend="0" data-offsetstart="0 0" data-offsetend="100 0" data-bgparallax="8" class="rev-slidebg"
                                      data-no-retina>
 

@@ -75,7 +75,7 @@
                 <div class="section-content ">
                     <div class="row">
                         <div class="col-lg-12">
-                            <embed src="archivos/Estatuto%20CDR%20XI.%20Ancash%20CTSP.pdf" width="100%" height="1000px">
+                            <embed src="archivos/EstatutoCDRXIAncash.pdf" width="100%" height="1000px">
                         </div>
                     </div>
                 </div>

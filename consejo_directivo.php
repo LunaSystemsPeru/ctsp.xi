@@ -85,7 +85,7 @@
 
                     </div>
                     <div class="col-lg-12 text-center">
-                        <img src="images/main-slider/baner22.jpg" width="75%">
+                        <img src="images/main-slider/banner11.jpg" width="75%">
 
                     </div>
                     <div class="col-lg-12 text-center">
