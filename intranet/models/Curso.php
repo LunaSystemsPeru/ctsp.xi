@@ -170,7 +170,7 @@ class Curso
     public function actualizar()
     {
         $sql = "UPDATE cursos
-                SET  id_usuario = '$this->idUsuario' WHERE  id_curso = '$this->idCurso' ";
+                SET  lugar = '$this->lugar' WHERE  id_curso = '$this->idCurso' ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 

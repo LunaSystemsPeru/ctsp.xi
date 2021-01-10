@@ -114,6 +114,7 @@ $detalle = new ParametrosDetalle();
                                         <div class="form-group col-md-12">
                                             <label>Nombre del curso</label>
                                             <input type="text" class="form-control" name="input_nombre" required>
+                                            <input type="hidden" name="action" value="1">
                                         </div>
                                         <div class="form-group col-md-12">
                                             <label>Profesor</label>
