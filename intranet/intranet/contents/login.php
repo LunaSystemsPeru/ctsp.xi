@@ -28,19 +28,21 @@
                                 </div>
                                 <hr class="">
                                 <h4 class="text-center mb-4 text-uppercase">Acesso Intranet</h4>
-                                <form action="index.php">
+                                <form action="../controller/login.php" method="post">
                                     <div class="form-group">
                                         <label><strong>Usuario</strong></label>
-                                        <input type="email" class="form-control" placeholder="Admin">
+                                        <input type="text" class="form-control" placeholder="Admin" name="inputUsuario">
                                     </div>
                                     <div class="form-group">
                                         <label><strong>Contraseña</strong></label>
-                                        <input type="password" class="form-control" placeholder="pass">
+                                        <input type="password" class="form-control" placeholder="pass" name="inputPassword">
                                     </div>
                                     <div class="form-row d-flex justify-content-between mt-4 mb-2">
+                                       <!--
                                         <div class="form-group">
                                             <a href="../controller/recuperar_contrasena.php">Olvidaste tu Contraseña?</a>
                                         </div>
+                                        -->
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-user"></i> ingresar</button>

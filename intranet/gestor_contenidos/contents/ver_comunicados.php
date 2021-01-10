@@ -129,7 +129,7 @@ $comunicado = new Comunicado();
                                     </thead>
                                     <tbody>
                                     <?php
-                                    $acomunicados = $comunicado->verComunicados('12'. '2020');
+                                    $acomunicados = $comunicado->verComunicados();
                                     foreach ($acomunicados as $item) {
                                         ?>
                                         <tr>

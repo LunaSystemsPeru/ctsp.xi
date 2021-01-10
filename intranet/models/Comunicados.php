@@ -93,9 +93,11 @@ class Comunicado
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
-    public function verComunicados ($mes,$anio) {
+    public function verComunicados () {
         $sql = "select idcomunicado, fecha,titulo, imagen 
-                from comunicados where year(fecha)='$anio' and month(fecha)>='$mes' ";
+                from comunicados 
+                order by fecha desc 
+                limit 20";
         return $this->c_conectar->get_Cursor($sql);
     }
 
