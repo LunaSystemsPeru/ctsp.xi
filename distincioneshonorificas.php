@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
     <!-- PAGE TITLE HERE -->
-    <title>Codigo de Etica | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>Distinciones Honorificas | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Codigo de Etica</h3>
+                        <h3 class="h3"> Reglamento de Distinciones Honorificas</h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
@@ -76,7 +76,7 @@
                     <div class="row">
                         <div class="col-lg-12">
 <!--                            Falta codigo de etica-->
-                            <embed src="archivos/ETICAYDEONTOLOGIA2019-2021.pdf" width="100%" height="1000px">
+                            <embed src="archivos/DISTINCIONES_HONORIFICAS2019-2021.pdf" width="100%" height="1000px">
                         </div>
                     </div>
                 </div>

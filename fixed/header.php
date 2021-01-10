@@ -67,6 +67,9 @@
                                     <li><a href="resena_historica.php">Reseña Historica</a></li>
                                     <li><a href="plan_trabajo.php">Plan de Trabajo</a></li>
                                     <li><a href="mof.php">M.O.F.</a></li>
+                                    <li><a href="estatutos_cdr.php">Estatutos CDR</a></li>
+                                    <li><a href="codigo_etica.php">Codigo de Etica</a></li>
+                                    <li><a href="distincioneshonorificas.php">Distinciones Honorificas</a></li>
                                 </ul>
                             </li>
                             <li><a href="javascript:;">Marco Legal<i class="fa fa-chevron-down"></i></a>
@@ -81,8 +84,7 @@
 
                                     </li>
                                     <li><a href="escritura_publica.php">Escritura Publica</a></li>
-                                    <li><a href="estatutos_cdr.php">Estatutos CDR</a></li>
-                                    <li><a href="codigo_etica.php">CODIGO DE ETICA</a></li>
+
 
                                 </ul>
                             </li>
