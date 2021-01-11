@@ -32,7 +32,7 @@
                         <div class="dez-separator bg-primary"></div>
                         <ul>
                             <li><i class="fa fa-map-marker"></i><strong>Dirección</strong> Av. Enrrique Meiggs 1910, Florida Baja, Ciudad Chimbote, Perú </li>
-                            <li><i class="fa fa-phone"></i><strong>Telefonos</strong>043-555555</li>
+                            <li><i class="fa fa-phone"></i><strong>Telefonos</strong>981379288 - 943889676 - 943662280</li>
                             <li><i class="fa fa-envelope"></i><strong>email</strong>consultas@ctsprxi.org.pe</li>
                         </ul>
                     </div>
