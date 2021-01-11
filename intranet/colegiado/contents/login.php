@@ -28,20 +28,20 @@
                                 </div>
                                 <hr class="">
                                 <h3 class="text-center mb-4 text-uppercase bg-blue-dark text-white">Soy Colegiado</h3>
-                                <form action="#">
+                                <form action="../controller/login.php" method="post">
                                     <div class="form-group">
                                         <label><strong>Email</strong></label>
-                                        <input type="email" class="form-control" value="colegiado@correo.com">
+                                        <input type="email" class="form-control" placeholder="colegiado@correo.com" name="inputEmail" required>
                                     </div>
                                     <div class="form-group">
                                         <label><strong>Contraseña</strong></label>
-                                        <input type="password" class="form-control" value="Contraseña">
+                                        <input type="password" class="form-control" placeholder="Contraseña" name="inputPassword" required>
                                     </div>
-                                    <div class="form-row d-flex justify-content-between mt-4 mb-2">
+                                    <!--<div class="form-row d-flex justify-content-between mt-4 mb-2">
                                         <div class="form-group">
                                             <a href="http://medico.dexignzone.com/xhtml/error-404.html">Olvidaste tu Contraseña?</a>
                                         </div>
-                                    </div>
+                                    </div>-->
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-user"></i> ingresar</button>
                                     </div>
