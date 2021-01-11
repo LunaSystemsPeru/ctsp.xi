@@ -107,7 +107,7 @@ $participante->setIdCurso($curso->getIdCurso());
                             <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar Participante</a>
                             <a href="#" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
                             <button class="btn btn-info" data-toggle="modal" data-target="#basicModal"><i class="fa fa-upload"></i> Cargar Link</button>
-                            <button class="btn btn-info" ><i class="fa fa-send"></i> Enviar Link Masivo</button>
+                            <button class="btn btn-info" onclick="enviarEmail()"><i class="fa fa-send"></i> Enviar Link Masivo</button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -269,6 +269,11 @@ $participante->setIdCurso($curso->getIdCurso());
 <!-- Svganimation scripts -->
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
+<script>
+    function enviarEmail () {
+        location.href = "../controller/send_link_masivo_curso.php?idcurso=<?php echo $curso->getIdCurso()?>";
+    }
+</script>
 </body>
 
 
