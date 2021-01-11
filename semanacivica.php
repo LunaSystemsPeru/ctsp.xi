@@ -127,7 +127,7 @@ if ($evento->obtenerDatosporTipo()) {
                                             <div class="overlay-bx overlay-primary-dark">
                                                 <div class="overlay-icon z-index2"><a
                                                             href="archivos/eventos/imagenes/<?php echo $fila['imagen'] ?>" class="mfp-link"
-                                                            title="Dia del Trabajador Social"> <i
+                                                            title="Semana Civiva"> <i
                                                                 class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                             </div>
                                         </div>
