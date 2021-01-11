@@ -124,21 +124,23 @@ $comunicado = new Comunicado();
                                         <th>Item</th>
                                         <th>Fecha</th>
                                         <th>Comunicado</th>
-                                        <th>Acciones</th>
+                                        <th width="12%">Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <?php
-                                    $acomunicados = $comunicado->verComunicados('12'. '2020');
+                                    $acomunicados = $comunicado->verComunicados();
+                                    $itemnro= 0;
                                     foreach ($acomunicados as $item) {
+                                        $itemnro++;
                                         ?>
                                         <tr>
-                                            <td>1</td>
-                                            <td>2020-11-16</td>
-                                            <td>COMUNICADO AL DIRECTOR REGIONAL DE SALUD ANCASH</td>
+                                            <td><?PHP echo $itemnro ?></td>
+                                            <td><?PHP echo $item["fecha"] ?></td>
+                                            <td><?PHP echo $item["titulo"] ?></td>
                                             <td>
-                                                <a href="#" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
-                                                <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+                                                <a href="#" class="btn btn-facebook btn-sm" title="Editar"><i class="fa fa-edit"></i></a>
+                                                <a href="#" class="btn btn-danger btn-sm" title="Eliminar"><i class="fa fa-trash"></i></a>
                                             </td>
                                         </tr>
                                     <?php

@@ -1,11 +1,16 @@
 <?php
 require '../../models/CursosParticipante.php';
 require '../../models/Curso.php';
+require '../../models/ParametrosDetalle.php';
 $curso = new Curso();
 $participante = new CursosParticipante();
+$tipo = new ParametrosDetalle();
 
 $curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
 $curso->obtenerDatos();
+
+$tipo->setIdDetalle($curso->getIdModalidad());
+$tipo->obtenerDatos();
 
 $participante->setIdCurso($curso->getIdCurso());
 ?>
@@ -91,20 +96,7 @@ $participante->setIdCurso($curso->getIdCurso());
     ***********************************-->
     <div class="content-body">
         <div class="container-fluid">
-            <div class="row page-titles mx-0">
-                <div class="col-sm-6 p-md-0">
-                    <div class="welcome-text">
-                        <h4>Hi, welcome back!</h4>
-                        <span class="ml-1">Datatable</span>
-                    </div>
-                </div>
-                <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Colegiatura</a></li>
-                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Cursos</a></li>
-                    </ol>
-                </div>
-            </div>
+
             <!-- row -->
 
 
@@ -113,6 +105,9 @@ $participante->setIdCurso($curso->getIdCurso());
                     <div class="card">
                         <div class="card-header">
                             <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar Participante</a>
+                            <a href="#" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#basicModal"><i class="fa fa-upload"></i> Cargar Link</button>
+                            <button class="btn btn-info" onclick="enviarEmail()"><i class="fa fa-send"></i> Enviar Link Masivo</button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -142,13 +137,13 @@ $participante->setIdCurso($curso->getIdCurso());
                                             <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] ?></td>
                                             <td><?php echo $fila['email'] ?></td>
                                             <td><?php echo $fila['celular'] ?></td>
-                                            <td><?php echo $label_estado?></td>
+                                            <td><?php echo $label_estado ?></td>
                                             <td>
                                                 <a href="#" class="btn btn-facebook" title="Cobrar"><i class="fa fa-dollar"></i></a>
                                                 <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
                                             </td>
                                         </tr>
-                                    <?php
+                                        <?php
                                     }
                                     ?>
 
@@ -182,7 +177,7 @@ $participante->setIdCurso($curso->getIdCurso());
                                             class="m-l10 font-weight-300 text-black"> <?php echo $curso->getProfesor() ?></span>
                                 </h5>
                                 <h5>Via Ponencia: <span
-                                            class="m-l10 font-weight-300 text-black"> <?php echo $curso->getLugar() ?></span>
+                                            class="m-l10 font-weight-300 text-black"> <?php echo $tipo->getNombre()?></span>
                                 </h5>
                                 <h5>Fecha: <span
                                             class="m-l10 font-weight-300 text-black"> <?php echo $curso->getFecha() ?></span>
@@ -190,9 +185,42 @@ $participante->setIdCurso($curso->getIdCurso());
                                 <h5>Monto: <span
                                             class="m-l10 font-weight-300 text-black"><?php echo $curso->getMonto() ?></span>
                                 </h5>
+
+                                <h5>URL Zoom: <span
+                                            class="m-l10 font-weight-300 text-black"><?php echo $curso->getLugar() ?></span>
+                                </h5>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="basicModal">
+                <div class="modal-dialog" role="document">
+                    <form class="form-horizontal" method="post" action="../controller/curso.php">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Cargar Link</h5>
+                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label>URL</label>
+                                        <input type="text" class="form-control" name="input_url" required>
+                                    </div>
+                                    <input type="hidden" name="action" value="2">
+                                    <input type="hidden" name="idcurso" value="<?php echo $curso->getIdCurso()?>">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -241,6 +269,11 @@ $participante->setIdCurso($curso->getIdCurso());
 <!-- Svganimation scripts -->
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
+<script>
+    function enviarEmail () {
+        location.href = "../controller/send_link_masivo_curso.php?idcurso=<?php echo $curso->getIdCurso()?>";
+    }
+</script>
 </body>
 
 

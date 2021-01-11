@@ -328,15 +328,34 @@ class Asociado
         $resultado = $this->c_conectar->get_Row($sql);
         if ($resultado) {
             $this->idAsociado = $resultado['id_asociado'];
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function validarEmail()
+    {
+        $sql = "select id_asociado 
+        from asociados 
+        where email = '$this->email'";
+        $resultado = $this->c_conectar->get_Row($sql);
+        if ($resultado) {
+            $this->idAsociado = $resultado['id_asociado'];
+            return true;
+        } else {
+            return false;
         }
     }
 
     public function actualizar()
     {
         $sql = "UPDATE asociados
-                SET  registro_sunedu = '$this->registroSunedu' WHERE  id_asociado = '$this->idAsociado' ";
+                SET  password = '$this->password' WHERE  id_asociado = '$this->idAsociado' ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
+
+
 
     public function eliminar()
     {

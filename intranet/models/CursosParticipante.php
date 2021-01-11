@@ -211,4 +211,9 @@ class CursosParticipante
         $sql = "select * from cursos_participantes where id_curso = '$this->idCurso'";
         return $this->c_conectar->get_Cursor($sql);
     }
+
+    public function verPagaron () {
+        $sql = "select * from cursos_participantes where id_curso = '$this->idCurso' and verificado = 1";
+        return $this->c_conectar->get_Cursor($sql);
+    }
 }

@@ -5,7 +5,7 @@ require 'intranet/models/Comunicados.php';
 require 'intranet/tools/Util.php';
 
 $curso = new Curso();
-$noticias = new noticias();
+$noticia = new noticias();
 $comunicado = new Comunicado();
 $util = new Util();
 
@@ -114,7 +114,7 @@ $util = new Util();
                                 data-param10="{&quot;revslider-weather-addon&quot; : { &quot;type&quot; : &quot;&quot; ,&quot;name&quot; : &quot;&quot; ,&quot;woeid&quot; : &quot;&quot; ,&quot;unit&quot; : &quot;&quot; }}"
                                 data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="images/main-slider/baner22.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" 2 data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                <img src="images/main-slider/banner11.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" 2 data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
                                      data-blurend="0" data-offsetstart="0 0" data-offsetend="100 0" data-bgparallax="8" class="rev-slidebg"
                                      data-no-retina>
 
@@ -514,13 +514,19 @@ $util = new Util();
         <div class="section-full bg-white content-inner" id="services">
             <div class="container">
                 <div class="section-head text-center ">
-                    <h3 class="h3 text-uppercase">Cursos</h3>
+                    <a href="cursos.php"><h3 class="h3 text-uppercase">Cursos</h3></a>
                 </div>
                 <div class="section-content ">
                     <div class="row">
                         <?php
-                        $acursos = $curso->verCursosActivos();
+                        $acursos = $curso->verUltimosCursos();
+                        $fecha_actual = strtotime(date("Y-m-d"));
                         foreach ($acursos as $item) {
+                            $fecha_entrada = strtotime($item['fecha']);
+                            $label = '<label class="badge badge-success"> Activo</label>';
+                            if ($fecha_entrada < $fecha_actual) {
+                                $label = '<label class="badge badge-danger"> Cerrado</label>';
+                            }
                             ?>
                             <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
                                 <div class="dez-box">
@@ -530,8 +536,9 @@ $util = new Util();
                                         </a>
                                     </div>
                                     <div class="dez-info p-a30 border-1">
-                                        <h4 class="dez-title m-t0"><a href="detalle_curso.php?idcurso=<?php echo $item['id_curso'] ?>"><?php echo $item['nombre'] ?></a></h4>
+                                        <h4 class="dez-title m-t0"><a href="detalle_curso.php?idcurso=<?php echo $item['id_curso'] ?>"><?php echo $item['nombre'] ?></a> <?php echo $label?></h4>
                                         <div class="dez-separator bg-primary"></div>
+                                        <p class="m-b15">Fecha: <?php echo $util->fechaCastellano($item['fecha']) ?> </p>
                                         <p class="m-b15">Profesor(es) <?php echo $item['profesor'] ?> </p>
                                         <a href="detalle_curso.php?idcurso=<?php echo $item['id_curso'] ?>" class="site-button-link black">Estoy Interesado <i class="fa fa-long-arrow-right"></i></a>
                                     </div>
@@ -549,19 +556,24 @@ $util = new Util();
         <div class="section-full bg-white content-inner" id="services">
             <div class="container">
                 <div class="section-head text-center ">
-                    <h3 class="h3 text-uppercase">Noticias</h3>
+                    <h3 class="h3 text-uppercase">EVENTOS</h3>
                 </div>
                 <div class="section-content ">
                     <div class="blog-carousel owl-carousel owl-theme owl-btn-1 primary owl-btn-center-lr owl-dots-black-full">
                         <?php
-                        $anoticias = $noticias->verNoticiasEncabezado(date("m"), date("Y"));
+                        $anoticias = $noticia->verNoticiasImagen();
+                        $fecha_actual = strtotime(date("Y-m-d"));
                         foreach ($anoticias as $item) {
+                            $fecha_entrada = strtotime($item['fecha']);
                             $fechalarga = $util->fechaCastellano($item['fecha']);
+                            $year= date('Y', $fecha_entrada);
+                            $day= date('d', $fecha_entrada);
+                            $month = $util->Mes3Letras($fecha_entrada);
                             ?>
                             <div class="item">
                                 <div class="dez-box">
                                     <div class="dez-media">
-                                        <a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>"><img src="images/noticias/<?php echo $item['imagen'] ?>" alt=""></a>
+                                        <a href="detalle_notica.php?idnoticia=<?php echo $item['idnoticias'] ?>"><img src="archivos/noticias/imagenes/<?php echo $item['imagen'] ?>" alt=""></a>
                                     </div>
                                     <div class="dez-info p-a20 border-1">
                                         <div class="dez-post-meta ">
@@ -593,7 +605,9 @@ $util = new Util();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center text-white ">
-                        <h2 class="m-b15 m-t0">Comunicados</h2>
+                        <h2 class="m-b10 m-t0">Comunicados </h2>
+                        <h6>(hacer clic en el titulo)</h6>
+                        <br>
                     </div>
                 </div>
 
@@ -605,29 +619,19 @@ $util = new Util();
                                 <div>
                                     <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
                                         <?php
-                                        $acomunicados = $comunicado->verComunicados(date("m") - 1, date("Y"));
+                                        $acomunicados = $comunicado->verComunicados(12);
                                         foreach ($acomunicados as $item) {
-                                            ?>
-
+                                        $imagen = $item['imagen'];
+                                        ?>
                                             <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                                <div class="dez-box  dez-gallery-bx">
-                                                    <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/comunicados/<?php echo $item['imagen']?>" alt=""> </a>
-                                                        <div class="overlay-bx">
-                                                            <div class="overlay-icon">
-                                                                <a href="images/comunicados/<?php echo $item['imagen'] ?>" class="mfp-link" title="DexignZone" title="<?php echo $item['titulo'] ?>">
-                                                                    <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                                </a>
-                                                            </div>
+                                                <a href="#" onclick="cargarArchivo('<?php echo $item['imagen'] ?>');return false">
+                                                    <div class="dez-post-info">
+                                                        <div class="dez-post-title ">
+                                                            <h3 class="post-title text-white"><?php echo $item['titulo'] ?></h3>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="dez-post-info">
-                                                    <div class="dez-post-title ">
-                                                        <h3 class="post-title text-white "><?php echo $item['titulo'] ?></h3>
-                                                    </div>
-                                                </div>
+                                                </a>
                                             </li>
-
                                             <?php
                                         }
                                         ?>
@@ -641,53 +645,16 @@ $util = new Util();
                 </div>
             </div>
         </div>
+
         <!-- Our Project END -->
         <!-- Meet Our Team -->
-        <!-- Team member -->
+        <!-- Team member-->
         <div class="section-full content-inner bg-gray">
             <div class="container">
-                <div class="section-head text-center ">
-                    <h3 class="h3 text-uppercase">Servicios</h3>
-                </div>
-                <div class="section-content text-center ">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-cogs"></i></a></div>
-                                <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Bienestar Social</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-recycle"></i></a></div>
-                                <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Fondo de Apoyo</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-id-card"></i></a></div>
-                                <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Convenios</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
-                            <div class="icon-bx-wraper center">
-                                <div class="icon-bx-sm radius bg-primary m-b20"><a href="#" class="icon-cell"><i class="fa fa-openid"></i></a></div>
-                                <div class="icon-content">
-                                    <h5 class="dez-tilte text-uppercase">Oportunidad Laboral</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
-        <!-- Team member END -->
+        <!--Team member END -->
         <div class="section-full bg-img-fix overlay-primary-dark content-inner-1 dez-support" style="background-image:url(images/background/bg5.jpg);">
             <div class="container">
                 <div class="row">
@@ -733,7 +700,7 @@ $util = new Util();
 
             </div>
         </div>
-        <!-- Latest Blog -->
+        <!-- Latest Blog
         <div class="section-full bg-white content-inner-1">
             <div class="container">
                 <div class="section-head text-center ">
@@ -833,6 +800,26 @@ $util = new Util();
                         </div>
                     </div>
                 </div>
+
+                 -->
+                <div class="modal fade" id="basicModal">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Ver Comunicado </h5>
+                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <embed src="images/comunicados/logopdf.jpeg" id="embedPDF" width="100%" height="500px" >
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -913,10 +900,17 @@ $util = new Util();
 <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <script src="js/rev.slider.js"></script>
 <script>
+
+
     jQuery(document).ready(function () {
         'use strict';
         dz_rev_slider_5();
     });	/*ready*/
+
+    function cargarArchivo (archivo) {
+        $("#basicModal").modal("toggle");
+        $("#embedPDF").attr("src", "images/comunicados/" + archivo)
+    }
 </script>
 
 </body>

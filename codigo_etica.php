@@ -76,7 +76,7 @@
                     <div class="row">
                         <div class="col-lg-12">
 <!--                            Falta codigo de etica-->
-                            <embed src="" width="100%" height="1000px">
+                            <embed src="archivos/ETICAYDEONTOLOGIA2019-2021.pdf" width="100%" height="1000px">
                         </div>
                     </div>
                 </div>

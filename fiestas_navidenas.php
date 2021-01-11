@@ -1,3 +1,23 @@
+<?php
+require 'intranet/models/Evento.php';
+require 'intranet/models/EventoDetalle.php';
+$evento = new Evento();
+$galeria = new EventoDetalle();
+$evento->setIdTipoEvento(11);
+$anio=$evento->obtenerUltimoAño();
+
+if (filter_input(INPUT_GET, 'anio')) {
+    $anio = filter_input(INPUT_GET, 'anio');
+}
+
+$evento->setAnio($anio);
+if ($evento->obtenerDatosporTipo()) {
+    $evento->obtenerDatos();
+} else {
+    header("index.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,16 +31,16 @@
     <meta name="robots" content=""/>
     <meta name="description" content=""/>
     <meta property="og:title" content="Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
-    <meta property="og:description" content="Comunicados del Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
+    <meta property="og:description"
+          content="Comunicados del Colegio de Trabajadores Sociales del Peru - Region XI Ancash"/>
     <meta property="og:image" content=""/>
     <meta name="format-detection" content="telephone=no">
-    ctsprxiancash.org.pe
     <!-- FAVICONS ICON -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
 
     <!-- PAGE TITLE HERE -->
-    <title>Comunicados | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
+    <title>FIESTAS NAVIDEÑAS Y AÑO NUEVO | Colegio de Trabajadores Sociales del Peru - Region XI Ancash</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,192 +80,75 @@
     <!-- header END -->
     <!-- Content -->
     <div class="page-content">
+
         <!-- About Company -->
-        <!-- Our Awesome Services -->
+        <!-- Our Awesome Services section-full bg-white content-inner -->
         <div class="section-full bg-white content-inner">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> NAVIDAD Y AÑO NUEVO</h3>
-                        <h3 class="h3"> 2020</h3>
+                        <h3 class="h3"> FIESTA NAVIDEÑA Y FIN DE AÑO</h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
                 </div>
-                    <div class="row">
-                        <div class="col-lg-12 text-center section-head">
-                            <a href="archivos/invitacionNavidad.jpeg" target="_blank" class="site-button">Descargar Invitacion Aqui</a>
-                        </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center section-head">
+                        <a href="archivos/eventos/<?php echo $evento->getPrograma() ?>" target="_blank"
+                           class="site-button">Descargar Programa Aqui</a></div>
 
-                    </div>
                 </div>
-
                 <div class="section-content ">
                     <div class="row">
-                        <div class="col-lg-12 p-lr0">
-                            <!-- blog grid -->
-                            <div id="masonry" class="dez-blog-grid-4">
-                                <div>
-                                    <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="archivos/tarjetaNavidad.jpeg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon">
-                                                            <a href="archivos/tarjetaNavidad.jpeg" class="mfp-link" title="DexignZone" title="Image title come here">
-                                                                <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202001.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon">
-                                                            <a href="images/gallery/fiesta_navidena/2020/fn202001.jpg" class="mfp-link" title="DexignZone" title="Image title come here">
-                                                                <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202002.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202002.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202003.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202003.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202004.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202004.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202005.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202005.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202006.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202006.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202007.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon">
-                                                            <a href="images/gallery/fiesta_navidena/2020/fn202007.jpg" class="mfp-link" title="DexignZone" title="Image title come here">
-                                                                <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202013.jpeg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202013.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202009.jpeg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202009.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202010.jpeg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202010.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202014.jpeg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202014.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/fiesta_navidena/2020/fn202012.jpeg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="images/gallery/fiesta_navidena/2020/fn202012.jpeg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
+                        <div class="col-lg-12 p-lr0 text-center">
+                            <iframe width="400" height="315" src="https://www.youtube.com/embed/<?php echo $evento->getVideo()?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
+                <br>
 
+            </div>
+
+            <div class="blog-page-content full-blog-dark style-2 style-3">
+                <div class="row m-lr0">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-tb20">
+                        <div id="masonry"
+                             class="row m-lr0 dez-blog-grid-3 dez-gallery-listing gallery-grid-4 gallery mfp-gallery">
+                            <?php
+                            $galeria->setIdevento($evento->getId());
+                            $agaleria = $galeria->verImagenes();
+                            foreach ($agaleria as $fila) {
+                                ?>
+                                <div class="post card-container col-lg-4 col-md-6 col-sm-6 col-12">
+                                    <div class="dez-box dez-gallery-box m-b0">
+                                        <div class="dez-media dez-img-overlay11 dez-img-effect zoom-slow"><a
+                                                    href="javascript:void(0);"> <img
+                                                        src="archivos/eventos/imagenes/<?php echo $fila['imagen'] ?>" alt=""> </a>
+                                            <div class="overlay-bx overlay-primary-dark">
+                                                <div class="overlay-icon z-index2"><a
+                                                            href="archivos/eventos/imagenes/<?php echo $fila['imagen'] ?>" class="mfp-link"
+                                                            title="Dia del Trabajador Social"> <i
+                                                                class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
-    <!-- Footer -->
-    <?php include 'fixed/footer.php' ?>
-    <!-- Footer END-->
-    <!-- scroll top button -->
-    <button class="scroltop fa fa-chevron-up"></button>
+</div>
+<!-- Footer -->
+<?php include 'fixed/footer.php' ?>
+<!-- Footer END-->
+<!-- scroll top button -->
+<button class="scroltop fa fa-chevron-up"></button>
 </div>
 <!-- JavaScript  files ========================================= -->
 <script src="js/combining.js"></script><!-- COMBINING JS  -->
@@ -261,5 +164,5 @@
 </script>
 </body>
 
-<!-- Mirrored from medico.dexignzone.com/xhtml/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Sep 2020 21:19:49 GMT -->
+
 </html>

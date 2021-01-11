@@ -1,6 +1,6 @@
 <?php
 require '../../models/Noticias.php';
-$noticia =new Noticias();
+$noticia = new Noticias();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -116,36 +116,45 @@ $noticia =new Noticias();
                             </div>
 
                         </div>
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="example" class="display" style="min-width: 845px">
+                                    <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Fecha</th>
+                                        <th>Titulo</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php
+                                    $anoticia = $noticia->verNoticias();
+                                    $nrofila = 0;
+                                    foreach ($anoticia as $item) {
+                                        $nrofila++;
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $nrofila ?></td>
+                                            <td><?php echo $item['fecha'] ?></td>
+                                            <td><?php echo $item['titulo'] ?></td>
+                                            <td>
+                                                <a href="edt_noticia.php?idnoticia=<?php echo $item['idnoticias'] ?>" class="btn btn-facebook" title="Editar"><i class="fa fa-edit"></i></a>
+                                                <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                    }
+                                    ?>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="row">
-                <?php
-                $anoticia=$noticia->verNoticias(12,2020);
-                foreach ($anoticia as $fila) {
-                ?>
-                <div class="col-xl-4 col-xxl-6 col-lg-6 col-sm-6">
-
-                    <div class="card mb-3">
-
-                        <img class="card-img-bottom img-fluid" src="../../../images/noticias/<?php echo $fila['imagen']?>"
-                             alt="Card image cap">
-                        <div class="card-header">
-                            <h5 class="card-title"><?php echo $fila['titulo']?></h5>
-                        </div>
-
-                        <div class="card-footer">
-                            <p class="card-text d-inline">Card footer</p>
-                            <a href="mod_noticia.php?id=1" class="card-link float-right btn btn-success">Editar</a>
-                        </div>
-                    </div>
-                </div>
-
-                    <?php
-                }
-                ?>
             </div>
         </div>
     </div>

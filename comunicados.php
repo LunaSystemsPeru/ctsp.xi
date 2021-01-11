@@ -1,3 +1,8 @@
+<?php
+require 'intranet/models/Comunicados.php';
+$comunicado = new Comunicado();
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -79,66 +84,54 @@
                             <div id="masonry" class="dez-blog-grid-4">
                                 <div>
                                     <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon">
-                                                            <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here">
-                                                                <i class="fa fa-picture-o icon-bx-xs"></i>
-                                                            </a>
+                                        <?php
+                                        $acomunicados = $comunicado->verComunicados();
+                                        foreach ($acomunicados as $item) {
+                                            $imagen = $item['imagen'];
+                                            $extesion = explode(".", $imagen);
+                                            $extesionfinal = $extesion[1];
+                                            if ($extesionfinal == "pdf") {
+                                                $imagen = "logopdf.jpeg";
+                                                ?>
+                                                <li class="card-container col-lg-2 col-md-6 col-sm-6 m-b30 home">
+                                                    <a href="#" onclick="cargarArchivo('<?php echo $item['imagen'] ?>')">
+                                                    <div class="">
+                                                        <img src="images/comunicados/<?php echo $imagen ?>" alt="">
+                                                    </div>
+                                                    <div class="dez-post-info">
+                                                        <div class="dez-post-title ">
+                                                            <h3 class="post-title"><?php echo $item['titulo'] ?></h3>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                    </a>
+                                                </li>
+
+                                                <?php
+                                            } else {
+                                                ?>
+                                                <li class="card-container col-lg-2 col-md-6 col-sm-6 m-b30 home">
+                                                    <div class="dez-box  dez-gallery-bx">
+                                                        <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/comunicados/<?php echo $imagen ?>" alt=""> </a>
+                                                            <div class="overlay-bx">
+                                                                <div class="overlay-icon">
+                                                                    <a href="images/comunicados/<?php echo $imagen ?>" class="mfp-link" title="<?php echo $item['titulo'] ?>">
+                                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                                    <div class="dez-post-info">
+                                                        <div class="dez-post-title ">
+                                                            <h3 class="post-title"><?php echo $item['titulo'] ?></h3>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                            <div class="dez-box  dez-gallery-bx">
-                                                <div class="dez-thum-bx dez-img-overlay1 dez-img-effect zoom-slow"><a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg" alt=""> </a>
-                                                    <div class="overlay-bx">
-                                                        <div class="overlay-icon"><a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic1.jpg" class="mfp-link" title="DexignZone" title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#">Apoyo a Afectados por Covid</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
+                                                </li>
+                                                <?php
+                                            }
+                                        }
+                                        ?>
+
                                     </ul>
                                 </div>
 
@@ -147,6 +140,24 @@
                     </div>
                 </div>
 
+                <!-- -->
+                <div class="modal fade" id="basicModal">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Ver Comunicado </h5>
+                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <embed src="images/comunicados/logopdf.jpeg" id="embedPDF" width="100%" height="500px" >
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -163,10 +174,16 @@
 <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <script src="js/rev.slider.js"></script>
 <script>
+    function cargarArchivo (archivo) {
+        $("#basicModal").modal("toggle");
+        $("#embedPDF").attr("src", "images/comunicados/" + archivo)
+    }
+</script>
+<script>
     jQuery(document).ready(function () {
         'use strict';
         dz_rev_slider_5();
-    });	/*ready*/
+    });
 </script>
 </body>
 

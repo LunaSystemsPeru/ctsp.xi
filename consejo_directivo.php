@@ -85,7 +85,7 @@
 
                     </div>
                     <div class="col-lg-12 text-center">
-                        <img src="images/main-slider/baner22.jpg" width="75%">
+                        <img src="images/main-slider/banner11.jpg" width="75%">
 
                     </div>
                     <div class="col-lg-12 text-center">
@@ -146,13 +146,8 @@
 								<div class="dez-info p-t20">
 									<h4 class="dez-title m-b10"><a href="#">Mg. T.S. Silvia Aurora Noriega Roldán</a></h4>
 									<h6 class="dez-title">Decana</h6>
-									<p class="m-b10">CTSP:2280 - DNI:17933296 </p>
-									<ul class="dez-social-icon border dez-social-icon-lg">
-										<li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-pinterest-p"></a></li>
-									</ul>
+									<p class="m-b10">CTSP:2280</p>
+
 								</div>				
 							</div>
 						</div>
@@ -162,13 +157,8 @@
 								<div class="dez-info p-t20">
 									<h4 class="dez-title m-b10"><a href="#">Lic. T. S. Nancy Elizabeth Diestra  Pastor </a></h4>
 									<h6 class="dez-title">Vice Decana</h6>
-									<p class="m-b10">CTSP:6387 - DNI:17936907</p>
-									<ul class="dez-social-icon border dez-social-icon-lg">
-										<li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-pinterest-p"></a></li>
-									</ul>
+									<p class="m-b10">CTSP:6387</p>
+
 								</div>				
 							</div>
 						</div>
@@ -178,13 +168,8 @@
 								<div class="dez-info p-t20">
 									<h4 class="dez-title m-b10"><a href="#">Lic. T.S. Mónica Alexandra Castillo Sánchez  </a></h4>
 									<h6 class="dez-title">Secretaria</h6>
-									<p class="m-b10">CTSP:9357 - DNI:44514674 </p>
-									<ul class="dez-social-icon border dez-social-icon-lg">
-										<li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-pinterest-p"></a></li>
-									</ul>
+									<p class="m-b10">CTSP:9357</p>
+
 								</div>				
 							</div>
 						</div>
@@ -194,13 +179,8 @@
 								<div class="dez-info p-t20">
 									<h4 class="dez-title m-b10"><a href="#">Lic. T. S. Olinda María Ganoza Alvitres </a></h4>
 									<h6 class="dez-title">Tesorera</h6>
-									<p class="m-b10">CTSP:6608  - DNI:32914836 </p>
-									<ul class="dez-social-icon border dez-social-icon-lg">
-										<li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-										<li><a href="javascript:void(0);" class="fa fa-pinterest-p"></a></li>
-									</ul>
+									<p class="m-b10">CTSP:6608</p>
+
 								</div>				
 							</div>
 						</div>
@@ -210,13 +190,8 @@
                                 <div class="dez-info p-t20">
                                     <h4 class="dez-title m-b10"><a href="#">Lic. T. S. Nancy Esperanza Sánchez Azañedo </a></h4>
                                     <h6 class="dez-title">Vocal I</h6>
-                                    <p class="m-b10">CTSP:6090 - DNI:32875221 </p>
-                                    <ul class="dez-social-icon border dez-social-icon-lg">
-                                        <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-pinterest-p"></a></li>
-                                    </ul>
+                                    <p class="m-b10">CTSP:6090</p>
+
                                 </div>
                             </div>
                         </div>
@@ -226,13 +201,8 @@
                                 <div class="dez-info p-t20">
                                     <h4 class="dez-title m-b10"><a href="#">Lic. T. S. Frecia  Carmela Castillo  Milla </a></h4>
                                     <h6 class="dez-title">Vocal II</h6>
-                                    <p class="m-b10">CTSP:2492 - DNI:32860182  </p>
-                                    <ul class="dez-social-icon border dez-social-icon-lg">
-                                        <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-pinterest-p"></a></li>
-                                    </ul>
+                                    <p class="m-b10">CTSP:2492</p>
+
                                 </div>
                             </div>
                         </div>

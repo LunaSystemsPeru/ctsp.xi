@@ -1,6 +1,8 @@
 <?php
 require 'intranet/models/Curso.php';
+require 'intranet/tools/Util.php';
 $curso = new Curso();
+$util = new Util();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -83,8 +85,17 @@ $curso = new Curso();
                             <!-- blog grid -->
                             <div id="masonry" class="dez-blog-grid-3">
                                 <?php
-                                $acurso = $curso->verFilas();
+                                $acurso = $curso->verTodoCursos();
+                                $fecha_actual = strtotime(date("Y-m-d"));
                                 foreach ($acurso as $fila) {
+                                    $fecha_entrada = strtotime($fila['fecha']);
+                                    $label = '<label class="badge badge-success"> Activo</label>';
+                                    if ($fecha_entrada < $fecha_actual) {
+                                        $label = '<label class="badge badge-danger"> Cerrado</label>';
+                                    }
+                                    $year= date('Y', $fecha_entrada);
+                                    $day= date('d', $fecha_entrada);
+                                    $month = $util->Mes3Letras($fecha_entrada);
                                 ?>
                                     <div class="post card-container col-lg-4 col-md-6 col-12">
                                         <div class="blog-post blog-grid date-style-2">
@@ -95,11 +106,16 @@ $curso = new Curso();
                                             </div>
                                             <div class="dez-post-info">
                                                 <div class="dez-post-title ">
-                                                    <h3 class="post-title"><a href="#"><?php echo $fila['nombre'] ?></a></h3>
+                                                    <h3 class="post-title">
+                                                        <a href="detalle_curso.php?idcurso=<?php echo $fila['id_curso'] ?>">
+                                                            <?php echo $fila['nombre'] ?>
+                                                        </a>
+                                                        <?php echo $label   ?>
+                                                    </h3>
                                                 </div>
                                                 <div class="dez-post-meta ">
                                                     <ul>
-                                                        <li class="post-date"><i class="fa fa-calendar"></i><strong>10 Aug</strong> <span> 2020</span></li>
+                                                        <li class="post-date"><i class="fa fa-calendar"></i><strong><?php echo $day . " " . $month?></strong> <span> <?php echo $year?></span></li>
                                                     </ul>
                                                 </div>
                                                 <div class="dez-post-text">

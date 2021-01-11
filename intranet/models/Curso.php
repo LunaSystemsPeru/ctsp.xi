@@ -170,7 +170,7 @@ class Curso
     public function actualizar()
     {
         $sql = "UPDATE cursos
-                SET  id_usuario = '$this->idUsuario' WHERE  id_curso = '$this->idCurso' ";
+                SET  lugar = '$this->lugar' WHERE  id_curso = '$this->idCurso' ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
@@ -181,16 +181,18 @@ class Curso
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
-    public function verFilas () {
+    public function verUltimosCursos () {
         $sql = "select id_curso, nombre, profesor, monto, fecha, estado, imagen 
-                from cursos ";
+                from cursos 
+                order by fecha desc 
+                limit 6";
         return $this->c_conectar->get_Cursor($sql);
     }
 
-    public function verCursosActivos () {
-        $sql = "select id_curso, nombre, profesor, monto, fecha, estado, imagen 
+    public function verTodoCursos () {
+        $sql = "select id_curso, nombre, profesor, monto, fecha, estado, imagen, (select count(*) from cursos_participantes as cp where cp.id_curso = cursos.id_curso)  as matriculados
                 from cursos 
-                where current_date() < fecha";
+                order by fecha desc";
         return $this->c_conectar->get_Cursor($sql);
     }
 

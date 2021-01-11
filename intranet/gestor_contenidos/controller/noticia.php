@@ -1,44 +1,48 @@
 <?php
 require '../../models/Noticias.php';
+require '../../models/NoticiaImagen.php';
 
 $noticia = new Noticias();
+$galeria = new NoticiaImagen();
 
 $noticia->generarCodigo();
 $noticia->setFecha(filter_input(INPUT_POST, 'input_fecha'));
 $noticia->setTitulo(filter_input(INPUT_POST, 'input_titulo'));
 $noticia->setContenido(filter_input(INPUT_POST, 'input_contenido'));
-$afile = $_FILES["input_imagen"];
+$noticia->insertar();
 
-//cargar imagen y enviar a carpeta.
-if (isset($afile)) {
-    // echo "imagenes encontradas: " . $file_count;
+$galeria->setIdnoticia($noticia->getIdnoticias());
 
-    $file = $afile['name'];
-    $file_temporal = $afile['tmp_name'];
-    $validextensions = array("jpeg", "jpg", "png", "JPG", "JPEG", "PNG");
-    $temporary = explode(".", $afile["name"]);
+//ccargar galeria
+$agaleria = $_FILES["filefotos"];
+//var_dump($_FILES["filefotos"]);
+
+for ($i= 0; $i < count($agaleria['name']); $i++) {
+    $file = $agaleria['name'][$i];
+    $file_temporal = $agaleria['tmp_name'][$i];
+    $temporary = explode(".", $file);
     $file_extension = end($temporary);
 
-    if ($afile["error"] > 0) {
-        echo "Return Code: " . $afile["error"] . "<br/><br/>";
+    if ($agaleria["error"][$i] > 0) {
+        echo "Return Code: " . $agaleria["error"][$i] . "<br/><br/>";
     } else {
-        $directorio = "../../../images/noticias/";
+        $directorio = "../../../archivos/noticias/imagenes/";
         if (!file_exists($directorio)) {
             if (!mkdir($directorio, 0777, true)) {
                 die('Fallo al crear las carpetas...');
             }
         }
 
-        $new_name = $noticia->getIdnoticias() . '.' . $file_extension;
+        $galeria->generarCodigo();
+        $new_name = $galeria->getId() . '.' . $file_extension;
 
         if (move_uploaded_file($file_temporal, $directorio . $new_name)) {
-            $noticia->setImagen($new_name);
-            if ($noticia->insertar()) {
-                header("Location: ../contents/noticia.php");
-            }
+            $galeria->setImagen($new_name);
+            $galeria->insertar();
         } else {
-            echo "error no se pudo copiar la imagen a la carpeta";
+            echo "error no se pudo copiar el archivo a la carpeta";
             //header("Location: ../reg_productos.php?error=3");
         }
     }
 }
+header("Location: ../contents/ver_noticias.php");

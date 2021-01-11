@@ -1,7 +1,8 @@
 <?php
 
 require_once 'Conectar.php';
-class Noticias
+
+class noticias
 {
     private $idnoticias;
     private $fecha;
@@ -103,6 +104,7 @@ class Noticias
         $sql = "select ifnull(max(idnoticias) +1, 1) as codigo from noticias";
         $this->idnoticias = $this->c_conectar->get_valor_query($sql, "codigo");
     }
+
     public function insertar()
     {
         $sql = "insert into noticias 
@@ -116,6 +118,7 @@ class Noticias
                 )";
         return $this->c_conectar->ejecutar_idu($sql);
     }
+
     public function obtenerDatos()
     {
         $sql = "select * from noticias 
@@ -127,6 +130,7 @@ class Noticias
         $this->imagen = $resultado['imagen'];
 
     }
+
     public function actualizar()
     {
         $sql = "UPDATE noticias
@@ -140,31 +144,33 @@ class Noticias
                 WHERE  idnoticias = '$this->idnoticias'  ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
-    public function verNoticias ($mes,$anio) {
-        $sql = "select idnoticias, fecha,titulo, contenido, imagen 
-                from noticias where year(fecha)=$anio and month(fecha)=$mes ";
-        //echo $sql;
+
+    public function verNoticias()
+    {
+        $sql = "select idnoticias,titulo, fecha  
+                from noticias 
+                order by fecha desc";
         return $this->c_conectar->get_Cursor($sql);
 
     }
 
-    public function verNoticiasEncabezado ($mes,$anio) {
+    public function verNoticiasImagen()
+    {
+        $sql = "select idnoticias,titulo, fecha, (select imagen from noticias_imagenes where noticias_imagenes.idnoticias = noticias.idnoticias order by RAND() limit 1) as imagen  
+                from noticias 
+                order by fecha desc";
+        return $this->c_conectar->get_Cursor($sql);
+
+    }
+
+    public function verNoticiasEncabezado($mes, $anio)
+    {
         $sql = "select idnoticias, fecha,titulo, imagen 
                 from noticias where year(fecha)=$anio and month(fecha)=$mes ";
         //echo $sql;
         return $this->c_conectar->get_Cursor($sql);
 
     }
-
-    public function verUltimasNoticias () {
-        $sql = "select idnoticias, fecha,titulo, contenido, imagen from noticias order by fecha asc limit 12 ";
-        //echo $sql;
-        return $this->c_conectar->get_Cursor($sql);
-
-    }
-
-
-
 
 
 }

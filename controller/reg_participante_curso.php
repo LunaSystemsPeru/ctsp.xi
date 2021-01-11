@@ -1,9 +1,14 @@
 <?php
+ob_start();
 require '../intranet/models/CursosParticipante.php';
+require '../intranet/models/Curso.php';
 require '../intranet/tools/Util.php';
+require '../intranet/tools/Email.php';
 
 $participantes = new CursosParticipante();
+$curso = new Curso();
 $util = new Util();
+$email = new Email();
 
 $participantes->generarCodigo();
 $participantes->setNombre(strtoupper(filter_input(INPUT_POST, 'input_nombres')));
@@ -13,6 +18,9 @@ $participantes->setEmail(filter_input(INPUT_POST, 'input_email'));
 $participantes->setNroDocumento(filter_input(INPUT_POST, 'input_documento'));
 $participantes->setCentroTrabajo(filter_input(INPUT_POST, 'input_trabajo'));
 $participantes->setIdCurso(filter_input(INPUT_POST, 'hidden_curso'));
+
+$curso->setIdCurso($participantes->getIdCurso());
+$curso->obtenerDatos();
 
 $afile = $_FILES["input_voucher"];
 
@@ -40,7 +48,14 @@ if (isset($afile)) {
         if (move_uploaded_file($file_temporal, $directorio . $new_name)) {
             $participantes->setVoucher($new_name);
             if ($participantes->insertar()) {
-                header("Location: ../detalle_curso.php?idcurso=" . $participantes->getIdCurso());
+                $email->setAsunto("REGISTRO AL CURSO: " . strtoupper($curso->getNombre()));
+                $email->setCorreo($participantes->getEmail());
+                $email->setNombreReceptor($participantes->getApellido() . " " . $participantes->getNombre());
+                $host= $_SERVER["HTTP_HOST"];
+                $url= $_SERVER["REQUEST_URI"];
+                $email->setUrl("http://" . $host . $url."/../../intranet/plantilla_emails/email_inscripcion_curso.php?idparticipante=" . $participantes->getIdParticipante());
+                $email->EnviarEmail();
+                header("Location: ../detalle_curso_registrado.php?idcurso=" . $participantes->getIdCurso());
             }
         } else {
             echo "error no se pudo copiar la imagen a la carpeta";
@@ -52,3 +67,4 @@ if (isset($afile)) {
     echo "tipo archivo " . $afile['type'];
     //header("Location: ../reg_productos.php?error=2");
 }
+ob_end_flush();
