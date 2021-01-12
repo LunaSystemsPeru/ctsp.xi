@@ -139,6 +139,7 @@ $ficha =  "../../../images/asociados/ficha_inscripcion/" . $asociado->getFichaIn
                             <p class="text-white mb-0"><?php echo $asociado->getApellido() ?></p>
                         </div>
                         <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Nro CTSP</span> <strong class="text-muted"><?php echo $asociado->getCtsp() ?>    </strong></li>
                             <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Tipo Documento</span> <strong class="text-muted"><?php echo $detalle->getNombre() ?>    </strong></li>
                             <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Nro Documento</span> <strong class="text-muted"><?php echo $asociado->getDni() ?></strong></li>
                             <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Fecha Nacimiento</span> <strong class="text-muted"><?php echo $asociado->getFechaNac() ?></strong></li>

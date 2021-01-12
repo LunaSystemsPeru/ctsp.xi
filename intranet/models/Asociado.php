@@ -360,6 +360,7 @@ class Asociado
                     celular = '$this->celular',
                     domicilio = '$this->domicilio',
                     foto = '$this->foto',
+                    password = '$this->password',
                     id_tipo_documento = '$this->tipo_documento'
                 WHERE  id_asociado = '$this->idAsociado' ";
         return $this->c_conectar->ejecutar_idu($sql);

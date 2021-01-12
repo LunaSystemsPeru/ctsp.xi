@@ -14,7 +14,6 @@ $imagen_perfil = "../../public/images/profile/pic1.jpg";
 if ($asociado->getFoto() != "noimage.jpg") {
     $imagen_perfil = "../../../images/asociados/perfil/" . $asociado->getFoto();
 }
-echo $imagen_perfil;
 ?>
 
 <!DOCTYPE html>
@@ -173,6 +172,10 @@ echo $imagen_perfil;
                                                 <div class="form-group col-md-3">
                                                     <label>Nro Celular</label>
                                                     <input type="text" class="form-control" name="input_celular" maxlength="9" value="<?php echo $asociado->getCelular() ?>" required>
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label>Contraseña</label>
+                                                    <input type="text" class="form-control" name="input_password" value="<?php echo $asociado->getPassword() ?>" required>
                                                 </div>
                                                 <div class="form-group col-md-12">
                                                     <label>Domicilio Actual</label>

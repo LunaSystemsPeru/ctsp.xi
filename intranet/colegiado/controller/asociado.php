@@ -13,6 +13,7 @@ $asociado->setEmail(filter_input(INPUT_POST, 'input_email'));
 $asociado->setCelular(filter_input(INPUT_POST, 'input_celular'));
 $asociado->setDomicilio(filter_input(INPUT_POST, 'input_domicilio'));
 $asociado->setFechaNac(filter_input(INPUT_POST, 'input_fec_nac'));
+$asociado->setPassword(filter_input(INPUT_POST, 'input_password'));
 $asociado->setCentroTrabajo(filter_input(INPUT_POST, 'input_trabajo'));
 
 //cargar files
