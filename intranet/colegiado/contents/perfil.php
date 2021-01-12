@@ -2,10 +2,12 @@
 session_start();
 require '../../models/Asociado.php';
 require '../../models/ParametrosDetalle.php';
+require '../../models/Cuota.php';
 require '../../tools/Util.php';
 
 $asociado = new Asociado();
 $detalle = new ParametrosDetalle();
+$cuota = new Cuota();
 
 $util = new Util();
 
@@ -14,6 +16,18 @@ $asociado->obtenerDatos();
 
 $detalle->setIdDetalle($asociado->getTipoDocumento());
 $detalle->obtenerDatos();
+
+$cuota->setIdAsociado($asociado->getIdAsociado());
+
+$imagen_perfil = "../../public/images/profile/pic1.jpg";
+
+if ($asociado->getFoto() != "noimage.jpg") {
+    $imagen_perfil = "../../../images/asociados/perfil/" . $asociado->getFoto();
+}
+
+$titulo =  "../../../images/asociados/titulo/" . $asociado->getTitulo();
+$sunedu =  "../../../images/asociados/sunedu/" . $asociado->getRegistroSunedu();
+$ficha =  "../../../images/asociados/ficha_inscripcion/" . $asociado->getFichaInscripcion();
 ?>
 
 <!DOCTYPE html>
@@ -119,32 +133,150 @@ $detalle->obtenerDatos();
                     <div class="card">
                         <div class="text-center py-4 px-5 overlay-box" style="background-image: url(images/big/img1.jpg);">
                             <div class="profile-photo">
-                                <img src="../../../images/asociados/perfil/<?php echo $asociado->getFoto()?>" width="100" class="img-fluid rounded-circle" alt="">
+                                <img src="<?php echo $imagen_perfil ?>" width="100" class="img-fluid rounded-circle" alt="">
                             </div>
-                            <h3 class="mt-3 mb-1 text-white"><?php echo $asociado->getNombre()?></h3>
-                            <p class="text-white mb-0"><?php echo $asociado->getApellido()?></p>
+                            <h3 class="mt-3 mb-1 text-white"><?php echo $asociado->getNombre() ?></h3>
+                            <p class="text-white mb-0"><?php echo $asociado->getApellido() ?></p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Tipo Documento</span> <strong class="text-muted"><?php echo $detalle->getNombre()?>	</strong></li>
-                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Nro Documento</span> 		<strong class="text-muted"><?php echo $asociado->getDni()?></strong></li>
-                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Fecha Nacimiento</span> <strong class="text-muted"><?php echo $asociado->getFechaNac()?></strong></li>
-                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Edad</span> <strong class="text-muted"><?php echo $util->calculaEdad($asociado->getFechaNac())?></strong></li>
-                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Nro Celular</span> <strong class="text-muted"><?php echo $asociado->getCelular()?></strong></li>
-                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Email</span> <strong class="text-muted"><?php echo $asociado->getEmail()?></strong></li>
-                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Centro de Trabajo</span> <strong class="text-muted"><?php echo $asociado->getCentroTrabajo()?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Tipo Documento</span> <strong class="text-muted"><?php echo $detalle->getNombre() ?>    </strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Nro Documento</span> <strong class="text-muted"><?php echo $asociado->getDni() ?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Fecha Nacimiento</span> <strong class="text-muted"><?php echo $asociado->getFechaNac() ?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Edad</span> <strong class="text-muted"><?php echo $util->calculaEdad($asociado->getFechaNac()) ?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Nro Celular</span> <strong class="text-muted"><?php echo $asociado->getCelular() ?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Email</span> <strong class="text-muted"><?php echo $asociado->getEmail() ?></strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span class="mb-0">Centro de Trabajo</span> <strong class="text-muted"><?php echo $asociado->getCentroTrabajo() ?></strong></li>
                         </ul>
                         <div class="card-footer border-0 mt-0">
                             <button class="btn btn-primary btn-lg btn-block">
-                                <h4 class="m-0 text-white"><i class="fa fa-bell-o"></i> Reminder Alarm</h4>
+                                <a href="edt_asociado.php?idasociado=<?php echo $asociado->getIdAsociado() ?>"><h4 class="m-0 text-white"><i class="fa fa-bell-o"></i> Modificar Datos</h4></a>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-8 col-xxl-8 col-lg-8 col-md-12">
+                <div class="col-xl-4 col-xxl-8 col-lg-8 col-md-12">
                     <div class="card">
                         <div class="card-header">
-                    <button class="btn btn-success"> <i class="fa fa-check"> </i> Aprobar Solicitud</button>
+                            <!--<button class="btn btn-facebook">
+                                <i class="fa fa-upload"></i> Modificar Archivos
+                            </button>
+                            -->
+                            <H4 class="card-title">Cuotas Pagadas</H4>
                         </div>
+                        <div class="card-body">
+                            <table class="table " style="width:100%">
+                                <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Monto</th>
+                                    <th>Nro Meses</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php
+                                $acuotas = $cuota->verPagos();
+                                foreach ($acuotas as $item) {
+                                    ?>
+                                    <tr>
+                                        <td class="text-center"><?php echo $item['fecha'] ?></td>
+                                        <td class="text-right">S/ <?php echo number_format($item['monto'], 2) ?></td>
+                                        <td class="text-right"><?php echo $item['nrocuotas'] ?></td>
+                                    </tr>
+                                    <?php
+                                }
+                                ?>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-xxl-8 col-lg-8 col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <!--<button class="btn btn-facebook">
+                                <i class="fa fa-upload"></i> Modificar Archivos
+                            </button>
+                            -->
+                            <H4 class="card-title">Archivos del Asociado</H4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table " style="width:100%">
+                                <thead>
+                                <tr>
+                                    <th>Archivo</th>
+                                    <th>Accion</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>TITULO PROFESIONAL</td>
+                                    <td class="text-center">
+                                        <a href="<?php echo $titulo?>" target="_blank" class="btn btn-success"><i class="fa fa-eye"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>REGISTRO SUNEDU</td>
+                                    <td class="text-center">
+                                        <a href="<?php echo $sunedu?>" target="_blank" class="btn btn-success"><i class="fa fa-eye"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>FICHA INSCRIPCION</td>
+                                    <td class="text-center">
+                                        <a href="<?php echo $ficha?>" target="_blank" class="btn btn-success"><i class="fa fa-eye"></i></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-facebook" type="button" data-toggle="modal" data-target="#basicModal">
+                                <i class="fa fa-upload"></i> Modificar Archivos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="basicModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form method="post" action="../controller/upt_archivos.php">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Actualizar Archivos Obligatorios</h5>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-row">
+                                    <div class="col-lg-8">
+                                        <div class="form-group col-md-12">
+                                            <label>Ficha Inscripcion</label>
+                                            <input type="file" class="form-control" name="file_ficha_inscripcion" accept="application/pdf">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label>Titulo scan</label>
+                                            <input type="file" class="form-control" name="file_titulo" accept="application/pdf">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label>Certificado SUNEDU</label>
+                                            <input type="file" class="form-control" name="file_sunedu" accept="application/pdf">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="hidden" value="<?php echo "" ?>"
+                                       name="hidden_banco" id="hidden_banco">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Cerrar
+                                </button>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -196,7 +328,7 @@ $detalle->obtenerDatos();
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
 
 <script>
-    document.getElementById("input_file_perfil").onchange = function(e) {
+    document.getElementById("input_file_perfil").onchange = function (e) {
         var file = this.files[0];
         var imagefile = file.type;
         var match = ["image/jpeg", "image/png", "image/jpg"];

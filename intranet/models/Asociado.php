@@ -351,7 +351,17 @@ class Asociado
     public function actualizar()
     {
         $sql = "UPDATE asociados
-                SET  password = '$this->password' WHERE  id_asociado = '$this->idAsociado' ";
+                SET  dni = '$this->dni',
+                    apellidos = '$this->apellido',
+                    nombres = '$this->nombre',
+                    centro_trabajo = '$this->centroTrabajo',
+                    fecha_nac = '$this->fechaNac',
+                    email = '$this->email',
+                    celular = '$this->celular',
+                    domicilio = '$this->domicilio',
+                    foto = '$this->foto',
+                    id_tipo_documento = '$this->tipo_documento'
+                WHERE  id_asociado = '$this->idAsociado' ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
