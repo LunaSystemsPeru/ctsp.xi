@@ -86,7 +86,7 @@
                             <h4 class="h4 text-left">REGLAMENTO</h4>
                             <p class="text-justify">Para mayor detalle revisar el reglamento del fondo de apoyo social </p>
 
-                            <embed src="Archivos/ReglamentoFAS.pdf" width="75%" height="1000px">
+                            <embed src="archivos/ReglamentoFAS.pdf" width="75%" height="1000px">
                         </div>
                     </div>
                 </div>

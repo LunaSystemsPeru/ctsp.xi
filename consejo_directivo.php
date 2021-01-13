@@ -77,11 +77,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Sobre Nosotros</h3>
+                        <h3 class="h3"> Nosotros Somos</h3>
                         <div class="dez-separator bg-primary"></div>
                         <div class="clear"></div>
-                        <p class="m-b0">El Colegio de Trabajadores Sociales del Perú, es una Institución Gremial Autónoma de Derecho Público Interno, sin fines de lucro, con personería Jurídica y representa a los Profesionales Asistentes Sociales y Trabajadores Sociales del Perú.  El CTSP fue creado por Ley N° 27918 el 11 enero 2003. Contamos con la Ley del Ejercicio Profesional del Trabajador Social Ley N°30112 del 07 noviembre 2013.</p>
-                        <p class="m-b0">En la Region Ancash estamos registradas en la SUNARP con inscripción de Personas Jurídicas creadas por Ley Colegio de Trabajadores Sociales del Perú Region XI - Ancash.   Partida Registral N° 11085805 Zona Registral N° VII - Sede Huaraz. Oficina Registral Chimbote - SUNARP </p>
+                        <p class="m-b0">El Colegio de Trabajadores Sociales del Perú, es una Institución Gremial Autónoma de Derecho Público Interno, sin fines de lucro, con personería Jurídica y representa a los Profesionales Asistentes Sociales y Trabajadores Sociales del Perú.  El CTSP fue creado por Ley N° 27918 el 11 enero 2003. Contamos con la Ley del Ejercicio Profesional del Trabajador Socia l Ley N°30112 del 07 noviembre 2013.</p>
+                        <p class="m-b0">En la Region Ancash estamos registradas en la SUNARP con inscripción de Personas Jurídicas creadas por Ley Colegio de Trabajadores Sociales del Perú Region XI - Ancash. Partida Registral N° 11085805 Zona Registral N° VII- Sede Huaraz. Oficina Registral Chimbote - SUNARP </p>
 
                     </div>
                     <div class="col-lg-12 text-center">
@@ -219,27 +219,26 @@
                         <div class="dez-separator bg-primary"></div>
                         <div class="clear"></div>
                         <ol class="primary">
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XI ANCASH </li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION IV AREQUIPA</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION II SEDE TRUJILLO LA LIBERTAD</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION I PIURA-TUMBES</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION V CUSCO</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES  DEL PERU REGION VIII AYACUCHO</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES  DEL PERU REGION X LORETO</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES  DEL PERU REGION XI LAMBAYEQUE–AMAZONAS-SAN MARTIN</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XIII ICA </li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XIV HUACHO </li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XV CALLAO</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION XVI UCAYALI</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION VII PUNO</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION III LIMA</li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION VI JUNIN </li>
-                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERU REGION HUANCAYO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR I PIURA-TUMBES</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR II TRUJILLO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR III LIMA</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR IV AREQUIPA</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR V CUSCO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR VI HUANCAYO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR VII PUNO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR VIII AYACUCHO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR IX TACNA</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR X LORETO</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR XI ANCASH </li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR XII LAMBAYEQUE</li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR XIII ICA </li>
+                            <li>COLEGIO DE TRABAJADORES SOCIALES DEL PERÚ-CDR XIV HUACHO </li>
+
                         </ol>
 
                     </div>
                     <div class="col-lg-6 text-center">
-                        <img src="images/mapasdelperu.jpg" width="80%">
+                        <img src="images/mapasdelperu.jpg" width="70%">
 
                     </div>
                 </div>
