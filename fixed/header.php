@@ -10,7 +10,7 @@
                     <ul class="contact-info style-1 clearfix text-primary">
 
                         <li>
-                            <h6 class="text-primary"><i class="fa fa-envelope-o"></i> Escribenos</h6>
+                            <h6 class="text-primary"><i class="fa fa-envelope-o"></i> Escríbenos</h6>
                             <span>consultas@ctsprxiancash.org.pe</span>
                         </li>
                         <li>
@@ -18,8 +18,8 @@
                             <span>Lun -vier: 8:00 - 18:00</span>
                         </li>
                         <li>
-                            <h6 class="text-primary"><i class="fa fa-map-marker"></i>Ubicanos en</h6>
-                            <span>Av.Meiggs 1910 Florida Baja</span>
+                            <h6 class="text-primary"><i class="fa fa-map-marker"></i>Ubícanos en</h6>
+                            <span>Av.Meiggs 1910, Chimbote</span>
                         </li>
                     </ul>
                 </div>

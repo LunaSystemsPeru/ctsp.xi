@@ -6,7 +6,9 @@
                     <div class="widget widget_about">
                         <h4 class="m-b15 text-uppercase">Nosotros</h4>
                         <div class="dez-separator bg-primary"></div>
-                        <p><strong>Trabajadoras Sociales.</strong> Un trabajador social se define como aquel o aquella profesional dedicada a promover activamente el cambio y desarrollo social de las personas. Es decir, se encarga de la ardua tarea de promover el bienestar de los individuos, atendiendo en todo momento sus carencias sociales, ya sean en el entorno familiar, grupal, comunitario o el medio social en el que viven.</p>
+                        <p>El Trabajo Social es una profesión de las ciencias sociales, como disciplina académica promueve el cambio y el desarrollo social; basado en los principios de la justicia social y los derechos humanos.
+                            El Trabajador Social interviene en los equipos multisiciplinarios para evaluar el aspecto Social, los factores protectores riesgo y factores de riesgo que favorecen o limitan del desarrolllo del ser humano en su interaccion con los individuos y su entorno social.
+                        </p>
                         <ul class="dez-social-icon border">
                             <li><a class="text-primary fa fa-facebook" href="javascript:void(0);"></a></li>
                             <li><a class="text-primary fa fa-twitter" href="javascript:void(0);"></a></li>
@@ -31,7 +33,7 @@
                         <h4 class="m-b15 text-uppercase">Contactanos</h4>
                         <div class="dez-separator bg-primary"></div>
                         <ul>
-                            <li><i class="fa fa-map-marker"></i><strong>Dirección</strong> Av. Enrrique Meiggs 1910, Florida Baja, Ciudad Chimbote, Perú </li>
+                            <li><i class="fa fa-map-marker"></i><strong>Dirección</strong> Av. Enrique Meiggs 1910, Chimbote, Perú </li>
                             <li><i class="fa fa-phone"></i><strong>Telefonos</strong>981379288 - 943889676 - 943662280</li>
                             <li><i class="fa fa-envelope"></i><strong>email</strong>consultas@ctsprxi.org.pe</li>
                         </ul>
