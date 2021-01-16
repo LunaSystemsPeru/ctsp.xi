@@ -1,8 +1,10 @@
 <?php
 require '../../models/Asociado.php';
+require '../../tools/Email.php';
 require '../../tools/Util.php';
 
 $asociado = new Asociado();
+$email = new Email();
 $util = new Util();
 
 $asociado->setEstado(0);
