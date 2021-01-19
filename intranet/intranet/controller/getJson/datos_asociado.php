@@ -27,6 +27,7 @@ if ($asociado->getIdAsociado()) {
     $aresultado = [
         "success" => true,
         "idasociado" => $asociado->getIdAsociado(),
+        "dni"=>$asociado->getDni(),
         "ctsp" => $asociado->getCtsp(),
         "apellidos" => $asociado->getApellido(),
         "nombres" => $asociado->getNombre(),

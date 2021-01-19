@@ -337,6 +337,7 @@ $banco = new Banco();
         $.post("../controller/getJson/datos_asociado.php", {inputCTSP: nroCtsp})
             .done(function (data) {
                 var jdata = JSON.parse(data);
+                $("#inputNroDoc").val(jdata.dni);
                 $("#inputApellidos").val(jdata.apellidos);
                 $("#inputNombres").val(jdata.nombres);
                 $("#inputNroCTSP").val(jdata.ctsp);
