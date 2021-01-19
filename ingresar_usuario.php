@@ -77,11 +77,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> Seleccionar Usuario</h3>
+                        <h3 class="h3"> Selecciona donde quieres trabajar</h3>
                         <div class="dez-separator bg-primary"></div>
                         <div class="clear"></div>
+                        <!--
                         <p class="m-b0">Lorem Ipsum the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
-                    </div>
+                        -->
+                   </div>
                 </div>
 
                 <div class="section-content">
@@ -94,10 +96,8 @@
                                             <h2>Gestor de Contenidos</h2>
                                         </div>
                                         <ul class="pricingtable-features">
-                                            <li><i class="fa fa-check"></i> Noticias</li>
-                                            <li><i class="fa fa-check"></i> Galeria</li>
                                             <li><i class="fa fa-check"></i> Eventos</li>
-                                            <li><i class="fa fa-check"></i> Cursos</li>
+                                            <li><i class="fa fa-check"></i> Comunicados</li>
                                             <li><i class="fa fa-check"></i> Actividades Conmemorativas</li>
                                         </ul>
                                         <div class="pricingtable-footer"><a href="intranet/gestor_contenidos/index.php" class="site-button radius-no">Ingresar</a></div>

@@ -160,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--
                 <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12">
                     <div class="card">
                         <div class="card-body">
@@ -188,6 +188,7 @@
                         </div>
                     </div>
                 </div>
+                -->
                 <div class="col-xl-8 col-xxl-8 col-lg-8 col-md-12 col-sm-12">
                     <div id="user-activity" class="card">
                         <div class="card-header">
@@ -227,6 +228,7 @@
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12">
                     <div class="card">
                         <div class="card-header">
@@ -592,6 +594,7 @@
                         </div>
                     </div>
                 </div>
+                 -->
             </div>
 
             <div class="row">
