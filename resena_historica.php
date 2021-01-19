@@ -222,8 +222,9 @@
                                         </div>
                                         <br>
                                         <div class="icon-content">
-                                            <h5 class="dez-tilte text-uppercase">Lic. T.S. Silvia Noriega Roldan</h5>
-                                            <p>2019 – 2021</p>
+                                            <h5 class="dez-tilte">Mag. SILVIA AURORA NORIEGA ROLDAN</h5>
+                                            <p>CTSP – 2280</p>
+                                            <p>PERIODO 2019 – 2021</p>
                                         </div>
                                     </div>
                                 </div>

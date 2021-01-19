@@ -7,7 +7,7 @@
                         <h4 class="m-b15 text-uppercase">Nosotros</h4>
                         <div class="dez-separator bg-primary"></div>
                         <p>El Trabajo Social es una profesión de las ciencias sociales, como disciplina académica promueve el cambio y el desarrollo social; basado en los principios de la justicia social y los derechos humanos.
-                            El Trabajador Social interviene en los equipos multisiciplinarios para evaluar el aspecto Social, los factores protectores riesgo y factores de riesgo que favorecen o limitan del desarrolllo del ser humano en su interaccion con los individuos y su entorno social.
+                            El Trabajador Social interviene en los equipos multisiciplinarios para evaluar el aspecto Social, los factores protectores y factores de riesgo que favorecen o limitan del desarrolllo del ser humano en su interaccion con los individuos y su entorno social.
                         </p>
                         <ul class="dez-social-icon border">
                             <li><a class="text-primary fa fa-facebook" href="javascript:void(0);"></a></li>
