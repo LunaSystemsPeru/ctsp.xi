@@ -1,3 +1,8 @@
+<?php
+require '../../models/SolicitudHabilidad.php';
+
+$solicitud = new SolicitudHabilidad();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -117,30 +122,25 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        <?php
+                                        $asolicitud = $solicitud->verSolicitudes();
+                                        foreach ($asolicitud as $item) {
+                                            ?>
                                             <tr>
-                                                <td>OYANGUREN GIRON LUIS ENRIQUE</td>
-                                                <td class="text-center">2020-10-04</td>
-                                                <td class="text-center">2020-10-10</td>
-                                                <td class="text-center">2020-11-12</td>
-                                                <td class="text-right">S/ 30.00</td>
+                                                <td><?php echo $item['apellidos'] . " ". $item['nombres'] ?></td>
+                                                <td class="text-center"><?php echo $item['fecha_inscripcion']?></td>
+                                                <td class="text-center"><?php echo $item['ultimo_pago']?></td>
+                                                <td class="text-center"><?php echo $item['fecha_solicitud']?></td>
+                                                <td class="text-right">S/ <?php echo $item['pago']?></td>
                                                 <td><label class="label label-success">Pendiente</label></td>
                                                 <td>
-                                                    <button type="button" class="btn btn-success btn-xs" title="Permisos"><i class="fa fa-user"></i></button>
-                                                    <button type="button" class="btn btn-warning btn-xs" title="Eliminar"><i class="fa fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-warning btn-xs" title="Aprobar"><i class="fa fa-eye"></i></button>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>DE LA CRUZ ESPINOZA ANDREA TATIANA</td>
-                                                <td class="text-center">2020-10-04</td>
-                                                <td class="text-center">2020-10-10</td>
-                                                <td class="text-center">2020-11-12</td>
-                                                <td class="text-right">S/ 30.00</td>
-                                                <td><label class="label label-success">Pendiente</label></td>
-                                                <td>
-                                                    <button type="button" class="btn btn-success btn-xs" title="Permisos"><i class="fa fa-user"></i></button>
-                                                    <button type="button" class="btn btn-warning btn-xs" title="Eliminar"><i class="fa fa-trash"></i></button>
-                                                </td>
-                                            </tr>
+                                        <?php
+                                        }
+                                        ?>
+
                                         </tbody>
                                         <tfoot>
                                             <tr>

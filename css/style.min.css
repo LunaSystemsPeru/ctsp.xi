@@ -8384,7 +8384,7 @@ footer p {
 footer li, footer p {
     font-size: 14px;
     line-height: 22px;
-    text-transform: capitalize
+    /*text-transform: capitalize*/
 }
 
 footer#footer {

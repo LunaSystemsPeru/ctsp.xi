@@ -133,4 +133,25 @@ class SolicitudHabilidad
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
+    public function verSolicitudesAsociado()
+    {
+        $sql = "select sh.estado, sh.fecha_solicitud, sh.id_solicitud, sh.pago, sh.fecha_ultimo_pago, a.apellidos, a.nombres 
+                from solicitud_habilidad as sh 
+                inner join asociados a on sh.id_asociado = a.id_asociado 
+                where sh.id_asociado = '$this->idAsociado'
+                order by sh.fecha_solicitud desc;";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
+    public function verSolicitudes()
+    {
+        $sql = "select sh.estado, sh.fecha_solicitud, a.fecha_inscripcion, a.ultimo_pago, sh.id_solicitud, sh.pago, sh.fecha_ultimo_pago, a.apellidos, a.nombres, a.centro_trabajo 
+                from solicitud_habilidad as sh 
+                inner join asociados a on sh.id_asociado = a.id_asociado 
+                where sh.estado = '0'
+                order by sh.fecha_solicitud desc;";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
+
 }
