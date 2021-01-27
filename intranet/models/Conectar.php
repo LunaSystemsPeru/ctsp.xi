@@ -6,7 +6,7 @@ class Conectar
 
     private static $_instancia;
     private $_connection;
-    private $_host = "lunasystemsperu.com";
+    private $_host = "localhost";
     private $_user = "root_lsp";
     private $_pass = "root/*123";
     // Almacenar una unica instancia

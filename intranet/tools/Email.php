@@ -86,19 +86,24 @@ class Email
 
         try {
             //Server settings
-            $mail->SMTPDebug = $smtp::DEBUG_SERVER;                      // Enable verbose debug output
+            $mail->SMTPDebug = $smtp::DEBUG_CONNECTION;                      // Enable verbose debug output NORMAL ES DEBUG_SERVER
             $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host       = 'a2plcpnl0713.prod.iad2.secureserver.net';                    // Set the SMTP server to send through
+            $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'consultas@ctsprxiancash.org.pe';                     // SMTP username
-            $mail->Password   = '@z_Lq6Qqf@N(';                               // SMTP password
-            $mail->SMTPSecure = $mail::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-            $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+            $mail->Username   = 'cdrxiancashctsp@gmail.com';                     // SMTP username
+            $mail->Password   = 'cdrxiancashctsp2021';                               // SMTP password
+            $mail->SMTPSecure = $mail::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged ENCRYPTION_STARTTLS
+            $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above 587
+            $mail->SMTPOptions = array('ssl' => array (
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true)
+            );
 
             //Recipients
-            $mail->setFrom('consultas@ctsprxiancash.org.pe', 'Consultas CTSP RXI Ancash');
+            $mail->setFrom('cdrxiancashctsp@gmail.com', 'Consultas CTSP RXI Ancash');
             $mail->addAddress($this->correo, $this->nombre_receptor);     // Add a recipient
-            $mail->addReplyTo('consultas@ctsprxiancash.org.pe', 'Consultas CTSP RXI Ancash');
+            $mail->addReplyTo('cdrxiancashctsp@gmail.com', 'Consultas CTSP RXI Ancash');
             //$mail->addCC('cc@example.com');
             //$mail->addBCC('bcc@example.com');
 

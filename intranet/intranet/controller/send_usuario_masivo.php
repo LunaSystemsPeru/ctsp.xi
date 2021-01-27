@@ -10,6 +10,11 @@ $util = new Util();
 $asociado->setEstado(0);
 $array_asociados_0 = $asociado->verAsociados();
 
+$host= $_SERVER["HTTP_HOST"];
+$url_server = "http://" . $host . "/clientes/ctsp.xi";
+//$url_server = "http://" . $host;
+$url_email = $url_server ."/intranet/plantilla_emails/email_usuario_masivo.php?idasociado=";
+
 foreach ($array_asociados_0 as $item) {
     if ($item['email'] != "") {
         /*$asociado->setIdAsociado($item['id_asociado']);
@@ -18,12 +23,11 @@ foreach ($array_asociados_0 as $item) {
         $email->setAsunto("ACCESO A PERFIL COLEGIADO");
         $email->setCorreo($item['email']);
         $email->setNombreReceptor($item['apellidos'] . " " . $item['nombres']);
-        $host= $_SERVER["HTTP_HOST"];
-        $url_server = "http://" . $host . "/clientes/ctsp.xi";
-        $url_email = $url_server ."/intranet/plantilla_emails/emaul_usuario_masivo.php?idasociado=" . $item['id_asociado'];
-        $email->setUrl($url_email);
+        $url_final_email = $url_email . $item['id_asociado'];
+        $email->setUrl($url_final_email);
         //echo $url_email;
         $email->EnviarEmail();
+        sleep(3);
     }
 }
 
@@ -38,10 +42,8 @@ foreach ($array_asociados_1 as $item) {
         $email->setAsunto("ACCESO A PERFIL COLEGIADO");
         $email->setCorreo($item['email']);
         $email->setNombreReceptor($item['apellidos'] . " " . $item['nombres']);
-        $host= $_SERVER["HTTP_HOST"];
-        $url_server = "http://" . $host . "/clientes/ctsp.xi";
-        $url_email = $url_server ."/intranet/plantilla_emails/emaul_usuario_masivo.php?idasociado=" . $item['id_asociado'];
-        $email->setUrl($url_email);
+        $url_final_email = $url_email . $item['id_asociado'];
+        $email->setUrl($url_final_email);
         //echo $url_email;
         $email->EnviarEmail();
     }

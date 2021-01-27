@@ -622,7 +622,7 @@ $util = new Util();
                                         $imagen = $item['imagen'];
                                         ?>
                                             <li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home">
-                                                <a href="#" onclick="cargarArchivo('<?php echo $item['imagen'] ?>');return false">
+                                                <a href="javascript:void(0);" onclick="cargarArchivo('<?php echo $item['imagen'] ?>');return false">
                                                     <div class="dez-post-info">
                                                         <div class="dez-post-title ">
                                                             <h3 class="post-title text-white"><?php echo $item['titulo'] ?></h3>

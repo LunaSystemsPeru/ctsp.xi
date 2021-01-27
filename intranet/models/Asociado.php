@@ -380,7 +380,7 @@ class Asociado
                 from asociados as a 
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
-                where a.estado = '$this->estado'";
+                where a.estado = '$this->estado' ";
         return $this->c_conectar->get_Cursor($sql);
     }
 
