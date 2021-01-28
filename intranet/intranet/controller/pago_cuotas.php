@@ -24,7 +24,8 @@ $cuota->setFecha($movimiento->getFecha());
 $cuota->setMonto(filter_input(INPUT_POST, 'inputMontoPagar'));
 $cuota->setNota(filter_input(INPUT_POST, 'inputNroOperacion'));
 $cuota->setIdMovimiento($movimiento->getIdMovimiento());
-$cuota->setNrocuotas(filter_input(INPUT_POST, 'inputCuotasPagadas'));
+$cuota->setNrocuotas(filter_input(INPUT_POST, 'inputNroCuotas'));
+$cuota->setPeriodoInicial(filter_input(INPUT_POST, 'inputPeriodoPago'));
 $cuota->insertar();
 
 //actualizar datos

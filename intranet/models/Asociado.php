@@ -25,6 +25,7 @@ class Asociado
     private $registroSunedu;
     private $tipo_documento;
     private $tipo_registro;
+    private $tipo_actividad;
 
     private $c_conectar;
 
@@ -286,7 +287,8 @@ class Asociado
                         '$this->titulo', 
                         '$this->registroSunedu',
                         '$this->tipo_documento',
-                        '$this->tipo_registro'
+                        '$this->tipo_registro',
+                        '$this->tipo_actividad'
                 )";
         return $this->c_conectar->ejecutar_idu($sql);
     }
@@ -297,26 +299,27 @@ class Asociado
         where id_asociado = '$this->idAsociado'";
         $resultado = $this->c_conectar->get_Row($sql);
         if ($resultado) {
-        $this->dni = $resultado['dni'];
-        $this->apellido = $resultado['apellidos'];
-        $this->nombre = $resultado['nombres'];
-        $this->ctsp = $resultado['ctsp'];
-        $this->centroTrabajo = $resultado['centro_trabajo'];
-        $this->fechaNac = $resultado['fecha_nac'];
-        $this->email = $resultado['email'];
-        $this->celular = $resultado['celular'];
-        $this->estado = $resultado['estado'];
-        $this->password = $resultado['password'];
-        $this->ultimoPago = $resultado['ultimo_pago'];
-        $this->domicilio = $resultado['domicilio'];
-        $this->fechaInscripcion = $resultado['fecha_inscripcion'];
-        $this->fechaCertificado = $resultado['fecha_certificado'];
-        $this->fichaInscripcion = $resultado['ficha_inscripcion'];
-        $this->foto = $resultado['foto'];
-        $this->titulo = $resultado['titulo'];
-        $this->registroSunedu = $resultado['registro_sunedu'];
-        $this->tipo_documento = $resultado['id_tipo_documento'];
-        $this->tipo_registro = $resultado['id_tipo_inscripcion'];
+            $this->dni = $resultado['dni'];
+            $this->apellido = $resultado['apellidos'];
+            $this->nombre = $resultado['nombres'];
+            $this->ctsp = $resultado['ctsp'];
+            $this->centroTrabajo = $resultado['centro_trabajo'];
+            $this->fechaNac = $resultado['fecha_nac'];
+            $this->email = $resultado['email'];
+            $this->celular = $resultado['celular'];
+            $this->estado = $resultado['estado'];
+            $this->password = $resultado['password'];
+            $this->ultimoPago = $resultado['ultimo_pago'];
+            $this->domicilio = $resultado['domicilio'];
+            $this->fechaInscripcion = $resultado['fecha_inscripcion'];
+            $this->fechaCertificado = $resultado['fecha_certificado'];
+            $this->fichaInscripcion = $resultado['ficha_inscripcion'];
+            $this->foto = $resultado['foto'];
+            $this->titulo = $resultado['titulo'];
+            $this->registroSunedu = $resultado['registro_sunedu'];
+            $this->tipo_documento = $resultado['id_tipo_documento'];
+            $this->tipo_registro = $resultado['id_tipo_inscripcion'];
+            $this->tipo_actividad = $resultado['id_tipo_actividad'];
         }
     }
 
@@ -361,11 +364,12 @@ class Asociado
                     domicilio = '$this->domicilio',
                     foto = '$this->foto',
                     password = '$this->password',
-                    id_tipo_documento = '$this->tipo_documento'
+                    id_tipo_documento = '$this->tipo_documento',
+                    id_tipo_servicio = '$this->tipo_servicio',
+                    id_tipo_actividad = '$this->tipo_actividad',
                 WHERE  id_asociado = '$this->idAsociado' ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
-
 
 
     public function eliminar()
@@ -375,31 +379,36 @@ class Asociado
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
-    public function verAsociados () {
-        $sql = "select a.id_asociado, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion
+    public function verAsociados()
+    {
+        $sql = "select a.id_asociado, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion, a.id_tipo_actividad, pda.nombre as tactividad 
                 from asociados as a 
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
+                inner join parametros_detalles as pda on pda.id_detalle = a.id_tipo_actividad 
                 where a.estado = '$this->estado' ";
         return $this->c_conectar->get_Cursor($sql);
     }
 
-    public function getAsociadosJson ($termino) {
-        $sql = "select a.id_asociado, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion, a.ctsp  
+    public function getAsociadosJson($termino)
+    {
+        $sql = "select a.id_asociado, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion, a.ctsp, a.id_tipo_actividad, da.nombre as tactividad  
                 from asociados as a 
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
-                inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
+                inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion
+                inner join parametros_detalles as pda on pda.id_detalle = a.id_tipo_actividad
                 where a.estado = '$this->estado' and concat(a.apellidos, ' ', a.nombres) like '%$termino%' ";
         return $this->c_conectar->get_Cursor($sql);
     }
 
-    public function buscarAsociado () {
+    public function buscarAsociado()
+    {
         $sql = "select a.dni, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, a.ctsp, pdr.nombre as tipo_registro, a.celular, a.estado, a.email, a.id_tipo_inscripcion
                 from asociados as a 
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
-                where a.apellidos like '%".$this->apellido."%' or a.nombres like '%".$this->nombre."%' or a.ctsp = '".$this->ctsp."'";
-                return $this->c_conectar->get_Cursor($sql);
+                where a.apellidos like '%" . $this->apellido . "%' or a.nombres like '%" . $this->nombre . "%' or a.ctsp = '" . $this->ctsp . "'";
+        return $this->c_conectar->get_Cursor($sql);
     }
 
 }

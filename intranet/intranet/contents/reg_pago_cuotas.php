@@ -129,14 +129,14 @@ $banco = new Banco();
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-lg-8">
                     <div class="card">
                         <div class="card-body">
                             <div class="basic-form">
                                 <form>
                                     <div class="form-row">
                                         <div class="form-group col-md-2">
-                                            <label>Nro Colegiatura</label>
+                                            <label>Nro CTSP</label>
                                             <input type="text" class="form-control" id="inputNroCTSP" disabled>
                                         </div>
                                         <div class="form-group col-md-2">
@@ -193,78 +193,104 @@ $banco = new Banco();
                         </div>
                     </div>
                 </div>
-
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="basic-form">
-                                        <input type="hidden" id="inputIdAsociado" name="inputIdAsociado">
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label>Cuotas Pendientes</label>
-                                                <input type="text" class="form-control" id="inputCuotasPendientes" disabled>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Periodo Inicial</label>
-                                                <input type="date" class="form-control" id="inputPeriodoInicio" name="inputPeriodoInicio" value="<?php echo date("Y-m-d") ?>">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Nro Cuotas a Pagar</label>
-                                                <input type="number" class="form-control" id="inputCuotasPagadas" name="inputCuotasPagadas" onkeyup="CalcularCuotas()">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Periodo Final</label>
-                                                <input type="date" class="form-control" id="inputPeriodoFinal" name="inputPeriodoFinal" value="<?php echo date("Y-m-d") ?>" >
-                                            </div>
-                                        </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="basic-form">
+                               <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Cuotas Pendientes</label>
+                                        <input type="text" class="form-control" id="inputCuotasPendientes" disabled>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label>Año -</label>
+                                        <input type="number" class="form-control" id="inputanio" name="inputanio"
+                                               value="<?php echo date("Y") ?>">
+                                        <!-- <input type="date" class="form-control" id="inputPeriodoInicio" name="inputPeriodoInicio" value="<?php echo date("Y-m-d") ?>"> -->
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Mes de Inicio</label>
+                                        <select class="form-control" id="selectmes" name="selectmes">
+                                            <option value="01">Enero</option>
+                                            <option value="02">Febrero</option>
+                                            <option value="03">Marzo</option>
+                                            <option value="04">Abril</option>
+                                            <option value="05">Mayo</option>
+                                            <option value="06">Junio</option>
+                                            <option value="07">Julio</option>
+                                            <option value="08">Agosto</option>
+                                            <option value="09">Setiembre</option>
+                                            <option value="10">Octubre</option>
+                                            <option value="11">Noviembre</option>
+                                            <option value="12">Diciembre</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Nro Cuotas a Pagar</label>
+                                        <input type="number" class="form-control" id="inputCuotasPagadas"
+                                               name="inputCuotasPagadas" onkeyup="CalcularCuotas()">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label>Año -</label>
+                                        <input type="text" class="form-control" id="inputaniofinal" name="inputaniofinal"
+                                               value="<?php echo date("Y") ?>" readonly>
+                                        <!-- <input type="date" class="form-control" id="inputPeriodoInicio" name="inputPeriodoInicio" value="<?php echo date("Y-m-d") ?>"> -->
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Mes Final</label>
+                                        <input type="text" id="inputmesfinal" value="Enero" class="form-control" readonly>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="basic-form">
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label>Fecha de Pago</label>
-                                                <input type="date" class="form-control" id="inputFechaPago" name="inputFechaPago" value="<?php echo date("Y-m-d") ?>">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Monto Total</label>
-                                                <input type="text" class="form-control" id="inputMontoPagar" name="inputMontoPagar">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Destino</label>
-                                                <select class="form-control" id="selectDestino" name="selectDestino">
-                                                    <?php
-                                                    $abanco = $banco->verFilas();
-                                                    foreach ($abanco as $item) {
-                                                        ?>
-                                                        <option value="<?php echo $item['id_banco'] ?>"><?php echo $item['nombre'] ?></option>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Nro Operacion</label>
-                                                <input type="text" class="form-control" id="inputNroOperacion" name="inputNroOperacion">
-                                            </div>
-                                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <form method="post" action="../controller/pago_cuotas.php">
+                            <input type="hidden" id="inputIdAsociado" name="inputIdAsociado">
+                            <input type="hidden" name="inputNroCuotas" id="inputNroCuotas">
+                            <input type="hidden" name="inputPeriodoPago" id="inputPeriodoPago">
+                        <div class="card-body">
+                            <div class="basic-form">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Fecha de Pago</label>
+                                        <input type="date" class="form-control" id="inputFechaPago"
+                                               name="inputFechaPago" value="<?php echo date("Y-m-d") ?>">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Monto Total</label>
+                                        <input type="text" class="form-control" id="inputMontoPagar"
+                                               name="inputMontoPagar">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Destino</label>
+                                        <select class="form-control" id="selectDestino" name="selectDestino">
+                                            <?php
+                                            $abanco = $banco->verFilas();
+                                            foreach ($abanco as $item) {
+                                                ?>
+                                                <option value="<?php echo $item['id_banco'] ?>"><?php echo $item['nombre'] ?></option>
+                                                <?php
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Nro Operacion</label>
+                                        <input type="text" class="form-control" id="inputNroOperacion"
+                                               name="inputNroOperacion">
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-footer text-right">
-                                    <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Guardar</button>
-                                </div>
+                            <div class="card-footer text-right">
+                                <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Guardar</button>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -361,18 +387,46 @@ $banco = new Banco();
         sumarMeses();
     }
 
-    function validarPago () {
+    function validarPago() {
         url_post = "../controller/pago_cuotas.php";
     }
 
-    function sumarMeses () {
-        var fecha = new Date($('#inputPeriodoInicio').val());
-        var meses = parseInt($('#inputCuotasPagadas').val()); // Número de días a agregar
-        console.log(fecha.getMonth());
+    function sumarMeses() {
+
+        var cuotas = $('#inputCuotasPagadas').val();
+        $('#inputNroCuotas').val(cuotas);
+
+        var arraymeses = new Array();
+        arraymeses[1] = "Enero";
+        arraymeses[2] = "Febrero";
+        arraymeses[3] = "Marzo";
+        arraymeses[4] = "Abril";
+        arraymeses[5] = "Mayo";
+        arraymeses[6] = "Junio";
+        arraymeses[7] = "Julio";
+        arraymeses[8] = "Agosto";
+        arraymeses[9] = "Setiembre";
+        arraymeses[10] = "Octubre";
+        arraymeses[11] = "Noviembre";
+        arraymeses[12] = "Diciembre";
+
+        var anio = $('#inputanio').val();
+        var mes = $('#selectmes').val();
+
+        var fecha = new Date(anio + "-" + mes + "-15");
+        var meses = parseInt(cuotas); // Número de días a agregar
+        meses = meses - 1;
         fecha.setMonth(fecha.getMonth() + meses);
 
-        console.log(fecha.getFullYear() + "-" + PadLeft((fecha.getMonth()+1), 2) + "-" + PadLeft(fecha.getDate(), 2));
-        $('#inputPeriodoFinal').val(fecha.getFullYear() + "-" + PadLeft((fecha.getMonth()+1), 2) + "-" + PadLeft(fecha.getDate(), 2));
+        $('#inputPeriodoPago').val(anio + "-" + mes + "-15");
+        var nombremes = arraymeses[fecha.getMonth() + 1];
+        //console.log(nombremes);
+
+        $('#inputaniofinal').val(fecha.getFullYear());
+        $('#inputmesfinal').val(nombremes);
+
+        console.log(fecha.getFullYear() + "-" + PadLeft((fecha.getMonth() + 1), 2) + "-" + PadLeft(fecha.getDate(), 2));
+        //$('#inputPeriodoFinal').val(fecha.getFullYear() + "-" + PadLeft((fecha.getMonth() + 1), 2) + "-" + PadLeft(fecha.getDate(), 2));
     }
 
     function PadLeft(value, length) {

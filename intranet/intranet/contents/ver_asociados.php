@@ -121,6 +121,7 @@ $util = new Util();
                                         <th>Fecha Afiliacion</th>
                                         <th>Ultimo Pago</th>
                                         <th>Condicion</th>
+                                        <th>Tipo</th>
                                         <th width="13%">Estado</th>
                                         <th width="13%">Acciones</th>
                                     </tr>
@@ -145,6 +146,11 @@ $util = new Util();
                                         $fecha_actual = strtotime($fecha120);
                                         $fecha_pago = strtotime($ultimo_pago);
 
+                                        $label_actividad = '<label class="label label-success">'.$fila['tactividad'].'</label>';
+                                        if ($fila['id_tipo_actividad'] != 12) {
+                                            $label_actividad = '<label class="label label-info">'.$fila['tactividad'].'</label>';
+                                        }
+
                                         if ($fecha_pago < $fecha_actual) {
                                             $label_estado = '<label class="label label-danger">No Habilitado</label>';
                                         }
@@ -160,9 +166,10 @@ $util = new Util();
                                             <td><?php echo $fila['centro_trabajo'] ?></td>
                                             <td><?php echo $edad ?></td>
                                             <td><?php echo $fila['fecha_inscripcion'] ?></td>
-                                            <td><?php echo $fila['ultimo_pago'] ?></td>
-                                            <td><?php echo $label ?></td>
-                                            <td><?php echo $label_estado?></td>
+                                            <td class="text-center"><?php echo $util->fecha_periodo($fila['ultimo_pago']) ?></td>
+                                            <td class="text-center"><?php echo $label ?></td>
+                                            <td class="text-center"><?php echo $label_actividad ?></td>
+                                            <td class="text-center"><?php echo $label_estado?></td>
                                             <td>
                                                 <button type="button" class="btn btn-success btn-xs" title="Permisos"><i
                                                             class="fa fa-user"></i></button>

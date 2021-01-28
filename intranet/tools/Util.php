@@ -30,6 +30,14 @@ class Util
         return date_format($date_aux, $to_format);
     }
 
+    function fecha_periodo($date)
+    {
+        $to_format = 'm/Y';
+        $from_format = 'Y-m-d';
+        $date_aux = date_create_from_format($from_format, $date);
+        return date_format($date_aux, $to_format);
+    }
+
     function fecha_tabla_completa($date)
     {
         $to_format = 'd/m/Y H:i:s';

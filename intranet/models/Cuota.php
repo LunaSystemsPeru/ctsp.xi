@@ -15,6 +15,7 @@ class Cuota
     private $imgdeposito;
     private $idMovimiento;
     private $nrocuotas;
+    private $periodo_inicial;
 
     private $c_conectar;
 
@@ -110,6 +111,22 @@ class Cuota
         $this->nrocuotas = $nrocuotas;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getPeriodoInicial()
+    {
+        return $this->periodo_inicial;
+    }
+
+    /**
+     * @param mixed $periodo_inicial
+     */
+    public function setPeriodoInicial($periodo_inicial)
+    {
+        $this->periodo_inicial = $periodo_inicial;
+    }
+
     public function generarCodigo()
     {
         $sql = "select ifnull(max(id_cuota) +1, 1) as codigo from cuotas";
@@ -118,7 +135,7 @@ class Cuota
 
     public function insertar()
     {
-        $sql = "insert into cuotas values ('$this->idCuota', '$this->idAsociado', '$this->fecha', '$this->monto', '$this->nota', '$this->imgdeposito', '$this->idMovimiento', '$this->nrocuotas')";
+        $sql = "insert into cuotas values ('$this->idCuota', '$this->idAsociado', '$this->fecha', '$this->monto', '$this->nota', '$this->imgdeposito', '$this->idMovimiento', '$this->nrocuotas', '$this->periodo_inicial')";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
@@ -134,6 +151,7 @@ class Cuota
         $this->imgdeposito = $resultado['imgdeposito'];
         $this->idMovimiento = $resultado['id_movimiento'];
         $this->nrocuotas = $resultado['nrocuotas'];
+        $this->periodo_inicial = $resultado['periodo_inicio'];
     }
 
     public function actualizar()
@@ -152,7 +170,7 @@ class Cuota
 
     public function verPagos()
     {
-        $sql = "select fecha, monto, nrocuotas  
+        $sql = "select fecha, monto, nrocuotas, periodo_inicio, date_add(periodo_inicio, interval nrocuotas month) as pagado 
                 from cuotas 
                 where id_asociado = '$this->idAsociado' 
                 order by fecha asc";
