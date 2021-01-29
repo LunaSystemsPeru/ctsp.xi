@@ -257,6 +257,22 @@ class Asociado
         $this->tipo_registro = $tipo_registro;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getTipoActividad()
+    {
+        return $this->tipo_actividad;
+    }
+
+    /**
+     * @param mixed $tipo_actividad
+     */
+    public function setTipoActividad($tipo_actividad): void
+    {
+        $this->tipo_actividad = $tipo_actividad;
+    }
+
     public function generarCodigo()
     {
         $sql = "select ifnull(max(id_asociado) +1, 1) as codigo from asociados";
@@ -365,8 +381,7 @@ class Asociado
                     foto = '$this->foto',
                     password = '$this->password',
                     id_tipo_documento = '$this->tipo_documento',
-                    id_tipo_servicio = '$this->tipo_servicio',
-                    id_tipo_actividad = '$this->tipo_actividad',
+                    id_tipo_actividad = '$this->tipo_actividad'
                 WHERE  id_asociado = '$this->idAsociado' ";
         return $this->c_conectar->ejecutar_idu($sql);
     }

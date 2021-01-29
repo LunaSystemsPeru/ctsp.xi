@@ -15,6 +15,8 @@ $asociado->setDomicilio(filter_input(INPUT_POST, 'input_domicilio'));
 $asociado->setFechaNac(filter_input(INPUT_POST, 'input_fec_nac'));
 $asociado->setPassword(filter_input(INPUT_POST, 'input_password'));
 $asociado->setCentroTrabajo(filter_input(INPUT_POST, 'input_trabajo'));
+$asociado->setTipoActividad(filter_input(INPUT_POST, 'input_actividad'));
+$asociado->setFoto(filter_input(INPUT_POST, 'input_foto'));
 
 //cargar files
 $directorio = "../../../images/asociados/perfil/";

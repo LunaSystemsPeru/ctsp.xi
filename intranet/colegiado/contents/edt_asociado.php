@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+if (!isset($_SESSION)) {
+    header("Location: login.php");
+}
 require '../../models/Asociado.php';
 require '../../models/ParametrosDetalle.php';
 
@@ -189,6 +193,8 @@ if ($asociado->getFoto() != "noimage.jpg") {
                                                     <label>Centro Trabajo Actual</label>
                                                     <input type="text" class="form-control" name="input_trabajo" value="<?php echo $asociado->getCentroTrabajo() ?>">
                                                 </div>
+                                                <input type="hidden" value="<?php echo $asociado->getTipoActividad()?>" name="input_actividad">
+                                                <input type="hidden" value="<?php echo $asociado->getFoto()?>" name="input_foto">
                                             </div>
                                         </div>
                                     </div>

@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['idasociado'])) {
+    header("Location: login.php");
+}
+
 require '../../models/Asociado.php';
 require '../../models/ParametrosDetalle.php';
 require '../../models/Cuota.php';
