@@ -135,7 +135,7 @@ $ficha =  "../../../images/asociados/ficha_inscripcion/" . $asociado->getFichaIn
             <div class="row">
                 <div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12">
                     <div class="card">
-                        <div class="text-center py-4 px-5 overlay-box" style="background-image: url(images/big/img1.jpg);">
+                        <div class="text-center py-4 px-5 overlay-box" style="background-image: url(../../../images/big/img1.jpeg);">
                             <div class="profile-photo">
                                 <img src="<?php echo $imagen_perfil ?>" width="100" class="img-fluid rounded-circle" alt="">
                             </div>
@@ -219,18 +219,21 @@ $ficha =  "../../../images/asociados/ficha_inscripcion/" . $asociado->getFichaIn
                                     <td>TITULO PROFESIONAL</td>
                                     <td class="text-center">
                                         <a href="<?php echo $titulo?>" target="_blank" class="btn btn-success"><i class="fa fa-eye"></i></a>
+                                        <button type="button" onclick="cargarModal(1)" class="btn btn-info" title="Subir Archivo"><i class="fa fa-upload"></i></button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>REGISTRO SUNEDU</td>
                                     <td class="text-center">
                                         <a href="<?php echo $sunedu?>" target="_blank" class="btn btn-success"><i class="fa fa-eye"></i></a>
+                                        <button type="button" onclick="cargarModal(2)" class="btn btn-info" title="Subir Archivo"><i class="fa fa-upload"></i></button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>FICHA INSCRIPCION</td>
                                     <td class="text-center">
                                         <a href="<?php echo $ficha?>" target="_blank" class="btn btn-success"><i class="fa fa-eye"></i></a>
+                                        <button type="button" onclick="cargarModal(3)" class="btn btn-info" title="Subir Archivo"><i class="fa fa-upload"></i></button>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -257,25 +260,29 @@ $ficha =  "../../../images/asociados/ficha_inscripcion/" . $asociado->getFichaIn
                             </div>
                             <div class="modal-body">
                                 <div class="form-row">
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-12">
                                         <div class="form-group col-md-12">
-                                            <label>Ficha Inscripcion</label>
+                                            <label>Tipo de Archivo</label>
+                                            <select class="form-control" id="select_tipo_archivo" disabled>
+                                                <option value="1">TITULO PROFESIONAL</option>
+                                                <option value="2">REGISTRO SUNEDU</option>
+                                                <option value="3">FICHA DE INSCRIPCION</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group col-md-12">
+                                            <label>Subir Archivo</label>
                                             <input type="file" class="form-control" name="file_ficha_inscripcion" accept="application/pdf">
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label>Titulo scan</label>
-                                            <input type="file" class="form-control" name="file_titulo" accept="application/pdf">
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label>Certificado SUNEDU</label>
-                                            <input type="file" class="form-control" name="file_sunedu" accept="application/pdf">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <input type="hidden" value="<?php echo "" ?>"
-                                       name="hidden_banco" id="hidden_banco">
+                                <input type="hidden" value="1"
+                                       name="hidden_tipo" id="hidden_tipo">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                     Cerrar
                                 </button>
@@ -333,27 +340,11 @@ $ficha =  "../../../images/asociados/ficha_inscripcion/" . $asociado->getFichaIn
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
 
 <script>
-    document.getElementById("input_file_perfil").onchange = function (e) {
-        var file = this.files[0];
-        var imagefile = file.type;
-        var match = ["image/jpeg", "image/png", "image/jpg"];
-        if (!((imagefile == match[0]) || (imagefile == match[1]) || (imagefile == match[2]))) {
-            $('#img_perfil').attr('src', 'noimage.png');
-            return false;
-        } else {
-            var reader = new FileReader();
-            reader.onload = imageIsLoaded_lado1;
-            reader.readAsDataURL(this.files[0]);
-        }
+    function cargarModal (tipo) {
+        $('#basicModal').modal('toggle');
+        $('#select_tipo_archivo').val(tipo);
+        $('#hidden_tipo').val(tipo);
 
-    }
-
-    function imageIsLoaded_lado1(e) {
-        //$("#file_lado1").css("color", "green");
-        //$('#image_preview_lado1').css("display", "block");
-        $('#img_perfil').attr('src', e.target.result);
-        $('#img_perfil').attr('width', '100%');
-        //$('#previewing').attr('height', '300px');
     }
 </script>
 </body>

@@ -386,6 +386,16 @@ class Asociado
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
+    public function actualizarDocumentos()
+    {
+        $sql = "UPDATE asociados
+                SET  ficha_inscripcion = '$this->fichaInscripcion',
+                    titulo = '$this->titulo',
+                    registro_sunedu = '$this->sunedtroSunedu'
+                WHERE  id_asociado = '$this->idAsociado' ";
+        return $this->c_conectar->ejecutar_idu($sql);
+    }
+
 
     public function eliminar()
     {
