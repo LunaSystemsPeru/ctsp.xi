@@ -63,7 +63,7 @@ class Banco
         $resultado = $this->c_conectar->get_Row($sql);
         $this->nombre = $resultado['nombre'];
         $this->monto = $resultado['monto'];
-        echo $sql;
+        //echo $sql;
     }
 
     public function actualizar()

@@ -206,7 +206,7 @@ $year = date("Y");
                                         <th>Ingresa</th>
                                         <th>Sale</th>
                                         <th>Saldo</th>
-                                        <th>Acciones</th>
+                                       <!-- <th>Acciones</th> -->
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -224,11 +224,11 @@ $year = date("Y");
                                         <td class="text-right"><?php echo number_format($saldo, 2) ?></td>
                                         <td class="text-right"><?php echo number_format(0, 2) ?></td>
                                         <td class="text-right"><?php echo number_format($saldo, 2) ?></td>
-                                        <td class="text-center">
+                                        <!--<td class="text-center">
                                             <button class="btn btn-danger text-white">
                                                 <i class="fa fa-trash"></i> Eliminar
                                             </button>
-                                        </td>
+                                        </td>-->
                                     </tr>
                                     <?php
                                     foreach ($amovimiento as $fila) {
@@ -254,17 +254,6 @@ $year = date("Y");
                                     }
                                     ?>
                                     </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Item</th>
-                                        <th>Fecha</th>
-                                        <th>Descripcion</th>
-                                        <th>Ingresa</th>
-                                        <th>Sale</th>
-                                        <th>Saldo</th>
-                                        <th>Acciones</th>
-                                    </tr>
-                                    </tfoot>
                                 </table>
                             </div>
                         </div>
