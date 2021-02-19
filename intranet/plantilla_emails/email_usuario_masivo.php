@@ -8,8 +8,8 @@ $util = new Util();
 $asociado->setIdAsociado(filter_input(INPUT_GET, 'idasociado'));
 $asociado->obtenerDatos();
 
-$host= $_SERVER["HTTP_HOST"];
-$url= $_SERVER["REQUEST_URI"];
+//$host= $_SERVER["HTTP_HOST"];
+$host = "ctsprxiancash.org.pe";
 //$url_server = "http://" . $host . "/clientes/ctsp.xi";
 $url_server = "http://" . $host ;
 $url_imagen = $url_server ."/intranet/public/images/favicon.ico";

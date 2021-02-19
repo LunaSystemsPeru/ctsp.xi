@@ -1,7 +1,7 @@
 <?php
-require '../../models/Asociado.php';
+require '../../models/Cuota.php';
 require '../../tools/Util.php';
-$asociado = new Asociado();
+$cuota = new Cuota();
 $util = new Util();
 ?>
 
@@ -14,7 +14,7 @@ $util = new Util();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Asociados | Sistema de Gestion - CTSP Region XI Ancash </title>
+    <title>Cuotas Pagadas | Sistema de Gestion - CTSP Region XI Ancash </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../public/images/favicon.png">
     <!-- Datatable -->
@@ -90,13 +90,13 @@ $util = new Util();
             <div class="row page-titles mx-0">
                 <div class="col-sm-6 p-md-0">
                     <div class="welcome-text">
-                        <h4>Listar Asociados</h4>
+                        <h4>Listar Cuotas</h4>
                     </div>
                 </div>
                 <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">SG</a></li>
-                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Asociados</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Cuotas</a></li>
                     </ol>
                 </div>
             </div>
@@ -107,7 +107,7 @@ $util = new Util();
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Asociados</h4>
+                            <h4 class="card-title">Cuotas</h4>
                             <!--<a href="reg_asociado.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar</a>-->
                         </div>
                         <div class="card-body">
@@ -115,61 +115,33 @@ $util = new Util();
                                 <table id="example2" class="table-striped" style="width:100%">
                                     <thead>
                                     <tr>
+                                        <th>Item</th>
                                         <th>Apellidos y Nombres</th>
-                                        <th>Trabajo</th>
-                                        <th>Edad</th>
-                                        <th>Fecha Afiliacion</th>
-                                        <th>Ultimo Pago</th>
-                                        <th>Condicion</th>
-                                        <th>Tipo</th>
-                                        <th width="13%">Estado</th>
+                                        <th>Fecha Pago</th>
+                                        <th>Per Inicio</th>
+                                        <th>Per Fin</th>
+                                        <th>Nro Cuotas</th>
+                                        <th>Monto</th>
+                                        <th>Destino</th>
                                         <th width="13%">Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <?php
-                                    $asociado->setEstado(1);
-                                    $aasociados = $asociado->verAsociados();
-                                    $labelnuevo = '<label class="label label-primary">Nuevo</label>';
-                                    $labeltraslado = '<label class="label label-default">Traslado</label>';
-                                    $label = "";
-                                    foreach ($aasociados as $fila) {
-                                        $label_estado = '<label class="label label-success">Activo</label>';
-                                        if ($fila['id_tipo_inscripcion'] == 4) {
-                                            $label = $labelnuevo;
-                                        } else {
-                                            $label = $labeltraslado;
-                                        }
-                                        $ultimo_pago = $fila['ultimo_pago'];
-                                        $fecha120 = $util->SumaDias(date("Y-m-d"), 120);
-
-                                        $fecha_actual = strtotime($fecha120);
-                                        $fecha_pago = strtotime($ultimo_pago);
-
-                                        $label_actividad = '<label class="label label-success">'.$fila['tactividad'].'</label>';
-                                        if ($fila['id_tipo_actividad'] != 12) {
-                                            $label_actividad = '<label class="label label-info">'.$fila['tactividad'].'</label>';
-                                        }
-
-                                        if ($fecha_pago < $fecha_actual) {
-                                            $label_estado = '<label class="label label-danger">No Habilitado</label>';
-                                        }
-
-                                        if ($fecha_pago > $fecha_actual) {
-                                            $label_estado = '<label class="label label-success">Activo</label>';
-                                        }
-
-                                        $edad = $util->calculaEdad($fila['fecha_nac']);
+                                    $acuotas = $cuota->verPagosFechas("2021-01-01", "2021-01-31");
+                                    $item = 0;
+                                    foreach ($acuotas as $fila) {
+                                    $item++;
                                         ?>
                                         <tr>
-                                            <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] ?></td>
-                                            <td><?php echo $fila['centro_trabajo'] ?></td>
-                                            <td><?php echo $edad ?></td>
-                                            <td><?php echo $fila['fecha_inscripcion'] ?></td>
-                                            <td class="text-center"><?php echo $util->fecha_periodo($fila['ultimo_pago']) ?></td>
-                                            <td class="text-center"><?php echo $label ?></td>
-                                            <td class="text-center"><?php echo $label_actividad ?></td>
-                                            <td class="text-center"><?php echo $label_estado?></td>
+                                            <td><?php echo $item ?></td>
+                                            <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] . " | CTSP N: " . $fila['ctsp'] ?></td>
+                                            <td><?php echo $fila['fecha'] ?></td>
+                                            <td class="text-center"><?php echo $util->fecha_periodo($fila['periodo_inicio']) ?></td>
+                                            <td class="text-center"><?php echo $util->fecha_periodo($fila['pagado']) ?></td>
+                                            <td class="text-center"><?php echo $fila['nrocuotas'] ?></td>
+                                            <td class="text-center"><?php echo $fila['monto'] ?></td>
+                                            <td class="text-center"><?php echo $fila['nombrebanco'] ?></td>
                                             <td>
                                                 <button type="button" class="btn btn-success btn-xs" title="Permisos"><i
                                                             class="fa fa-user"></i></button>

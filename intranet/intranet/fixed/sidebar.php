@@ -33,6 +33,7 @@
                     <li><a href="ver_solicitud_constancias.php">Solicitud de Constancia</a></li>
                     <li><a href="reg_constancia_habilitado.php">Emitir Constancia Habilitado</a></li>
                     <li><a href="reg_pago_cuotas.php">Pagar Cuotas</a></li>
+                    <li><a href="ver_cuotas_pagadas.php">Ver Pagos Cuotas</a></li>
                 </ul>
             </li>
             <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">

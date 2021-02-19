@@ -94,7 +94,7 @@ $comunicado = new Comunicado();
                                                 $imagen = "logopdf.jpeg";
                                                 ?>
                                                 <li class="card-container col-lg-2 col-md-6 col-sm-6 m-b30 home">
-                                                    <a href="#" onclick="cargarArchivo('<?php echo $item['imagen'] ?>')">
+                                                    <a href="javascript:void(0);" onclick="cargarArchivo('<?php echo $item['imagen'] ?>')">
                                                     <div class="">
                                                         <img src="images/comunicados/<?php echo $imagen ?>" alt="">
                                                     </div>

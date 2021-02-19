@@ -15,6 +15,7 @@ class Cuota
     private $imgdeposito;
     private $idMovimiento;
     private $nrocuotas;
+    private $periodo_inicial;
 
     private $c_conectar;
 
@@ -110,6 +111,22 @@ class Cuota
         $this->nrocuotas = $nrocuotas;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getPeriodoInicial()
+    {
+        return $this->periodo_inicial;
+    }
+
+    /**
+     * @param mixed $periodo_inicial
+     */
+    public function setPeriodoInicial($periodo_inicial)
+    {
+        $this->periodo_inicial = $periodo_inicial;
+    }
+
     public function generarCodigo()
     {
         $sql = "select ifnull(max(id_cuota) +1, 1) as codigo from cuotas";
@@ -118,44 +135,57 @@ class Cuota
 
     public function insertar()
     {
-        $sql = "insert into cuotas values ('$this->idCuota', '$this->idAsociado', '$this->fecha', '$this->monto', '$this->nota', '$this->imgdeposito', '$this->idMovimiento', '$this->nrocuotas')";
+        $sql = "insert into cuotas values ('$this->idCuota', '$this->idAsociado', '$this->fecha', '$this->monto', '$this->nota', '$this->imgdeposito', '$this->idMovimiento', '$this->nrocuotas', '$this->periodo_inicial')";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function obtenerDatos()
     {
         $sql = "select * from cuotas 
-        where id_cuota = '$this->idCuota'" ;
+        where id_cuota = '$this->idCuota'";
         $resultado = $this->c_conectar->get_Row($sql);
-         $this->idAsociado = $resultado['id_asociado'];
+        $this->idAsociado = $resultado['id_asociado'];
         $this->fecha = $resultado['fecha'];
         $this->monto = $resultado['monto'];
         $this->nota = $resultado['nota'];
         $this->imgdeposito = $resultado['imgdeposito'];
         $this->idMovimiento = $resultado['id_movimiento'];
         $this->nrocuotas = $resultado['nrocuotas'];
+        $this->periodo_inicial = $resultado['periodo_inicio'];
     }
 
     public function actualizar()
     {
         $sql = "UPDATE cuotas
-                SET  periodo = '$this->periodo' WHERE  id_cuota = '$this->idCuota' " ;
-         return $this->c_conectar->ejecutar_idu($sql);
+                SET  periodo = '$this->periodo' WHERE  id_cuota = '$this->idCuota' ";
+        return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function eliminar()
     {
         $sql = "DELETE FROM cuotas
-                WHERE  id_cuota = '$this->idCuota'  " ; 
+                WHERE  id_cuota = '$this->idCuota'  ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
     public function verPagos()
     {
-        $sql = "select fecha, monto, nrocuotas  
+        $sql = "select fecha, monto, nrocuotas, periodo_inicio, date_add(periodo_inicio, interval nrocuotas month) as pagado 
                 from cuotas 
                 where id_asociado = '$this->idAsociado' 
                 order by fecha asc";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
+    public function verPagosFechas($fechainicio, $fechafinal)
+    {
+        $sql = "select c.fecha, c.monto, c.nrocuotas, b.nombre as nombrebanco, c.periodo_inicio, date_add(c.periodo_inicio, interval nrocuotas month) as pagado, a.apellidos, a.nombres, a.ctsp 
+                from cuotas as c
+                inner join asociados a on c.id_asociado = a.id_asociado
+                inner join banco_movimientos bm on c.id_movimiento = bm.id_movimiento
+                inner join bancos b on bm.id_banco = b.id_banco
+                order by c.fecha asc";
+        //echo $sql;
         return $this->c_conectar->get_Cursor($sql);
     }
 
