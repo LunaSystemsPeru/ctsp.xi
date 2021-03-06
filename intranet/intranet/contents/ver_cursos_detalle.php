@@ -150,7 +150,7 @@ $participante->setIdCurso($curso->getIdCurso());
                                             <td><?php echo $label_estado ?></td>
                                             <td>
                                                 <button onclick="cargarDatos(<?php echo $fila['id_participante']  ?>)" class="btn btn-facebook" title="Cobrar"><i class="fa fa-dollar"></i></button>
-                                                <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+                                                <button onclick="eliminar(<?php echo $fila['id_participante']  ?>)" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></button>
                                             </td>
                                         </tr>
                                         <?php
@@ -355,6 +355,22 @@ $participante->setIdCurso($curso->getIdCurso());
     }
 
     function eliminar(idparticipante) {
+        Swal.fire({
+            title: 'Esta Segura de eliminar al Participante?',
+            showCancelButton: true,
+            confirmButtonText: `Aceptar`,
+
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                location.href="../controller/eliminarparticipante.php?id_participante=" +idparticipante ;
+
+                Swal.fire('Eliminado!', '', 'success')
+
+            } else if (result.isCancel) {
+                Swal.fire('No se Realizaron Cambios', '', 'info')
+            }
+        })
 
     }
 
