@@ -1,12 +1,12 @@
 <?php
 
 header('Content-type: application/vnd.ms-excel;charset=UTF-8');
-header('Content-Disposition: attachment; filename=nombre_archivo.xls');
+header('Content-Disposition: attachment; filename=participantes.xls');
 
 if (filter_input(INPUT_GET, 'id_curso')) {
     $idcurso = filter_input(INPUT_GET, 'id_curso');
 }else{
-    header("location: ../contents/ver_cursos.php");
+    header("location: ../contents/ver_cursos.php");//en caso no reciba valor, regresar a cursos
 
 }
 require '../../models/CursosParticipante.php';
@@ -47,6 +47,4 @@ $participante->setIdCurso($idcurso);//asignar el valor del idcurso
 
                 </table>
 
-<?php
-//$cita->actualizarEstado();
-//?>
+
