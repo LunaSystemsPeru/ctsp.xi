@@ -191,6 +191,7 @@ class CursosParticipante
         $this->centroTrabajo = $resultado['centro_trabajo'];
         $this->voucher = $resultado['voucher'];
         $this->verificado = $resultado['verificado'];
+        return json_encode($resultado);
     }
 
     public function actualizar()

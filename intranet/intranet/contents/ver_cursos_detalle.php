@@ -7,6 +7,10 @@ $participante = new CursosParticipante();
 $tipo = new ParametrosDetalle();
 
 $curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
+
+if (!$curso->getIdCurso()) {
+    header("Location: ver_cursos.php");
+}
 $curso->obtenerDatos();
 
 $tipo->setIdDetalle($curso->getIdModalidad());
@@ -101,8 +105,11 @@ $participante->setIdCurso($curso->getIdCurso());
 
 
             <div class="row">
-                <div class="col-8">
+                <div class="col-12">
                     <div class="card">
+                        <div class="card-header">
+                            <h2 class="m-b10 font-weight-500 "><?php echo $curso->getNombre() ?></h2>
+                        </div>
                         <div class="card-header">
                             <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar Participante</a>
                             <a href="../controller/generar_excel.php?id_curso=<?php echo $curso->getIdCurso()?>" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
@@ -115,7 +122,7 @@ $participante->setIdCurso($curso->getIdCurso());
                                     <thead>
                                     <tr>
                                         <th>Item</th>
-                                        <th>Nombre</th>
+                                        <th width="35%">Nombre</th>
                                         <th>Email</th>
                                         <th>Celular</th>
                                         <th>Estado</th>
@@ -139,7 +146,7 @@ $participante->setIdCurso($curso->getIdCurso());
                                             <td><?php echo $fila['celular'] ?></td>
                                             <td><?php echo $label_estado ?></td>
                                             <td>
-                                                <button data-toggle="modal" data-target="#detallePago" class="btn btn-facebook" title="Cobrar"><i class="fa fa-dollar"></i></button>
+                                                <button onclick="cargarDatos(<?php echo $fila['id_participante']  ?>)" class="btn btn-facebook" title="Cobrar"><i class="fa fa-dollar"></i></button>
                                                 <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
                                             </td>
                                         </tr>
@@ -165,7 +172,7 @@ $participante->setIdCurso($curso->getIdCurso());
                     </div>
                 </div>
 
-                <div class="col-4">
+                <!--<div class="col-4">
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Detalle del Curso</h4>
@@ -177,7 +184,7 @@ $participante->setIdCurso($curso->getIdCurso());
                                             class="m-l10 font-weight-300 text-black"> <?php echo $curso->getProfesor() ?></span>
                                 </h5>
                                 <h5>Via Ponencia: <span
-                                            class="m-l10 font-weight-300 text-black"> <?php echo $tipo->getNombre()?></span>
+                                            class="m-l10 font-weight-300 text-black"> <?php echo $tipo->getNombre() ?></span>
                                 </h5>
                                 <h5>Fecha: <span
                                             class="m-l10 font-weight-300 text-black"> <?php echo $curso->getFecha() ?></span>
@@ -192,7 +199,7 @@ $participante->setIdCurso($curso->getIdCurso());
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
             <div class="modal fade" id="basicModal">
@@ -205,14 +212,13 @@ $participante->setIdCurso($curso->getIdCurso());
                                 </button>
                             </div>
                             <div class="modal-body">
-
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label>URL</label>
                                         <input type="text" class="form-control" name="input_url" required>
                                     </div>
                                     <input type="hidden" name="action" value="2">
-                                    <input type="hidden" name="idcurso" value="<?php echo $curso->getIdCurso()?>">
+                                    <input type="hidden" name="idcurso" value="<?php echo $curso->getIdCurso() ?>">
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -225,7 +231,7 @@ $participante->setIdCurso($curso->getIdCurso());
             </div>
 
             <div class="modal fade" id="detallePago">
-                <div class="modal-dialog" role="document">
+                <div class="modal-dialog modal-lg" role="document">
                     <form class="form-horizontal" method="post" action="../controller/aprobarpagocurso.php">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -234,11 +240,26 @@ $participante->setIdCurso($curso->getIdCurso());
                                 </button>
                             </div>
                             <div class="modal-body">
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label>URL</label>
-                                        <input type="text" class="form-control" name="input_url" required>
+                                <div class="media pt-3 pb-3">
+                                    <img src="../../../images/cursos/voucher/vjec4ztc.jpg" alt="image" id="mpago_voucher" class="mr-3"
+                                         style="max-width: 350px">
+                                    <div class="form-group col-md-6">
+                                        <div class="form-group">
+                                            <label>Nombre</label>
+                                            <input type="text" class="form-control" id="mpago_inputNombre" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nro Celular</label>
+                                            <input type="text" class="form-control" id="mpago_inputCelular" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control" id="mpago_inputEmail" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Monto</label>
+                                            <input type="text" class="form-control" id="mpago_inputMonto" readonly>
+                                        </div>
                                     </div>
                                     <input type="hidden" name="action" value="2">
                                     <input type="hidden" name="idcurso" value="<?php echo $curso->getIdCurso()?>">
@@ -246,7 +267,7 @@ $participante->setIdCurso($curso->getIdCurso());
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary">Guardar</button>
+                                <button type="submit" class="btn btn-primary">Aprobar Pago</button>
                             </div>
                         </div>
                     </form>
@@ -299,8 +320,22 @@ $participante->setIdCurso($curso->getIdCurso());
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
 <script>
-    function enviarEmail () {
+    function enviarEmail() {
         location.href = "../controller/send_link_masivo_curso.php?idcurso=<?php echo $curso->getIdCurso()?>";
+    }
+
+    function cargarDatos(idparticipante) {
+        $.post("../controller/getJson/datos_participante.php", {input_idparticipante: idparticipante})
+            .done(function (data) {
+                var jdata = JSON.parse(data);
+                $("#mpago_voucher").prop("src", "../../../images/cursos/voucher/" + jdata.voucher);
+                $("#mpago_inputNombre").val(jdata.apellidos + " " + jdata.nombres);
+                $("#mpago_inputCelular").val(jdata.celular);
+                $("#mpago_inputEmail").val(jdata.email);
+                $("#mpago_inputMonto").val(<?php echo $curso->getMonto()?>);
+                //$("#mpago_inputFecha").val(jdata.fechainscripcion);
+                $("#detallePago").modal('show');
+            });
     }
 </script>
 </body>
