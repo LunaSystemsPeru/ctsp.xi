@@ -141,10 +141,10 @@ $util = new Util();
                                             $label = $labeltraslado;
                                         }
                                         $ultimo_pago = $fila['ultimo_pago'];
-                                        $fecha120 = $util->SumaDias(date("Y-m-d"), 120);
+                                        $fecha_sumada= $util->SumaDias($fila['ultimo_pago'], 183);
 
-                                        $fecha_actual = strtotime($fecha120);
-                                        $fecha_pago = strtotime($ultimo_pago);
+                                        $fecha_actual = strtotime(date("Y-m-d"));
+                                        $fecha_pago = strtotime($fecha_sumada);
 
                                         $label_actividad = '<label class="label label-success">'.$fila['tactividad'].'</label>';
                                         if ($fila['id_tipo_actividad'] != 12) {
