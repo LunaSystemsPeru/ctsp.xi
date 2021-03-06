@@ -111,15 +111,10 @@ $participante->setIdCurso($curso->getIdCurso());
                             <h2 class="m-b10 font-weight-500 "><?php echo $curso->getNombre() ?></h2>
                         </div>
                         <div class="card-header">
-                            <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar
-                                Participante</a>
-                            <a href="#" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
-                            <button class="btn btn-info" data-toggle="modal" data-target="#basicModal"><i
-                                        class="fa fa-upload"></i> Cargar Link
-                            </button>
-                            <button class="btn btn-info" onclick="enviarEmail()"><i class="fa fa-send"></i> Enviar Link
-                                Masivo
-                            </button>
+                            <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar Participante</a>
+                            <a href="../controller/generar_excel.php?id_curso=<?php echo $curso->getIdCurso()?>" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#basicModal"><i class="fa fa-upload"></i> Cargar Link</button>
+                            <button class="btn btn-info" onclick="enviarEmail()"><i class="fa fa-send"></i> Enviar Link Masivo</button>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -266,9 +261,10 @@ $participante->setIdCurso($curso->getIdCurso());
                                             <input type="text" class="form-control" id="mpago_inputMonto" readonly>
                                         </div>
                                     </div>
+                                    <input type="hidden" name="action" value="2">
+                                    <input type="hidden" name="idcurso" value="<?php echo $curso->getIdCurso()?>">
                                 </div>
                             </div>
-
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 <button type="submit" class="btn btn-primary">Aprobar Pago</button>
@@ -299,6 +295,7 @@ $participante->setIdCurso($curso->getIdCurso());
     <!--**********************************
        Support ticket button end
     ***********************************-->
+
 
 </div>
 <!--**********************************
