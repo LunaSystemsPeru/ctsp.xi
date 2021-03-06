@@ -1,10 +1,12 @@
 <?php
 require '../../models/CursosParticipante.php';
 require '../../models/Curso.php';
+require '../../models/Banco.php';
 require '../../models/ParametrosDetalle.php';
 $curso = new Curso();
 $participante = new CursosParticipante();
 $tipo = new ParametrosDetalle();
+$banco = new Banco();
 
 $curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
 
@@ -233,7 +235,7 @@ $participante->setIdCurso($curso->getIdCurso());
 
             <div class="modal fade" id="detallePago">
                 <div class="modal-dialog modal-lg" role="document">
-                    <form class="form-horizontal" method="post" action="../controller/aprobarpagocurso.php">
+                    <form class="form-horizontal" method="post" action="../controller/aprobarparticipantecurso.php">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Detalle de Pago de Inscripcion al Curso</h5>
@@ -260,6 +262,20 @@ $participante->setIdCurso($curso->getIdCurso());
                                         <div class="form-group">
                                             <label>Monto</label>
                                             <input type="text" class="form-control" id="mpago_inputMonto" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="hidden" name="mpago_inputIdParticipante" id="mpago_inputIdParticipante">
+                                            <label>Banco Destino</label>
+                                            <select class="form-control" name="selectDestino">
+                                                <?php
+                                                $abanco = $banco->verFilas();
+                                                foreach ($abanco as $item) {
+                                                    ?>
+                                                    <option value="<?php echo $item['id_banco'] ?>"><?php echo $item['nombre'] ?></option>
+                                                    <?php
+                                                }
+                                                ?>
+                                            </select>
                                         </div>
                                     </div>
                                     <input type="hidden" name="action" value="2">
@@ -334,6 +350,7 @@ $participante->setIdCurso($curso->getIdCurso());
                 $("#mpago_inputCelular").val(jdata.celular);
                 $("#mpago_inputEmail").val(jdata.email);
                 $("#mpago_inputMonto").val(<?php echo $curso->getMonto()?>);
+                $("#mpago_inputIdParticipante").val(jdata.id_participante);
                 //$("#mpago_inputFecha").val(jdata.fechainscripcion);
                 $("#detallePago").modal('show');
             });
