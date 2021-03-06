@@ -35,6 +35,7 @@ $participante->setIdCurso($curso->getIdCurso());
     <!-- Custom Stylesheet -->
     <link href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="../../public/css/style.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </head>
 
@@ -337,6 +338,12 @@ $participante->setIdCurso($curso->getIdCurso());
                 $("#detallePago").modal('show');
             });
     }
+
+    function eliminar(idparticipante) {
+
+    }
+
+
 </script>
 </body>
 
