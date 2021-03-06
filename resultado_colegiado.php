@@ -1,6 +1,8 @@
 <?php
 require 'intranet/models/Asociado.php';
+require 'intranet/tools/Util.php';
 
+$util = new Util();
 $asociado = new Asociado();
 
 $asociado->setNombre(filter_input(INPUT_POST, 'input_nombres'));
@@ -132,6 +134,7 @@ if ($asociado->getCtsp() == "") {
                                         <th>Apellidos y Nombres</th>
                                         <th>Fec. Inscripcion</th>
                                         <th>Estado</th>
+                                        <th>Tipo Actividad</th>
                                         <th>Acciones</th>
                                     </tr>
                                     </thead>
@@ -141,17 +144,33 @@ if ($asociado->getCtsp() == "") {
                                     $aasociados = $asociado->buscarAsociado();
                                     foreach ($aasociados as $fila) {
                                         $item++;
-                                        $label = '<label class="badge badge-success">Activo</label>';
-                                        if ($fila['estado'] == 0) {
-                                            $label = '<label class="badge badge-warning">No Habilitado</label>';
+                                        $ultimo_pago = $fila['ultimo_pago'];
+                                        $fecha_sumada= $util->SumaDias($fila['ultimo_pago'], 183);
+
+                                        $fecha_actual = strtotime(date("Y-m-d"));
+                                        $fecha_pago = strtotime($fecha_sumada);
+
+                                        $label_actividad = '<label class="badge badge-success">'.$fila['tactividad'].'</label>';
+                                        if ($fila['id_tipo_actividad'] != 12) {
+                                            $label_actividad = '<label class="badge badge-info">'.$fila['tactividad'].'</label>';
                                         }
+
+                                        if ($fecha_pago < $fecha_actual) {
+                                            $label_estado = '<label class="badge badge-danger"> No Habilitado</label>';
+                                        }
+
+                                        if ($fecha_pago > $fecha_actual) {
+                                            $label_estado = '<label class="badge badge-success">Habilitado</label>';
+                                        }
+
                                         ?>
                                         <tr>
                                             <td><?php echo $item?></td>
                                             <td><?php echo $fila['ctsp'] ?></td>
                                             <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] ?></td>
                                             <td><?php echo $fila['fecha_inscripcion'] ?></td>
-                                            <td><?php echo $label ?></td>
+                                            <td><?php echo $label_estado ?></td>
+                                            <td><?php echo $label_actividad ?></td>
                                             <td>
                                                 <button type="button" class="btn btn-info" title="Ver Perfil"><i
                                                             class="fa fa-user"></i></button>
