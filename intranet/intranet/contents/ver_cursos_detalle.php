@@ -105,7 +105,7 @@ $participante->setIdCurso($curso->getIdCurso());
                     <div class="card">
                         <div class="card-header">
                             <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar Participante</a>
-                            <a href="#" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
+                            <a href="../controller/generar_excel.php?id_curso=<?php echo $curso->getIdCurso()?>" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
                             <button class="btn btn-info" data-toggle="modal" data-target="#basicModal"><i class="fa fa-upload"></i> Cargar Link</button>
                             <button class="btn btn-info" onclick="enviarEmail()"><i class="fa fa-send"></i> Enviar Link Masivo</button>
                         </div>
@@ -205,10 +205,7 @@ $participante->setIdCurso($curso->getIdCurso());
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <div>
-                                    <
 
-                                </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label>URL</label>

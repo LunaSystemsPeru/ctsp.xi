@@ -152,7 +152,7 @@ $util = new Util();
                                         }
 
                                         if ($fecha_pago < $fecha_actual) {
-                                            $label_estado = '<label class="label label-sucess">Habilitado</label>';
+                                            $label_estado = '<label class="label label-danger"> No Habilitado</label>';
                                         }
 
                                         if ($fecha_pago > $fecha_actual) {
