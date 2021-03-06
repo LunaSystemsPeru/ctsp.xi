@@ -278,8 +278,6 @@ $participante->setIdCurso($curso->getIdCurso());
                                             </select>
                                         </div>
                                     </div>
-                                    <input type="hidden" name="action" value="2">
-                                    <input type="hidden" name="idcurso" value="<?php echo $curso->getIdCurso()?>">
                                 </div>
                             </div>
                             <div class="modal-footer">

@@ -98,7 +98,7 @@ class Util
     function SumaDias($fecha, $dias)
     {
         //sumo 1 día
-        return date("d-m-Y", strtotime($fecha . "+ " . $dias . " days"));
+        return date("Y-m-d", strtotime($fecha . "+ " . $dias . " days"));
     }
 
     function fechaCastellano ($fecha) {
