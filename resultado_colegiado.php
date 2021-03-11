@@ -132,9 +132,7 @@ if ($asociado->getCtsp() == "") {
                                         <th>Item</th>
                                         <th>Nro CTSP</th>
                                         <th>Apellidos y Nombres</th>
-                                        <th>Fec. Inscripcion</th>
-                                        <th>Estado</th>
-                                        <th>Tipo Actividad</th>
+                                        <th>Fecha Inscripcion</th>
                                         <th>Acciones</th>
                                     </tr>
                                     </thead>
@@ -169,10 +167,8 @@ if ($asociado->getCtsp() == "") {
                                             <td><?php echo $fila['ctsp'] ?></td>
                                             <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] ?></td>
                                             <td><?php echo $fila['fecha_inscripcion'] ?></td>
-                                            <td><?php echo $label_estado ?></td>
-                                            <td><?php echo $label_actividad ?></td>
                                             <td>
-                                                <button type="button" class="btn btn-info" title="Ver Perfil"><i
+                                                <button type="button" onclick="verAsociado(<?php echo $fila['id_asociado'] ?>)" class="btn btn-info" title="Ver Perfil"><i
                                                             class="fa fa-user"></i></button>
                                             </td>
                                         </tr>
@@ -188,6 +184,56 @@ if ($asociado->getCtsp() == "") {
 
 
             </div>
+
+            <div class="modal fade" id="detalleAsociado">
+                <div class="modal-dialog modal-lg" role="document">
+                    <form class="form-horizontal" method="post" action="#">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Detalle del Asociado</h5>
+                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="media pt-3 pb-3">
+                                    <img src="images/asociados/perfil/1.jpg" alt="image" id="mpago_voucher" class="mr-3"
+                                         style="max-width: 100px">
+                                    <div class="form-group col-md-6">
+                                        <div class="form-group">
+                                            <label>Nombre</label>
+                                            <input type="text" class="form-control" id="mpago_inputNombre" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nro Celular</label>
+                                            <input type="text" class="form-control" id="mpago_inputCelular" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control" id="mpago_inputEmail" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nro CTSP</label>
+                                            <input type="text" class="form-control" id="mpago_inputCelular" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Tipo Actividad</label>
+                                            <input type="text" class="form-control" id="mpago_inputMonto" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Estado</label>
+                                            <input type="text" class="form-control" id="mpago_inputMonto" readonly>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Footer -->
@@ -198,6 +244,11 @@ if ($asociado->getCtsp() == "") {
 </div>
 <!-- JavaScript  files ========================================= -->
 <script src="js/combining.js"></script><!-- COMBINING JS  -->
+<script>
+    function verAsociado () {
+        $("#detalleAsociado").modal('toggle');
+    }
+</script>
 <!-- revolution JS FILES -->
 </body>
 

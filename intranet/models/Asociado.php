@@ -439,7 +439,7 @@ class Asociado
 
     public function buscarAsociado()
     {
-        $sql = "select a.dni, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, a.ctsp, pdr.nombre as tipo_registro, a.celular, a.estado, a.email, a.id_tipo_inscripcion, a.id_tipo_actividad,  pda.nombre as tactividad
+        $sql = "select a.id_asociado, a.dni, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, a.ctsp, pdr.nombre as tipo_registro, a.celular, a.estado, a.email, a.id_tipo_inscripcion, a.id_tipo_actividad,  pda.nombre as tactividad
                 from asociados as a 
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion
