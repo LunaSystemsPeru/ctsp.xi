@@ -268,10 +268,12 @@ class Asociado
     /**
      * @param mixed $tipo_actividad
      */
-    public function setTipoActividad($tipo_actividad): void
+    public function setTipoActividad($tipo_actividad)
     {
         $this->tipo_actividad = $tipo_actividad;
     }
+
+
 
     public function generarCodigo()
     {
