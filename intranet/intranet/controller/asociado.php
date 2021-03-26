@@ -14,7 +14,7 @@ $asociado->setCelular(filter_input(INPUT_POST, 'input_celular'));
 $asociado->setDomicilio(filter_input(INPUT_POST, 'input_domicilio'));
 $asociado->setFechaNac(filter_input(INPUT_POST, 'input_fec_nac'));
 $asociado->setCentroTrabajo(filter_input(INPUT_POST, 'input_trabajo'));
-$asociado->setEstado(0);
+$asociado->setEstado(3);
 //0 = pendiente
 //1 = aprobado
 //2 = rechazado por corregir

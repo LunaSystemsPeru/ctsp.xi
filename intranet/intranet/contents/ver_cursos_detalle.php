@@ -1,12 +1,18 @@
 <?php
 require '../../models/CursosParticipante.php';
 require '../../models/Curso.php';
+require '../../models/Banco.php';
 require '../../models/ParametrosDetalle.php';
 $curso = new Curso();
 $participante = new CursosParticipante();
 $tipo = new ParametrosDetalle();
+$banco = new Banco();
 
 $curso->setIdCurso(filter_input(INPUT_GET, 'idcurso'));
+
+if (!$curso->getIdCurso()) {
+    header("Location: ver_cursos.php");
+}
 $curso->obtenerDatos();
 
 $tipo->setIdDetalle($curso->getIdModalidad());
@@ -31,6 +37,7 @@ $participante->setIdCurso($curso->getIdCurso());
     <!-- Custom Stylesheet -->
     <link href="../../public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="../../public/css/style.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </head>
 
@@ -101,11 +108,14 @@ $participante->setIdCurso($curso->getIdCurso());
 
 
             <div class="row">
-                <div class="col-8">
+                <div class="col-12">
                     <div class="card">
                         <div class="card-header">
+                            <h2 class="m-b10 font-weight-500 "><?php echo $curso->getNombre() ?></h2>
+                        </div>
+                        <div class="card-header">
                             <a href="reg_curso.php" class="btn btn-facebook"> <i class="fa fa-plus"></i> Agregar Participante</a>
-                            <a href="#" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
+                            <a href="../controller/generar_excel.php?id_curso=<?php echo $curso->getIdCurso()?>" class="btn btn-success"> <i class="fa fa-file-excel-o"></i> Excel Participantes</a>
                             <button class="btn btn-info" data-toggle="modal" data-target="#basicModal"><i class="fa fa-upload"></i> Cargar Link</button>
                             <button class="btn btn-info" onclick="enviarEmail()"><i class="fa fa-send"></i> Enviar Link Masivo</button>
                         </div>
@@ -115,7 +125,7 @@ $participante->setIdCurso($curso->getIdCurso());
                                     <thead>
                                     <tr>
                                         <th>Item</th>
-                                        <th>Nombre</th>
+                                        <th width="35%">Nombre</th>
                                         <th>Email</th>
                                         <th>Celular</th>
                                         <th>Estado</th>
@@ -139,8 +149,8 @@ $participante->setIdCurso($curso->getIdCurso());
                                             <td><?php echo $fila['celular'] ?></td>
                                             <td><?php echo $label_estado ?></td>
                                             <td>
-                                                <a href="#" class="btn btn-facebook" title="Cobrar"><i class="fa fa-dollar"></i></a>
-                                                <a href="#" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+                                                <button onclick="cargarDatos(<?php echo $fila['id_participante']  ?>)" class="btn btn-facebook" title="Cobrar"><i class="fa fa-dollar"></i></button>
+                                                <button onclick="eliminar(<?php echo $fila['id_participante']  ?>)" class="btn btn-danger" title="Eliminar"><i class="fa fa-trash"></i></button>
                                             </td>
                                         </tr>
                                         <?php
@@ -165,7 +175,7 @@ $participante->setIdCurso($curso->getIdCurso());
                     </div>
                 </div>
 
-                <div class="col-4">
+                <!--<div class="col-4">
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Detalle del Curso</h4>
@@ -177,7 +187,7 @@ $participante->setIdCurso($curso->getIdCurso());
                                             class="m-l10 font-weight-300 text-black"> <?php echo $curso->getProfesor() ?></span>
                                 </h5>
                                 <h5>Via Ponencia: <span
-                                            class="m-l10 font-weight-300 text-black"> <?php echo $tipo->getNombre()?></span>
+                                            class="m-l10 font-weight-300 text-black"> <?php echo $tipo->getNombre() ?></span>
                                 </h5>
                                 <h5>Fecha: <span
                                             class="m-l10 font-weight-300 text-black"> <?php echo $curso->getFecha() ?></span>
@@ -192,7 +202,7 @@ $participante->setIdCurso($curso->getIdCurso());
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
             <div class="modal fade" id="basicModal">
@@ -205,19 +215,74 @@ $participante->setIdCurso($curso->getIdCurso());
                                 </button>
                             </div>
                             <div class="modal-body">
-
                                 <div class="form-row">
                                     <div class="form-group col-md-12">
                                         <label>URL</label>
                                         <input type="text" class="form-control" name="input_url" required>
                                     </div>
                                     <input type="hidden" name="action" value="2">
-                                    <input type="hidden" name="idcurso" value="<?php echo $curso->getIdCurso()?>">
+                                    <input type="hidden" name="idcurso" value="<?php echo $curso->getIdCurso() ?>">
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal fade" id="detallePago">
+                <div class="modal-dialog modal-lg" role="document">
+                    <form class="form-horizontal" method="post" action="../controller/aprobarparticipantecurso.php">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Detalle de Pago de Inscripcion al Curso</h5>
+                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="media pt-3 pb-3">
+                                    <img src="../../../images/cursos/voucher/vjec4ztc.jpg" alt="image" id="mpago_voucher" class="mr-3"
+                                         style="max-width: 350px">
+                                    <div class="form-group col-md-6">
+                                        <div class="form-group">
+                                            <label>Nombre</label>
+                                            <input type="text" class="form-control" id="mpago_inputNombre" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Nro Celular</label>
+                                            <input type="text" class="form-control" id="mpago_inputCelular" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control" id="mpago_inputEmail" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Monto</label>
+                                            <input type="text" class="form-control" id="mpago_inputMonto" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="hidden" name="mpago_inputIdParticipante" id="mpago_inputIdParticipante">
+                                            <label>Banco Destino</label>
+                                            <select class="form-control" name="selectDestino">
+                                                <?php
+                                                $abanco = $banco->verFilas();
+                                                foreach ($abanco as $item) {
+                                                    ?>
+                                                    <option value="<?php echo $item['id_banco'] ?>"><?php echo $item['nombre'] ?></option>
+                                                    <?php
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-primary">Aprobar Pago</button>
                             </div>
                         </div>
                     </form>
@@ -270,9 +335,46 @@ $participante->setIdCurso($curso->getIdCurso());
 <script src="../../public/vendor/svganimation/vivus.min.js"></script>
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
 <script>
-    function enviarEmail () {
+    function enviarEmail() {
         location.href = "../controller/send_link_masivo_curso.php?idcurso=<?php echo $curso->getIdCurso()?>";
     }
+
+    function cargarDatos(idparticipante) {
+        $.post("../controller/getJson/datos_participante.php", {input_idparticipante: idparticipante})
+            .done(function (data) {
+                var jdata = JSON.parse(data);
+                $("#mpago_voucher").prop("src", "../../../images/cursos/voucher/" + jdata.voucher);
+                $("#mpago_inputNombre").val(jdata.apellidos + " " + jdata.nombres);
+                $("#mpago_inputCelular").val(jdata.celular);
+                $("#mpago_inputEmail").val(jdata.email);
+                $("#mpago_inputMonto").val(<?php echo $curso->getMonto()?>);
+                $("#mpago_inputIdParticipante").val(jdata.id_participante);
+                //$("#mpago_inputFecha").val(jdata.fechainscripcion);
+                $("#detallePago").modal('show');
+            });
+    }
+
+    function eliminar(idparticipante) {
+        Swal.fire({
+            title: 'Esta Segura de eliminar al Participante?',
+            showCancelButton: true,
+            confirmButtonText: `Aceptar`,
+
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                location.href="../controller/eliminarparticipante.php?id_participante=" +idparticipante ;
+
+                Swal.fire('Eliminado!', '', 'success')
+
+            } else if (result.isCancel) {
+                Swal.fire('No se Realizaron Cambios', '', 'info')
+            }
+        })
+
+    }
+
+
 </script>
 </body>
 

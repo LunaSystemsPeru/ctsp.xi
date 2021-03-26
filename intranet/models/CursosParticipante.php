@@ -191,12 +191,13 @@ class CursosParticipante
         $this->centroTrabajo = $resultado['centro_trabajo'];
         $this->voucher = $resultado['voucher'];
         $this->verificado = $resultado['verificado'];
+        return json_encode($resultado);
     }
 
     public function actualizar()
     {
         $sql = "UPDATE cursos_participantes
-                SET  id_movimiento = '$this->idMovimiento' WHERE  id_participante = '$this->idParticipante' ";
+                SET  id_movimiento = '$this->idMovimiento', verificado = '1' WHERE  id_participante = '$this->idParticipante' ";
         return $this->c_conectar->ejecutar_idu($sql);
     }
 

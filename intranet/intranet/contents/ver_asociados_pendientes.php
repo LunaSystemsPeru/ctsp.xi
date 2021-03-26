@@ -126,8 +126,8 @@ $util = new Util();
                                     </thead>
                                     <tbody>
                                     <?php
-                                    $asociado->setEstado(0);
-                                    $aasociados = $asociado->verAsociados();
+                                    $asociado->setEstado(3);
+                                    $aasociados = $asociado->verAsociadosPendientes();
                                     $labelnuevo = '<label class="label label-success">Nuevo</label>';
                                     $labeltraslado = '<label class="label label-default">Traslado</label>';
                                     $label = "";

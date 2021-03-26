@@ -388,6 +388,16 @@ class Asociado
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
+    public function actualizarDocumentos()
+    {
+        $sql = "UPDATE asociados
+                SET  ficha_inscripcion = '$this->fichaInscripcion',
+                    titulo = '$this->titulo',
+                    registro_sunedu = '$this->sunedtroSunedu'
+                WHERE  id_asociado = '$this->idAsociado' ";
+        return $this->c_conectar->ejecutar_idu($sql);
+    }
+
 
     public function eliminar()
     {
@@ -403,7 +413,18 @@ class Asociado
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
                 inner join parametros_detalles as pda on pda.id_detalle = a.id_tipo_actividad 
-                where a.estado = '$this->estado' ";
+                where a.estado != 3";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
+    public function verAsociadosPendientes()
+    {
+        $sql = "select a.id_asociado, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, pdr.nombre as tipo_registro, a.estado, a.email, a.id_tipo_inscripcion, a.id_tipo_actividad, pda.nombre as tactividad 
+                from asociados as a 
+                inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
+                inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
+                inner join parametros_detalles as pda on pda.id_detalle = a.id_tipo_actividad 
+                where a.estado = '$this->estado' and a.id_tipo_actividad = '12' ";
         return $this->c_conectar->get_Cursor($sql);
     }
 
@@ -414,16 +435,17 @@ class Asociado
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
                 inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion
                 inner join parametros_detalles as pda on pda.id_detalle = a.id_tipo_actividad
-                where a.estado = '$this->estado' and concat(a.apellidos, ' ', a.nombres) like '%$termino%' ";
+                where a.estado != '3' and concat(a.apellidos, ' ', a.nombres) like '%$termino%' ";
         return $this->c_conectar->get_Cursor($sql);
     }
 
     public function buscarAsociado()
     {
-        $sql = "select a.dni, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, a.ctsp, pdr.nombre as tipo_registro, a.celular, a.estado, a.email, a.id_tipo_inscripcion
+        $sql = "select a.id_asociado, a.dni, a.apellidos, a.nombres, a.centro_trabajo, a.fecha_nac, a.fecha_inscripcion, a.ultimo_pago, a.ctsp, pdr.nombre as tipo_registro, a.celular, a.estado, a.email, a.id_tipo_inscripcion, a.id_tipo_actividad,  pda.nombre as tactividad
                 from asociados as a 
                 inner join parametros_detalles as pdd on pdd.id_detalle = a.id_tipo_documento 
-                inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion 
+                inner join parametros_detalles as pdr on pdr.id_detalle = a.id_tipo_inscripcion
+                inner join parametros_detalles as pda on pda.id_detalle = a.id_tipo_actividad
                 where a.apellidos like '%" . $this->apellido . "%' or a.nombres like '%" . $this->nombre . "%' or a.ctsp = '" . $this->ctsp . "'";
         return $this->c_conectar->get_Cursor($sql);
     }
