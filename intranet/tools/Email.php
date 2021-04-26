@@ -86,19 +86,19 @@ class Email
 
         try {
             //Server settings
-            $mail->SMTPDebug = $smtp::DEBUG_CONNECTION;                      // Enable verbose debug output NORMAL ES DEBUG_SERVER
+            $mail->SMTPDebug = $smtp::DEBUG_CONNECTION;                      // Enable verbose debug output NORMAL ES DEBUG_SERVER $smtp::DEBUG_CONNECTION
             $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+            $mail->Host       = 'imap.gmail.com';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
             $mail->Username   = 'cdrxiancashctsp@gmail.com';                     // SMTP username
             $mail->Password   = 'cdrxiancashctsp2021';                               // SMTP password
             $mail->SMTPSecure = $mail::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged ENCRYPTION_STARTTLS
             $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above 587
-            $mail->SMTPOptions = array('ssl' => array (
+            /*$mail->SMTPOptions = array('ssl' => array (
                 'verify_peer' => false,
                 'verify_peer_name' => false,
                 'allow_self_signed' => true)
-            );
+            );*/
 
             //Recipients
             $mail->setFrom('cdrxiancashctsp@gmail.com', 'Consultas CTSP RXI Ancash');

@@ -118,7 +118,7 @@ $fecha_curso = $util->fechaCastellano($curso->getFecha());
                                         <?php
                                         $fecha_actual = strtotime(date("Y-m-d"));
                                         $fecha_entrada = strtotime($curso->getFecha());
-                                        if ($fecha_entrada > $fecha_actual) {
+                                        if ($fecha_entrada >= $fecha_actual) {
                                             ?>
                                             <div class="alert bg-success text-white"><i class="fa fa-address-book"></i> <strong> INSCRIBITE ONLINE!!</strong></div>
                                             <form method="post" action="controller/reg_participante_curso.php" enctype="multipart/form-data">
