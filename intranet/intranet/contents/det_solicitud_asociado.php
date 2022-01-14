@@ -207,20 +207,23 @@ $detalle->obtenerDatos();
 
                     <div class="card">
                         <div class="card-header">
-                            <button class="btn btn-success"><i class="fa fa-check"> </i> Aprobar Solicitud</button>
+                            <h3>Finalizar Aprobacion</h3>
                         </div>
                         <div class="card-body">
-                            <form METHOD="post" action="../controller/asociado.php">
+                            <form METHOD="post" action="../controller/aprobarColegiatura.php">
                                 <div class="form-row">
-                                    <div class="form-group col-md-12">
+                                    <div class="form-group col-md-8">
                                         <label>Codigo CTSP</label>
+                                        <input type="hidden" name="hidden_idasociado" value="<?php echo $asociado->getIdAsociado()?>">
                                         <input type="text" class="form-control" name="input_codigoctsp" required>
                                     </div>
-                                    <div class="form-group col-md-12">
+                                    <div class="form-group col-md-8">
                                         <label>Fecha Aprobacion</label>
-                                        <input type="date" class="form-control" name="input_fecha" required>
+                                        <input type="date" class="form-control" name="input_fecha_aprovacion" required>
                                     </div>
-
+                                </div>
+                                <div class="form-row">
+                                    <button class="btn btn-success"><i class="fa fa-check"> </i> Aprobar Solicitud</button>
                                 </div>
                             </form>
                                 </div>

@@ -398,6 +398,15 @@ class Asociado
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
+    public function aprobarColegiatura()
+    {
+        $sql = "UPDATE asociados
+                SET  estado = '1',
+                    fecha_inscripcion = '$this->fechaInscripcion'
+                WHERE  id_asociado = '$this->idAsociado' ";
+        return $this->c_conectar->ejecutar_idu($sql);
+    }
+
 
     public function eliminar()
     {
