@@ -23,6 +23,7 @@ $asociado->setEstado(3);
 $asociado->setUltimoPago("1000-01-01");
 $asociado->setFechaCertificado("1000-01-01");
 $asociado->setFechaInscripcion(date("Y-m-d"));
+$asociado->setTipoActividad(12);
 
 //cargar files
 
