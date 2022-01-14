@@ -163,16 +163,16 @@ $util = new Util();
                                         ?>
                                         <tr>
                                             <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] ?></td>
+                                            <td class="text-center"><?php echo $fila['ctsp'] ?></td>
                                             <td><?php echo $fila['centro_trabajo'] ?></td>
                                             <td><?php echo $edad ?></td>
                                             <td><?php echo $fila['fecha_inscripcion'] ?></td>
                                             <td class="text-center"><?php echo $util->fecha_periodo($fila['ultimo_pago']) ?></td>
-                                            <td class="text-center"><?php echo $label ?></td>
                                             <td class="text-center"><?php echo $label_actividad ?></td>
                                             <td class="text-center"><?php echo $label_estado?></td>
                                             <td>
-                                                <button type="button" class="btn btn-success btn-xs" title="Permisos"><i
-                                                            class="fa fa-user"></i></button>
+                                                <a href="det_asociado.php?idasociado=<?php echo $fila['id_asociado'] ?>" type="button" class="btn btn-success btn-xs" title="Ver detalle del asociado"><i
+                                                            class="fa fa-user"></i></a>
                                                 <button type="button" class="btn btn-warning btn-xs" title="Eliminar"><i
                                                             class="fa fa-trash"></i></button>
                                             </td>

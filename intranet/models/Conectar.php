@@ -7,10 +7,10 @@ class Conectar
     private static $_instancia;
     private $_connection;
     private $_host = "localhost";
-    private $_user = "root_lsp";
-    private $_pass = "root/*123";
+    private $_user = "goempres_root";
+    private $_pass = "k;6?6,m{7ePs";
     // Almacenar una unica instancia
-    private $_db = "ctsprxi";
+    private $_db = "goempres_ctsprxi";
 
     /**
      * constructor de la clase Base de datos

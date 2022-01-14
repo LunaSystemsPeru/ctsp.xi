@@ -134,7 +134,7 @@ $detalle->obtenerDatos();
                         </ul>
                         <div class="card-footer border-0 mt-0">
                             <button class="btn btn-primary btn-lg btn-block">
-                                <h4 class="m-0 text-white"><i class="fa fa-bell-o"></i> Reminder Alarm</h4>
+                                <h4 class="m-0 text-white"><i class="fa fa-bell-o"></i> Modificar Datos</h4>
                             </button>
                         </div>
                     </div>
