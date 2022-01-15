@@ -28,6 +28,25 @@
                                 </div>
                                 <hr class="">
                                 <h4 class="text-center mb-4 text-uppercase">Acceder al Gestor de Contenidos</h4>
+                                <?php
+                                $error = filter_input(INPUT_GET, 'error');
+                                if (isset($error) || $error != "" || !is_null($error)) {
+                                    $tipo_error = "";
+                                    if ($error == 1) {
+                                        $tipo_error = "CONTRASEÑA INCORRECTA";
+                                    }
+                                    if ($error == 2) {
+                                        $tipo_error = "USUARIO NO EXISTE";
+                                    }
+                                    ?>
+                                    <div class="col-lg-12">
+                                        <div class="alert alert-warning solid">
+                                            <?php echo $tipo_error?>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                                ?>
                                 <form action="../controller/login.php" method="post">
                                     <div class="form-group">
                                         <label><strong>Usuario</strong></label>
