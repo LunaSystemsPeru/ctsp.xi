@@ -380,8 +380,6 @@ class Asociado
                     email = '$this->email',
                     celular = '$this->celular',
                     domicilio = '$this->domicilio',
-                    foto = '$this->foto',
-                    password = '$this->password',
                     id_tipo_documento = '$this->tipo_documento',
                     id_tipo_actividad = '$this->tipo_actividad'
                 WHERE  id_asociado = '$this->idAsociado' ";

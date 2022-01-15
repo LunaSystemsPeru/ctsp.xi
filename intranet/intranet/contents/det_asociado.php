@@ -134,7 +134,7 @@ $detalle->obtenerDatos();
                         </ul>
                         <div class="card-footer border-0 mt-0">
                             <button class="btn btn-primary btn-lg btn-block">
-                                <h4 class="m-0 text-white"><i class="fa fa-bell-o"></i> Modificar Datos</h4>
+                                <a href="mod_asociado.php?idasociado=<?php echo $asociado->getIdAsociado()?>" class="m-0 text-white"><i class="fa fa-bell-o"></i> Modificar Datos</a>
                             </button>
                         </div>
                     </div>
