@@ -131,13 +131,18 @@ $util = new Util();
                                     $acuotas = $cuota->verPagosFechas("2021-01-01", "2021-01-31");
                                     $item = 0;
                                     foreach ($acuotas as $fila) {
+                                        $periodoinicio = $fila['periodo_inicio'];
+                                        if ($periodoinicio == '0000-00-00') {
+                                            $periodoinicio = '2000-01-01';
+                                        }
+
                                     $item++;
                                         ?>
                                         <tr>
                                             <td><?php echo $item ?></td>
                                             <td><?php echo $fila['apellidos'] . " " . $fila['nombres'] . " | CTSP N: " . $fila['ctsp'] ?></td>
                                             <td><?php echo $fila['fecha'] ?></td>
-                                            <td class="text-center"><?php echo $util->fecha_periodo($fila['periodo_inicio']) ?></td>
+                                            <td class="text-center"><?php echo $util->fecha_periodo($periodoinicio) ?></td>
                                             <td class="text-center"><?php echo $util->fecha_periodo($fila['pagado']) ?></td>
                                             <td class="text-center"><?php echo $fila['nrocuotas'] ?></td>
                                             <td class="text-center"><?php echo $fila['monto'] ?></td>

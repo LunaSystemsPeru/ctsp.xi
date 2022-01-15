@@ -402,6 +402,8 @@ class Asociado
     {
         $sql = "UPDATE asociados
                 SET  estado = '1',
+                    ctsp = '$this->ctsp',
+                    password = dni,
                     fecha_inscripcion = '$this->fechaInscripcion'
                 WHERE  id_asociado = '$this->idAsociado' ";
         return $this->c_conectar->ejecutar_idu($sql);

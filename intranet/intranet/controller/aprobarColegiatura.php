@@ -9,4 +9,4 @@ $asociado->setCtsp(filter_input(INPUT_POST, 'input_codigoctsp'));
 
 $asociado->aprobarColegiatura();
 
-header("Location: ../ver_asociados_pendientes.php");
+header("Location: ../contents/ver_asociados_pendientes.php");
