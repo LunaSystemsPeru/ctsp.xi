@@ -129,22 +129,15 @@ $year = date("Y");
                             <button class="btn btn-facebook" data-toggle="modal" data-target="#basicModal">
                                 <i class="fa fa-plus"></i> Agregar Movimiento <i class="fa fa-dollar"></i>
                             </button>
+                            <button class="btn btn-success" data-toggle="modal" data-target="#modalBuscar">
+                                <i class="fa fa-search"></i> Filtrar
+                            </button>
+                           <!--
+                            <button class="btn btn-info" >
+                                <i class="fa fa-send"></i> Exportar a Excel <i class="fa fa-file-excel-o"></i>
+                            </button>
+                            -->
 
-                            <div class="col-lg-3">
-                                <label>Sel. Periodo</label>
-                                <select class="form-control" name="select_periodo" id="select_periodo"
-                                        onchange="obtenerPeriodo()">
-                                    <option value="">Select Periodo</option>
-                                    <?php
-                                    $aperiodos = $movimiento->verPeriodos($year);
-                                    foreach ($aperiodos as $fila) {
-                                        ?>
-                                        <option value="<?php echo $fila['periodo'] ?>"><?php echo $fila['periodo'] ?></option>
-                                        <?php
-                                    }
-                                    ?>
-                                </select>
-                            </div>
                             <div class="modal fade" id="basicModal">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -194,6 +187,53 @@ $year = date("Y");
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="modal fade" id="modalBuscar">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <form method="get" action="ver_banco_movimiento.php">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Filtrar Movimientos</h5>
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <span>&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-12">
+                                                        <label>Año</label>
+                                                        <select class="form-control" id="select_anio" onchange="buscarMeses()">
+                                                            <option value="0">SELECCIONAR AÑO</option>
+                                                            <?php
+                                                            $movanios = $movimiento->verAnios();
+                                                            foreach ($movanios as $item) {
+                                                                ?>
+                                                                <option value="<?php echo $item['periodo'] ?>"><?php echo $item['periodo'] ?></option>
+                                                            <?php
+                                                            }
+                                                            ?>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label>Mes</label>
+                                                        <select class="form-control" id="select_periodos" name="periodo">
+                                                            <option value="0">SELECCIONAR AÑO</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <input type="hidden" value="<?php echo $banco->getIdBanco() ?>"
+                                                       name="idbanco" id="hidden_banco">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                    Cerrar
+                                                </button>
+                                                <button type="submit" class="btn btn-primary">Buscar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -206,7 +246,7 @@ $year = date("Y");
                                         <th>Ingresa</th>
                                         <th>Sale</th>
                                         <th>Saldo</th>
-                                       <!-- <th>Acciones</th> -->
+                                       <th>Acciones</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -215,7 +255,7 @@ $year = date("Y");
                                     $item = 2;
                                     $year = substr($periodo, 0, 4);
                                     $month = substr($periodo, 5, 2);
-                                    $saldo = $movimiento->obtenerSaldo($year, $month);
+                                    $saldo = $movimiento->obtenerSaldo($periodo.'-01');
                                     ?>
                                     <tr>
                                         <td class="text-center"><?php echo "1" ?></td>
@@ -224,11 +264,9 @@ $year = date("Y");
                                         <td class="text-right"><?php echo number_format($saldo, 2) ?></td>
                                         <td class="text-right"><?php echo number_format(0, 2) ?></td>
                                         <td class="text-right"><?php echo number_format($saldo, 2) ?></td>
-                                        <!--<td class="text-center">
-                                            <button class="btn btn-danger text-white">
-                                                <i class="fa fa-trash"></i> Eliminar
-                                            </button>
-                                        </td>-->
+                                        <td class="text-center">
+
+                                        </td>
                                     </tr>
                                     <?php
                                     foreach ($amovimiento as $fila) {
@@ -315,6 +353,15 @@ $year = date("Y");
         window.location = "ver_banco_movimiento.php?periodo=" + selperiodo + "&idbanco=" + selidbanco;
     }
 
+    function buscarMeses () {
+        var anio = $("#select_anio").val();
+        var idbanco = $("#hidden_banco").val();
+
+        $.get( "../controller/getJson/periodos_banco_movimientos.php", { idbanco: idbanco, anio: anio } )
+            .done(function( data ) {
+                $("#select_periodos").html(data)
+            });
+    }
     function eliminarMovimiento () {
 
     }

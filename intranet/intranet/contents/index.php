@@ -61,7 +61,7 @@
     <!--**********************************
         Header start
     ***********************************-->
-    <?php include '../fixed/header.php'?>
+    <?php include '../fixed/header.php' ?>
     <!--**********************************
         Header end ti-comment-alt
     ***********************************-->
@@ -189,40 +189,17 @@
                     </div>
                 </div>
                 -->
-                <div class="col-xl-8 col-xxl-8 col-lg-8 col-md-12 col-sm-12">
+                <div class="col-sm-12">
                     <div id="user-activity" class="card">
                         <div class="card-header">
                             <h4 class="card-title">Visitor Activity</h4>
-                            <div class="card-action">
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#user" role="tab">
-                                            Day
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#session" role="tab">
-                                            Week
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#bounce" role="tab">
-                                            Month
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#session-duration" role="tab">
-                                            Year
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </div>
 
                         <div class="card-body">
                             <div class="tab-content mt-5" id="myTabContent">
                                 <div class="tab-pane fade show active" id="user" role="tabpanel">
-                                    <canvas id="activity" class="chartjs"></canvas>
+                                    <canvas id="barChart_1" class="chartjs"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -693,7 +670,7 @@
     <!--**********************************
         Footer start
     ***********************************-->
-    <?php include '../fixed/footer.php'?>
+    <?php include '../fixed/footer.php' ?>
     <!--**********************************
         Footer end
     ***********************************-->
@@ -737,6 +714,53 @@
 <script src="../../public/vendor/svganimation/svg.animation.js"></script>
 
 </body>
+
+<script>
+    (function($) {
+       verIngresos()
+    })
+
+    function verIngresos() {
+
+        //basic bar chart
+        if (jQuery('#barChart_1').length > 0) {
+            const barChart_1 = document.getElementById("barChart_1").getContext('2d');
+
+            barChart_1.height = 100;
+
+            new Chart(barChart_1, {
+                type: 'bar',
+                data: {
+                    defaultFontFamily: 'Poppins',
+                    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+                    datasets: [
+                        {
+                            label: "My First dataset",
+                            data: [65, 59, 80, 81, 56, 55, 40],
+                            borderColor: 'rgba(54, 149, 235, 1)',
+                            borderWidth: "0",
+                            backgroundColor: 'rgba(54, 149, 235, 1)'
+                        }
+                    ]
+                },
+                options: {
+                    legend: false,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                        xAxes: [{
+                            // Change here
+                            barPercentage: 0.5
+                        }]
+                    }
+                }
+            });
+        }
+    }
+</script>
 
 <!-- Mirrored from medico.dexignzone.com/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Oct 2020 01:48:35 GMT -->
 </html>

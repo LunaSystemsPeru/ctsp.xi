@@ -118,9 +118,18 @@ class BancoMovimiento
         return $this->c_conectar->ejecutar_idu($sql);
     }
 
+    public function verAnios()
+    {
+        $sql = "select year(fecha) as periodo 
+                from banco_movimientos 
+                where id_banco = '$this->idBanco'
+                group by year(fecha)";
+        return $this->c_conectar->get_Cursor($sql);
+    }
+
     public function verPeriodos($year)
     {
-        $sql = "select concat(year(fecha), '-', month(fecha)) as periodo 
+        $sql = "select concat(year(fecha), '-', LPAD(month(fecha),2,'00')) as periodo 
                 from banco_movimientos
                 where year(fecha) = '$year'
                 group by month(fecha)";
@@ -128,12 +137,12 @@ class BancoMovimiento
     }
 
 
-    public function obtenerSaldo($year, $month)
+    public function obtenerSaldo($fecha)
     {
         $saldo = 0;
         $sql = "select ifnull(sum(ingresa - sale), 0) as saldo 
                 from banco_movimientos
-                where year(fecha) = '$year' and month(fecha) < '$month' and id_banco = '$this->idBanco'";
+                where fecha < '$fecha' and id_banco = '$this->idBanco'";
         $saldo = $this->c_conectar->get_valor_query($sql, "saldo");
         return $saldo;
     }
@@ -146,6 +155,13 @@ class BancoMovimiento
                 order by bm.fecha asc";
         //echo $sql;
         return $this->c_conectar->get_Cursor($sql);
+    }
+
+    public function obtenerResumenMensual () {
+        $sql = 'select month(fecha) as mes, sum(ingresa) as totingreso, sum(sale) as totegreso 
+                from banco_movimientos as bm 
+                where year(fecha) = year(current_date()) group by month(fecha)';
+        return $this->c_conectar->get_json_rows($sql);
     }
 
 }
