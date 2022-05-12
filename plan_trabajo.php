@@ -66,8 +66,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center section-head">
-                        <h3 class="h3"> PLAN DE TRABAJO </h3>
-                        <h3 class="h3"> 2019 - 2021 </h3>
+                        <h3 class="h3"> PLAN DE TRABAJO COLEGIO DE TRABAJADORES SOCIALES REGION XI CHIMBOTE </h3>
+                        <h3 class="h3"> GESTION 2021-2023 </h3>
                         <div class="dez-separator bg-primary"></div>
 
                     </div>
@@ -76,52 +76,70 @@
                 <div class="section-content ">
                     <div class="row">
                         <div class="col-lg-12">
-                            <p>El Colegio de Trabajadores Sociales del Perú es una institución gremial autónoma de derecho público interno, sin fines de lucro tiene personería jurídica y es el órgano representativo de los profesionales Trabajadores Sociales y Asistentes Sociales del Perú.</p>
-                            <p>Teniendo como marco legal los Estatutos, el Reglamento de Elecciones, Ley de creación de los Trabajadores Sociales del Perú  Nº27918  del 11 Enero  2003, en el  D.S. Nº 012-2018-JUS de 28.12.2018 de los Lineamientos para inscripción de los Colegios Profesionales de las Juntas de Decanos de los colegios Profesionales</p>
-                            <p>En este marco jurídico este consejo directivo CDR XI – Ancash, presenta a todos los agremiados el Plan de Trabajo, para el periodo 2019 -2021.</p>
+                            <p>El Colegio de Trabajadores Sociales del Perú - Región XI es una institución autónoma sin fines de
+                                lucro y forma parte del gremio nacional del Colegio de Trabajadores Sociales del Perú que se
+                                ampara en la Ley Nº 27918 Ley de creación del Colegio de Trabajadores Sociales del Perú, Ley
+                                Nº30112 Ley del Ejercicio Profesional del Trabajador Social y sus respectivos estatutos
+                                nacionales.</p>
+                            <p>Según el Artículo 49° del Estatuto Nacional cada región está representada por un Consejo
+                                Directivo Regional CDR que es un órgano autónomo que se rige por sus propios estatutos y cuyo
+                                mandato dura dos años y cuyo proceso de renovación está contemplado en el Reglamento de
+                                Elecciones del Comité Electoral elegido en asamblea. Dentro de éste marco con fecha 15 de
+                                octubre 2021, el CDR convocó a elecciones por el período 2021-2023.</p>
+                            <p>En tal sentido, la lista denominada “Trabajadoras Sociales Del Bicentenario” expresa su intención
+                                de postular al CDR XI- Chimbote para el periodo 2021-2023 y expone a los agremiados el
+                                presente Plan de Trabajo.</p>
 
-                            <h4 class="h4"> PROPUESTAS</h4>
+                            <h4 class="h4"> PROPUESTAS DE TRABAJO</h4>
                             <div class="dez-separator bg-primary"></div>
-                            <h5 class="h5" > Área de Capacitación:  Actualización de temas</h5>
+                            <h5 class="h5" > EMPLEABILIDAD Y DIFUSION DE LA PROFESION A NIVEL LOCAL</h5>
 
                             <ul class="list-check-circle primary">
-                                <li>Peritaje social</li>
-                                <li>Violencia Familiar</li>
-                                <li>Sistema de Pensiones, Jubilación y Seguridad social</li>
-                                <li>Familia  y Cuidado de Adulto Mayor</li>
-                                <li>Trabajo social en Educación</li>
-                                <li>Seguridad  y Salud en el Trabajo</li>
-                                <li>Trabajo Social en Pandemias</li>
+                                <li>Contar con un directorio de profesionales a nivel regionall</li>
+                                <li>Crear una bolsa de trabajo</li>
+                                <li>Establecer alianzas estratégicas con universidades de formación profesional</li>
+                                <li>Incorporar programas de prácticas profesionales en instituciones o empresas
+                                    locales.</li>
+                                <li>Lograr la incorporación del gremio en la evaluación el Sistema de Focalización de
+                                    Hogares (SISFOH) de nuestra región.</li>
+                                <li>Sistematización y difusión de intervenciones profesionales</li>
+                                <li>Participación del gremio en campañas de proyección y desarrollo social a nivel
+                                    local.</li>
 
                             </ul>
-                            <h5 class="h5" > Área de Gestión</h5>
+                            <h5 class="h5" > FORTALECIENDO NUESTRAS COMPETENCIAS</h5>
                             <ul class="list-check-circle primary">
-                                <li>Conformación de comisión Revisora de cuentas</li>
-                                <li>Fortalecimiento del Fondo de Apoyo Social r</li>
-                                <li>Difusión bolsa de Trabajo</li>
-                                <li>Acciones  que contribuyan a la Renovación de directiva  y fortalecimiento
-                                    del Consejo Directivo Nacional</li>
-                                <li>Inscripción del Colegio a la Sunarp</li>
-                                <li>Inscripción  del Colegio a la Sunat</li>
-                                <li>Creación de cuenta Bancaria a nombre CDR XI-Ancash-CTSP </li>
+                                <li>Administración de Pólizas de Riesgos Humanos (EPS, Vida Ley, SCTR)</li>
+                                <li>Seguridad y Salud en el Trabajo - Plan de Vigilancia COVID-19</li>
+                                <li>Gestión en el Sistema de Pensión público y privado</li>
+                                <li>Violencia Familiar y plan de intervención profesional</li>
+                                <li>Ética y Trabajo Social</li>
+                                <li>Peritaje Social</li>
+                                <li>Intervención Social con Poblaciones Vulnerables </li>
+                                <li>Intervención Social en Educación</li>
+                                <li>Ejercicio Profesional Independiente</li>
 
                             </ul>
-                            <h5 class="h5" > Área de Responsabilidad Social</h5>
+                            <h5 class="h5" > GESTIÓN DEL CDR XI</h5>
                             <ul class="list-check-circle primary">
-                                <li>Proyección y desarrollo social  en poblaciones vulnerables : Campañas</li>
+                                <li>Conformación de Tribunal de Ética</li>
+                                <li>Informe Semestral Económico </li>
+                                <li>Incorporarnos a redes y páginas web de soporte al quehacer profesional                               </li>
+                                <li>Creación de cuenta Bancaria a nombre CDR Región XI- Chimbote</li>
+                                <li>Local institucional propio</li>
 
                             </ul>
-                            <h5 class="h5" > Área bienestar social</h5>
+                            <h5 class="h5" > RESPONSABILIDAD SOCIAL</h5>
                             <ul class="list-check-circle primary">
-                                <li>Programa Turístico Nacional, e internacional</li>
-                                <li>Programas de Integración institucional en fechas conmemorativas de
-                                    acuerdo al calendario cívico</li>
-
+                                <li>Gestionar a nivel local, beneficios corporativos para los agremiados</li>
+                                <li>Fortalecer el Fondo de Apoyo Social</li>
+                                <li>Programa de Turismo interno y externo para agremiados</li>
+                                <li>Eventos de integración para las agremiadas</li>
                             </ul>
 
                         </div>
                         <div class="col-lg-12">
-                            <a href="archivos/Plan%20%20de%20Trabajo%20Bienal%20CDR%20XI%20Ancash%20CTSP.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Descargue el plan completo aqui</a>
+                            <a href="archivos/PLAN%20DE%20TRABAJO%20CTSP%202021-2023.pdf" target="_blank"> <i class="fa fa-file-pdf-o"></i> Descargue el plan completo aqui</a>
                             
                         </div>
                     </div>

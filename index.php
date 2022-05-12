@@ -43,8 +43,7 @@ $util = new Util();
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
+
     <![endif]-->
 
     <!-- STYLESHEETS -->
@@ -61,12 +60,7 @@ $util = new Util();
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
 
-    <script
-            src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            crossorigin="anonymous">
 
-    </script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|PT+Serif:400,400i,700,700i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Slab:100,300,400,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
     </style>
@@ -119,7 +113,7 @@ $util = new Util();
                                 data-param10="{&quot;revslider-weather-addon&quot; : { &quot;type&quot; : &quot;&quot; ,&quot;name&quot; : &quot;&quot; ,&quot;woeid&quot; : &quot;&quot; ,&quot;unit&quot; : &quot;&quot; }}"
                                 data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="images/main-slider/banner11.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" 2 data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                <img src="images/main-slider/baner1.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
                                      data-blurend="0" data-offsetstart="0 0" data-offsetend="100 0" data-bgparallax="8" class="rev-slidebg"
                                      data-no-retina>
 
@@ -149,7 +143,7 @@ $util = new Util();
                                          data-paddingright="[40,40,30,30]"
                                          data-paddingbottom="[0,0,50,50]"
                                          data-paddingleft="[40,40,30,30]"
-                                         style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
+                                         style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 2px;">
                                         <!-- LAYER NR. 2 -->
                                         <div class="tp-caption scroll-content"
                                              id="slide-100-layer-2"
@@ -306,12 +300,12 @@ $util = new Util();
                                 data-param10="{&quot;revslider-weather-addon&quot; : { &quot;type&quot; : &quot;&quot; ,&quot;name&quot; : &quot;&quot; ,&quot;woeid&quot; : &quot;&quot; ,&quot;unit&quot; : &quot;&quot; }}"
                                 data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="images/main-slider/BANER31.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                <img src="images/main-slider/baner2.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
                                      data-blurend="0" data-offsetstart="0 0" data-offsetend="100 0" data-bgparallax="8" class="rev-slidebg"
                                      data-no-retina>
 
                                 <!-- LAYERS -->
-                                <div id="rrzb_200" class="rev_row_zone rev_row_zone_bottom" style="z-index: 5;">
+                                <div id="rrzb_100" class="rev_row_zone rev_row_zone_bottom" style="z-index: 5;">
                                     <!-- LAYER NR. 1 -->
                                     <div class="tp-caption  "
                                          id="slide-200-layer-1"
@@ -336,7 +330,7 @@ $util = new Util();
                                          data-paddingright="[40,40,30,30]"
                                          data-paddingbottom="[0,0,50,50]"
                                          data-paddingleft="[40,40,30,30]"
-                                         style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
+                                         style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 2px;">
                                         <!-- LAYER NR. 2 -->
                                         <div class="tp-caption scroll-content"
                                              id="slide-200-layer-2"
@@ -446,6 +440,172 @@ $util = new Util();
                                         <img src="images/main-slider/pic6.jpg" alt="" data-ww="['640px','640px','360px','360px']" data-hh="['360px','360px','249px','249']" width="640" height="360" data-no-retina>
                                     </div>
                             </li>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-100"
+                                data-transition="fade"
+                                data-slotamount="default"
+                                data-hideafterloop="0"
+                                data-hideslideonmobile="off"
+                                data-easein="default"
+                                data-easeout="default"
+                                data-masterspeed="300"
+                                data-thumb=""
+                                data-rotate="0"
+                                data-saveperformance="off"
+                                data-title="Slide"
+                                data-param1=""
+                                data-param2=""
+                                data-param3=""
+                                data-param4=""
+                                data-param5=""
+                                data-param6=""
+                                data-param7=""
+                                data-param8=""
+                                data-param9=""
+                                data-param10="{&quot;revslider-weather-addon&quot; : { &quot;type&quot; : &quot;&quot; ,&quot;name&quot; : &quot;&quot; ,&quot;woeid&quot; : &quot;&quot; ,&quot;unit&quot; : &quot;&quot; }}"
+                                data-description="">
+                                <!-- MAIN IMAGE -->
+                                <img src="images/main-slider/baner3.jpg" alt="" title="" data-bgposition="right center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+                                     data-blurend="0" data-offsetstart="0 0" data-offsetend="100 0" data-bgparallax="8" class="rev-slidebg"
+                                     data-no-retina>
+
+                                <!-- LAYERS -->
+                                <div id="rrzb_200" class="rev_row_zone rev_row_zone_bottom" style="z-index: 5;">
+                                    <!-- LAYER NR. 1 -->
+                                    <div class="tp-caption  "
+                                         id="slide-200-layer-1"
+                                         data-x="['left','left','left','left']"
+                                         data-hoffset="['0','0','0','0']"
+                                         data-y="['bottom','bottom','bottom','bottom']"
+                                         data-voffset="['683','683','683','683']"
+                                         data-width="none"
+                                         data-height="none"
+                                         data-whitespace="nowrap"
+                                         data-type="row"
+                                         data-columnbreak="2"
+                                         data-responsive_offset="on"
+                                         data-responsive="off"
+                                         data-frames='[{"delay":10,"speed":2000,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                         data-margintop="[0,0,0,0]"
+                                         data-marginright="[0,0,0,0]"
+                                         data-marginbottom="[50,50,0,0]"
+                                         data-marginleft="[0,0,0,0]"
+                                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                                         data-paddingtop="[0,0,0,0]"
+                                         data-paddingright="[40,40,30,30]"
+                                         data-paddingbottom="[0,0,50,50]"
+                                         data-paddingleft="[40,40,30,30]"
+                                         style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 2px;">
+                                        <!-- LAYER NR. 2 -->
+                                        <div class="tp-caption scroll-content"
+                                             id="slide-200-layer-2"
+                                             data-x="['left','left','left','left']"
+                                             data-hoffset="['100','100','100','100']"
+                                             data-y="['top','top','top','top']"
+                                             data-voffset="['100','100','100','100']"
+                                             data-width="none"
+                                             data-height="none"
+                                             data-whitespace="nowrap"
+                                             data-type="column"
+                                             data-responsive_offset="on"
+                                             data-responsive="off"
+                                             data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                             data-columnwidth="33.33%"
+                                             data-verticalalign="top"
+                                             data-margintop="[0,0,0,0]"
+                                             data-marginright="[0,0,0,0]"
+                                             data-marginbottom="[0,0,0,0]"
+                                             data-marginleft="[0,0,0,0]"
+                                             data-textAlign="['inherit','inherit','inherit','inherit']"
+                                             data-paddingtop="[0,0,0,0]"
+                                             data-paddingright="[0,0,0,0]"
+                                             data-paddingbottom="[0,0,0,0]"
+                                             data-paddingleft="[0,0,0,0]"
+                                             style="z-index: 6; width: 100%;background-color:rgb(255,255,255);">
+
+                                            <!-- LAYER NR. 3 -->
+
+                                            <!-- LAYER NR. 4 -->
+
+
+                                            <!-- LAYER NR. 10 -->
+                                            <div class="tp-caption  "
+                                                 id="slide-200-layer-10"
+                                                 data-x="['left','left','left','left']"
+                                                 data-hoffset="['100','100','100','100']"
+                                                 data-y="['top','top','top','top']"
+                                                 data-voffset="['100','100','100','100']"
+                                                 data-width="none"
+                                                 data-height="none"
+                                                 data-whitespace="nowrap"
+                                                 data-type="column"
+                                                 data-responsive_offset="on"
+                                                 data-responsive="off"
+                                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                                 data-columnwidth="66.67%"
+                                                 data-verticalalign="top"
+                                                 data-margintop="[0,0,0,0]"
+                                                 data-marginright="[0,0,0,0]"
+                                                 data-marginbottom="[0,0,0,0]"
+                                                 data-marginleft="[0,0,0,0]"
+                                                 data-textAlign="['inherit','inherit','inherit','inherit']"
+                                                 data-paddingtop="[0,0,0,0]"
+                                                 data-paddingright="[0,0,0,0]"
+                                                 data-paddingbottom="[0,0,0,0]"
+                                                 data-paddingleft="[0,0,0,0]"
+                                                 style="z-index: 26; width: 100%;">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- LAYER NR. 12 -->
+                                    <div class="tp-caption   tp-resizeme  re-shadow"
+                                         id="slide-200-layer-12"
+                                         data-x="['left','left','left','left']"
+                                         data-hoffset="['400','330','50','50']"
+                                         data-y="['bottom','bottom','bottom','bottom']"
+                                         data-voffset="['140','160','350','350']"
+                                         data-width="none"
+                                         data-height="none"
+                                         data-whitespace="normal"
+                                         data-visibility="['on','off','off','off']"
+                                         data-type="image"
+                                         data-responsive_offset="on"
+                                         data-frames='[{"delay":"bytrigger","speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                                         data-paddingtop="[0,0,0,0]"
+                                         data-paddingright="[0,0,0,0]"
+                                         data-paddingbottom="[0,0,0,0]"
+                                         data-paddingleft="[0,0,0,0]"
+                                         data-lasttriggerstate="reset"
+                                         style="z-index: 28;">
+                                        <img src="images/main-slider/pic5.jpg" alt="" data-ww="['640px','640px','360px','360px']" data-hh="['360px','360px','249px','249']" width="640" height="360" data-no-retina>
+                                    </div>
+                                    <!-- LAYER NR. 13 -->
+                                    <div class="tp-caption   tp-resizeme  re-shadow"
+                                         id="slide-200-layer-13"
+                                         data-x="['left','left','left','left']"
+                                         data-hoffset="['400','330','50','50']"
+                                         data-y="['bottom','bottom','bottom','bottom']"
+                                         data-voffset="['140','160','350','350']"
+                                         data-width="none"
+                                         data-height="none"
+                                         data-whitespace="normal"
+                                         data-visibility="['on','off','off','off']"
+                                         data-type="image"
+                                         data-responsive_offset="on"
+                                         data-frames='[{"delay":"bytrigger","speed":600,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":300,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                         data-textAlign="['inherit','inherit','inherit','inherit']"
+                                         data-paddingtop="[0,0,0,0]"
+                                         data-paddingright="[0,0,0,0]"
+                                         data-paddingbottom="[0,0,0,0]"
+                                         data-paddingleft="[0,0,0,0]"
+                                         data-lasttriggerstate="reset"
+                                         style="z-index: 29;">
+                                        <img src="images/main-slider/pic6.jpg" alt="" data-ww="['640px','640px','360px','360px']" data-hh="['360px','360px','249px','249']" width="640" height="360" data-no-retina>
+                                    </div>
+                            </li>
+
                         </ul>
 
                     </div>
@@ -460,11 +620,14 @@ $util = new Util();
                     <div class="row d-flex">
                         <div class="col-lg-6 col-md-6 text-justify m-b30">
                             <div class="text-center"><h2 class="m-b15">BIENVENIDA</h2></div>
-                            <p class="m-b15">Estimadas colegas, como Junta Directiva del Consejo Directivo Regional XI – Ancash del Colegio de Trabajadores Sociales del Perú, nos dirigimos a ustedes para darles una cordial BIENVENIDA a la página oficial Institucional, creada como una estrategia de posicionamiento para resaltar el Trabajo Social que desarrolla el Trabajador Social en las diferentes instituciones públicas, privadas, ONGs, en la Región Ancash.</p>
-                            <p class="m-b30">En este espacio virtual encontrara, información sobre normas legales, instrumentos normativos, el sistema de registro de los miembros de la orden, su condición de hábil para el ejercicio profesional, la difusión de experiencias exitosas de Trabajo Social realizadas como Trabajadores Sociales en los diferentes espacios, con el propósito de promover el cambio y desarrollo social en nuestra región.</p>
+                            <p class="m-b15">El Consejo Directivo Regional del Colegio de Trabajadores Sociales del Perú - Región XI – Ancash, le da la más cordial BIENVENIDA a nuestra página oficial Institucional.</p>
+                            <p class="m-b30">En este espacio virtual, usted encontrará información sobre normas legales e instrumentos normativos que rigen el ejercicio profesional del Trabajador Social y la reseña histórica de la labor de nuestras colegas decanas, que data desde el año 1968, y que sustentan la creación de la Región XI Ancash en 1996.</p>
+                            <p class="m-b30">En ésta página encontrará también el Registro de Miembros de la orden y su condición de hábil para el ejercicio profesional; así como los requisitos para acceder a diversos trámites y servicios dirigidos a los miembros de la orden. </p>
+                            <p class="m-b30">También podrá visualizar experiencias exitosas de Trabajo Social realizadas por nuestras colegas en los diferentes espacios profesionales de nuestra región, cuyo propósito es dar a conocer la labor y contribución de nuestras profesionales en el desarrollo social en nuestra región Ancash.</p>
+
                             <div class="text-center">
-                                <img src="images/firmaDec2.png" width="200" alt="">
-                                <h4 class="m-b0">Mg. Silvia Aurora Noriega Roldan</h4>
+                                <img src="images/firmaDec1.png" width="205" alt="">
+                                <h4 class="m-b0">Gloria Carolinne Bazán Guzmán</h4>
                                 <h4 class="m-b0">Decana</h4>
                             </div>
 

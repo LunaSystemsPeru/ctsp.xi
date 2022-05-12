@@ -80,8 +80,8 @@
                         <h3 class="h3"> Nosotros Somos</h3>
                         <div class="dez-separator bg-primary"></div>
                         <div class="clear"></div>
-                        <p class="m-b0">El Colegio de Trabajadores Sociales del Perú, es una Institución Gremial Autónoma de Derecho Público Interno, sin fines de lucro, con personería Jurídica y representa a los Profesionales Asistentes Sociales y Trabajadores Sociales del Perú.  El CTSP fue creado por Ley N° 27918 el 11 enero 2003. Contamos con la Ley del Ejercicio Profesional del Trabajador Socia l Ley N°30112 del 07 noviembre 2013.</p>
-                        <p class="m-b0">En la Region Ancash estamos registradas en la SUNARP con inscripción de Personas Jurídicas creadas por Ley Colegio de Trabajadores Sociales del Perú Region XI - Ancash. Partida Registral N° 11085805 Zona Registral N° VII- Sede Huaraz. Oficina Registral Chimbote - SUNARP </p>
+                        <p class="m-b0">El Colegio de Trabajadores Sociales del Perú CTSP, fue creado por Ley N° 27918 el 11 enero 2003; contamos con la Ley N°30112 del Ejercicio Profesional del Trabajador Social del 07 noviembre 2013. Somos una Institución Gremial Autónoma de Derecho Público Interno, sin fines de lucro, con personería Jurídica y representamos a los Profesionales Asistentes Sociales y Trabajadores Sociales del Perú.</p>
+                        <p class="m-b0">En la Región Ancash, estamos registrados como personas jurídicas creadas por la Ley del Colegio de Trabajadores Sociales del Perú Región XI – Ancash, inscritas con la Partida Registral N° 11085805 Zona Registral N° VII- Sede Huaraz - Oficina Registral Chimbote – SUNARP.</p>
 
                     </div>
                     <div class="col-lg-12 text-center">
@@ -100,14 +100,14 @@
                             <div class="icon-bx-sm radius bg-primary"> <a href="#" class="icon-cell text-white"><i class="fa fa-bullseye"></i></a> </div>
                             <div class="icon-content p-l40">
                                 <h2 class="w3-tilte text-center">MISIÓN</h2>
-                                <p class="text-justify">Somos una  institución  autónoma con personería jurídica  sin  fines de lucro,
-                                    que asume la representación  gremial  y defensa del ejercicio  legal,  en la
-                                    Región Áncash, de  Trabajadores  Sociales, Asistentes Sociales,  colegiadas,
-                                    competentes con formación científica, humanística y ética profesional, con
-                                    actitud crítica, innovadora, y solidaria que estudia e investiga la
-                                    problemática social de la población objetivo; con intervención social
-                                    propositiva y eficaz a la problemática social en el marco de valores los
-                                    universales, derechos humanos y justicia social.   </p>
+                                <p class="text-justify">Somos una institución autónoma con personería jurídica sin fines de lucro, que
+                                    asume la representación gremial y defensa del ejercicio profesional legal de
+                                    Trabajadores Sociales y Asistentes Sociales colegiadas, que ejercen en la
+                                    Región Áncash; somos profesionales competentes con formación científica,
+                                    humanística y ética profesional, con actitud crítica, innovadora y solidaria que
+                                    estudia e investiga la problemática social de la población objetivo para brindar
+                                    una propuesta de intervención social propositiva y eficaz en el marco de los
+                                    valores universales, los derechos humanos y la justicia social.  </p>
                             </div>
                         </div>
                     </div>
@@ -116,12 +116,12 @@
                             <div class="icon-bx-sm radius bg-primary"> <a href="#" class="icon-cell text-white"><i class="fa fa-eye"></i></a> </div>
                             <div class="icon-content p-l40">
                                 <h2 class="w3-tilte text-center ">VISIÓN</h2>
-                                <p class="text-justify">Ser, una Institución, integrada, reconocida, referente del Trabajo Social y
-                                    de los Colegios Profesionales en la Región Ancash, con servicios de calidad
-                                    a los colegiados, que contribuye en la formulación de políticas sociales,
-                                    locales y de la Región; trabaja en red con entidades públicas y privadas de
-                                    acuerdo a los principios éticos, deontológicos y científicos del Trabajo Social
-                                    en función al desarrollo social y calidad de vida de la población.  </p><br>
+                                <p class="text-justify">Ser, una Institución, integrada, reconocida y referente del Trabajo Social y de los
+                                    Colegios Profesionales en la Región Ancash, con servicios de calidad a los
+                                    colegiados, que contribuye en la formulación de políticas sociales locales y de la
+                                    Región y que trabaja en red con entidades públicas y privadas de acuerdo a los
+                                    principios éticos, deontológicos y científicos del Trabajo Social en función al
+                                    desarrollo social y calidad de vida de la población.  </p><br>
                             </div>
                         </div>
                     </div>
@@ -136,72 +136,72 @@
             <div class="container">
                 <div class="section-head text-center ">
                     <h3 class="h3 text-uppercase">Consejo Directivo </h3>
-                    <p>Periodo Octubre 2019 - Octubre 2021</p>
+                    <p>Trabajadores Sociales del Bicentenario 2021-2023 </p>
                 </div>
                 <div class="section-content text-center ">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
 							<div class="dez-box team-bx1">
-								<div class="dez-media"> <a href="#"><img src="images/our-team/small/decana.JPG" alt=""></a> </div>
+								<div class="dez-media"> <a href="#"><img src="images/our-team/small/decana1.JPG" alt=""></a> </div>
 								<div class="dez-info p-t20">
-									<h4 class="dez-title m-b10"><a href="#">Mg. T.S. Silvia Aurora Noriega Roldán</a></h4>
+									<h4 class="dez-title m-b10"><a href="#">Lic. T.S. Gloria Carolinne Bazán Guzmán </a></h4>
 									<h6 class="dez-title">Decana</h6>
-									<p class="m-b10">CTSP:2280</p>
+									<p class="m-b10">CTSP:6126</p>
 
 								</div>				
 							</div>
 						</div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
 							<div class="dez-box team-bx1">
-								<div class="dez-media"> <a href="#"><img src="images/our-team/small/vicedecana2.jpg" alt=""></a> </div>
+								<div class="dez-media"> <a href="#"><img src="images/our-team/small/vicedecana1.jpg" alt=""></a> </div>
 								<div class="dez-info p-t20">
-									<h4 class="dez-title m-b10"><a href="#">Lic. T. S. Nancy Elizabeth Diestra  Pastor </a></h4>
+									<h4 class="dez-title m-b10"><a href="#">Lic. T.S. Judith Marleny Tasayco Carranza </a></h4>
 									<h6 class="dez-title">Vice Decana</h6>
-									<p class="m-b10">CTSP:6387</p>
+									<p class="m-b10">CTSP:7113</p>
 
 								</div>				
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
 							<div class="dez-box team-bx1">
-								<div class="dez-media"> <a href="#"><img src="images/our-team/small/MonicaCastillo.jpg" alt=""></a> </div>
+								<div class="dez-media"> <a href="#"><img src="images/our-team/small/secretaria1.jpg" alt=""></a> </div>
 								<div class="dez-info p-t20">
-									<h4 class="dez-title m-b10"><a href="#">Lic. T.S. Mónica Alexandra Castillo Sánchez  </a></h4>
+									<h4 class="dez-title m-b10"><a href="#">Lic. T.S. Victoria Elizabeth Aponte Lector </a></h4>
 									<h6 class="dez-title">Secretaria</h6>
-									<p class="m-b10">CTSP:9357</p>
+									<p class="m-b10">CTSP:5382</p>
 
 								</div>				
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
 							<div class="dez-box team-bx1">
-								<div class="dez-media"> <a href="#"><img src="images/our-team/small/tesorera2.jpg" alt=""></a> </div>
+								<div class="dez-media"> <a href="#"><img src="images/our-team/small/tesorera1.jpg" alt=""></a> </div>
 								<div class="dez-info p-t20">
-									<h4 class="dez-title m-b10"><a href="#">Lic. T. S. Olinda María Ganoza Alvitres </a></h4>
+									<h4 class="dez-title m-b10"><a href="#">Lic. T. S. Esmelda Dalila Vásquez Corro </a></h4>
 									<h6 class="dez-title">Tesorera</h6>
-									<p class="m-b10">CTSP:6608</p>
+									<p class="m-b10">CTSP:3382</p>
 
 								</div>				
 							</div>
 						</div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="dez-box team-bx1">
-                                <div class="dez-media"> <a href="#"><img src="images/our-team/small/vocal1_3.jpg" alt=""></a> </div>
+                                <div class="dez-media"> <a href="#"><img src="images/our-team/small/vocal1.jpg" alt=""></a> </div>
                                 <div class="dez-info p-t20">
-                                    <h4 class="dez-title m-b10"><a href="#">Lic. T. S. Nancy Esperanza Sánchez Azañedo </a></h4>
+                                    <h4 class="dez-title m-b10"><a href="#">Lic. T. S. Katty Geovanny Ríos Holguín </a></h4>
                                     <h6 class="dez-title">Vocal I</h6>
-                                    <p class="m-b10">CTSP:6090</p>
+                                    <p class="m-b10">CTSP:6991</p>
 
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                             <div class="dez-box team-bx1">
-                                <div class="dez-media"> <a href="#"><img src="images/our-team/small/vocal2_3.jpg" alt=""></a> </div>
+                                <div class="dez-media"> <a href="#"><img src="images/our-team/small/vocal2.jpg" alt=""></a> </div>
                                 <div class="dez-info p-t20">
-                                    <h4 class="dez-title m-b10"><a href="#">Lic. T. S. Frecia  Carmela Castillo  Milla </a></h4>
+                                    <h4 class="dez-title m-b10"><a href="#">Lic. T. S. Tula Esperanza Falla Juárez </a></h4>
                                     <h6 class="dez-title">Vocal II</h6>
-                                    <p class="m-b10">CTSP:2492</p>
+                                    <p class="m-b10">CTSP:2973</p>
 
                                 </div>
                             </div>
